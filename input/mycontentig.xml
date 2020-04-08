@@ -99,7 +99,7 @@
     </parameter>
     <parameter>
       <code value="path-binary"/>
-      <value value="input\cql"/>
+      <value value="input/cql"/>
     </parameter>
 <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>

@@ -8,4 +8,9 @@ include example.fhir.uv.myig.example called test
 
 context Patient
 
-define Test: ["Observation"] O where exists (O.category C where C ~ test."Laboratory Observation Category")
+define Test: ["Observation"] O
+  where exists (O.category C
+    where C ~ test."Laboratory Observation Category"
+  )
+
+  
