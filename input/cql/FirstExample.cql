@@ -12,6 +12,6 @@ define PatientExample:
   Patient P
     where P.gender = 'male'
       and P.active is true
-      and P.birthDate 30 years before Today()
+      and P.birthDate 30 years or more before Today()
       and not(P.deceased)
       and P.maritalStatus in "Marital Status"
