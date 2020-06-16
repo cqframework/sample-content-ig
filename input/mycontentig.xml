@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
+<!-- Start by finding all references to "mycontentig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
   <id value="example.fhir.uv.mycontentig"/>
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
@@ -7,9 +7,9 @@
   </extension>-->
   <url value="http://somewhere.org/fhir/uv/mycontentig/ImplementationGuide/example.fhir.uv.mycontentig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.2.0"/>
+  <version value="0.1.0"/>
   <name value="YourComputableMyContentIGNameHere"/>
-  <title value="Your User Friendly Name for MyIG Here"/>
+  <title value="Your User Friendly Name for MyContentIG Here"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 International - [Some] Work Group"/>
@@ -20,7 +20,7 @@
       <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="A brief description of what MyIG is about (probably the same text as in your readme)"/>
+  <description value="A brief description of what MyContentIG is about (probably the same text as in your readme)"/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
@@ -59,7 +59,7 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="MyContentIG Home Page"/>
         <generation value="html"/>
       </page>
       <page>
@@ -100,6 +100,10 @@
     <parameter>
       <code value="path-binary"/>
       <value value="input/cql"/>
+    </parameter>
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="templates\liquid"/>
     </parameter>
 <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>

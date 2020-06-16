@@ -1,6 +1,5 @@
 {
    "options":[
-      "EnableAnnotations",
       "EnableLocators",
       "DisableListDemotion",
       "DisableListPromotion"
@@ -8,7 +7,7 @@
 ],
    "formats":[
      "XML",
-     "JXSON"
+     "JSON"
    ],
    "validateUnits":true,
    "verifyOnly":false,
