@@ -45,13 +45,15 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-<!--    <resource>
+    <!--
+    <resource>
       <reference>
-        <reference value="Library/example"/>
+        <reference value="Library/dependency-example"/>
       </reference>
-      <name value="Simple library example"/>
-      <description value="A simple example showing how library is pre-loaded"/>
-    </resource> -->
+      <name value="Dependency library example"/>
+      <description value="A simple example showing use of a dependency library from an implementation guide dependency"/>
+    </resource>
+    -->
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -97,14 +99,17 @@
       <code value="find-other-resources"/>
       <value value="true"/>
     </parameter>
+    <!-- This parameter indicates to the publisher that it should translate and package CQL libraries. See the example library resources for more -->
     <parameter>
       <code value="path-binary"/>
       <value value="input/cql"/>
     </parameter>
+    <!-- Use this parameter if you want to customize the library narrative template. Leave it commented out to let the publisher generate library narrative
     <parameter>
       <code value="path-liquid"/>
       <value value="templates\liquid"/>
     </parameter>
+    -->
 <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>
       <code value="excludexml"/>
