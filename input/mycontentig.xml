@@ -90,6 +90,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="license.html"/>
+        <title value="License"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="changes.html"/>
         <title value="IG Change History"/>
         <generation value="html"/>
@@ -110,13 +115,15 @@
       <value value="true"/>
     </parameter>
     <!-- This parameter indicates to the publisher that it should translate and package CQL libraries. See the example library resources for more -->
+    <!-- This is disabled for now because the CQF Tooling has more up-to-date CQL processing than the publisher. Run refresh to update IG resources
     <parameter>
       <code value="path-binary"/>
       <value value="input/cql"/>
     </parameter>
+    -->
     <parameter>
       <code value="path-liquid"/>
-      <value value="templates\liquid"/>
+      <value value="templates/liquid"/>
     </parameter>
 <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>

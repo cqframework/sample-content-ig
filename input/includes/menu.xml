@@ -31,8 +31,17 @@
         <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
       </li>
       <li>
+        <a target="_blank" href="http://cql.hl7.org/index.html">CQL Spec</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/uv/cpg">FHIR Clinical Guidelines</a>
+      </li>
+      <li>
         <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="license.html">License</a>
       </li>
     </ul>
   </li>
-</ul>      
+</ul>
