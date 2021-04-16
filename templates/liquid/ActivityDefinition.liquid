@@ -336,12 +336,6 @@
             <td style="padding-left: 4px;">{{ActivityDefinition.priority.value}}</td>
         </tr>
         {% endif %}
-        {% if ActivityDefinition.experimental.exists() %}
-        <tr>
-            <th scope="row"><b>Experimental: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.experimental.value}}</td>
-        </tr>
-        {% endif %}
         {% if ActivityDefinition.doNotPerform.exists() %}
         <tr>
             <th scope="row"><b>doNotPerform: </b></th>
