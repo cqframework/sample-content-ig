@@ -9,7 +9,7 @@
         {% if Measure.url.exists() %}
         <tr>
             <th scope="row"><b>Url: </b></th>
-            <td style="padding-left: 4px;">{{Measure.url}}</td>
+            <td style="padding-left: 4px;"><a href="{{Measure.url}}">{{Measure.url}}</a></td>
         </tr>
         {% endif %}
         {% if Measure.version.exists() %}
@@ -73,7 +73,7 @@
                     {% for coding in Measure.scoring.coding %}
                         {% if coding.system.exists() %}
                         <p style="margin-bottom: 5px;">
-                            <b>system: </b> <span>{{coding.system}}</span>
+                            <b>system: </b> <span><a href="{{coding.system}}">{{coding.system}}</a></span>
                         </p>
                         {% endif %}
                         {% if coding.code.exists() %}
@@ -102,7 +102,7 @@
                     {% for coding in Measure.improvementNotation.coding %}
                         {% if coding.system.exists() %}
                         <p style="margin-bottom: 5px;">
-                            <b>system: </b> <span>{{coding.system}}</span>
+                            <b>system: </b> <span><a href="{{coding.system}}">{{coding.system}}</a></span>
                         </p>
                         {% endif %}
                         {% if coding.code.exists() %}
@@ -131,7 +131,7 @@
                     {% for coding in Measure.type.coding %}
                         {% if coding.system.exists() %}
                         <p style="margin-bottom: 5px;">
-                            <b>system: </b> <span>{{coding.system}}</span>
+                            <b>system: </b> <span><a href="{{coding.system}}">{{coding.system}}</a></span>
                         </p>
                         {% endif %}
                         {% if coding.code.exists() %}
@@ -161,7 +161,7 @@
                     {% for coding in Measure.subject.coding %}
                         {% if coding.system.exists() %}
                         <p style="margin-bottom: 5px;">
-                            <b>system: </b> <span>{{coding.system}}</span>
+                            <b>system: </b> <span><a href="{{coding.system}}">{{coding.system}}</a></span>
                         </p>
                         {% endif %}
                         {% if coding.code.exists() %}
@@ -338,61 +338,6 @@
           </td>
         </tr>
         {% endif %}
-        {% if Measure.dataRequirement.exists() %}
-        <tr>
-          <th scope="row"><b>Data Requirements:</b></th>
-          <td style="padding-left: 4px;">
-            <table class="grid-dict">
-              <tr><th><b>Type</b></th><th><b>Profile</b></th><th><b>MS</b></th><th><b>Code Filter</b></th></tr>
-              {% for requirement in Measure.dataRequirement %}
-                <tr>
-                  <th>{{requirement.type.value}}</th>
-                  <th>{% for profile in requirement.profile %}{{profile.value}}{% endfor %}</th>
-                  <th>{% for support in requirement.mustSupport %}{{mustSupport}};{% endfor %}</th>
-                  <th>
-                    {% for cfilter in requirement.codeFilter %}
-                      <b>code filter: </b>
-                      {% if cfilter.path.exists() or cfilter.valueSet.exists() or cfilter.code.exists() %}
-                      <br/>
-                      {% endif %}
-                      {% if cfilter.path.exists() %}
-                      <span style="padding-left: 4px;">
-                          <b>path: </b><span>{{cfilter.path}}</span>
-                      </span>
-                      {% if cfilter.valueSet.exists() or cfilter.code.exists() %}
-                      <br/>
-                      {% endif %}
-                      {% endif %}
-                      {% if cfilter.valueSet.exists() %}
-                      <span style="padding-left: 4px;">
-                          <b>value set: </b><span>{{cfilter.valueSet.value}}</span>
-                      </span>
-                      {% endif %}
-                      {% for coding in cfilter.code %}
-                          {% if coding.system.exists() %}
-                          <p style="margin-bottom: 5px;">
-                              <b>system: </b> <span>{{coding.system}}</span>
-                          </p>
-                          {% endif %}
-                          {% if coding.code.exists() %}
-                          <p style="margin-bottom: 5px;">
-                              <b>code: </b> <span>{{coding.code}}</span>
-                          </p>
-                          {% endif %}
-                          {% if coding.display.exists() %}
-                          <p style="margin-bottom: 5px;">
-                              <b>display: </b> <span>{{coding.display}}</span>
-                          </p>
-                          {% endif %}
-                      {% endfor %}
-                    {% endfor %}
-                  </th>
-                </tr>
-              {% endfor %}
-            </table>
-          </td>
-        </tr>
-        {% endif %}
         {% for c in Measure.content %}
         {% if c.contentType = 'text/cql' %}
         <tr>
@@ -519,7 +464,7 @@
                         <tr>
                             <td>{{extension.valueCoding.display}}</td>
                             <td>{{extension.valueCoding.code}}</td>
-                            <td>{{extension.valueCoding.system}}</td>
+                            <td><a href="{{extension.valueCoding.system}}">{{extension.valueCoding.system}}</a></td>
                         </tr>
                     {% endfor %}
                 </table>
@@ -527,7 +472,7 @@
         </tr>
     </table>
     <p style="color:blue;font-size:18px;">ValueSets</p>
-    {% if Measure.id = "Comment:  these should have a better categorization that comes out of data requirements tell by related artifact" %}
+    {% if Measure.id = "Comment:  todo - these should have a better categorization that comes out of data requirements tell by related artifact" %}
     {% endif %}
     <table class="grid dict">
         <tr>
@@ -539,7 +484,7 @@
                           <tr>
                             <td>ValueSet</td>
                             <td>{{relatedArtifact.display.value.substring(10)}}</td>
-                            <td>{{relatedArtifact.resource.value}}</td>
+                            <td><a href="{{relatedArtifact.resource.value}}">{{relatedArtifact.resource.value}}</a></td>
                           </tr>
                         {% endif %}
                     {% endfor %}
@@ -558,9 +503,17 @@
                             <tr>
                                 <td>{{extension.valueDataRequirement.type}}</td>
                                 {% if extension.valueDataRequirement.codeFilter.first().valueSet.exists() %}
-                                    <td>{{extension.valueDataRequirement.codeFilter.first().valueSet}}</td>
+                                    {% if extension.valueDataRequirement.codeFilter.first().valueSet.contains("http")%}
+                                        <td><a href="{{extension.valueDataRequirement.codeFilter.first().valueSet}}">{{extension.valueDataRequirement.codeFilter.first().valueSet}}</a></td>
+                                    {% else %}
+                                        <td>{{extension.valueDataRequirement.codeFilter.first().valueSet}}</td>
+                                    {%endif%}
                                 {% else %}
-                                    <td>{{extension.valueDataRequirement.profile}}</td>
+                                    {% if  extension.valueDataRequirement.profile.contains("http")%}
+                                        <td><a href="{{extension.valueDataRequirement.profile}}">{{extension.valueDataRequirement.profile}}</a></td>
+                                    {% else %}
+                                        <td>{{extension.valueDataRequirement.profile}}</td>
+                                    {% endif %}
                                 {% endif%}
                             </tr>
                         {% endfor %}
