@@ -1,5 +1,7 @@
 <div>
     <table class="grid dict">
+        {% if Measure.id = "Comment => {percent comment percent}comment{percent endcomment percent} Does NOT work in current version of FHIR liquid" %}{% endif %}
+        {% if Measure.id = "Comment => In addition: from liquid profile (https://confluence.hl7.org/display/FHIR/FHIR+Liquid+Profile) Use a small subset of the liquid language (the syntax, and none of the functions)" %}{% endif %}
         {% if Measure.id.exists() %}
         <tr>
             <th scope="row"><b>Id: </b></th>
@@ -377,6 +379,8 @@
     {% endfor %}
     <p style="color:blue;font-size:18px;">Libraries</p>
     <p style="margin-left:2%;font-size:16px>{{Measure.name.value}}</p>
+        {% if extension in Measure.extension = "Comment => for the definitions and functions in the main library" %}
+        {% endif %}
         <p style="margin-left:4%;font-size:14px">Definitions
             {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
                 {% if extension.extension.where(url = 'libraryName').value = Measure.name.value %}
@@ -392,6 +396,8 @@
             </p>
         </p>
         {% for relArtifact in Measure.relatedArtifact.where(resource.value.contains('Library')) %}
+            {% if extension in Measure.extension = "Comment => for the definitions and functions in the included libraries" %}
+            {% endif %}
             <p style="margin-left:2%;font-size:16px>{{relArtifact.resource.value}}</p>
             <p style="margin-left:4%;font-size:14px">Definitions</p>
             {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
@@ -424,7 +430,7 @@
         </tr>
     </table>
     <p style="color:blue;font-size:18px;">ValueSets</p>
-    {% if Measure.id = "Comment:  todo - these should have a better categorization that comes out of data requirements tell by related artifact" %}
+    {% if Measure.id = "Comment => todo - these should have a better categorization that comes out of data requirements tell by related artifact" %}
     {% endif %}
     <table class="grid dict">
         <tr>
