@@ -363,65 +363,17 @@
     </table>
     <p style="color:blue;font-size:18px;">Population Criteria</p>
     {% for group in Measure.group %}
-        {{group.description.value}}
-        {% if Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition').exists() %}
+        <p style="font-size:16px;margin-left:2%;">{{group.description.value}}</p>
+        {% for population in Measure.group.population %}
+            <p style="font-size:14px;margin-left:4%;">{{population.code.coding.first().display.value}}</p>
             {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
-                {% for nameExtension in extension.extension.where(url = 'name') %}
-                    {% if nameExtension.value = 'Initial Population'%}
-                        <p style="font-size:14px;">Initial Population</p>
+                {% for nameExt in extension.extension.where(url = 'name') %}
+                    {% if nameExt.valueString = population.criteria.expression.value %}
                         <pre><code class="language-cql">{{extension.extension.where(url = 'statement').value.escape('html')}}</code></pre>
                     {% endif %}
                 {% endfor %}
             {% endfor %}
-            {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
-                {% for nameExtension in extension.extension.where(url = 'name') %}
-                    {% if nameExtension.value = 'Denominator'%}
-                        <p style="font-size:14px;">Denominator</p>
-                        <pre><code class="language-cql">{{extension.extension.where(url = 'statement').value.escape('html')}}</code></pre>
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-            {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
-                {% for nameExtension in extension.extension.where(url = 'name') %}
-                    {% if nameExtension.value = 'Denominator Exclusion'%}
-                        <p style="font-size:14px;">Denominator Exclusion</p>
-                        <pre><code class="language-cql">{{extension.extension.where(url = 'statement').value.escape('html')}}</code></pre>
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-            {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
-                {% for nameExtension in extension.extension.where(url = 'name') %}
-                    {% if nameExtension.value = 'Numerator'%}
-                        <p style="font-size:14px;">Numerator</p>
-                            <pre><code class="language-cql">{{extension.extension.where(url = 'statement').value.escape('html')}}</code></pre>
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-            {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
-                {% for nameExtension in extension.extension.where(url = 'name') %}
-                    {% if nameExtension.value = 'Numerator Exclusion'%}
-                        <p style="font-size:14px;">Numerator Exclusion</p>
-                            <pre><code class="language-cql">{{extension.extension.where(url = 'statement').value.escape('html')}}</code></pre>
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-            {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
-                {% for nameExtension in extension.extension.where(url = 'name') %}
-                    {% if nameExtension.value = 'Denominator Exceptions'%}
-                        <p style="font-size:14px;">Denominator Exceptions</p>
-                            <pre><code class="language-cql">{{extension.extension.where(url = 'statement').value.escape('html')}}</code></pre>
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-            {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
-                {% for nameExtension in extension.extension.where(url = 'name') %}
-                    {% if nameExtension.value = 'Stratification'%}
-                        <p style="font-size:14px;">Stratification</p>
-                            <pre><code class="language-cql">{{extension.extension.where(url = 'statement').value.escape('html')}}</code></pre>
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-        {% endif %}
+        {% endfor %}
     {% endfor %}
     <p style="color:blue;font-size:18px;">Libraries</p>
     <p style="margin-left:2%;font-size:16px>{{Measure.name.value}}</p>
