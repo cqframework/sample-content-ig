@@ -486,6 +486,16 @@
         <p style="margin-left:4%;font-size:12px">
             {% for supplementalData in Measure.supplementalData %}
                 {{supplementalData.criteria.expression}}<br/>
+               {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
+                    {% for nameExtension in extension.extension.where(url = 'name') %}
+                        {% if supplementalData.criteria.expression.value.contains(nameExtension.value)%}
+                            <p style="margin-left:6%;font-size:12px">
+                                <pre><code class="language-cql">{{extension.extension.where(url = 'statement').value.escape('html')}}</code></pre>
+                            </p>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
             {% endfor %}
         </p>
     <p style="color:blue;font-size:18px;">Risk Adjustment Variables</p>
