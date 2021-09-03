@@ -204,13 +204,13 @@
         {% if PlanDefinition.purpose.exists() %}
         <tr>
             <th scope="row"><b>Purpose: </b></th>
-            <td style="padding-left: 4px;">{{PlanDefinition.purpose}}</td>
+            <td style="padding-left: 4px;">{{PlanDefinition.purpose.escape('html')}}</td>
         </tr>
         {% endif %}
         {% if PlanDefinition.usage.exists() %}
         <tr>
             <th scope="row"><b>Usage: </b></th>
-            <td style="padding-left: 4px;">{{PlanDefinition.usage}}</td>
+            <td style="padding-left: 4px;">{{PlanDefinition.usage.escape('html')}}</td>
         </tr>
         {% endif %}
         {% if PlanDefinition.copyright.exists() %}
@@ -347,7 +347,7 @@
                                         {% if action.action.exists() %}
                                           <i>Additional sub-actions not displayed</i>
                                         {% else %}
-                                          {% if action.definition.exists() %}<i>Definition:</i> {{action.definition}}<br/>{% endif %}
+                                          {% if action.definition.exists() %}<i>Definition:</i> {{action.definition.escape('html')}}<br/>{% endif %}
                                           {% if action.dynamicValue.exists() %}
                                             <i>Dynamic Values:</i><br/>
                                             {% for dynamicValue in action.dynamicValue %}

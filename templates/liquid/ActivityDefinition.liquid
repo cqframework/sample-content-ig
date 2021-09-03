@@ -175,13 +175,13 @@
         {% if ActivityDefinition.purpose.exists() %}
         <tr>
             <th scope="row"><b>Purpose: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.purpose}}</td>
+            <td style="padding-left: 4px;">{{ActivityDefinition.purpose.escape('html')}}</td>
         </tr>
         {% endif %}
         {% if ActivityDefinition.usage.exists() %}
         <tr>
             <th scope="row"><b>Usage: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.usage}}</td>
+            <td style="padding-left: 4px;">{{ActivityDefinition.usage.escape('html')}}</td>
         </tr>
         {% endif %}
         {% if ActivityDefinition.copyright.exists() %}

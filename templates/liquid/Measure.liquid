@@ -44,13 +44,13 @@
         {% if Measure.title.exists() %}
         <tr>
             <th scope="row"><b>Title: </b></th>
-            <td style="padding-left: 4px;">{{Measure.title}}</td>
+            <td style="padding-left: 4px;">{{Measure.title.escape('html')}}</td>
         </tr>
         {% endif %}
         {% if Measure.subtitle.exists() %}
         <tr>
             <th scope="row"><b>Subtitle: </b></th>
-            <td style="padding-left: 4px;">{{Measure.subtitle}}</td>
+            <td style="padding-left: 4px;">{{Measure.subtitle.escape('html')}}</td>
         </tr>
         {% endif %}
         {% if Measure.status.exists() %}
@@ -217,7 +217,7 @@
         {% if Measure.description.exists() %}
         <tr>
             <th scope="row"><b>Description: </b></th>
-            <td style="padding-left: 4px;">{{Measure.description}}</td>
+            <td style="padding-left: 4px;">{{Measure.description.escape('html')}}</td>
         </tr>
         {% endif %}
         {% if Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
@@ -343,7 +343,7 @@
         {% if Measure.purpose.exists() %}
         <tr>
             <th scope="row"><b>Purpose: </b></th>
-            <td style="padding-left: 4px;">{{Measure.purpose}}</td>
+            <td style="padding-left: 4px;">{{Measure.purpose.escape('html')}}</td>
         </tr>
         {% endif %}
         {% if Measure.usage.exists() %}
