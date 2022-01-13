@@ -220,6 +220,30 @@
                 <td style="padding-left: 4px;">{{Measure.description.escape('html')}}</td>
             </tr>
         {% endif %}
+        {% if Measure.group.exists() %}
+            {% if Measure.group[0].population.description.exists() %}
+                <tr>
+                    <th scope="row"><b>Population Criteria: </b></th>
+                    <td style="padding-left: 4px;">
+                        {% for group in Measure.group %}
+                            <table class="grid-dict">
+                                {% if group.id.exists() %}
+                                    <tr>
+                                        <th><b>{{group.id}}</b></th>
+                                    </tr>
+                                {% endif %}
+                                {% for population in group.population %}
+                                    <tr>
+                                        <td>{{population.code.coding[0].display}}: </td>
+                                        <td>{{population.description}}</td>
+                                    </tr>
+                                {% endfor %}
+                            </table>
+                        {% endfor %}
+                    </td>
+                </tr>
+            {% endif %}
+        {% endif %}
         {% if Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
             <tr>
                 <th scope="row"><b>Knowledge Capability: </b></th>
