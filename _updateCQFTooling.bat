@@ -9,23 +9,23 @@ IF "%~1"=="/f" SET skipPrompts=true
 FOR %%x IN ("%CD%") DO SET upper_path=%%~dpx
 
 IF NOT EXIST "%input_cache_path%%tooling_jar%" (
-	IF NOT EXIST "%upper_path%%tooling_jar%" (
-		SET jarlocation=%input_cache_path%%tooling_jar%
-		SET jarlocationname=Input Cache
-		ECHO IG Refresh is not yet in input-cache or parent folder.
-		REM we don't use jarlocation below because it will be empty because we're in a bracketed if statement
-		GOTO create
-	) ELSE (
-		ECHO IG RefreshFOUND in parent folder
-		SET jarlocation=%upper_path%%tooling_jar%
-		SET jarlocationname=Parent folder
-		GOTO:upgrade
-	)
+   IF NOT EXIST "%upper_path%%tooling_jar%" (
+      SET jarlocation=%input_cache_path%%tooling_jar%
+      SET jarlocationname=Input Cache
+      ECHO IG Refresh is not yet in input-cache or parent folder.
+      REM we don't use jarlocation below because it will be empty because we're in a bracketed if statement
+      GOTO create
+   ) ELSE (
+      ECHO IG RefreshFOUND in parent folder
+      SET jarlocation=%upper_path%%tooling_jar%
+      SET jarlocationname=Parent folder
+      GOTO:upgrade
+   )
 ) ELSE (
-	ECHO IG Refresh FOUND in input-cache
-	SET jarlocation=%input_cache_path%%tooling_jar%
-	SET jarlocationname=Input Cache
-	GOTO:upgrade
+   ECHO IG Refresh FOUND in input-cache
+   SET jarlocation=%input_cache_path%%tooling_jar%
+   SET jarlocationname=Input Cache
+   GOTO:upgrade
 )
 
 :create
@@ -36,6 +36,9 @@ IF "%skipPrompts%"=="false" (
 ) ELSE goto:mkdir
 
 GOTO:done
+:mkdir
+    mkdir "%input_cache_path%" 2> NUL
+GOTO:download
 
 :upgrade
 IF "%skipPrompts%"=="false" (
