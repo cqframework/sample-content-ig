@@ -5,6 +5,10 @@
                 <th scope="row"><b>Id: </b></th>
                 <td style="padding-left: 4px;">{{Measure.id}}</td>
             </tr>
+            <tr>
+                <th scope="row"><b>Download cql: </b></th>
+                <td style="padding-left: 4px;"><a href="Library-{{Measure.id}}.cql">Library-{{Measure.id}}.cql</a></td>
+            </tr>
         {% endif %}
         {% if Measure.url.exists() %}
             <tr>
@@ -291,13 +295,22 @@
                     <th scope="row"><b>DataRequirements:</b></th>
                     <td style="padding-left: 4px;">
                         <table class="grid-dict">
-                            <tr><th><b>Type</b></th><th><b>Must Support</b></th><th><b>Valueset</b></th></tr>
+                            <tr><th><b>Type</b></th><th><b>Must Support</b></th><th><b>Valueset Name</b></th><th><b>Valueset</b></th></tr>
                             {% for dataRequirement in contained.dataRequirement %}
                                 <tr>
                                     <td>{{dataRequirement.type}}</td>
                                     <td>
                                         {% for mustSupport in dataRequirement.mustSupport %}
                                             {{ mustSupport }}
+                                        {% endfor %}
+                                    </td>
+                                    <td>
+                                        {% for relatedArtifact in contained.relatedArtifact.where(resource = dataRequirement.codeFilter.first().valueSet) %}
+                                            {%  if relatedArtifact.display.startsWith("Value set ") %}
+                                                {{ relatedArtifact.display.substring(9).replace(' &', ',') }}
+                                            {% else %}
+                                                {{ relatedArtifact.display.replace(' &', ',') }}
+                                            {%  endif %}
                                         {% endfor %}
                                     </td>
                                     <td>{{dataRequirement.codeFilter.first().valueSet}}</td>
@@ -347,7 +360,7 @@
                                     <tr>
                                         {% for statementExtension in extension.extension.where(url = 'statement') %}
                                             <td></td>
-                                        <td><pre><code class="language-cql">{{statementExtension.value.escape('html')}}</code></pre></td>
+                                        <td><pre class="highlight language-cql"><code data-lang="cql"  class="language-cql">{{statementExtension.value.escape('html')}}</code></pre></td>
                                         {% endfor %}
                                     </tr>
                                 {% endfor %}
@@ -438,7 +451,7 @@
                                     </tr>
                                 </table>
                                 {% for statementExtension in extension.extension.where(url = 'statement') %}
-                                    <pre><code class="language-cql">{{statementExtension.value.escape('html')}}</code></pre>
+                                    <pre class="highlight language-cql"><code data-lang="cql" class="language-cql">{{statementExtension.value.escape('html')}}</code></pre>
                                 {% endfor %}
                                 <br/><br/>
                             {% endfor %}
