@@ -9,6 +9,9 @@ output
 /input-cache/org.hl7.fhir.publisher.jar
 /input-cache/tooling*
 
+# Ignore test bundles generated via _refresh #
+/input/tests/*Example/example/*-bundle.json
+
 # Windows generated files #
 ###########################
 Thumbs.db
