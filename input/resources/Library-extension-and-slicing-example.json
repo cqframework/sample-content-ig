@@ -69,10 +69,6 @@
     "type": "Patient"
   } ],
   "dataRequirement": [ {
-    "type": "Patient",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ],
-    "mustSupport": [ "extension" ]
-  }, {
     "type": "Observation",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
     "mustSupport": [ "component", "code" ],
@@ -84,6 +80,10 @@
         "display": "blood pressure"
       } ]
     } ]
+  }, {
+    "type": "Patient",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "mustSupport": [ "extension" ]
   }, {
     "type": "Patient",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ],

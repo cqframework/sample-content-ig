@@ -76,11 +76,11 @@
     "type": "integer"
   } ],
   "dataRequirement": [ {
-    "type": "Patient",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
-  }, {
     "type": "QuestionnaireResponse",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" ]
+  }, {
+    "type": "Patient",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
   } ],
   "content": [ {
     "contentType": "text/cql",

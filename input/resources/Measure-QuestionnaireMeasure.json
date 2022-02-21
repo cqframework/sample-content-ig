@@ -39,7 +39,7 @@
         "code": "module-definition"
       } ]
     },
-    "date": "2022-02-16T16:44:00-05:00",
+    "date": "2022-02-17T14:25:38-05:00",
     "relatedArtifact": [ {
       "type": "depends-on",
       "display": "Library PHQ9Logic",
@@ -94,7 +94,7 @@
   "title": "Questionnaire Measure Example",
   "status": "draft",
   "experimental": true,
-  "date": "2022-02-16T14:44:00-07:00",
+  "date": "2022-02-17T12:25:38-07:00",
   "description": "Example measure illustrating a continuous variable measure calculating scores from multiple questionnaires",
   "relatedArtifact": [ {
     "type": "depends-on",
