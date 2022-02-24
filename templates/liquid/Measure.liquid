@@ -269,9 +269,19 @@
                 <tr>
                     <th scope="row"><b>Related Artifact Dependencies: </b></th>
                     <td style="padding-left: 4px;">
-                        {% for relatedArtifact in contained.relatedArtifact.where(type= 'depends-on') %}
-                            <li>{{relatedArtifact.resource}}</li>
-                        {% endfor %}
+                        <table class="grid-dict">
+                            <tr><th><b>Display</b></th><th><b>Resource Identifier &amp; Version</b></th></tr>
+                            {% for relatedArtifact in contained.relatedArtifact.where(type= 'depends-on') %}
+                                <tr>
+                                    <td>
+                                        {{relatedArtifact.display}}
+                                    </td>
+                                    <td>
+                                        <a>{{relatedArtifact.resource}}</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
                     </td>
                 </tr>
                 <tr>
@@ -567,13 +577,21 @@
                         </ul>
                     {% endif %}
                     {% if Measure.relatedArtifact.where(type = 'depends-on').exists() and
-                            Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements').exists().not  %}
-                        <p><b>Dependencies</b></p>
-                        <ul>
-                            {% for artifact in Measure.relatedArtifact.where(type = 'depends-on') %}
-                                <li>{{artifact.resource}}</li>
-                            {% endfor %}
-                        </ul>
+                        Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements').exists().not  %}
+                            <p><b>Dependencies</b></p>
+                            <table class="grid-dict">
+                                <tr><th><b>Display</b></th><th><b>Resource Identifier &amp; Version</b></th></tr>
+                                {% for artifact in Measure.relatedArtifact.where(type = 'depends-on') %}
+                                  <tr>
+                                    <td>
+                                      {{artifact.display}}
+                                    </td>
+                                    <td>
+                                      <a>{{artifact.resource}}</a>
+                                    </td>
+                                  </tr>
+                                {% endfor %}
+                              </table>
                     {% endif %}
                     {% if Measure.relatedArtifact.where(type = 'composed-of').exists() %}
                         <p><b>Components</b></p>

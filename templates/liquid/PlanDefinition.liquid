@@ -258,12 +258,20 @@
             </ul>
             {% endif %}
             {% if PlanDefinition.relatedArtifact.where(type = 'depends-on').exists() %}
-            <p><b>Dependencies</b></p>
-            <ul>
-              {% for artifact in PlanDefinition.relatedArtifact.where(type = 'depends-on') %}
-                <li>{{artifact.resource}}</li>
-              {% endfor %}
-            </ul>
+              <p><b>Dependencies</b></p>
+              <table class="grid-dict">
+                <tr><th><b>Display</b></th><th><b>Resource Identifier &amp; Version</b></th></tr>
+                {% for artifact in PlanDefinition.relatedArtifact.where(type = 'depends-on') %}
+                  <tr>
+                    <td>
+                      {{artifact.display}}
+                    </td>
+                    <td>
+                      <a>{{artifact.resource}}</a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </table>
             {% endif %}
             {% if PlanDefinition.relatedArtifact.where(type = 'composed-of').exists() %}
             <p><b>Components</b></p>

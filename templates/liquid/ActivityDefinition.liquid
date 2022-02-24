@@ -230,11 +230,21 @@
             {% endif %}
             {% if ActivityDefinition.relatedArtifact.where(type = 'depends-on').exists() %}
             <p><b>Dependencies</b></p>
-            <ul>
+            <table class="grid-dict">
+              <tr><th><b>Display</b></th><th><b>Resource Identifier &amp; Version</b></th></tr>
               {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'depends-on') %}
-                <li>{{artifact.resource}}</li>
+                <tr>
+                  <td>
+                    {{artifact.display}}
+                  </td>
+                  <td>
+                    {% if artifact.resource.exists() %}
+                      <a>{{artifact.resource}}</a>
+                    {% endif %}
+                  </td>
+                </tr>
               {% endfor %}
-            </ul>
+            </table>
             {% endif %}
             {% if ActivityDefinition.relatedArtifact.where(type = 'composed-of').exists() %}
             <p><b>Components</b></p>

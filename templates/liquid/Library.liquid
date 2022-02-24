@@ -260,14 +260,14 @@
             {% if Library.relatedArtifact.where(type = 'depends-on').exists() %}
               <p><b>Dependencies</b></p>
               <table class="grid-dict">
-                <tr><th><b>Resource Identifier &amp; Version</b></th><th><b>Display</b></th></tr>
+                <tr><th><b>Display</b></th><th><b>Resource Identifier &amp; Version</b></th></tr>
                 {% for artifact in Library.relatedArtifact.where(type = 'depends-on') %}
                   <tr>
                     <td>
-                      <a>{{artifact.resource}}</a>
+                      {{artifact.display}}
                     </td>
                     <td>
-                      {{artifact.display}}
+                      <a>{{artifact.resource}}</a>
                     </td>
                   </tr>
                 {% endfor %}
