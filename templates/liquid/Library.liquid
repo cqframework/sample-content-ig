@@ -258,12 +258,20 @@
             </ul>
             {% endif %}
             {% if Library.relatedArtifact.where(type = 'depends-on').exists() %}
-            <p><b>Dependencies</b></p>
-            <ul>
-              {% for artifact in Library.relatedArtifact.where(type = 'depends-on') %}
-                <li>{{artifact.resource}}</li>
-              {% endfor %}
-            </ul>
+              <p><b>Dependencies</b></p>
+              <table class="grid-dict">
+                <tr><th><b>Resource Identifier &amp; Version</b></th><th><b>Display</b></th></tr>
+                {% for artifact in Library.relatedArtifact.where(type = 'depends-on') %}
+                  <tr>
+                    <td>
+                      <a>{{artifact.resource}}</a>
+                    </td>
+                    <td>
+                      {{artifact.display}}
+                    </td>
+                  </tr>
+                {% endfor %}
+              </table>
             {% endif %}
             {% if Library.relatedArtifact.where(type = 'composed-of').exists() %}
             <p><b>Components</b></p>
