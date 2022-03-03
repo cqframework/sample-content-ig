@@ -71,26 +71,26 @@
             {%if ActivityDefinition.subject is CodeableConcept %}
             <td style="padding-left: 4px;">
                 {% if ActivityDefinition.subject.coding.exists() %}
-                    {% for coding in ActivityDefinition.subject.coding %}
-                        {% if coding.system.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>system: </b> <span>{{coding.system}}</span>
-                        </p>
-                        {% endif %}
-                        {% if coding.code.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>code: </b> <span>{{coding.code}}</span>
-                        </p>
-                        {% endif %}
-                        {% if coding.display.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>display: </b> <span>{{coding.display}}</span>
-                        </p>
-                        {% endif %}
-                    {% endfor %}
+                {% for coding in ActivityDefinition.subject.coding %}
+                {% if coding.system.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>system: </b> <span>{{coding.system}}</span>
+                </p>
+                {% endif %}
+                {% if coding.code.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>code: </b> <span>{{coding.code}}</span>
+                </p>
+                {% endif %}
+                {% if coding.display.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>display: </b> <span>{{coding.display}}</span>
+                </p>
+                {% endif %}
+                {% endfor %}
                 {% endif %}
                 {% if ActivityDefinition.subject.coding.exists().not and ActivityDefinition.subject.text.exists() %}
-                    {{ActivityDefinition.subject.text}}
+                {{ActivityDefinition.subject.text}}
                 {% endif %}
             </td>
             {% endif %}
@@ -133,20 +133,26 @@
             <td style="padding-left: 4px;">{{ActivityDefinition.description.escape('html')}}</td>
         </tr>
         {% endif %}
-        {% if ActivityDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
+        {% if ActivityDefinition.extension.where(url =
+        'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
         <tr>
-          <th scope="row"><b>Knowledge Capability: </b></th>
-          <td style="padding-left: 4px;">
-            {% for extension in ActivityDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability') %}{{extension.value}} {% endfor %}
-          </td>
+            <th scope="row"><b>Knowledge Capability: </b></th>
+            <td style="padding-left: 4px;">
+                {% for extension in ActivityDefinition.extension.where(url =
+                'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability') %}{{extension.value}} {%
+                endfor %}
+            </td>
         </tr>
         {% endif %}
-        {% if ActivityDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel').exists() %}
+        {% if ActivityDefinition.extension.where(url =
+        'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel').exists() %}
         <tr>
-          <th scope="row"><b>Knowledge Representation Level: </b></th>
-          <td style="padding-left: 4px;">
-            {% for extension in ActivityDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel') %}{{extension.value}}{% endfor %}
-          </td>
+            <th scope="row"><b>Knowledge Representation Level: </b></th>
+            <td style="padding-left: 4px;">
+                {% for extension in ActivityDefinition.extension.where(url =
+                'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel')
+                %}{{extension.value}}{% endfor %}
+            </td>
         </tr>
         {% endif %}
         {% if ActivityDefinition.useContext.exists() %}
@@ -154,13 +160,17 @@
             <th scope="row"><b>Use Context: </b></th>
             <td style="padding-left: 4px;">
                 <table class="grid-dict">
-                    <tr><th><b>code</b></th><th><b>value</b></th><th><b>display</b></th></tr>
+                    <tr>
+                        <th><b>code</b></th>
+                        <th><b>value</b></th>
+                        <th><b>display</b></th>
+                    </tr>
                     {% for useContext in ActivityDefinition.useContext %}
-                      <tr>
+                    <tr>
                         <td>{{useContext.code.code}}</td>
                         <td>{{(useContext.value as CodeableConcept).coding.first().code}}</td>
                         <td>{{(useContext.value as CodeableConcept).coding.first().display.escape('html')}}</td>
-                      </tr>
+                    </tr>
                     {% endfor %}
                 </table>
             </td>
@@ -205,90 +215,98 @@
         {% if ActivityDefinition.effectivePeriod.exists() %}
         <tr>
             <th scope="row"><b>Effective Period: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.effectivePeriod.start}}..{{ActivityDefinition.effectivePeriod.end}}</td>
+            <td style="padding-left: 4px;">
+                {{ActivityDefinition.effectivePeriod.start}}..{{ActivityDefinition.effectivePeriod.end}}</td>
         </tr>
         {% endif %}
         {% if ActivityDefinition.relatedArtifact.exists() %}
         <tr>
-          <th scope="row"><b>Related Artifacts: </b></th>
-          <td style="padding-left: 4px;">
-            {% if ActivityDefinition.relatedArtifact.where(type = 'documentation' or type = 'justification').exists() %}
-            <p><b>Documentation</b></p>
-            <ul>
-              {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'documentation' or type = 'justification') %}
-                <li><a href="{{artifact.url}}">{{artifact.label}} {{artifact.display.escape('html')}}</a></li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-            {% if ActivityDefinition.relatedArtifact.where(type = 'citation').exists() %}
-            <p><b>References</b></p>
-            <ul>
-              {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'citation') %}
-                <li>{{artifact.citation}}<br/><a href="{{artifact.url}}">{{artifact.url}}</a></li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-            {% if ActivityDefinition.relatedArtifact.where(type = 'depends-on').exists() %}
-            <p><b>Dependencies</b></p>
-            <table class="grid-dict">
-              <tr><th><b>Display</b></th><th><b>Resource Identifier &amp; Version</b></th></tr>
-              {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'depends-on') %}
-                <tr>
-                  <td>
-                    {{artifact.display}}
-                  </td>
-                  <td>
-                    <a>{{artifact.resource}}</a>
-                  </td>
-                </tr>
-              {% endfor %}
-            </table>
-            {% endif %}
-            {% if ActivityDefinition.relatedArtifact.where(type = 'composed-of').exists() %}
-            <p><b>Components</b></p>
-            <ul>
-              {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'composed-of') %}
-                <li>{{artifact.resource}}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-            {% if ActivityDefinition.relatedArtifact.where(type = 'derived-from').exists() %}
-            <p><b>Derived From</b></p>
-            <ul>
-              {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'derived-from') %}
-                <li>{{artifact.resource}}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-            {% if ActivityDefinition.relatedArtifact.where(type = 'successor').exists() %}
-            <p><b>Successor</b></p>
-            <ul>
-              {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'successor') %}
-                <li>{{artifact.resource}}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-            {% if ActivityDefinition.relatedArtifact.where(type = 'predecessor').exists() %}
-            <p><b>Predecessor</b></p>
-            <ul>
-              {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'predecessor') %}
-                <li>{{artifact.resource}}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </td>
+            <th scope="row"><b>Related Artifacts: </b></th>
+            <td style="padding-left: 4px;">
+                {% if ActivityDefinition.relatedArtifact.where(type = 'documentation' or type =
+                'justification').exists() %}
+                <p><b>Documentation</b></p>
+                <ul>
+                    {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'documentation' or type =
+                    'justification') %}
+                    <li><a href="{{artifact.url}}">{{artifact.label}} {{artifact.display.escape('html')}}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if ActivityDefinition.relatedArtifact.where(type = 'citation').exists() %}
+                <p><b>References</b></p>
+                <ul>
+                    {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'citation') %}
+                    <li>{{artifact.citation}}<br /><a href="{{artifact.url}}">{{artifact.url}}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if ActivityDefinition.relatedArtifact.where(type = 'depends-on').exists() %}
+                <p><b>Dependencies</b></p>
+                <table class="grid-dict">
+                    <tr>
+                        <th><b>Display</b></th>
+                        <th><b>Resource Identifier &amp; Version</b></th>
+                    </tr>
+                    {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'depends-on') %}
+                    <tr>
+                        <td>
+                            {{artifact.display}}
+                        </td>
+                        <td>
+                            <a href="{{artifact.resource}}">{{artifact.resource}}</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+                {% if ActivityDefinition.relatedArtifact.where(type = 'composed-of').exists() %}
+                <p><b>Components</b></p>
+                <ul>
+                    {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'composed-of') %}
+                    <li>{{artifact.resource}}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if ActivityDefinition.relatedArtifact.where(type = 'derived-from').exists() %}
+                <p><b>Derived From</b></p>
+                <ul>
+                    {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'derived-from') %}
+                    <li>{{artifact.resource}}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if ActivityDefinition.relatedArtifact.where(type = 'successor').exists() %}
+                <p><b>Successor</b></p>
+                <ul>
+                    {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'successor') %}
+                    <li>{{artifact.resource}}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if ActivityDefinition.relatedArtifact.where(type = 'predecessor').exists() %}
+                <p><b>Predecessor</b></p>
+                <ul>
+                    {% for artifact in ActivityDefinition.relatedArtifact.where(type = 'predecessor') %}
+                    <li>{{artifact.resource}}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </td>
         </tr>
         {% endif %}
         {% if ActivityDefinition.library.exists() %}
         <tr>
-          <th scope="row"><b>Libraries: </b></th>
-          <td style="padding-left: 4px;">
-            <table class="grid-dict">
-              {% for library in ActivityDefinition.library %}
-                <tr><td>{{library}}</td></tr>
-              {% endfor %}
-            </table>
-          </td>
+            <th scope="row"><b>Libraries: </b></th>
+            <td style="padding-left: 4px;">
+                <table class="grid-dict">
+                    {% for library in ActivityDefinition.library %}
+                    <tr>
+                        <td>{{library}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </td>
         </tr>
         {% endif %}
         {% if ActivityDefinition.kind.exists() %}
@@ -308,26 +326,26 @@
             <th scope="row"><b>Type: </b></th>
             <td style="padding-left: 4px;">
                 {% if ActivityDefinition.code.coding.exists() %}
-                    {% for coding in ActivityDefinition.code.coding %}
-                        {% if coding.system.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>system: </b> <span>{{coding.system}}</span>
-                        </p>
-                        {% endif %}
-                        {% if coding.code.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>code: </b> <span>{{coding.code}}</span>
-                        </p>
-                        {% endif %}
-                        {% if coding.display.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>display: </b> <span>{{coding.display.escape('html')}}</span>
-                        </p>
-                        {% endif %}
-                    {% endfor %}
+                {% for coding in ActivityDefinition.code.coding %}
+                {% if coding.system.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>system: </b> <span>{{coding.system}}</span>
+                </p>
+                {% endif %}
+                {% if coding.code.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>code: </b> <span>{{coding.code}}</span>
+                </p>
+                {% endif %}
+                {% if coding.display.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>display: </b> <span>{{coding.display.escape('html')}}</span>
+                </p>
+                {% endif %}
+                {% endfor %}
                 {% endif %}
                 {% if ActivityDefinition.code.coding.exists().not and ActivityDefinition.code.text.exists() %}
-                    {{ActivityDefinition.code.text}}
+                {{ActivityDefinition.code.text}}
                 {% endif %}
             </td>
         </tr>
@@ -356,26 +374,26 @@
             {%if ActivityDefinition.product is CodeableConcept %}
             <td style="padding-left: 4px;">
                 {% if ActivityDefinition.product.coding.exists() %}
-                    {% for coding in ActivityDefinition.product.coding %}
-                        {% if coding.system.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>system: </b> <span>{{coding.system}}</span>
-                        </p>
-                        {% endif %}
-                        {% if coding.code.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>code: </b> <span>{{coding.code}}</span>
-                        </p>
-                        {% endif %}
-                        {% if coding.display.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>display: </b> <span>{{coding.display.escape('html')}}</span>
-                        </p>
-                        {% endif %}
-                    {% endfor %}
+                {% for coding in ActivityDefinition.product.coding %}
+                {% if coding.system.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>system: </b> <span>{{coding.system}}</span>
+                </p>
+                {% endif %}
+                {% if coding.code.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>code: </b> <span>{{coding.code}}</span>
+                </p>
+                {% endif %}
+                {% if coding.display.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>display: </b> <span>{{coding.display.escape('html')}}</span>
+                </p>
+                {% endif %}
+                {% endfor %}
                 {% endif %}
                 {% if ActivityDefinition.product.coding.exists().not and ActivityDefinition.product.text.exists() %}
-                    {{ActivityDefinition.product.text}}
+                {{ActivityDefinition.product.text}}
                 {% endif %}
             </td>
             {% endif %}
@@ -404,7 +422,7 @@
         <tr>
             <th scope="row"><b>Quantity: </b></th>
             <td style="padding-left: 4px;">
-              {{ActivityDefinition.quantity.value}} <i>({{ActivityDefinition.quantity.unit.escape('html')}})</i><br/>
+                {{ActivityDefinition.quantity.value}} <i>({{ActivityDefinition.quantity.unit.escape('html')}})</i><br />
             </td>
         </tr>
         {% endif %}
@@ -413,12 +431,15 @@
             <th scope="row"><b>Body Site(s): </b></th>
             <td style="padding-left: 4px;">
                 <table class="grid-dict">
-                    <tr><th><b>code</b></th><th><b>display</b></th></tr>
+                    <tr>
+                        <th><b>code</b></th>
+                        <th><b>display</b></th>
+                    </tr>
                     {% for bodySite in ActivityDefinition.bodySite %}
-                      <tr>
+                    <tr>
                         <td>{{bodySite.coding.first().code}}</td>
                         <td>{{bodySite.coding.first().display.escape('html')}}</td>
-                      </tr>
+                    </tr>
                     {% endfor %}
                 </table>
             </td>
@@ -428,11 +449,11 @@
         <tr>
             <th scope="row"><b>Dynamic Values: </b></th>
             <td style="padding-left: 4px;">
-              {% for dynamicValue in ActivityDefinition.dynamicValue %}
+                {% for dynamicValue in ActivityDefinition.dynamicValue %}
                 <li>
-                  {{dynamicValue.path}}: <i>({{dynamicValue.expression.expression.escape('html')}})</i><br/>
+                    {{dynamicValue.path}}: <i>({{dynamicValue.expression.expression.escape('html')}})</i><br />
                 </li>
-              {% endfor %}
+                {% endfor %}
             </td>
         </tr>
         {% endif %}
