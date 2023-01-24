@@ -31,6 +31,81 @@
         "system": "http://loinc.org",
         "code": "LA6571-9"
       }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "PHQ9Logic"
+      }, {
+        "url": "name",
+        "valueString": "QuestionnaireResponse"
+      }, {
+        "url": "statement",
+        "valueString": "// Use the QuestionnaireResponse provided as a parameter if available\n// Otherwise look it up from the record\ndefine \"QuestionnaireResponse\":\n  if response is not null then\n    response\n  else\n    Last(\n      [QuestionnaireResponse] QR\n        where QR.questionnaire = 'http://somewhere.org/fhir/uv/mycontentig/Questionnaire/phq-9-questionnaire'\n        sort by (authored as FHIR.dateTime) desc\n    )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 0
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "PHQ9Logic"
+      }, {
+        "url": "name",
+        "valueString": "Responses"
+      }, {
+        "url": "statement",
+        "valueString": "// NOTE: This ties this logic directly to this particular rendering of the Questionnaire.\n// Ideally the items would be filtered based on Code of the Item, rather than the LinkId,\n// but that would require pulling in the Questionnaire because the QuestionnaireResponse\n// only has the LinkId.\ndefine \"Responses\":\n  \"QuestionnaireResponse\" QR\n    return QR.item I where I.linkId in {\n      'LittleInterest',\n      'FeelingDown',\n      'TroubleSleeping',\n      'FeelingTired',\n      'BadApetite',\n      'FeelingBadAboutSelf',\n      'TroubleConcetrating',\n      'MovingSpeaking'\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 1
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "PHQ9Logic"
+      }, {
+        "url": "name",
+        "valueString": "CalculateTotalScore"
+      }, {
+        "url": "statement",
+        "valueString": "define \"CalculateTotalScore\":\n  Sum(\"Responses\" R return all AnswerCardinality(First(R.answer.value)))"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 2
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "QuestionnaireMeasure"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Initial Population\":\n  AgeInYearsAt(start of \"Measurement Period\") >= 18"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 3
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "QuestionnaireMeasure"
+      }, {
+        "url": "name",
+        "valueString": "Measure Population"
+      }, {
+        "url": "statement",
+        "valueString": "// Likely some condition or other relevant characteristic such as a depression diagnosis\ndefine \"Measure Population\":\n  true"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 4
+      } ]
     } ],
     "status": "active",
     "type": {
@@ -39,7 +114,6 @@
         "code": "module-definition"
       } ]
     },
-    "date": "2022-02-16T16:44:00-05:00",
     "relatedArtifact": [ {
       "type": "depends-on",
       "display": "Library PHQ9Logic",
@@ -94,21 +168,8 @@
   "title": "Questionnaire Measure Example",
   "status": "draft",
   "experimental": true,
-  "date": "2022-02-16T14:44:00-07:00",
+  "date": "2023-01-24T10:09:31-07:00",
   "description": "Example measure illustrating a continuous variable measure calculating scores from multiple questionnaires",
-  "relatedArtifact": [ {
-    "type": "depends-on",
-    "display": "Library PHQ9Logic",
-    "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9Logic"
-  }, {
-    "type": "depends-on",
-    "display": "Library FHIRHelpers",
-    "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1"
-  }, {
-    "type": "depends-on",
-    "display": "Code system LOINC",
-    "resource": "http://loinc.org"
-  } ],
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasure" ],
   "scoring": {
     "coding": [ {
