@@ -1,16 +1,6 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "72166-2"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Tobacco smoking status",
-  "code" : "72166-2",
-  "system" : "http://loinc.org"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
   "code" : "85354-9",
   "display" : "blood pressure"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
@@ -19,7 +9,17 @@ v: {
   "code" : "85354-9",
   "system" : "http://loinc.org",
   "severity" : "warning",
-  "error" : "The display \"blood pressure\" is not a valid display for the code {http://loinc.org}85354-9 - should be one of ['Blood pressure panel with all children optional', 'BP pnl w all optional', '医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组.生命体征' (zh-CN), '组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）.体征' (zh-CN), '生命体征医嘱组 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 所有（全部）儿童均可选的血压组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目） 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 组 组合 组合医嘱 组合类 组套 血' (zh-CN), '全血 血压组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '血压组套' (zh-CN), '血压组合' (zh-CN), 'Panel pressione sanguigna Punto nel tempo (episodio) Set di prescrizione parametri vitali' (it-IT)] (from http://tx.fhir.org/r4)"
+  "error" : "The display \"blood pressure\" is not a valid display for the code {http://loinc.org}85354-9 - should be one of ['Blood pressure panel with all children optional', 'BP pnl w all optional', '', '医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组.生命体征' (zh-CN), '组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）.体征' (zh-CN), '生命体征医嘱组 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 压强 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 所有（全部）儿童均可选的血压组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目） 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 组 组合 组合医嘱 组合类 组套 血' (zh-CN), '全血 血压组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '血压组套' (zh-CN), '血压组合' (zh-CN), 'Panel pressione sanguigna Punto nel tempo (episodio) Set di prescrizione parametri vitali' (it-IT)] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72166-2"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Tobacco smoking status",
+  "code" : "72166-2",
+  "system" : "http://loinc.org"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -78,7 +78,7 @@ v: {
   "code" : "44250-9"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Little interest or pleasure in doing things in last 2 weeks [Reported.PHQ]",
+  "display" : "Little interest or pleasure in doing things in last 2 weeks",
   "code" : "44250-9",
   "system" : "http://loinc.org"
 }
@@ -88,7 +88,7 @@ v: {
   "code" : "44255-8"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Feeling down, depressed, or hopeless in last 2 weeks [Reported.PHQ]",
+  "display" : "Feeling down, depressed, or hopeless in last 2 weeks",
   "code" : "44255-8",
   "system" : "http://loinc.org"
 }
@@ -178,7 +178,7 @@ v: {
   "code" : "44250-9"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Little interest or pleasure in doing things in last 2 weeks [Reported.PHQ]",
+  "display" : "Little interest or pleasure in doing things in last 2 weeks",
   "code" : "44250-9",
   "system" : "http://loinc.org"
 }
@@ -188,7 +188,7 @@ v: {
   "code" : "44255-8"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Feeling down, depressed, or hopeless in last 2 weeks [Reported.PHQ]",
+  "display" : "Feeling down, depressed, or hopeless in last 2 weeks",
   "code" : "44255-8",
   "system" : "http://loinc.org"
 }
