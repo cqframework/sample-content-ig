@@ -24,7 +24,7 @@
             <td style="padding-left: 4px;">
                 {% if identifier.type.exists() %}
                 <p style="margin-bottom: 5px;">
-                    <b>type: </b> <span>{{identifier.type.value}}</span>
+                    <b>type: </b> <span>{{identifier.type.text}}</span>
                 </p>
                 {% endif %}
                 {% if identifier.value.exists() %}
@@ -196,11 +196,11 @@
                     <tr><th><b>name</b></th><th><b>use</b></th><th><b>min</b></th><th><b>max</b></th><th><b>type</b></th></tr>
                     {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter') %}
                     <tr>
-                        <td>{{extension.valueParameterDefinition.name}}</td>
-                        <td>{{extension.valueParameterDefinition.use}}</td>
-                        <td>{{extension.valueParameterDefinition.min}}</td>
-                        <td>{{extension.valueParameterDefinition.max}}</td>
-                        <td>{{extension.valueParameterDefinition.type}}</td>
+                        <td>{{extension.value.name}}</td>
+                        <td>{{extension.value.use}}</td>
+                        <td>{{extension.value.min}}</td>
+                        <td>{{extension.value.max}}</td>
+                        <td>{{extension.value.type}}</td>
                     </tr>
                     {% endfor %}
                 </table>
@@ -215,15 +215,15 @@
                     <tr><th><b>type</b></th><th><b>path</b></th><th><b>valueSet or system</b></th><th><b>code</b></th></tr>
                     {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-dataRequirement') %}
                         <tr>
-                            <td>{{extension.valueDataRequirement.type}}</td>
-                            <td>{{extension.valueDataRequirement.codeFilter.first().path}}</td>
-                            {% if extension.valueDataRequirement.codeFilter.first().valueSet.exists() %}
-                                <td>{{extension.valueDataRequirement.codeFilter.first().valueSet}}</td>
+                            <td>{{extension.value.type}}</td>
+                            <td>{{extension.value.codeFilter.first().path}}</td>
+                            {% if extension.value.codeFilter.first().valueSet.exists() %}
+                                <td>{{extension.value.codeFilter.first().valueSet}}</td>
                                 <td></td>
                             {% endif%}
-                            {% if extension.valueDataRequirement.codeFilter.first().code.exists() %}
-                                <td>{{extension.valueDataRequirement.codeFilter.first().code.first().version}}</td>
-                                <td>{{extension.valueDataRequirement.codeFilter.first().code.first().code}}</td>
+                            {% if extension.value.codeFilter.first().code.exists() %}
+                                <td>{{extension.value.codeFilter.first().code.first().system}}</td>
+                                <td>{{extension.value.codeFilter.first().code.first().code}}</td>
                             {% endif%}
                         </tr>
                     {% endfor %}
@@ -239,9 +239,9 @@
                     <tr><th><b>display</b></th><th><b>code</b></th><th><b>system</b></th></tr>
                     {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode') %}
                         <tr>
-                            <td>{{extension.valueCoding.display}}</td>
-                            <td>{{extension.valueCoding.code}}</td>
-                            <td>{{extension.valueCoding.version}}</td>
+                            <td>{{extension.value.display}}</td>
+                            <td>{{extension.value.code}}</td>
+                            <td>{{extension.value.system}}</td>
                         </tr>
                     {% endfor %}
                 </table>
@@ -260,7 +260,7 @@
                             {% for population in group.population %}
                                 <tr>
                                     <td/>
-                                    <td>{{(population.code.first() as CodeableConcept).coding.first().display}}</td>
+                                    <td>{{population.code.first().coding.first().display}}</td>
                                     <td>
                                         {% if population.description %}
                                             {{(population.description)}}
@@ -283,7 +283,7 @@
                         {% for supplementalData in Measure.supplementalData %}
                         <tr>
                             <td>{{supplementalData.criteria.expression}}</td>
-                            <td>{{(supplementalData.usage.first() as CodeableConcept).coding.first().system}}</td>
+                            <td>{{supplementalData.usage.first().coding.first().system}}</td>
                         </tr>
                         {% endfor %}
                     </table>
@@ -299,7 +299,7 @@
                     {% for useContext in Measure.useContext %}
                       <tr>
                         <td>{{useContext.code.code}}</td>
-                        <td>{{(useContext.valueCodeableConcept).text}}</td>
+                        <td>{{useContext.value.text}}</td>
                       </tr>
                     {% endfor %}
                 </table>
@@ -517,7 +517,7 @@
                                         {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').exists() %}
                                             <b>Group scoring:</b>
                                             {% for extension in group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring') %}
-                                               <span>  {{ extension.valueCodeableConcept.coding.code }} </span>
+                                               <span>  {{ extension.value.coding.code }} </span>
                                             {% endfor %}
                                         {% endif %}
                                         {% if Measure.scoring.exists() %}
@@ -533,7 +533,7 @@
                                         <tr>
                                             <td/>
                                             <td/>
-                                            <td>{{ (population.code.first() as CodeableConcept).coding.first().display }}</td>
+                                            <td>{{ population.code.first().coding.first().display }}</td>
                                             <td>
                                                 {% if population.criteria.expression %}
                                                 <pre><code class="language-cql">{{ (Measure.contained.where(id = 'effective-data-requirements').extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' and extension.where(url = 'name' and value = population.criteria.expression)).extension.where(url = 'statement').value) }}</code></pre>
