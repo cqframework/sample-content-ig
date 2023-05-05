@@ -1,7 +1,7 @@
 @ECHO OFF
 
-SET "dlurl=https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencds.cqf&a=tooling&v=2.3.0-SNAPSHOT&c=jar-with-dependencies"
-SET tooling_jar=tooling-2.3.0-SNAPSHOT-jar-with-dependencies.jar
+SET "dlurl=https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=org.opencds.cqf&a=tooling-cli&v=2.4.0"
+SET tooling_jar=tooling-cli-2.4.0.jar
 SET input_cache_path=%~dp0input-cache\
 SET skipPrompts=false
 IF "%~1"=="/f" SET skipPrompts=true
@@ -52,7 +52,7 @@ IF "%skipPrompts%"=="false" (
 GOTO:done
 
 :download
-ECHO Downloading most recent refresh to %jarlocationname% - it's ~70 MB, so this may take a bit
+ECHO Downloading most recent refresh to %jarlocationname% - it's ~110 MB, so this may take a bit
 
 FOR /f "tokens=4-5 delims=. " %%i IN ('ver') DO SET VERSION=%%i.%%j
 IF "%version%" == "10.0" GOTO win10

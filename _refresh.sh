@@ -1,6 +1,6 @@
 #!/bin/bash
 #DO NOT EDIT WITH WINDOWS
-tooling_jar=tooling-2.3.0-SNAPSHOT-jar-with-dependencies.jar
+tooling_jar=tooling-cli-2.4.0.jar
 input_cache_path=./input-cache
 ig_ini_path=$PWD/ig.ini
 
