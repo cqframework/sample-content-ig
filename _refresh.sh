@@ -10,7 +10,7 @@ wget -q --spider tx.fhir.org
 
 if [ $? -eq 0 ]; then
 	echo "Online"
-	fsoption="-fs https://cds-sandbox.alphora.com/cqf-ruler-r4/fhir/"
+	fsoption=""
 else
 	echo "Offline"
 	fsoption=""
