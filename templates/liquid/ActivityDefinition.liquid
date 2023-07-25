@@ -18,15 +18,10 @@
             <td style="padding-left: 4px;">{{ActivityDefinition.version}}</td>
         </tr>
         {% endif %}
-        {% for identifier in ActivityDefinition.identifier %}
+        {% for identifier in Library.identifier %}
         <tr>
-            <th scope="row"><b>Identifier: </b></th>
+            <th scope="row"><b><a href="{{identifier.system}}">{{identifier.use}}</a> </b></th>
             <td style="padding-left: 4px;">
-                {% if identifier.type.exists() %}
-                <p style="margin-bottom: 5px;">
-                    <b>type: </b> <span>{{identifier.type.value}}</span>
-                </p>
-                {% endif %}
                 {% if identifier.value.exists() %}
                 <p style="margin-bottom: 5px;">
                     <b>value: </b> <span>{{identifier.value}}</span>
