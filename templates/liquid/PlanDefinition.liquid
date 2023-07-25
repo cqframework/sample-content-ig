@@ -18,7 +18,7 @@
             <td style="padding-left: 4px;">{{PlanDefinition.version}}</td>
         </tr>
         {% endif %}
-        {% for identifier in Library.identifier %}
+        {% for identifier in PlanDefinition.identifier %}
         <tr>
             <th scope="row"><b><a href="{{identifier.system}}">{{identifier.use}}</a> </b></th>
             <td style="padding-left: 4px;">

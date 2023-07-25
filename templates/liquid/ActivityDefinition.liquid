@@ -18,7 +18,7 @@
             <td style="padding-left: 4px;">{{ActivityDefinition.version}}</td>
         </tr>
         {% endif %}
-        {% for identifier in Library.identifier %}
+        {% for identifier in ActivityDefinition.identifier %}
         <tr>
             <th scope="row"><b><a href="{{identifier.system}}">{{identifier.use}}</a> </b></th>
             <td style="padding-left: 4px;">
