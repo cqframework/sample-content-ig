@@ -20,7 +20,19 @@
         {% endif %}
         {% for identifier in Library.identifier %}
         <tr>
-            <th scope="row"><b><a href="{{identifier.system}}">{{identifier.use}}</a> </b></th>
+            <th scope="row">
+                <b>
+                    {% if identifier.type.coding.exists() %}
+                        {% if identifier.type.coding.display.exists() %}
+                            {{identifier.type.coding.display}} 
+                        {% else %}
+                            {{identifier.type.coding}} 
+                        {% endif %}
+                    {% else %}
+                        {{identifier.use}} 
+                    {% endif %}
+                </b>
+            </th>
             <td style="padding-left: 4px;">
                 {% if identifier.value.exists() %}
                 <p style="margin-bottom: 5px;">
