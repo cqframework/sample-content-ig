@@ -1,6 +1,6 @@
 <div>
     <table class="grid dict">
-         {#  Id  #}
+         <!-- Id -->
         {% if PlanDefinition.id.exists() %}
         <tr>
             <th scope="row"><b>Id: </b></th>
@@ -8,7 +8,7 @@
         </tr>
         {% endif %}
 
-         {#  Url  #}
+         <!-- Url -->
         {% if PlanDefinition.url.exists() %}
         <tr>
             <th scope="row"><b>Url: </b></th>
@@ -16,7 +16,7 @@
         </tr>
         {% endif %}
 
-         {#  Version  #}
+         <!-- Version -->
         {% if PlanDefinition.version.exists() %}
         <tr>
             <th scope="row"><b>Version: </b></th>
@@ -24,7 +24,7 @@
         </tr>
         {% endif %}
 
-         {#  Identifier  #}
+         <!-- Identifier -->
         {% for identifier in PlanDefinition.identifier %}
         <tr>
             <th scope="row"><b>Identifier: </b></th>
@@ -43,7 +43,7 @@
         </tr>
         {% endfor %}
 
-         {#  Name  #}
+         <!-- Name -->
         {% if PlanDefinition.name.exists() %}
         <tr>
             <th scope="row"><b>Name: </b></th>
@@ -51,7 +51,7 @@
         </tr>
         {% endif %}
 
-         {#  Title  #}
+         <!-- Title -->
         {% if PlanDefinition.title.exists() %}
         <tr>
             <th scope="row"><b>Title: </b></th>
@@ -59,7 +59,7 @@
         </tr>
         {% endif %}
 
-         {#  Subtitle  #}
+         <!-- Subtitle -->
         {% if PlanDefinition.subtitle.exists() %}
         <tr>
             <th scope="row"><b>Subtitle: </b></th>
@@ -67,7 +67,7 @@
         </tr>
         {% endif %}
 
-         {#  Status  #}
+         <!-- Status -->
         {% if PlanDefinition.status.exists() %}
         <tr>
             <th scope="row"><b>Status: </b></th>
@@ -75,7 +75,7 @@
         </tr>
         {% endif %}
 
-         {#  Experimental  #}
+         <!-- Experimental -->
         {% if PlanDefinition.experimental.exists() %}
         <tr>
             <th scope="row"><b>Experimental: </b></th>
@@ -83,7 +83,7 @@
         </tr>
         {% endif %}
 
-         {#  Type  #}
+         <!-- Type -->
         {% if PlanDefinition.type.exists() %}
         <tr>
             <th scope="row"><b>Type: </b></th>
@@ -114,7 +114,7 @@
         </tr>
         {% endif %}
 
-         {#  Subject  #}
+         <!-- Subject -->
         {% if PlanDefinition.subject.exists() %}
         <tr>
             <th scope="row"><b>Subject: </b></th>
@@ -166,7 +166,7 @@
         </tr>
         {% endif %}
 
-         {#  Date  #}
+         <!-- Date -->
         {% if PlanDefinition.date.exists() %}
         <tr>
             <th scope="row"><b>Date: </b></th>
@@ -174,7 +174,7 @@
         </tr>
         {% endif %}
 
-         {#  Publisher  #}
+         <!-- Publisher -->
         {% if PlanDefinition.publisher.exists() %}
         <tr>
             <th scope="row"><b>Publisher: </b></th>
@@ -182,7 +182,7 @@
         </tr>
         {% endif %}
 
-         {#  Description  #}
+         <!-- Description -->
         {% if PlanDefinition.description.exists() %}
         <tr>
             <th scope="row"><b>Description: </b></th>
@@ -190,7 +190,7 @@
         </tr>
         {% endif %}
 
-         {#  Knowledge Capability  #}
+         <!-- Knowledge Capability -->
         {% if PlanDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
         <tr>
             <th scope="row"><b>Knowledge Capability: </b></th>
@@ -201,7 +201,7 @@
         </tr>
         {% endif %}
 
-         {#  Knowledge Representation Level  #}
+         <!-- Knowledge Representation Level -->
         {% if PlanDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel').exists() %}
         <tr>
             <th scope="row"><b>Knowledge Representation Level: </b></th>
@@ -212,7 +212,7 @@
         </tr>
         {% endif %}
 
-         {#  Use Context  #}
+         <!-- Use Context -->
         {% if PlanDefinition.useContext.exists() %}
         <tr>
             <th scope="row"><b>Use Context: </b></th>
@@ -235,7 +235,7 @@
         </tr>
         {% endif %}
 
-         {#  Jurisdiction  #}
+         <!-- Jurisdiction -->
         {% if PlanDefinition.jurisdiction.exists() %}
         <tr>
             <th scope="row"><b>Jurisdiction: </b></th>
@@ -243,7 +243,7 @@
         </tr>
         {% endif %}
 
-         {#  Purpose  #}
+         <!-- Purpose -->
         {% if PlanDefinition.purpose.exists() %}
         <tr>
             <th scope="row"><b>Purpose: </b></th>
@@ -251,7 +251,7 @@
         </tr>
         {% endif %}
 
-         {#  Usage  #}
+         <!-- Usage -->
         {% if PlanDefinition.usage.exists() %}
         <tr>
             <th scope="row"><b>Usage: </b></th>
@@ -259,7 +259,7 @@
         </tr>
         {% endif %}
 
-         {#  Copyright  #}
+         <!-- Copyright -->
         {% if PlanDefinition.copyright.exists() %}
         <tr>
             <th scope="row"><b>Copyright: </b></th>
@@ -267,7 +267,7 @@
         </tr>
         {% endif %}
 
-         {#  Approval Date  #}
+         <!-- Approval Date -->
         {% if PlanDefinition.approvalDate.exists() %}
         <tr>
             <th scope="row"><b>Approval Date: </b></th>
@@ -275,7 +275,7 @@
         </tr>
         {% endif %}
 
-         {#  Last Review Date  #}
+         <!-- Last Review Date -->
         {% if PlanDefinition.lastReviewDate.exists() %}
         <tr>
             <th scope="row"><b>Last Review Date: </b></th>
@@ -283,7 +283,7 @@
         </tr>
         {% endif %}
 
-         {#  Effective Period  #}
+         <!-- Effective Period -->
         {% if PlanDefinition.effectivePeriod.exists() %}
         <tr>
             <th scope="row"><b>Effective Period: </b></th>
@@ -291,7 +291,7 @@
         </tr>
         {% endif %}
 
-         {#  Related Artifacts  #}
+         <!-- Related Artifacts -->
         {% if PlanDefinition.relatedArtifact.exists() %}
         <tr>
             <th scope="row"><b>Related Artifacts: </b></th>
@@ -356,7 +356,7 @@
         </tr>
         {% endif %}
 
-         {#  Libraries  #}
+         <!-- Libraries -->
         {% if PlanDefinition.library.exists() %}
         <tr>
             <th scope="row"><b>Libraries: </b></th>
@@ -372,7 +372,7 @@
         </tr>
         {% endif %}
 
-         {#  Actions  #}
+         <!-- Actions -->
         {% if PlanDefinition.action.exists() %}
         <tr>
             <th scope="row"><b>Actions: </b></th>

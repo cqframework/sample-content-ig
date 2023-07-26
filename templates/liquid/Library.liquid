@@ -1,6 +1,6 @@
 <div>
     <table class="grid dict">
-        {#  eCQM title  #}
+        <!-- eCQM title -->
         {% if Library.title.exists() %}
         <tr>
             <th scope="row"><b>Title: </b></th>
@@ -8,7 +8,7 @@
         </tr>
         {% endif %}
 
-        {#  eCQM ID  #}
+        <!-- eCQM ID -->
         {% if Library.id.exists() %}
         <tr>
             <th scope="row"><b>Id: </b></th>
@@ -16,7 +16,7 @@
         </tr>
         {% endif %}
 
-        {#  eCQM version number  #}
+        <!-- eCQM version number -->
         {% if Library.version.exists() %}
         <tr>
             <th scope="row"><b>Version: </b></th>
@@ -49,7 +49,7 @@
         </tr>
         {% endfor %}
 
-        {#  Measurement period  #}
+        <!-- Measurement period -->
         {% if Library.name.exists() %}
         <tr>
             <th scope="row"><b>Name: </b></th>
@@ -57,7 +57,7 @@
         </tr>
         {% endif %}
 
-        {#  Effective Period  #}
+        <!-- Effective Period -->
         {% if Library.subtitle.exists() %}
         <tr>
             <th scope="row"><b>Subtitle: </b></th>
@@ -65,7 +65,7 @@
         </tr>
         {% endif %}
 
-        {#  Status  #}
+        <!-- Status -->
         {% if Library.status.exists() %}
         <tr>
             <th scope="row"><b>Status: </b></th>
@@ -73,7 +73,7 @@
         </tr>
         {% endif %}
 
-        {#  Experimental  #}
+        <!-- Experimental -->
         {% if Library.experimental.exists() %}
         <tr>
             <th scope="row"><b>Experimental: </b></th>
@@ -81,7 +81,7 @@
         </tr>
         {% endif %}
 
-        {#  Type  #}
+        <!-- Type -->
         {% if Library.type.exists() %}
         <tr>
             <th scope="row"><b>Type: </b></th>
@@ -112,7 +112,7 @@
         </tr>
         {% endif %}
 
-        {#  Description  #}
+        <!-- Description -->
         {% if Library.subject.exists() %}
         <tr>
             <th scope="row"><b>Subject: </b></th>
@@ -164,7 +164,7 @@
         </tr>
         {% endif %}
 
-        {#  Date  #}
+        <!-- Date -->
         {% if Library.date.exists() %}
         <tr>
             <th scope="row"><b>Date: </b></th>
@@ -172,7 +172,7 @@
         </tr>
         {% endif %}
 
-        {#  Publisher  #}
+        <!-- Publisher -->
         {% if Library.publisher.exists() %}
         <tr>
             <th scope="row"><b>Publisher: </b></th>
@@ -180,7 +180,7 @@
         </tr>
         {% endif %}
 
-        {#  Description  #}
+        <!-- Description -->
         {% if Library.description.exists() %}
         <tr>
             <th scope="row"><b>Description: </b></th>
@@ -188,7 +188,7 @@
         </tr>
         {% endif %}
 
-        {#  Copyright  #}
+        <!-- Copyright -->
         {% if Library.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
         <tr>
             <th scope="row"><b>Knowledge Capability: </b></th>
@@ -200,7 +200,7 @@
         </tr>
         {% endif %}
 
-        {#  Disclaimer  #}
+        <!-- Disclaimer -->
         {% if Library.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel').exists() %}
         <tr>
             <th scope="row"><b>Knowledge Representation Level: </b></th>
@@ -212,7 +212,7 @@
         </tr>
         {% endif %}
 
-        {#  Measure scoring  #}
+        <!-- Measure scoring -->
         {% if Library.useContext.exists() %}
         <tr>
             <th scope="row"><b>Use Context: </b></th>
@@ -231,7 +231,7 @@
         </tr>
         {% endif %}
 
-        {#  Approval date  #}
+        <!-- Approval date -->
         {% if Library.jurisdiction.exists() %}
         <tr>
             <th scope="row"><b>Jurisdiction: </b></th>
@@ -239,7 +239,7 @@
         </tr>
         {% endif %}
 
-        {#  Last review date  #}
+        <!-- Last review date -->
         {% if Library.purpose.exists() %}
         <tr>
             <th scope="row"><b>Purpose: </b></th>
@@ -247,7 +247,7 @@
         </tr>
         {% endif %}
 
-        {#  Short Name  #}
+        <!-- Short Name -->
         {% if Library.usage.exists() %}
         <tr>
             <th scope="row"><b>Usage: </b></th>
@@ -255,7 +255,7 @@
         </tr>
         {% endif %}
 
-        {#  Measure steward  #}
+        <!-- Measure steward -->
         {% if Library.copyright.exists() %}
         <tr>
             <th scope="row"><b>Copyright: </b></th>
@@ -263,7 +263,7 @@
         </tr>
         {% endif %}
 
-        {#  Measure developer  #}
+        <!-- Measure developer -->
         {% if Library.approvalDate.exists() %}
         <tr>
             <th scope="row"><b>Approval Date: </b></th>
@@ -271,7 +271,7 @@
         </tr>
         {% endif %}
 
-        {#  Endorsed by  #}
+        <!-- Endorsed by -->
         {% if Library.lastReviewDate.exists() %}
         <tr>
             <th scope="row"><b>Last Review Date: </b></th>
@@ -279,7 +279,7 @@
         </tr>
         {% endif %}
 
-        {#  Description  #}
+        <!-- Description -->
         {% if Library.effectivePeriod.exists() %}
         <tr>
             <th scope="row"><b>Effective Period: </b></th>
@@ -287,7 +287,7 @@
         </tr>
         {% endif %}
 
-        {#  Related Artifacts  #}
+        <!-- Related Artifacts -->
         {% if Library.relatedArtifact.exists() %}
         <tr>
             <th scope="row"><b>Related Artifacts: </b></th>
@@ -352,7 +352,7 @@
         </tr>
         {% endif %}
 
-        {#  Libraries  #}
+        <!-- Libraries -->
         {% if Library.parameter.exists() %}
         <tr>
           <th scope="row"><b>Parameters: </b></th>
@@ -367,7 +367,7 @@
         </tr>
         {% endif %}
 
-        {#  Data Requirements  #}
+        <!-- Data Requirements -->
         {% if Library.dataRequirement.exists() %}
         <tr>
           <th scope="row"><b>Data Requirements:</b></th>
@@ -424,7 +424,7 @@
         </tr>
         {% endif %}
 
-        {#  CQL Content  #}
+        <!-- CQL Content -->
         {% for c in Library.content %}
         {% if c.contentType = 'text/cql' %}
         <tr>

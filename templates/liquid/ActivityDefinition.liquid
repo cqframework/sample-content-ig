@@ -1,7 +1,7 @@
 <div>
     <table class="grid dict">
 
-        {# TITLE #}
+        <!--TITLE-->
         {% if ActivityDefinition.title.exists() %}
         <tr>
             <th scope="row"><b>eCQM title: </b></th>
@@ -9,7 +9,7 @@
         </tr>
         {% endif %}
 
-        {# eCQM ID #}
+        <!--eCQM ID-->
         {% if ActivityDefinition.id.exists() %}
         <tr>
             <th scope="row"><b>eCQM ID: </b></th>
@@ -17,7 +17,7 @@
         </tr>
         {% endif %}
 
-        {# eCQM version number #}
+        <!--eCQM version number-->
         {% if ActivityDefinition.version.exists() %}
         <tr>
             <th scope="row"><b>eCQM version number: </b></th>
@@ -25,7 +25,7 @@
         </tr>
         {% endif %}
 
-        {# Measurement period #}
+        <!--Measurement period-->
         {% if ActivityDefinition.effectivePeriod.exists() %}
         <tr>
             <th scope="row"><b>Measurement period: </b></th>
@@ -33,7 +33,7 @@
         </tr>
         {% endif %}
 
-        {# Status #}
+        <!--Status-->
         {% if ActivityDefinition.status.exists() %}
         <tr>
             <th scope="row"><b>Status: </b></th>
@@ -41,7 +41,7 @@
         </tr>
         {% endif %}
 
-        {# Experimental #}
+        <!--Experimental-->
         {% if ActivityDefinition.experimental.exists() %}
         <tr>
             <th scope="row"><b>Experimental: </b></th>
@@ -49,7 +49,7 @@
         </tr>
         {% endif %}
 
-        {# Date (date last changed) #}
+        <!--Date (date last changed)-->
         {% if ActivityDefinition.date.exists() %}
         <tr>
             <th scope="row"><b>Date (date last changed): </b></th>
@@ -57,7 +57,7 @@
         </tr>
         {% endif %}
 
-        {# Approval date (when the measure was approved by the publisher) #}
+        <!--Approval date (when the measure was approved by the publisher)-->
         {% if ActivityDefinition.approvalDate.exists() %}
         <tr>
             <th scope="row"><b>Approval date (when the measure was approved by the publisher): </b></th>
@@ -65,7 +65,7 @@
         </tr>
         {% endif %}
 
-        {# Last review date (when the measure was last reviewed) #}
+        <!--Last review date (when the measure was last reviewed)-->
         {% if ActivityDefinition.lastReviewDate.exists() %}
         <tr>
             <th scope="row"><b>Last review date (when the measure was last reviewed): </b></th>
@@ -73,7 +73,7 @@
         </tr>
         {% endif %}
 
-        {# Short Name #}
+        <!--Short Name-->
         {% if ActivityDefinition.name.exists() %}
         <tr>
             <th scope="row"><b>Short Name: </b></th>
@@ -81,7 +81,7 @@
         </tr>
         {% endif %}
 
-        {# Measure steward #}
+        <!--Measure steward-->
         {% if ActivityDefinition.publisher.exists() %}
         <tr>
             <th scope="row"><b>Measure steward: </b></th>
@@ -89,7 +89,7 @@
         </tr>
         {% endif %}
 
-        {# Measure developer #}
+        <!--Measure developer-->
         {% if ActivityDefinition.author.exists() %}
         <tr>
             <th scope="row"><b>Measure developer: </b></th>
@@ -97,7 +97,7 @@
         </tr>
         {% endif %}
 
-        {# Endorsed by #}
+        <!--Endorsed by-->
         {% if ActivityDefinition.endorser.exists() %}
         <tr>
             <th scope="row"><b>Endorsed by: </b></th>
@@ -105,7 +105,7 @@
         </tr>
         {% endif %}
 
-        {# Description #}
+        <!--Description-->
         {% if ActivityDefinition.description.exists() %}
         <tr>
             <th scope="row"><b>Description: </b></th>
@@ -113,7 +113,7 @@
         </tr>
         {% endif %}
 
-        {# Copyright #}
+        <!--Copyright-->
         {% if ActivityDefinition.copyright.exists() %}
         <tr>
             <th scope="row"><b>Copyright: </b></th>
@@ -121,7 +121,7 @@
         </tr>
         {% endif %}
 
-        {# Disclaimer #}
+        <!--Disclaimer-->
         {% if ActivityDefinition.disclaimer.exists() %}
         <tr>
             <th scope="row"><b>Disclaimer: </b></th>
@@ -129,7 +129,7 @@
         </tr>
         {% endif %}
 
-        {# Measure scoring #}
+        <!--Measure scoring-->
         {% if ActivityDefinition.scoring.exists() %}
         <tr>
             <th scope="row"><b>Measure scoring: </b></th>
@@ -137,7 +137,7 @@
         </tr>
         {% endif %}
 
-        {# Measure type #}
+        <!--Measure type-->
         {% if ActivityDefinition.type.exists() %}
         <tr>
             <th scope="row"><b>Measure type: </b></th>
@@ -145,7 +145,7 @@
         </tr>
         {% endif %}
 
-        {# Stratification #}
+        <!--Stratification-->
         {% if ActivityDefinition.stratifier.exists() %}
         <tr>
             <th scope="row"><b>Stratification: </b></th>
@@ -153,7 +153,7 @@
         </tr>
         {% endif %}
 
-        {# Risk adjustment #}
+        <!--Risk adjustment-->
         {% if ActivityDefinition.riskAdjustment.exists() %}
         <tr>
             <th scope="row"><b>Risk adjustment: </b></th>
@@ -161,7 +161,7 @@
         </tr>
         {% endif %}
 
-        {# Rate aggregation #}
+        <!--Rate aggregation-->
         {% if ActivityDefinition.rateAggregation.exists() %}
         <tr>
             <th scope="row"><b>Rate aggregation: </b></th>
@@ -169,7 +169,7 @@
         </tr>
         {% endif %}
 
-        {# Rationale #}
+        <!--Rationale-->
         {% if ActivityDefinition.rationale.exists() %}
         <tr>
             <th scope="row"><b>Rationale: </b></th>
@@ -177,7 +177,7 @@
         </tr>
         {% endif %}
 
-        {# Clinical recommendation statement #}
+        <!--Clinical recommendation statement-->
         {% if ActivityDefinition.clinicalRecommendation.exists() %}
         <tr>
             <th scope="row"><b>Clinical recommendation statement: </b></th>
@@ -185,7 +185,7 @@
         </tr>
         {% endif %}
 
-        {# Improvement notation #}
+        <!--Improvement notation-->
         {% if ActivityDefinition.improvementNotation.exists() %}
         <tr>
             <th scope="row"><b>Improvement notation: </b></th>
@@ -193,7 +193,7 @@
         </tr>
         {% endif %}
 
-        {# Reference #}
+        <!--Reference-->
         {% if ActivityDefinition.relatedArtifact.exists() %}
         <tr>
             <th scope="row"><b>Reference: </b></th>
@@ -207,7 +207,7 @@
         </tr>
         {% endif %}
 
-        {# Initial Population #}
+        <!--Initial Population-->
         {% if ActivityDefinition.population.exists() %}
         <tr>
             <th scope="row"><b>Initial Population: </b></th>
@@ -215,7 +215,7 @@
         </tr>
         {% endif %}
 
-        {# Denominator #}
+        <!--Denominator-->
         {% if ActivityDefinition.denominator.exists() %}
         <tr>
             <th scope="row"><b>Denominator: </b></th>
@@ -223,7 +223,7 @@
         </tr>
         {% endif %}
 
-        {# Denominator exclusions #}
+        <!--Denominator exclusions-->
         {% if ActivityDefinition.denominatorExclusions.exists() %}
         <tr>
             <th scope="row"><b>Denominator exclusions: </b></th>
@@ -231,7 +231,7 @@
         </tr>
         {% endif %}
 
-        {# Measure observations #}
+        <!--Measure observations-->
         {% if ActivityDefinition.measureObservations.exists() %}
         <tr>
             <th scope="row"><b>Measure observations: </b></th>
@@ -239,7 +239,7 @@
         </tr>
         {% endif %}
 
-        {# Numerator #}
+        <!--Numerator-->
         {% if ActivityDefinition.numerator.exists() %}
         <tr>
             <th scope="row"><b>Numerator: </b></th>
@@ -247,7 +247,7 @@
         </tr>
         {% endif %}
 
-        {# Numerator exclusions #}
+        <!--Numerator exclusions-->
         {% if ActivityDefinition.numeratorExclusions.exists() %}
         <tr>
             <th scope="row"><b>Numerator exclusions: </b></th>
@@ -255,7 +255,7 @@
         </tr>
         {% endif %}
 
-        {# Supplemental data elements #}
+        <!--Supplemental data elements-->
         {% if ActivityDefinition.supplementalData.exists() %}
         <tr>
             <th scope="row"><b>Supplemental data elements: </b></th>
@@ -278,7 +278,7 @@
         </tr>
         {% endif %}
 
-        {# Libraries #}
+        <!--Libraries-->
         {% if ActivityDefinition.library.exists() %}
         <tr>
             <th scope="row"><b>Libraries: </b></th>
@@ -294,7 +294,7 @@
         </tr>
         {% endif %}
 
-        {# Related Artifact Dependencies #}
+        <!--Related Artifact Dependencies-->
         {% if ActivityDefinition.relatedArtifact.exists() %}
         <tr>
             <th scope="row"><b>Related Artifact Dependencies: </b></th>
@@ -310,9 +310,9 @@
         </tr>
         {% endif %}
 
-        {# Parameters #}
-        {# Data requirements #}
-        {# Direct reference codes #}
+        <!--Parameters-->
+        <!--Data requirements-->
+        <!--Direct reference codes-->
         {% if ActivityDefinition.code.exists() %}
         <tr>
             <th scope="row"><b>Direct reference codes: </b></th>
@@ -337,7 +337,7 @@
         </tr>
         {% endif %}
 
-        {# Logic Definitions #}
+        <!--Logic Definitions-->
         {% if ActivityDefinition.logic.exists() %}
         <tr>
             <th scope="row"><b>Logic Definitions: </b></th>
@@ -345,7 +345,7 @@
         </tr>
         {% endif %}
 
-        {# Derived From #}
+        <!--Derived From-->
         {% if ActivityDefinition.relatedArtifact.where(type = 'derived-from').exists() %}
         <tr>
             <th scope="row"><b>Derived From: </b></th>
@@ -359,7 +359,7 @@
         </tr>
         {% endif %}
 
-        {# Successor #}
+        <!--Successor-->
         {% if ActivityDefinition.relatedArtifact.where(type = 'successor').exists() %}
         <tr>
             <th scope="row"><b>Successor: </b></th>
@@ -373,7 +373,7 @@
         </tr>
         {% endif %}
 
-        {# Predecessor #}
+        <!--Predecessor-->
         {% if ActivityDefinition.relatedArtifact.where(type = 'predecessor').exists() %}
         <tr>
             <th scope="row"><b>Predecessor: </b></th>
@@ -387,7 +387,7 @@
         </tr>
         {% endif %}
 
-        {# Kind #}
+        <!--Kind-->
         {% if ActivityDefinition.kind.exists() %}
         <tr>
             <th scope="row"><b>Kind: </b></th>
@@ -395,7 +395,7 @@
         </tr>
         {% endif %}
 
-        {# Profile #}
+        <!--Profile-->
         {% if ActivityDefinition.profile.exists() %}
         <tr>
             <th scope="row"><b>Profile: </b></th>
@@ -403,7 +403,7 @@
         </tr>
         {% endif %}
 
-        {# Intent #}
+        <!--Intent-->
         {% if ActivityDefinition.intent.exists() %}
         <tr>
             <th scope="row"><b>Intent: </b></th>
@@ -411,7 +411,7 @@
         </tr>
         {% endif %}
 
-        {# Priority #}
+        <!--Priority-->
         {% if ActivityDefinition.priority.exists() %}
         <tr>
             <th scope="row"><b>Priority: </b></th>
@@ -419,7 +419,7 @@
         </tr>
         {% endif %}
 
-        {# doNotPerform #}
+        <!--doNotPerform-->
         {% if ActivityDefinition.doNotPerform.exists() %}
         <tr>
             <th scope="row"><b>doNotPerform: </b></th>
@@ -427,7 +427,7 @@
         </tr>
         {% endif %}
 
-        {# Product #}
+        <!--Product-->
         {% if ActivityDefinition.product.exists() %}
         <tr>
             <th scope="row"><b>Product: </b></th>
@@ -467,7 +467,7 @@
         </tr>
         {% endif %}
 
-        {# Quantity #}
+        <!--Quantity-->
         {% if ActivityDefinition.quantity.exists() %}
         <tr>
             <th scope="row"><b>Quantity: </b></th>
@@ -475,7 +475,7 @@
         </tr>
         {% endif %}
 
-        {# Body Site(s) #}
+        <!--Body Site(s)-->
         {% if ActivityDefinition.bodySite.exists() %}
         <tr>
             <th scope="row"><b>Body Site(s): </b></th>
@@ -496,7 +496,7 @@
         </tr>
         {% endif %}
 
-        {# Dynamic Values #}
+        <!--Dynamic Values-->
         {% if ActivityDefinition.dynamicValue.exists() %}
         <tr>
             <th scope="row"><b>Dynamic Values: </b></th>
