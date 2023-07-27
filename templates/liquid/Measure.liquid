@@ -1,13 +1,11 @@
 <div>
     <table class="grid dict">
-<!--Title-->
         {% if Measure.title.exists() %}
         <tr>
             <th scope="row"><b>Title: </b></th>
             <td style="padding-left: 4px;">{{Measure.title}}</td>
         </tr>
         {% endif %}
-<!--ID-->
         {% if Measure.id.exists() %}
             <tr>
                 <th scope="row"><b>Id: </b></th>
@@ -21,7 +19,6 @@
             {% endif %}
         {% endif %}
 
-<!--VERSION-->
         {% if Measure.version.exists() %}
             <tr>
                 <th scope="row"><b>Version: </b></th>
@@ -54,7 +51,6 @@
             </tr>
         {% endfor %}
 
-<!--EFFECTIVE PERIOD }
         {% if Measure.effectivePeriod.exists() %}
             <tr>
                 <th scope="row"><b>Effective Period: </b></th>
@@ -62,7 +58,6 @@
             </tr>
         {% endif %}
 
-<!--STATUS-->
         {% if Measure.status.exists() %}
             <tr>
                 <th scope="row"><b>Status: </b></th>
@@ -70,7 +65,6 @@
             </tr>
         {% endif %}
 
-<!--EXPERIMENTAL-->
         {% if Measure.experimental.exists() %}
             <tr>
                 <th scope="row"><b>Experimental: </b></th>
@@ -78,7 +72,6 @@
             </tr>
         {% endif %}
 
-<!--DATE-->
         {% if Measure.date.exists() %}
             <tr>
                 <th scope="row"><b>Date: </b></th>
@@ -86,7 +79,6 @@
             </tr>
         {% endif %}
 
-<!--APPROVAL DATE-->
         {% if Measure.approvalDate.exists() %}
             <tr>
                 <th scope="row"><b>Approval Date: </b></th>
@@ -94,7 +86,6 @@
             </tr>
         {% endif %}
 
-<!--LAST REVIEW DATE-->
         {% if Measure.lastReviewDate.exists() %}
             <tr>
                 <th scope="row"><b>Last Review Date: </b></th>
@@ -102,7 +93,6 @@
             </tr>
         {% endif %}
 
-<!--SHORT NAME-->
         {% if Measure.name.exists() %}
             <tr>
                 <th scope="row"><b>Name: </b></th>
@@ -110,7 +100,6 @@
             </tr>
         {% endif %}
 
-<!--PUBLISHER-->
         {% if Measure.publisher.exists() %}
             <tr>
                 <th scope="row"><b>Publisher: </b></th>
@@ -118,7 +107,6 @@
             </tr>
         {% endif %}
 
-<!--DESCRIPTION-->
         {% if Measure.description.exists() %}
             <tr>
                 <th scope="row"><b>Description: </b></th>
@@ -165,7 +153,6 @@
             </tr>
         {% endif %}
 
-<!--COPYRIGHT-->
         {% if Measure.copyright.exists() %}
             <tr>
                 <th scope="row"><b>Copyright: </b></th>
@@ -173,7 +160,6 @@
             </tr>
         {% endif %}
 
-<!--DISCLAIMER-->
         {% if Measure.disclaimer.exists() %}
             <tr>
                 <th scope="row"><b>Disclaimer: </b></th>
@@ -181,7 +167,6 @@
             </tr>
         {% endif %}
 
-<!--MEASURE SCORING-->
         {% if Measure.scoring.exists() %}
             <tr>
                 <th scope="row"><b>Scoring: </b></th>
@@ -200,7 +185,6 @@
             </tr>
         {% endif %}
 
-<!--TYPE-->
         {% if Measure.type.exists() %}
             <tr>
                 <th scope="row"><b>Type: </b></th>
@@ -219,7 +203,6 @@
             </tr>
         {% endif %}
 
-<!--RISK ADJUSTMENT-->
         {% if Measure.supplementalData.usage.coding.where(code = 'risk-adjustment-factor').exists() %}
             {% for supplementalData in Measure.supplementalData.where(usage.coding.where(code = 'risk-adjustment-factor').exists()) %}
             <tr>
@@ -245,7 +228,6 @@
             {% endfor %}
         {% endif %}
 
-<!--IMPROVEMENT NOTATION-->
         {% if Measure.improvementNotation.exists() %}
             <tr>
                 <th scope="row"><b>Improvement Notation: </b></th>
@@ -264,7 +246,6 @@
             </tr>
         {% endif %}
 
-<!--GUIDANCE (USAGE)-->
         {% if Measure.usage.exists() %}
             <tr>
                 <th scope="row"><b>Guidance (Usage): </b></th>
@@ -280,7 +261,6 @@
         {% endif %}
 
 
-<!--POPULATION CRITERIA#}
         {% if Measure.group.exists() %}
             {% if Measure.group[0].population.description.exists() %}
                 <tr>
@@ -306,7 +286,6 @@
             {% endif %}
         {% endif %}
 
-<!--SUPPLEMENTAL DATA GUIDANCE-->
       {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance') %}
             <tr>
                 <th scope="row"><b> {{iif(extension.extension.where(url = 'usage').value.text.exists(), extension.extension.where(url = 'usage').value.text, iif(extension.extension.where(url = 'usage').coding.first().display.exists(), extension.extension.where(url = 'usage').coding.first().display, extension.extension.where(url = 'usage').coding.first().code))}}: </b></th>
@@ -314,7 +293,6 @@
             </tr>
         {% endfor %}
 
-<!--SUPPLEMENTAL DATA ELEMENTS-->
         {% if Measure.supplementalData.usage.coding.where(code = 'supplemental-data').exists() %}
             <tr>
                 <th scope="row"><b> Supplemental Data Elements: </b></th>
@@ -338,7 +316,6 @@
             </tr>
         {% endif %}
 
-<!--LIBRARIES-->
         {% if Measure.library.exists() %}
             <tr>
                 <th scope="row"><b>Libraries: </b></th>
@@ -352,7 +329,6 @@
             </tr>
         {% endif %}
 
-<!--RELATED ARTIFACT DEPENDENCIES-->
         {% if Measure.relatedArtifact.exists() %}
             <tr>
                 <th scope="row"><b>Related Artifacts: </b></th>
@@ -429,7 +405,6 @@
                         {% endfor %}
                     </td>
                 </tr>
-                <!--PARAMETERS-->
                 <tr>
                     <th scope="row"><b>Parameters:</b></th>
                     <td style="padding-left: 4px;">
@@ -448,7 +423,6 @@
                     </td>
                 </tr>
 
-                <!--DATA REQUIREMENTS-->
                 <tr>
                     <th scope="row"><b>DataRequirements:</b></th>
                     <td style="padding-left: 4px;">
@@ -477,7 +451,6 @@
                         </table>
                     </td>
                 </tr>
-                <!--DIRECT REFERENCE CODES-->
                 {% if contained.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode').exists() %}
                     <tr>
                         <th scope="row"><b>Direct Reference Codes:</b></th>
@@ -496,7 +469,6 @@
                     </tr>
                 {% endif %}
                 {% if contained.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition').exists() %}
-                    <!--LOGIC DEFINITIONS-->
                     <tr>
                         <th scope="row"><b>Logic Definitions:</b></th>
                         <td style="padding-left: 4px;">
