@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/RetrieveExample",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/retrieve-example",
   "version": "0.1.0",
   "name": "RetrieveExample",
   "title": "Retrieve Example",
@@ -21,7 +21,7 @@
   },
   "subjectCodeableConcept": {
     "coding": [ {
-      "system": "hl7.org/fhir/resource-types",
+      "system": "http://hl7.org/fhir/resource-types",
       "code": "Patient"
     } ]
   },
