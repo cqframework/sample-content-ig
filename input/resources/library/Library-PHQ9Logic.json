@@ -67,8 +67,7 @@
     "name": "Responses",
     "use": "out",
     "min": 0,
-    "max": "*",
-    "type": "QuestionnaireResponse"
+    "max": "*"
   }, {
     "name": "CalculateTotalScore",
     "use": "out",

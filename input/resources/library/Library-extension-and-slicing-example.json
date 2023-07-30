@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/ExtensionAndSlicingExample",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/extension-and-slicing-example",
   "version": "0.1.0",
   "name": "ExtensionAndSlicingExample",
   "title": "Extension And Slicing Example",
@@ -21,7 +21,7 @@
   },
   "subjectCodeableConcept": {
     "coding": [ {
-      "system": "hl7.org/fhir/resource-types",
+      "system": "http://hl7.org/fhir/resource-types",
       "code": "Patient"
     } ]
   },

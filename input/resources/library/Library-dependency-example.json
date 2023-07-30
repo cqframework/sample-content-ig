@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/DependencyExample",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/dependency-example",
   "version": "0.1.0",
   "name": "DependencyExample",
   "title": "Dependency Example",
@@ -21,7 +21,7 @@
   },
   "subjectCodeableConcept": {
     "coding": [ {
-      "system": "hl7.org/fhir/resource-types",
+      "system": "http://hl7.org/fhir/resource-types",
       "code": "Patient"
     } ]
   },
