@@ -21,7 +21,7 @@
   },
   "subjectCodeableConcept": {
     "coding": [ {
-      "system": "hl7.org/fhir/resource-types",
+      "system": "http://hl7.org/fhir/resource-types",
       "code": "Patient"
     } ]
   },
@@ -67,7 +67,8 @@
     "name": "Responses",
     "use": "out",
     "min": 0,
-    "max": "*"
+    "max": "*",
+    "type": "QuestionnaireResponse"
   }, {
     "name": "CalculateTotalScore",
     "use": "out",

@@ -7,9 +7,15 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://hl7.org/fhir/Library/FHIRHelpers",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers",
   "version": "4.0.1",
   "name": "FHIRHelpers",
+  "type": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/library-type",
+      "code": "logic-library"
+    } ]
+  },
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",
