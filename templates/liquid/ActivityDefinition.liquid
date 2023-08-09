@@ -59,7 +59,7 @@
             <td style="padding-left: 4px;">{{ActivityDefinition.status.value}}</td>
         </tr>
         {% endif %}
-        {% if ActivityDefinition.experimental.exists() %}
+        {% if ActivityDefinition.experimental.exists() and ActivityDefinition.experimental.value = 'true' %}
         <tr>
             <th scope="row"><b>Experimental: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.experimental.value}}</td>
