@@ -215,13 +215,13 @@
         {% if Measure.jurisdiction.exists() %}
             <tr>
                 <th scope="row"><b>Jurisdiction: </b></th>
-                <td style="padding-left: 25px;">{{Measure.jurisdiction.first().coding.first().code}}</td>
+                <td style="padding-left: 4px;">{{Measure.jurisdiction.first().coding.first().code}}</td>
             </tr>
         {% endif %}
         {% if Measure.topic.exists() %}
             <tr>
                 <th scope="row"><b>Topic: </b></th>
-                <td style="padding-left: 25px;">{{Measure.topic.first().coding.first().code}}</td>
+                <td style="padding-left: 4px;">{{Measure.topic.first().coding.first().code}}</td>
             </tr>
         {% endif %}
         {% if Measure.purpose.exists() %}
@@ -239,13 +239,13 @@
         {% if Measure.copyright.exists() %}
             <tr>
                 <th scope="row"><b>Copyright: </b></th>
-                <td style="padding-left: 25px;">{{Measure.copyright}}</td>
+                <td style="padding-left: 4px;">{{Measure.copyright}}</td>
             </tr>
         {% endif %}
         {% if Measure.disclaimer.exists() %}
             <tr>
                 <th scope="row"><b>Disclaimer: </b></th>
-                <td style="padding-left: 25px;">{{Measure.disclaimer}}</td>
+                <td style="padding-left: 4px;">{{Measure.disclaimer}}</td>
             </tr>
         {% endif %}
         {% if Measure.approvalDate.exists() %}
