@@ -34,21 +34,29 @@
         {% endif %}
 
         {% for identifier in Measure.identifier %}
-            <tr>
-                <th scope="row"><b>Identifier: </b></th>
-                <td style="padding-left: 4px;">
-                    {% if identifier.type.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>type: </b> <span>{{identifier.type.text}}</span>
-                        </p>
+        <tr>
+            <th scope="row">
+                <b>
+                    {% if identifier.type.coding.exists() %}
+                        {% if identifier.type.coding.display.exists() %}
+                            {{identifier.type.coding.display}} 
+                        {% else %}
+                            {{identifier.type.coding}} 
+                        {% endif %}
+                    {% else %}
+                        {{identifier.use}} 
                     {% endif %}
-                    {% if identifier.value.exists() %}
-                        <p style="margin-bottom: 5px;">
-                            <b>value: </b> <span>{{identifier.value}}</span>
-                        </p>
-                    {% endif %}
-                </td>
-            </tr>
+                </b>
+            </th>
+            
+            <td style="padding-left: 4px;">
+                {% if identifier.value.exists() %}
+                <p style="margin-bottom: 5px;">
+                    <b>value: </b> <span>{{identifier.value}}</span>
+                </p>
+                {% endif %}
+            </td>
+        </tr>
         {% endfor %}
 
         {% if Measure.effectivePeriod.exists() %}
