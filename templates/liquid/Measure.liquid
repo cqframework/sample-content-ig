@@ -65,7 +65,7 @@
             </tr>
         {% endif %}
 
-        {% if Measure.experimental.exists() %}
+        {% if Measure.experimental.exists() and Measure.experimental.value = 'true' %}
             <tr>
                 <th scope="row"><b>Experimental: </b></th>
                 <td style="padding-left: 4px;">{{Measure.experimental.value}}</td>
@@ -246,6 +246,27 @@
             </tr>
         {% endif %}
 
+        {% if Measure.jurisdiction.exists() %}
+            <tr>
+                <th scope="row"><b>Jurisdiction: </b></th>
+                <td style="padding-left: 4px;">{{Measure.jurisdiction.first().coding.first().code}}</td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.topic.exists() %}
+            <tr>
+                <th scope="row"><b>Topic: </b></th>
+                <td style="padding-left: 4px;">{{Measure.topic.first().coding.first().code}}</td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.purpose.exists() %}
+            <tr>
+                <th scope="row"><b>Purpose: </b></th>
+                <td style="padding-left: 4px;">{{Measure.purpose}}</td>
+            </tr>
+        {% endif %}
+
         {% if Measure.usage.exists() %}
             <tr>
                 <th scope="row"><b>Guidance (Usage): </b></th>
@@ -259,7 +280,6 @@
                 <td style="padding-left: 4px;">{{Measure.subtitle}}</td>
             </tr>
         {% endif %}
-
 
         {% if Measure.group.exists() %}
             {% if Measure.group[0].population.description.exists() %}
@@ -427,7 +447,7 @@
                     <th scope="row"><b>DataRequirements:</b></th>
                     <td style="padding-left: 4px;">
                         <table class="grid-dict">
-                            <tr><th><b>Type</b></th><th><b>Must Support</b></th><th><b>Valueset Name</b></th><th><b>Valueset</b></th></tr>
+                            <tr><th><b>Type</b></th><th><b>Elements</b></th><th><b>Valueset Name</b></th><th><b>Valueset</b></th></tr>
                             {% for dataRequirement in contained.dataRequirement %}
                                 <tr>
                                     <td>{{dataRequirement.type}}</td>

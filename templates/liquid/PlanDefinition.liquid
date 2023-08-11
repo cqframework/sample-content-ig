@@ -67,7 +67,7 @@
         </tr>
         {% endif %}
 
-        {% if PlanDefinition.experimental.exists() %}
+        {% if PlanDefinition.experimental.exists() and PlanDefinition.experimental.value = 'true' %}
         <tr>
             <th scope="row"><b>Experimental: </b></th>
             <td style="padding-left: 4px;">{{PlanDefinition.experimental.value}}</td>

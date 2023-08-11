@@ -70,7 +70,7 @@
         </tr>
         {% endif %}
 
-        {% if Library.experimental.exists() %}
+        {% if Library.experimental.exists() and Library.experimental.value = 'true' %}
         <tr>
             <th scope="row"><b>Experimental: </b></th>
             <td style="padding-left: 4px;">{{Library.experimental.value}}</td>
