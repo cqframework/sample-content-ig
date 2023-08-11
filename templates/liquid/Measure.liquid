@@ -67,7 +67,7 @@
                 <td style="padding-left: 4px;">{{Measure.status.value}}</td>
             </tr>
         {% endif %}
-        {% if Measure.experimental.exists() %}
+        {% if Measure.experimental.exists() and Measure.experimental.value = 'true' %}
             <tr>
                 <th scope="row"><b>Experimental: </b></th>
                 <td style="padding-left: 4px;">{{Measure.experimental.value}}</td>
