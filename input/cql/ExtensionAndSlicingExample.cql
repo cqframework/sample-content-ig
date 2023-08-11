@@ -7,7 +7,7 @@ include FHIRHelpers version '4.0.1'
 codesystem "LOINC": 'http://loinc.org'
 codesystem "CDC Race and Ethnicity Codes": 'urn:oid:2.16.840.1.113883.6.238'
 
-code "Blood pressure": '85354-9' from "LOINC" display 'blood pressure'
+code "Blood pressure": '85354-9' from "LOINC" display 'Blood pressure panel with all children optional'
 code "Diastolic blood pressure": '8462-4' from "LOINC" display 'Diastolic blood pressure'
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
 code "American Indian or Alaska Native": '1002-5' from "CDC Race and Ethnicity Codes"
