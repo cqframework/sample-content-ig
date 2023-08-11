@@ -179,7 +179,7 @@
         {% if PlanDefinition.description.exists() %}
         <tr>
             <th scope="row"><b>Description: </b></th>
-            <td style="padding-left: 4px;">{{PlanDefinition.description.escape('html')}}</td>
+            <td style="padding-left: 4px;">{{PlanDefinition.description}}</td>
         </tr>
         {% endif %}
 
@@ -217,7 +217,7 @@
                     <tr>
                         <td>{{useContext.code.code}}</td>
                         <td>{{(useContext.value as CodeableConcept).coding.first().code}}</td>
-                        <td>{{(useContext.value as CodeableConcept).coding.first().display.escape('html')}}</td>
+                        <td>{{(useContext.value as CodeableConcept).coding.first().display}}</td>
                     </tr>
                     {% endfor %}
                 </table>
@@ -235,21 +235,21 @@
         {% if PlanDefinition.purpose.exists() %}
         <tr>
             <th scope="row"><b>Purpose: </b></th>
-            <td style="padding-left: 4px;">{{PlanDefinition.purpose.escape('html')}}</td>
+            <td style="padding-left: 4px;">{{PlanDefinition.purpose}}</td>
         </tr>
         {% endif %}
 
         {% if PlanDefinition.usage.exists() %}
         <tr>
             <th scope="row"><b>Usage: </b></th>
-            <td style="padding-left: 4px;">{{PlanDefinition.usage.escape('html')}}</td>
+            <td style="padding-left: 4px;">{{PlanDefinition.usage}}</td>
         </tr>
         {% endif %}
 
         {% if PlanDefinition.copyright.exists() %}
         <tr>
             <th scope="row"><b>Copyright: </b></th>
-            <td style="padding-left: 4px;">{{PlanDefinition.copyright.escape('html')}}</td>
+            <td style="padding-left: 4px;">{{PlanDefinition.copyright}}</td>
         </tr>
         {% endif %}
 
@@ -282,7 +282,7 @@
                 <p><b>Documentation</b></p>
                 <ul>
                     {% for artifact in PlanDefinition.relatedArtifact.where(type = 'documentation' or type = 'justification') %}
-                    <li><a href="{{artifact.url}}">{{artifact.label}} {{artifact.display.escape('html')}}</a></li>
+                    <li><a href="{{artifact.url}}">{{artifact.label}} {{artifact.display}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
@@ -362,15 +362,15 @@
                     <tr>
                         <td>
                             {% if action.textEquivalent.exists() %}
-                            {{action.textEquivalent.escape('html')}}
+                            {{action.textEquivalent}}
                             {% else %}
-                            <b>{{action.prefix}} {{action.title.escape('html')}}:</b> {{action.description.escape('html')}}
+                            <b>{{action.prefix}} {{action.title}}:</b> {{action.description}}
                             {% endif %}
                             <br/>
                             {% if action.trigger.exists() %}
                             <b>When:</b>
                             {% for trigger in action.trigger %}
-                            <i>{{trigger.type}}:</i> {{trigger.name.escape('html')}}
+                            <i>{{trigger.type}}:</i> {{trigger.name}}
                             <br/>
                             {% endfor %}
                             {% endif %}
@@ -379,9 +379,9 @@
                             {% for condition in action.condition %}
                             <i>{{condition.kind}}:</i>
                             {% if condition.expression.description.exists() %}
-                            {{condition.expression.description.escape('html')}}
+                            {{condition.expression.description}}
                             {% endif %}
-                            <i>({{condition.expression.expression.escape('html')}})</i>
+                            <i>({{condition.expression.expression}})</i>
                             <br/>
                             {% endfor %}
                             {% endif %}
@@ -392,17 +392,17 @@
                                 <tr>
                                     <td>
                                         {% if action.textEquivalent.exists() %}
-                                        {{action.textEquivalent.escape('html')}}
+                                        {{action.textEquivalent}}
                                         {% else %}
-                                        <b>{{action.prefix}} {{action.title.escape('html')}}:</b>
-                                        {{action.description.escape('html')}}
+                                        <b>{{action.prefix}} {{action.title}}:</b>
+                                        {{action.description}}
                                         {% endif %}
                                         <br/>
                                         {% if action.trigger.exists() %}
                                         <b>When:</b>
                                         {% for trigger in action.trigger %}
                                         <i>{{trigger.type}}:</i>
-                                        {{trigger.name.escape('html')}}
+                                        {{trigger.name}}
                                         <br/>
                                         {% endfor %}
                                         {% endif %}
@@ -411,9 +411,9 @@
                                         {% for condition in action.condition %}
                                         <i>{{condition.kind}}:</i>
                                         {% if condition.expression.description.exists() %}
-                                        {{condition.expression.description.escape('html')}}
+                                        {{condition.expression.description}}
                                         {% endif %}
-                                        <i>({{condition.expression.expression.escape('html')}})</i>
+                                        <i>({{condition.expression.expression}})</i>
                                         <br/>
                                         {% endfor %}
                                         {% endif %}
@@ -425,7 +425,7 @@
                                         {% if action.dynamicValue.exists() %}
                                         <i>Dynamic Values:</i><br/>
                                         {% for dynamicValue in action.dynamicValue %}
-                                        {{dynamicValue.path}}: <i>({{dynamicValue.expression.expression.escape('html')}})</i>
+                                        {{dynamicValue.path}}: <i>({{dynamicValue.expression.expression}})</i>
                                         <br/>
                                         {% endfor %}
                                         {% endif %}
@@ -441,7 +441,7 @@
                             {% if action.dynamicValue.exists() %}
                             <i>Dynamic Values:</i><br/>
                             {% for dynamicValue in action.dynamicValue %}
-                            {{dynamicValue.path}}: <i>({{dynamicValue.expression.expression.escape('html')}})</i>
+                            {{dynamicValue.path}}: <i>({{dynamicValue.expression.expression}})</i>
                             <br/>
                             {% endfor %}
                             {% endif %}
