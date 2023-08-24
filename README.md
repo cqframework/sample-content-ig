@@ -1,6 +1,7 @@
 # sample-content-ig
 A sample, template-driven content implementation guide that provides an illustration of a content IG, with examples of using CQL with FHIR libraries and vocabulary. A content IG is one that includes computable representations of clinical knowledge artifacts as FHIR Resources, specifically Library, ActivityDefinition, PlanDefinition, and Measure resources.
 
+
 ## Building the IG
 In addition to the [FHIR Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation), this
 IG makes use of the Refresh IG command of [CQF Tooling](https://github.com/cqframework/cqf-tooling). This
