@@ -39,9 +39,9 @@
                     <b>
                         {% if identifier.type.coding.exists() %}
                             {% if identifier.type.coding.display.exists() %}
-                                {{identifier.type.coding.display}}
+                                {{identifier.type.coding.display}}{% if identifier.assigner.display.exists() %} ({{identifier.assigner.display}}){% endif %} Identifier:
                             {% else %}
-                                {{identifier.type.coding}}
+                                {{identifier.type.coding.code}}{% if identifier.assigner.display.exists() %} ({{identifier.assigner.display}}){% endif %} identifier:
                             {% endif %}
                         {% else %}
                             {{identifier.use}}
@@ -52,7 +52,7 @@
                 <td style="padding-left: 4px;">
                     {% if identifier.value.exists() %}
                         <p style="margin-bottom: 5px;">
-                            <b>value: </b> <span>{{identifier.value}}</span>
+                            <span>{{identifier.value}}</span>
                         </p>
                     {% endif %}
                 </td>

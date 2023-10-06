@@ -248,7 +248,8 @@
     "type": {
       "coding": [ {
         "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
-        "code": "short-name"
+        "code": "short-name",
+        "display": "Short Name"
       } ]
     },
     "system": "https://madie.cms.gov/measure/shortName",
@@ -258,7 +259,8 @@
     "type": {
       "coding": [ {
         "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
-        "code": "version-independent"
+        "code": "version-independent",
+        "display": "Version Independent"
       } ]
     },
     "system": "urn:ietf:rfc:3986",
@@ -268,7 +270,8 @@
     "type": {
       "coding": [ {
         "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
-        "code": "version-specific"
+        "code": "version-specific",
+        "display": "Version Specific"
       } ]
     },
     "system": "urn:ietf:rfc:3986",
@@ -278,7 +281,8 @@
     "type": {
       "coding": [ {
         "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
-        "code": "publisher"
+        "code": "publisher",
+        "display": "Publisher"
       } ]
     },
     "system": "https://madie.cms.gov/measure/cmsId",
