@@ -421,6 +421,19 @@
                                         {% endif %}
                                     </tr>
                                 {% endfor %}
+                                {% if group.stratifier.exists %}
+                                  <tr><b>Stratifier Criteria: </b></tr>
+                                    {% for stratifier in group.stratifier %}
+                                        <tr>
+                                            <td>{{stratifier.code.coding[0].display}}:</td>
+                                            {% if stratifier.description.exists() %}
+                                                <td>{{stratifier.description}}</td>
+                                            {% else %}
+                                                <td>None</td>
+                                            {% endif %}
+                                        </tr>
+                                    {% endfor %}
+                                {% endif %}
                             </table>
                         {% endfor %}
                     </td>
@@ -767,6 +780,20 @@
                             </td>
                         </tr>
                         {% endfor %}
+                        {% for stratifier in group.stratifier %}
+                        <tr>
+                            <td/>
+                            <td/>
+                            <td>{{stratifier.code.first().coding.first().display}}</td>
+                            <td>
+                                {% if stratifier.criteria.expression %}
+                                    <pre><code class="language-cql">{{(Measure.contained.where(id = 'effective-data-requirements').extension.where(url = 'http://http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' and extension.where(url = 'name' and value = stratifier.criteria.expression)).extension.where(url = 'statement').value)}</code></pre>
+                                {% else %}
+                                    None
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
                     {% endfor %}
         </tr>
     </table>
@@ -882,6 +909,17 @@
                                         </td>
                                      </tr>
                                 {% endfor %}
+                                {% for stratifier in group.stratifier %}
+                                    <tr>
+                                        <td/>
+                                        <td>{{stratifier.code.first().coding.first().display}}</td>
+                                        <td>
+                                            {% if stratifier.description %}
+                                                {{(stratifier.description)}}
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
                             </tr>
                             {% endfor %}
                         </table>
@@ -931,7 +969,21 @@
                                                 </td>
                                             </tr>
                                         {% endfor %}
-
+                                        {% for stratifier in group.stratifier %}
+                                           <tr>
+                                                <td>Should be empty</td>
+                                                <td/>
+                                                    <td/>
+                                                    <td>{{stratifier.code.first().coding.first().display}}</td>
+                                                <td>
+                                                    {% if stratifier.criteria.expression %}
+                                                        <pre><code class="language-cql">{{(Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' and extension.where(url = 'name' and value = stratifier.criteria.expression)).extension.where(url = 'statement').value)}}</code></pre>
+                                                    {% else %}
+                                                        None
+                                                    {% endif %}
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
                                 {%  endfor %}
                                 </tr>
                             </table>
