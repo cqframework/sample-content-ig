@@ -211,14 +211,12 @@
                     <tr>
                         <th><b>code</b></th>
                         <th><b>value</b></th>
-                        <th><b>display</b></th>
                     </tr>
                     {% for useContext in PlanDefinition.useContext %}
-                    <tr>
-                        <td>{{useContext.code.code}}</td>
-                        <td>{{(useContext.value as CodeableConcept).coding.first().code}}</td>
-                        <td>{{(useContext.value as CodeableConcept).coding.first().display}}</td>
-                    </tr>
+                        <tr>
+                            <td>{{useContext.code.code}}</td>
+                            <td>{{useContext.value.text}}</td>
+                        </tr>
                     {% endfor %}
                 </table>
             </td>
