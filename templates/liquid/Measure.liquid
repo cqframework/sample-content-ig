@@ -127,14 +127,14 @@
         {% if Measure.author.exists() %}
         <tr>
             <th scope="row"><b>Author: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.author}}</td>
+            <td style="padding-left: 4px;">{{Measure.author}}</td>
         </tr>
         {% endif %}
 
         {% if Measure.endorser.exists() %}
         <tr>
             <th scope="row"><b>Endorser: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.endorser}}</td>
+            <td style="padding-left: 4px;">{{Measure.endorser}}</td>
         </tr>
         {% endif %}
 
@@ -324,7 +324,7 @@
 
         {% if Measure.riskAdjustment.exists() %}
         <tr>
-            <th scope="row"><b><Risk Adjustment: </b></th>
+            <th scope="row"><b>Risk Adjustment: </b></th>
             <td style="padding-left: 4px;">{{Measure.riskAdjustment}}</td>
         </tr>
         {% endif %}
@@ -332,7 +332,7 @@
         {% if Measure.supplementalData.usage.coding.where(code = 'risk-adjustment-factor').exists() %}
             {% for supplementalData in Measure.supplementalData.where(usage.coding.where(code = 'risk-adjustment-factor').exists()) %}
                 <tr>
-                    <th scope="row"><b> Risk Adjustment Factor: </b></th>
+                    <th scope="row"><b>Risk Adjustment Factor: </b></th>
                     <td style="padding-left: 4px;">
                         <p>
                             {% if supplementalData.code.exists() %}
@@ -356,14 +356,14 @@
 
         {% if Measure.rateAggregation.exists() %}
         <tr>
-            <th scope="row"><b><Rate Aggregation: </b></th>
+            <th scope="row"><b>Rate Aggregation: </b></th>
             <td style="padding-left: 4px;">{{Measure.rateAggregation}}</td>
         </tr>
         {% endif %}
 
         {% if Measure.rationale.exists() %}
         <tr>
-            <th scope="row"><b><Rationale: </b></th>
+            <th scope="row"><b>Rationale: </b></th>
             <td style="padding-left: 4px;">{{Measure.rationale}}</td>
         </tr>
         {% endif %}
@@ -736,14 +736,14 @@
 
                                     {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-riskAdjustment').exists() %}
                                     <tr>
-                                        <th scope="row"><b><Risk Adjustment: </b></th>
+                                        <th scope="row"><b>Risk Adjustment: </b></th>
                                         <td style="padding-left: 4px;">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-riskAdjustment').value}}</td>
                                     </tr>
                                     {% endif %}
 
                                     {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').exists() %}
                                     <tr>
-                                        <th scope="row"><b><Rate Aggregation: </b></th>
+                                        <th scope="row"><b>Rate Aggregation: </b></th>
                                         <td style="padding-left: 4px;">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').value}}</td>
                                     </tr>
                                     {% endif %}
@@ -790,7 +790,7 @@
                                     <td>{{stratifier.code.first().coding.first().display}}</td>
                                     <td>
                                         {% if stratifier.criteria.expression %}
-                                            <pre><code class="language-cql">{{(Measure.contained.where(id = 'effective-data-requirements').extension.where(url = 'http://http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' and extension.where(url = 'name' and value = stratifier.criteria.expression)).extension.where(url = 'statement').value)}</code></pre>
+                                            <pre><code class="language-cql">{{(Measure.contained.where(id = 'effective-data-requirements').extension.where(url = 'http://http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' and extension.where(url = 'name' and value = stratifier.criteria.expression)).extension.where(url = 'statement').value)}}</code></pre>
                                         {% else %}
                                             None
                                         {% endif %}
