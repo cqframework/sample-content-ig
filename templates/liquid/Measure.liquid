@@ -558,7 +558,7 @@
                     </tr>
                     {% for dataRequirement in contained.dataRequirement %}
                         <tr>
-                            <td>{{dataRequirement.type}}</td>
+                            <td>{{dataRequirement.type}}{% if dataRequirement.profile.exists() %}({{dataRequirement.profile.first()}}){% endif %}</td>
                             <td>
                                 {% for mustSupport in dataRequirement.mustSupport %}
                                     {{mustSupport}}
@@ -632,20 +632,19 @@
                             {% endif %}
                         </td>
                         {% for population in group.population %}
-                    <tr>
-                        <td/>
-                        <td/>
-                        <td>{{population.code.first().coding.first().display}}</td>
-                        <td>
-                            {% if population.criteria.expression %}
-                                <pre><code class="language-cql">{{(Measure.contained.where(id = 'effective-data-requirements').extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' and extension.where(url = 'name' and value = population.criteria.expression)).extension.where(url = 'statement').value)}}</code></pre>
-                            {% else %}
-                                None
-                            {% endif %}
-                        </td>
-                    </tr>
-                    {% endfor %}
-
+                        <tr>
+                            <td/>
+                            <td/>
+                            <td>{{population.code.first().coding.first().display}}</td>
+                            <td>
+                                {% if population.criteria.expression %}
+                                    <pre><code class="language-cql">{{(Measure.contained.where(id = 'effective-data-requirements').extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' and extension.where(url = 'name' and value = population.criteria.expression)).extension.where(url = 'statement').value)}}</code></pre>
+                                {% else %}
+                                    None
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
                     {% endfor %}
         </tr>
     </table>
