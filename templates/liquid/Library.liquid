@@ -213,13 +213,15 @@
             <th scope="row"><b>Use Context: </b></th>
             <td style="padding-left: 4px;">
                 <table class="grid-dict">
-                    <tr><th><b>code</b></th><th><b>value</b></th><th><b>display</b></th></tr>
+                    <tr>
+                        <th><b>code</b></th>
+                        <th><b>value</b></th>
+                    </tr>
                     {% for useContext in Library.useContext %}
-                      <tr>
-                        <td>{{useContext.code.code}}</td>
-                        <td>{{(useContext.value as CodeableConcept).coding.first().code}}</td>
-                        <td>{{(useContext.value as CodeableConcept).coding.first().display}}</td>
-                      </tr>
+                        <tr>
+                            <td>{{useContext.code.code}}</td>
+                            <td>{{useContext.value.text}}</td>
+                        </tr>
                     {% endfor %}
                 </table>
             </td>

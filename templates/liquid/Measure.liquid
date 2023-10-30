@@ -237,6 +237,13 @@
             {% endfor %}
         {% endif %}
 
+        {% if Measure.clinicalRecommendationStatement.exists() %}
+        <tr>
+            <th scope="row"><b>Clinical recommendation statement: </b></th>
+            <td style="padding-left: 4px;">{{Measure.clinicalRecommendationStatement}}</td>
+        </tr>
+        {% endif %}
+
         {% if Measure.improvementNotation.exists() %}
             <tr>
                 <th scope="row"><b>Improvement Notation: </b></th>
