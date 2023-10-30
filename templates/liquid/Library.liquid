@@ -235,6 +235,13 @@
         </tr>
         {% endif %}
 
+        {% if Library.topic.exists() %}
+            <tr>
+                <th scope="row"><b>Topic: </b></th>
+                <td style="padding-left: 4px;">{{Library.topic.first().coding.first().code}}</td>
+            </tr>
+        {% endif %}
+
         {% if Library.purpose.exists() %}
         <tr>
             <th scope="row"><b>Purpose: </b></th>

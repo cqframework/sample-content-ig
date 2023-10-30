@@ -124,6 +124,28 @@
         </tr>
         {% endif %}
 
+        {% if ActivityDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
+        <tr>
+            <th scope="row"><b>Knowledge Capability: </b></th>
+            <td style="padding-left: 4px;">
+                {% for extension in ActivityDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability') %}
+                    {{extension.value}}
+                {% endfor %}
+            </td>
+        </tr>
+        {% endif %}
+
+        {% if ActivityDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel').exists() %}
+        <tr>
+            <th scope="row"><b>Knowledge Representation Level: </b></th>
+            <td style="padding-left: 4px;">
+                {% for extension in ActivityDefinition.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel') %}
+                    {{extension.value}}
+                {% endfor %}
+            </td>
+        </tr>
+        {% endif %}
+
         {% if ActivityDefinition.useContext.exists() %}
         <tr>
             <th scope="row"><b>Use Context: </b></th>
@@ -148,6 +170,27 @@
         <tr>
             <th scope="row"><b>Jurisdiction: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.jurisdiction.first().coding.first().code}}</td>
+        </tr>
+        {% endif %}
+
+        {% if ActivityDefinition.topic.exists() %}
+        <tr>
+            <th scope="row"><b>Topic: </b></th>
+            <td style="padding-left: 4px;">{{ActivityDefinition.topic.first().coding.first().code}}</td>
+        </tr>
+        {% endif %}
+
+        {% if ActivityDefinition.purpose.exists() %}
+        <tr>
+            <th scope="row"><b>Purpose: </b></th>
+            <td style="padding-left: 4px;">{{ActivityDefinition.purpose.first().coding.first().code}}</td>
+        </tr>
+        {% endif %}
+
+        {% if ActivityDefinition.usage.exists() %}
+        <tr>
+            <th scope="row"><b>Usage (Guidance): </b></th>
+            <td style="padding-left: 4px;">{{ActivityDefinition.usage.first().coding.first().code}}</td>
         </tr>
         {% endif %}
 

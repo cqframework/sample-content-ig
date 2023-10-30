@@ -230,6 +230,13 @@
         </tr>
         {% endif %}
 
+        {% if PlanDefinition.topic.exists() %}
+            <tr>
+                <th scope="row"><b>Topic: </b></th>
+                <td style="padding-left: 4px;">{{PlanDefinition.topic.first().coding.first().code}}</td>
+            </tr>
+        {% endif %}
+
         {% if PlanDefinition.purpose.exists() %}
         <tr>
             <th scope="row"><b>Purpose: </b></th>
