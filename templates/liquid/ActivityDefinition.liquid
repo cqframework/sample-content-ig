@@ -3,21 +3,21 @@
 
         {% if ActivityDefinition.title.exists() %}
         <tr>
-            <th scope="row"><b>eCQM title: </b></th>
+            <th scope="row"><b>Title: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.title}}</td>
         </tr>
         {% endif %}
 
         {% if ActivityDefinition.id.exists() %}
         <tr>
-            <th scope="row"><b>eCQM ID: </b></th>
+            <th scope="row"><b>Id: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.id}}</td>
         </tr>
         {% endif %}
 
         {% if ActivityDefinition.version.exists() %}
         <tr>
-            <th scope="row"><b>eCQM version number: </b></th>
+            <th scope="row"><b>Version: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.version}}</td>
         </tr>
         {% endif %}
@@ -49,7 +49,7 @@
 
         {% if ActivityDefinition.effectivePeriod.exists() %}
         <tr>
-            <th scope="row"><b>Measurement period: </b></th>
+            <th scope="row"><b>Effective period: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.effectivePeriod.start}}..{{ActivityDefinition.effectivePeriod.end}}</td>
         </tr>
         {% endif %}
@@ -77,14 +77,14 @@
 
         {% if ActivityDefinition.approvalDate.exists() %}
         <tr>
-            <th scope="row"><b>Approval date (when the measure was approved by the publisher): </b></th>
+            <th scope="row"><b>Approval date: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.approvalDate}}</td>
         </tr>
         {% endif %}
 
         {% if ActivityDefinition.lastReviewDate.exists() %}
         <tr>
-            <th scope="row"><b>Last review date (when the measure was last reviewed): </b></th>
+            <th scope="row"><b>Last review date: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.lastReviewDate}}</td>
         </tr>
         {% endif %}
@@ -98,14 +98,14 @@
 
         {% if ActivityDefinition.publisher.exists() %}
         <tr>
-            <th scope="row"><b>Measure steward: </b></th>
+            <th scope="row"><b>Publisher (steward): </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.publisher}}</td>
         </tr>
         {% endif %}
 
         {% if ActivityDefinition.author.exists() %}
         <tr>
-            <th scope="row"><b>Measure developer: </b></th>
+            <th scope="row"><b>Author: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.author}}</td>
         </tr>
         {% endif %}
