@@ -261,7 +261,7 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-                {% if ActivityDefinition.code.coding.exists().not and ActivityDefinition.code.text.exists() %}
+                {% if ActivityDefinition.code.coding.exists().not() and ActivityDefinition.code.text.exists() %}
                     {{ ActivityDefinition.code.text }}
                 {% endif %}
             </td>
@@ -367,7 +367,7 @@
                 {% endif %}
                 {% endfor %}
                 {% endif %}
-                {% if ActivityDefinition.product.coding.exists().not and ActivityDefinition.product.text.exists() %}
+                {% if ActivityDefinition.product.coding.exists().not() and ActivityDefinition.product.text.exists() %}
                 {{ ActivityDefinition.product.text }}
                 {% endif %}
             </td>

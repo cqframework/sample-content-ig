@@ -107,7 +107,7 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-                {% if Library.type.coding.exists().not and Library.type.text.exists() %}
+                {% if Library.type.coding.exists().not() and Library.type.text.exists() %}
                     {{Library.type.text}}
                 {% endif %}
             </td>
@@ -138,7 +138,7 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-                {% if Library.subject.coding.exists().not and Library.subject.text.exists() %}
+                {% if Library.subject.coding.exists().not() and Library.subject.text.exists() %}
                     {{Library.subject.text}}
                 {% endif %}
             </td>

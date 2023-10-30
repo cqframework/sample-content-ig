@@ -230,7 +230,7 @@
                                 </p>
                             {% endfor %}
                         {% endif %}
-                        {% if Measure.subject.coding.exists().not and Measure.subject.text.exists() %}
+                        {% if Measure.subject.coding.exists().not() and Measure.subject.text.exists() %}
                             {{Measure.subject.text}}
                         {% endif %}
                     </td>
@@ -257,6 +257,15 @@
             </tr>
         {% endif %}
 
+        {% if Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis').exists() %}
+            <tr>
+                <th scope="row"><b>Basis: </b></th>
+                <td style="padding-left: 4px;">
+                {{Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis').first().value}}
+                </td>
+            </tr>
+        {% endif %}
+
         {% if Measure.scoring.exists() %}
             <tr>
                 <th scope="row"><b>Scoring: </b></th>
@@ -268,9 +277,28 @@
                             </p>
                         {% endfor %}
                     {% endif %}
-                    {% if Measure.scoring.coding.exists().not and Measure.scoring.text.exists() %}
+                    {% if Measure.scoring.coding.exists().not() and Measure.scoring.text.exists() %}
                         {{Measure.scoring.text}}
                     {% endif %}
+                </td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit').exists() %}
+            <tr>
+                <th scope="row"><b>Scoring unit: </b></th>
+                <td style="padding-left: 4px;">
+                    {% for scoringUnit in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit') %}
+                        {$if scoringUnit.coding.exists() %}
+                            {% for coding in scoringUnit.coding %}
+                                <p style="margin-bottom: 5px;">
+                                    <span>{{iif(coding.display.exists(), coding.display, coding.code)}} {{iif(coding.system != 'http://unitsofmeasure.org', '(' + coding.system + ')', '')}}</span>
+                                </p>
+                            {% endfor %}
+                        {% endif %}
+                        {% if scoringUnit.coding.exists().not() and scoringUnit.text.exists() %}
+                        {% endif %}
+                    {% endfor %}
                 </td>
             </tr>
         {% endif %}
@@ -286,7 +314,7 @@
                             </p>
                         {% endfor %}
                     {% endif %}
-                    {% if Measure.type.coding.exists().not and Measure.type.text.exists() %}
+                    {% if Measure.type.coding.exists().not() and Measure.type.text.exists() %}
                         {{Measure.type.text}}
                     {% endif %}
                 </td>
@@ -357,7 +385,7 @@
                             </p>
                         {% endfor %}
                     {% endif %}
-                    {% if Measure.improvementNotation.coding.exists().not and Measure.improvementNotation.text.exists() %}
+                    {% if Measure.improvementNotation.coding.exists().not() and Measure.improvementNotation.text.exists() %}
                         {{Measure.improvementNotation.text}}
                     {% endif %}
                 </td>
@@ -468,7 +496,7 @@
                         </ul>
                     {% endif %}
                     {% if Measure.relatedArtifact.where(type = 'depends-on').exists() and
-                            Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements').exists().not %}
+                            Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements').exists().not() %}
                         <p><b>Dependencies</b></p>
                         <ul>
                             {% for artifact in Measure.relatedArtifact.where(type = 'depends-on') %}
@@ -622,6 +650,26 @@
                                     <span>  {{extension.value.coding.code}} </span>
                                 {% endfor %}
                             {% endif %}
+
+                            {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit').exists() %}
+                                <tr>
+                                    <th scope="row"><b>Scoring unit: </b></th>
+                                    <td style="padding-left: 4px;">
+                                        {% for scoringUnit in group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit') %}
+                                            {$if scoringUnit.coding.exists() %}
+                                                {% for coding in scoringUnit.coding %}
+                                                    <p style="margin-bottom: 5px;">
+                                                        <span>{{iif(coding.display.exists(), coding.display, coding.code)}} {{iif(coding.system != 'http://unitsofmeasure.org', '(' + coding.system + ')', '')}}</span>
+                                                    </p>
+                                                {% endfor %}
+                                            {% endif %}
+                                            {% if scoringUnit.coding.exists().not() and scoringUnit.text.exists() %}
+                                            {% endif %}
+                                        {% endfor %}
+                                    </td>
+                                </tr>
+                            {% endif %}
+
                             {% if Measure.scoring.exists() %}
                                 <b>Measure scoring:</b>
                                 {% for coding in Measure.scoring.coding %}
@@ -630,6 +678,80 @@
                                     </p>
                                 {% endfor %}
                             {% endif %}
+
+                            {% if Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit').exists() %}
+                                <tr>
+                                    <th scope="row"><b>Scoring unit: </b></th>
+                                    <td style="padding-left: 4px;">
+                                        {% for scoringUnit in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit') %}
+                                            {$if scoringUnit.coding.exists() %}
+                                                {% for coding in scoringUnit.coding %}
+                                                    <p style="margin-bottom: 5px;">
+                                                        <span>{{iif(coding.display.exists(), coding.display, coding.code)}} {{iif(coding.system != 'http://unitsofmeasure.org', '(' + coding.system + ')', '')}}</span>
+                                                    </p>
+                                                {% endfor %}
+                                            {% endif %}
+                                            {% if scoringUnit.coding.exists().not() and scoringUnit.text.exists() %}
+                                            {% endif %}
+                                        {% endfor %}
+                                    </td>
+                                </tr>
+                            {% endif %}
+
+                            {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-measureType').exists() %}
+                                <tr>
+                                {% for extension in group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-measureType') %}
+                                    <th scope="row"><b>Type: </b></th>
+                                    <td style="padding-left: 4px;">
+                                        {% if extension.coding.exists() %}
+                                            {% for coding in extension.coding %}
+                                                <p style="margin-bottom: 5px;">
+                                                    <span>{{iif(coding.display.exists(), coding.display, coding.code)}} {{iif(coding.system != 'http://terminology.hl7.org/CodeSystem/measure-type', '(' + coding.system + ')', '')}}</span>
+                                                </p>
+                                            {% endfor %}
+                                        {% endif %}
+                                        {% if extension.coding.exists().not() and extension.text.exists() %}
+                                            {{extension.text}}
+                                        {% endif %}
+                                    </td>
+                                {% endfor %}
+                                </tr>
+                            {% endif %}
+
+                            {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-riskAdjustment').exists() %}
+                            <tr>
+                                <th scope="row"><b><Risk Adjustment: </b></th>
+                                <td style="padding-left: 4px;">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-riskAdjustment').value}}</td>
+                            </tr>
+                            {% endif %}
+
+                            {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').exists() %}
+                            <tr>
+                                <th scope="row"><b><Rate Aggregation: </b></th>
+                                <td style="padding-left: 4px;">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').value}}</td>
+                            </tr>
+                            {% endif %}
+
+                            {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-improvementNotation').exists() %}
+                                <tr>
+                                    <th scope="row"><b>Improvement Notation: </b></th>
+                                    <td style="padding-left: 4px;">
+                                    {% for extension in group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-improvementNotation') %}
+                                        {% if extension.coding.exists() %}
+                                            {% for coding in extension.coding %}
+                                                <p style="margin-bottom: 5px;">
+                                                    <span>{{iif(coding.display.exists(), coding.display, coding.code)}} {{iif(coding.system != 'http://terminology.hl7.org/CodeSystem/measure-improvement-notation', '(' + coding.system + ')', '')}}</span>
+                                                </p>
+                                            {% endfor %}
+                                        {% endif %}
+                                        {% if extension.coding.exists().not() and extension.text.exists() %}
+                                            {{extension.text}}
+                                        {% endif %}
+                                    {% endfor %}
+                                    </td>
+                                </tr>
+                            {% endif %}
+
                         </td>
                         {% for population in group.population %}
                         <tr>

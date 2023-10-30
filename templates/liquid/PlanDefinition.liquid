@@ -104,7 +104,7 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-                {% if PlanDefinition.type.coding.exists().not and PlanDefinition.type.text.exists() %}
+                {% if PlanDefinition.type.coding.exists().not() and PlanDefinition.type.text.exists() %}
                     {{PlanDefinition.type.text}}
                 {% endif %}
             </td>
@@ -135,7 +135,7 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-                {% if PlanDefinition.subject.coding.exists().not and PlanDefinition.subject.text.exists() %}
+                {% if PlanDefinition.subject.coding.exists().not() and PlanDefinition.subject.text.exists() %}
                     {{PlanDefinition.subject.text}}
                 {% endif %}
             </td>
