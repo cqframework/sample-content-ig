@@ -6,6 +6,14 @@
                 <td style="padding-left: 4px;">{{Measure.title}}</td>
             </tr>
         {% endif %}
+
+        {% if Measure.subtitle.exists() %}
+            <tr>
+                <th scope="row"><b>Subtitle: </b></th>
+                <td style="padding-left: 4px;">{{Measure.subtitle}}</td>
+            </tr>
+        {% endif %}
+
         {% if Measure.id.exists() %}
             <tr>
                 <th scope="row"><b>Id: </b></th>
@@ -116,10 +124,97 @@
             </tr>
         {% endif %}
 
+        {% if Measure.author.exists() %}
+        <tr>
+            <th scope="row"><b>Author: </b></th>
+            <td style="padding-left: 4px;">{{ActivityDefinition.author}}</td>
+        </tr>
+        {% endif %}
+
+        {% if Measure.endorser.exists() %}
+        <tr>
+            <th scope="row"><b>Endorser: </b></th>
+            <td style="padding-left: 4px;">{{ActivityDefinition.endorser}}</td>
+        </tr>
+        {% endif %}
+
         {% if Measure.description.exists() %}
             <tr>
                 <th scope="row"><b>Description: </b></th>
                 <td style="padding-left: 4px;">{{Measure.description}}</td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
+            <tr>
+                <th scope="row"><b>Knowledge Capability: </b></th>
+                <td style="padding-left: 4px;">
+                    {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability') %}{{extension.value}} {% endfor %}
+                </td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel').exists() %}
+            <tr>
+                <th scope="row"><b>Knowledge Representation Level: </b></th>
+                <td style="padding-left: 4px;">
+                    {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel') %}{{extension.value}}{% endfor %}
+                </td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.useContext.exists() %}
+            <tr>
+                <th scope="row"><b>Use Context: </b></th>
+                <td style="padding-left: 4px;">
+                    <table class="grid-dict">
+                        <tr>
+                            <th><b>code</b></th>
+                            <th><b>value</b></th>
+                        </tr>
+                        {% for useContext in Measure.useContext %}
+                            <tr>
+                                <td>{{useContext.code.code}}</td>
+                                <td>{{useContext.value.text}}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.jurisdiction.exists() %}
+            <tr>
+                <th scope="row"><b>Jurisdiction: </b></th>
+                <td style="padding-left: 4px;">{{Measure.jurisdiction.first().coding.first().code}}</td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.topic.exists() %}
+            <tr>
+                <th scope="row"><b>Topic: </b></th>
+                <td style="padding-left: 4px;">{{Measure.topic.first().coding.first().code}}</td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.purpose.exists() %}
+            <tr>
+                <th scope="row"><b>Purpose: </b></th>
+                <td style="padding-left: 4px;">{{Measure.purpose}}</td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.copyright.exists() %}
+            <tr>
+                <th scope="row"><b>Copyright: </b></th>
+                <td style="padding-left: 4px;">{{Measure.copyright}}</td>
+            </tr>
+        {% endif %}
+
+        {% if Measure.disclaimer.exists() %}
+            <tr>
+                <th scope="row"><b>Disclaimer: </b></th>
+                <td style="padding-left: 4px;">{{Measure.disclaimer}}</td>
             </tr>
         {% endif %}
 
@@ -162,20 +257,6 @@
             </tr>
         {% endif %}
 
-        {% if Measure.copyright.exists() %}
-            <tr>
-                <th scope="row"><b>Copyright: </b></th>
-                <td style="padding-left: 4px;">{{Measure.copyright}}</td>
-            </tr>
-        {% endif %}
-
-        {% if Measure.disclaimer.exists() %}
-            <tr>
-                <th scope="row"><b>Disclaimer: </b></th>
-                <td style="padding-left: 4px;">{{Measure.disclaimer}}</td>
-            </tr>
-        {% endif %}
-
         {% if Measure.scoring.exists() %}
             <tr>
                 <th scope="row"><b>Scoring: </b></th>
@@ -212,6 +293,13 @@
             </tr>
         {% endif %}
 
+        {% if Measure.riskAdjustment.exists() %}
+        <tr>
+            <th scope="row"><b><Risk Adjustment: </b></th>
+            <td style="padding-left: 4px;">{{Measure.riskAdjustment}}</td>
+        </tr>
+        {% endif %}
+
         {% if Measure.supplementalData.usage.coding.where(code = 'risk-adjustment-factor').exists() %}
             {% for supplementalData in Measure.supplementalData.where(usage.coding.where(code = 'risk-adjustment-factor').exists()) %}
                 <tr>
@@ -235,6 +323,20 @@
                     </td>
                 </tr>
             {% endfor %}
+        {% endif %}
+
+        {% if Measure.rateAggregation.exists() %}
+        <tr>
+            <th scope="row"><b><Rate Aggregation: </b></th>
+            <td style="padding-left: 4px;">{{Measure.rateAggregation}}</td>
+        </tr>
+        {% endif %}
+
+        {% if Measure.rationale.exists() %}
+        <tr>
+            <th scope="row"><b><Rationale: </b></th>
+            <td style="padding-left: 4px;">{{Measure.rationale}}</td>
+        </tr>
         {% endif %}
 
         {% if Measure.clinicalRecommendationStatement.exists() %}
@@ -266,13 +368,6 @@
             <tr>
                 <th scope="row"><b>Guidance (Usage): </b></th>
                 <td style="padding-left: 4px;">{{Measure.usage}}</td>
-            </tr>
-        {% endif %}
-
-        {% if Measure.subtitle.exists() %}
-            <tr>
-                <th scope="row"><b>Subtitle: </b></th>
-                <td style="padding-left: 4px;">{{Measure.subtitle}}</td>
             </tr>
         {% endif %}
 
@@ -416,7 +511,6 @@
                 </td>
             </tr>
         {% endif %}
-
 
         {% if Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements').exists() %}
         {% for contained in Measure.contained.where(id = 'effective-data-requirements') %}
@@ -743,63 +837,6 @@
             {% endif %}
         {% endif %}
 {% endif %}
-
-
-
-
-    {% if Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability').exists() %}
-        <tr>
-            <th scope="row"><b>Knowledge Capability: </b></th>
-            <td style="padding-left: 4px;">
-                {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability') %}{{extension.value}} {% endfor %}
-            </td>
-        </tr>
-    {% endif %}
-    {% if Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel').exists() %}
-        <tr>
-            <th scope="row"><b>Knowledge Representation Level: </b></th>
-            <td style="padding-left: 4px;">
-                {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel') %}{{extension.value}}{% endfor %}
-            </td>
-        </tr>
-    {% endif %}
-    {% if Measure.useContext.exists() %}
-        <tr>
-            <th scope="row"><b>Use Context: </b></th>
-            <td style="padding-left: 4px;">
-                <table class="grid-dict">
-                    <tr>
-                        <th><b>code</b></th>
-                        <th><b>value</b></th>
-                    </tr>
-                    {% for useContext in Measure.useContext %}
-                        <tr>
-                            <td>{{useContext.code.code}}</td>
-                            <td>{{useContext.value.text}}</td>
-                        </tr>
-                    {% endfor %}
-                </table>
-            </td>
-        </tr>
-    {% endif %}
-    {% if Measure.jurisdiction.exists() %}
-        <tr>
-            <th scope="row"><b>Jurisdiction: </b></th>
-            <td style="padding-left: 4px;">{{Measure.jurisdiction.first().coding.first().code}}</td>
-        </tr>
-    {% endif %}
-    {% if Measure.topic.exists() %}
-        <tr>
-            <th scope="row"><b>Topic: </b></th>
-            <td style="padding-left: 4px;">{{Measure.topic.first().coding.first().code}}</td>
-        </tr>
-    {% endif %}
-    {% if Measure.purpose.exists() %}
-        <tr>
-            <th scope="row"><b>Purpose: </b></th>
-            <td style="padding-left: 4px;">{{Measure.purpose}}</td>
-        </tr>
-    {% endif %}
 
     </table>
 </div>
