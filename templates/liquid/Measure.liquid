@@ -744,7 +744,7 @@
                                     {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').exists() %}
                                     <tr>
                                         <th scope="row"><b>Rate Aggregation: </b></th>
-                                        <td style="padding-left: 4px;" colspan="4">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').value}}</td>
+                                        <td style="padding-left: 4px;" colspan="3">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').value}}</td>
                                     </tr>
                                     {% endif %}
 
