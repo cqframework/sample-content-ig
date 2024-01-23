@@ -332,7 +332,7 @@
         {% if Measure.supplementalData.usage.coding.where(code = 'risk-adjustment-factor').exists() %}
             {% for supplementalData in Measure.supplementalData.where(usage.coding.where(code = 'risk-adjustment-factor').exists()) %}
                 <tr>
-                    <th scope="row"><b>Risk Adjustment Factor: </b></th>
+                    <th scope="row"><b>Risk Adjustment Variable: </b></th>
                     <td style="padding-left: 4px;">
                         <p>
                             {% if supplementalData.code.exists() %}
