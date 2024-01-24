@@ -70,7 +70,7 @@
         </tr>
         {% endif %}
 
-        {% if Library.status.exists() %}
+        {% if Library.status.exists() and Library.status.value != 'active' %}
         <tr>
             <th scope="row"><b>Status: </b></th>
             <td style="padding-left: 4px;">{{Library.status.value}}</td>

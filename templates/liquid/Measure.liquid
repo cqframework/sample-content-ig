@@ -75,7 +75,7 @@
             </tr>
         {% endif %}
 
-        {% if Measure.status.exists() and Measure.status.value | downcase != 'active' %}
+        {% if Measure.status.exists() and Measure.status.value != 'active' %}
             <tr>
                 <th scope="row"><b>Status: </b></th>
                 <td style="padding-left: 4px;">{{Measure.status.value}}</td>
