@@ -460,12 +460,12 @@
                             {{iif(supplementalData.code.text.exists(), supplementalData.code.text, iif(supplementalData.code.coding.first().display.exists(), supplementalData.code.coding.first().display, supplementalData.code.coding.first().code))}}
                         {% else %}
                             {% if supplementalData.description.exists() %}
-                                {{supplementalData.description}}
+                                <p>{{supplementalData.description}}</p>
                             {% else %}
                                 {% if supplementalData.criteria.description.exists() %}
-                                    {{supplementalData.criteria.description}}
+                                    <p>{{supplementalData.criteria.description}}</p>
                                 {% else %}
-                                    {{supplementalData.criteria.expression}}
+                                    <p>{{supplementalData.criteria.expression}}</p>
                                 {% endif %}
                             {% endif %}
                         {% endif %}
