@@ -124,17 +124,17 @@
             </tr>
         {% endif %}
 
-        {% if Measure.author.exists() %}
+        {% if Measure.author.exists() and Measure.author.name.exists()%}
         <tr>
             <th scope="row"><b>Author: </b></th>
             <td style="padding-left: 4px;">{{Measure.author.name}}</td>
         </tr>
         {% endif %}
 
-        {% if Measure.endorser.exists() %}
+        {% if Measure.endorser.exists() and Measure.endorser.name exists()%}
         <tr>
             <th scope="row"><b>Endorser: </b></th>
-            <td style="padding-left: 4px;">{{Measure.endorser}}</td>
+            <td style="padding-left: 4px;">{{Measure.endorser.name}}</td>
         </tr>
         {% endif %}
 
