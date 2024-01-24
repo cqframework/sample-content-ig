@@ -56,13 +56,6 @@
         </tr>
         {% endfor %}
 
-        {% if Library.name.exists() %}
-        <tr>
-            <th scope="row"><b>Name: </b></th>
-            <td style="padding-left: 4px;">{{Library.name}}</td>
-        </tr>
-        {% endif %}
-
         {% if Library.subtitle.exists() %}
         <tr>
             <th scope="row"><b>Subtitle: </b></th>
