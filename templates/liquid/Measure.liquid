@@ -49,7 +49,7 @@
                             {% if identifier.type.coding.display.exists() %}
                                 {{identifier.type.coding.display}}{% if identifier.assigner.display.exists() %} ({{identifier.assigner.display}}){% endif %} Identifier:
                             {% else %}
-                                {{ "my great title" | capitalize }}{% if identifier.assigner.display.exists() %} ({{identifier.assigner.display}}){% endif %} identifier:
+                                {{identifier.type.coding.code}}{% if identifier.assigner.display.exists() %} ({{identifier.assigner.display}}){% endif %} identifier:
                             {% endif %}
                         {% else %}
                             {{identifier.use}}
