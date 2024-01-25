@@ -69,7 +69,7 @@
             </tr>
         {% endif %}
 
-        {% if Measure.status.exists() %}
+        {% if Measure.status.exists() and Measure.status.value != 'active' %}
             <tr>
                 <th scope="row"><b>Status: </b></th>
                 <td style="padding-left: 4px;">{{Measure.status.value}}</td>
@@ -87,20 +87,6 @@
             <tr>
                 <th scope="row"><b>Date: </b></th>
                 <td style="padding-left: 4px;">{{Measure.date}}</td>
-            </tr>
-        {% endif %}
-
-        {% if Measure.approvalDate.exists() %}
-            <tr>
-                <th scope="row"><b>Approval Date: </b></th>
-                <td style="padding-left: 4px;">{{Measure.approvalDate}}</td>
-            </tr>
-        {% endif %}
-
-        {% if Measure.lastReviewDate.exists() %}
-            <tr>
-                <th scope="row"><b>Last Review Date: </b></th>
-                <td style="padding-left: 4px;">{{Measure.lastReviewDate}}</td>
             </tr>
         {% endif %}
 

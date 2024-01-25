@@ -54,7 +54,7 @@
         </tr>
         {% endif %}
 
-        {% if ActivityDefinition.status.exists() %}
+        {% if ActivityDefinition.status.exists() and ActivityDefinition.status.value != 'active' %}
         <tr>
             <th scope="row"><b>Status: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.status.value}}</td>
