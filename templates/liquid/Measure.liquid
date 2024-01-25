@@ -104,13 +104,6 @@
             </tr>
         {% endif %}
 
-        {% if Measure.name.exists() %}
-            <tr>
-                <th scope="row"><b>Name: </b></th>
-                <td style="padding-left: 4px;">{{Measure.name}}</td>
-            </tr>
-        {% endif %}
-
         {% if Measure.publisher.exists() %}
             <tr>
                 <th scope="row"><b>Publisher: </b></th>

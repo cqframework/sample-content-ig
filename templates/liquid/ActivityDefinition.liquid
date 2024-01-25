@@ -89,13 +89,6 @@
         </tr>
         {% endif %}
 
-        {% if ActivityDefinition.name.exists() %}
-        <tr>
-            <th scope="row"><b>Short Name: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.name}}</td>
-        </tr>
-        {% endif %}
-
         {% if ActivityDefinition.publisher.exists() %}
         <tr>
             <th scope="row"><b>Publisher (steward): </b></th>
