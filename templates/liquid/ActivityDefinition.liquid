@@ -103,17 +103,17 @@
         </tr>
         {% endif %}
 
-        {% if ActivityDefinition.author.exists() %}
+        {% if ActivityDefinition.author.exists() and ActivityDefinition.author.name.exists() %}
         <tr>
             <th scope="row"><b>Author: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.author}}</td>
+            <td style="padding-left: 4px;">{{ActivityDefinition.author.name}}</td>
         </tr>
         {% endif %}
 
-        {% if ActivityDefinition.endorser.exists() %}
+        {% if ActivityDefinition.endorser.exists() and ActivityDefinition.endorser.name.exists() %}
         <tr>
             <th scope="row"><b>Endorsed by: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.endorser}}</td>
+            <td style="padding-left: 4px;">{{ActivityDefinition.endorser.name}}</td>
         </tr>
         {% endif %}
 
