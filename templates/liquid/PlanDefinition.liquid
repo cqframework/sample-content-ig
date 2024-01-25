@@ -46,13 +46,6 @@
         </tr>
         {% endfor %}
 
-        {% if PlanDefinition.name.exists() %}
-        <tr>
-            <th scope="row"><b>Name: </b></th>
-            <td style="padding-left: 4px;">{{PlanDefinition.name}}</td>
-        </tr>
-        {% endif %}
-
         {% if PlanDefinition.title.exists() %}
         <tr>
             <th scope="row"><b>Title: </b></th>
@@ -67,7 +60,7 @@
         </tr>
         {% endif %}
 
-        {% if PlanDefinition.status.exists() %}
+        {% if PlanDefinition.status.exists() and PlanDefinition.status.value != 'active' %}
         <tr>
             <th scope="row"><b>Status: </b></th>
             <td style="padding-left: 4px;">{{PlanDefinition.status.value}}</td>
