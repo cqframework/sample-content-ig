@@ -295,13 +295,6 @@
             </tr>
         {% endif %}
 
-        {% if Measure.riskAdjustment.exists() %}
-        <tr>
-            <th scope="row"><b>Risk Adjustment: </b></th>
-            <td style="padding-left: 4px;">{{Measure.riskAdjustment}}</td>
-        </tr>
-        {% endif %}
-
         {% if Measure.supplementalData.usage.coding.where(code = 'risk-adjustment-factor').exists() %}
             <tr>
                 <th scope="row"><b>Risk Adjustment Factor: </b></th>
@@ -323,6 +316,13 @@
                     {% endfor %}
                 </td>
             </tr>
+        {% endif %}
+
+        {% if Measure.riskAdjustment.exists() %}
+        <tr>
+            <th scope="row"><b>Risk Adjustment: </b></th>
+            <td style="padding-left: 4px;">{{Measure.riskAdjustment}}</td>
+        </tr>
         {% endif %}
 
         {% if Measure.rateAggregation.exists() %}
@@ -413,15 +413,6 @@
             {% endif %}
         {% endif %}
 
-        {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance') %}
-            <tr>
-                <th scope="row">
-                    <b> {{iif(extension.extension.where(url = 'usage').value.text.exists(), extension.extension.where(url = 'usage').value.text, iif(extension.extension.where(url = 'usage').coding.first().display.exists(), extension.extension.where(url = 'usage').coding.first().display, extension.extension.where(url = 'usage').coding.first().code))}}
-                        : </b></th>
-                <td style="padding-left: 4px;"> {{extension.extension.where(url = 'guidance').value}} </td>
-            </tr>
-        {% endfor %}
-
         {% if Measure.supplementalData.usage.coding.where(code = 'supplemental-data').exists() %}
             <tr>
                 <th scope="row"><b> Supplemental Data Elements: </b></th>
@@ -444,6 +435,15 @@
                 </td>
             </tr>
         {% endif %}
+
+        {% for extension in Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance') %}
+            <tr>
+                <th scope="row">
+                    <b> {{iif(extension.extension.where(url = 'usage').value.text.exists(), extension.extension.where(url = 'usage').value.text, iif(extension.extension.where(url = 'usage').coding.first().display.exists(), extension.extension.where(url = 'usage').coding.first().display, extension.extension.where(url = 'usage').coding.first().code))}}
+                        : </b></th>
+                <td style="padding-left: 4px;"> {{extension.extension.where(url = 'guidance').value}} </td>
+            </tr>
+        {% endfor %}
 
         {% if Measure.library.exists() %}
             <tr>
