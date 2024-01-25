@@ -19,12 +19,6 @@
                 <th scope="row"><b>Id: </b></th>
                 <td style="padding-left: 4px;">{{Measure.id}}</td>
             </tr>
-            {% if Measure.library.exists() %}
-                <tr>
-                    <th scope="row"><b>Download cql: </b></th>
-                    <td style="padding-left: 4px;"><a href="Library-{{Measure.id}}.cql">{{Measure.id}}.cql</a></td>
-                </tr>
-            {% endif %}
         {% endif %}
 
         {% if Measure.version.exists() %}
@@ -96,13 +90,6 @@
             </tr>
         {% endif %}
 
-        {% if Measure.name.exists() %}
-            <tr>
-                <th scope="row"><b>Name: </b></th>
-                <td style="padding-left: 4px;">{{Measure.name}}</td>
-            </tr>
-        {% endif %}
-
         {% if Measure.publisher.exists() %}
             <tr>
                 <th scope="row"><b>Publisher: </b></th>
@@ -110,17 +97,17 @@
             </tr>
         {% endif %}
 
-        {% if Measure.author.exists() %}
+        {% if Measure.author.exists() and Measure.author.name.exists()%}
         <tr>
             <th scope="row"><b>Author: </b></th>
-            <td style="padding-left: 4px;">{{Measure.author}}</td>
+            <td style="padding-left: 4px;">{{Measure.author.name}}</td>
         </tr>
         {% endif %}
 
-        {% if Measure.endorser.exists() %}
+        {% if Measure.endorser.exists() and Measure.endorser.name exists()%}
         <tr>
             <th scope="row"><b>Endorser: </b></th>
-            <td style="padding-left: 4px;">{{Measure.endorser}}</td>
+            <td style="padding-left: 4px;">{{Measure.endorser.name}}</td>
         </tr>
         {% endif %}
 
@@ -316,28 +303,26 @@
         {% endif %}
 
         {% if Measure.supplementalData.usage.coding.where(code = 'risk-adjustment-factor').exists() %}
-            {% for supplementalData in Measure.supplementalData.where(usage.coding.where(code = 'risk-adjustment-factor').exists()) %}
-                <tr>
-                    <th scope="row"><b>Risk Adjustment Factor: </b></th>
-                    <td style="padding-left: 4px;">
-                        <p>
-                            {% if supplementalData.code.exists() %}
-                                {{iif(supplementalData.code.text.exists(), supplementalData.code.text, iif(supplementalData.code.coding.first().display.exists(), supplementalData.code.coding.first().display, supplementalData.code.coding.first().code))}}
+            <tr>
+                <th scope="row"><b>Risk Adjustment Factor: </b></th>
+                <td style="padding-left: 4px;">
+                    {% for supplementalData in Measure.supplementalData.where(usage.coding.where(code = 'risk-adjustment-factor').exists()) %}
+                        {% if supplementalData.code.exists() %}
+                            {{iif(supplementalData.code.text.exists(), supplementalData.code.text, iif(supplementalData.code.coding.first().display.exists(), supplementalData.code.coding.first().display, supplementalData.code.coding.first().code))}}
+                        {% else %}
+                            {% if supplementalData.description.exists() %}
+                                {{supplementalData.description}}
                             {% else %}
-                                {% if supplementalData.description.exists() %}
-                                    {{supplementalData.description}}
+                                {% if supplementalData.criteria.description.exists() %}
+                                    {{supplementalData.criteria.description}}
                                 {% else %}
-                                    {% if supplementalData.criteria.description.exists() %}
-                                        {{supplementalData.criteria.description}}
-                                    {% else %}
-                                        {{supplementalData.criteria.expression}}
-                                    {% endif %}
+                                    {{supplementalData.criteria.expression}}
                                 {% endif %}
                             {% endif %}
-                        </p>
-                    </td>
-                </tr>
-            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </td>
+            </tr>
         {% endif %}
 
         {% if Measure.rateAggregation.exists() %}
@@ -446,12 +431,12 @@
                             {{iif(supplementalData.code.text.exists(), supplementalData.code.text, iif(supplementalData.code.coding.first().display.exists(), supplementalData.code.coding.first().display, supplementalData.code.coding.first().code))}}
                         {% else %}
                             {% if supplementalData.description.exists() %}
-                                {{supplementalData.description}}
+                                <p>{{supplementalData.description}}</p>
                             {% else %}
                                 {% if supplementalData.criteria.description.exists() %}
-                                    {{supplementalData.criteria.description}}
+                                    <p>{{supplementalData.criteria.description}}</p>
                                 {% else %}
-                                    {{supplementalData.criteria.expression}}
+                                    <p>{{supplementalData.criteria.expression}}</p>
                                 {% endif %}
                             {% endif %}
                         {% endif %}
@@ -730,7 +715,7 @@
                                     {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').exists() %}
                                     <tr>
                                         <th scope="row"><b>Rate Aggregation: </b></th>
-                                        <td style="padding-left: 4px;">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').value}}</td>
+                                        <td style="padding-left: 4px;" colspan="3">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation').value}}</td>
                                     </tr>
                                     {% endif %}
 
