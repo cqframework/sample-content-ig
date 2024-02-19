@@ -1,0 +1,672 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1222.6",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2020-04-25T01:00:20.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 128 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-104931000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=104931000119100\">104931000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-10757401000119104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10757401000119104\">10757401000119104</a></td><td>http://snomed.info/sct</td><td>Pre-existing hypertensive heart and chronic kidney disease in mother complicating childbirth (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-10757481000119107\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10757481000119107\">10757481000119107</a></td><td>http://snomed.info/sct</td><td>Pre-existing hypertensive heart and chronic kidney disease in mother complicating pregnancy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-111411000119103\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=111411000119103\">111411000119103</a></td><td>http://snomed.info/sct</td><td>End stage renal disease due to hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-117681000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=117681000119102\">117681000119102</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-118781000119108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118781000119108\">118781000119108</a></td><td>http://snomed.info/sct</td><td>Pre-existing hypertensive chronic kidney disease in mother complicating pregnancy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-123609007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=123609007\">123609007</a></td><td>http://snomed.info/sct</td><td>Subacute glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-127991000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=127991000119101\">127991000119101</a></td><td>http://snomed.info/sct</td><td>Hypertension concurrent and due to end stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-128001000119105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128001000119105\">128001000119105</a></td><td>http://snomed.info/sct</td><td>Hypertension concurrent and due to end stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-129151000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=129151000119102\">129151000119102</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 due to hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-129161000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=129161000119100\">129161000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-129171000119106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=129171000119106\">129171000119106</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 due to hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-129181000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=129181000119109\">129181000119109</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-140101000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=140101000119109\">140101000119109</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 5 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-140111000119107\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=140111000119107\">140111000119107</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 4 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-140121000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=140121000119100\">140121000119100</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 3 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-140131000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=140131000119102\">140131000119102</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-153851000119106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=153851000119106\">153851000119106</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 5 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-153891000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=153891000119101\">153891000119101</a></td><td>http://snomed.info/sct</td><td>End stage renal disease on dialysis due to hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-195791000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=195791000119101\">195791000119101</a></td><td>http://snomed.info/sct</td><td>Chronic proliferative glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197613008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197613008\">197613008</a></td><td>http://snomed.info/sct</td><td>Chronic mesangial proliferative glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197616000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197616000\">197616000</a></td><td>http://snomed.info/sct</td><td>Chronic glomerulonephritis associated with another disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197617009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197617009\">197617009</a></td><td>http://snomed.info/sct</td><td>Chronic exudative glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197618004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197618004\">197618004</a></td><td>http://snomed.info/sct</td><td>Chronic focal glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197619007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197619007\">197619007</a></td><td>http://snomed.info/sct</td><td>Chronic diffuse glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197626007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197626007\">197626007</a></td><td>http://snomed.info/sct</td><td>Focal membranoproliferative glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197709005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197709005\">197709005</a></td><td>http://snomed.info/sct</td><td>Chronic nephritic syndrome, focal and segmental glomerular lesions (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197712008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197712008\">197712008</a></td><td>http://snomed.info/sct</td><td>Chronic nephritic syndrome, diffuse endocapillary proliferative glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197713003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197713003\">197713003</a></td><td>http://snomed.info/sct</td><td>Chronic nephritic syndrome, diffuse mesangiocapillary glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197714009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197714009\">197714009</a></td><td>http://snomed.info/sct</td><td>Chronic nephritic syndrome, dense deposit disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197715005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197715005\">197715005</a></td><td>http://snomed.info/sct</td><td>Chronic nephritic syndrome, diffuse crescentic glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-20917003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=20917003\">20917003</a></td><td>http://snomed.info/sct</td><td>Chronic glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-234485006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=234485006\">234485006</a></td><td>http://snomed.info/sct</td><td>Epstein syndrome (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236399008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236399008\">236399008</a></td><td>http://snomed.info/sct</td><td>Steroid-sensitive minimal change glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236400001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236400001\">236400001</a></td><td>http://snomed.info/sct</td><td>Steroid-resistant minimal change glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236401002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236401002\">236401002</a></td><td>http://snomed.info/sct</td><td>Steroid-dependent minimal change glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236407003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236407003\">236407003</a></td><td>http://snomed.info/sct</td><td>Immunoglobulin A nephropathy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236409000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236409000\">236409000</a></td><td>http://snomed.info/sct</td><td>Mesangiocapillary glomerulonephritis type III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236410005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236410005\">236410005</a></td><td>http://snomed.info/sct</td><td>Mesangiocapillary glomerulonephritis type IV (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236411009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236411009\">236411009</a></td><td>http://snomed.info/sct</td><td>Immunoglobulin M nephropathy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236412002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236412002\">236412002</a></td><td>http://snomed.info/sct</td><td>C1q nephropathy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236413007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236413007\">236413007</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis - stage I (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236414001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236414001\">236414001</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis - stage II (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236415000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236415000\">236415000</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis - stage III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236416004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236416004\">236416004</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis - stage IV (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-236417008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236417008\">236417008</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis stage V (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-253878003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=253878003\">253878003</a></td><td>http://snomed.info/sct</td><td>Adult type polycystic kidney disease type 1 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-253879006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=253879006\">253879006</a></td><td>http://snomed.info/sct</td><td>Adult type polycystic kidney disease type 2 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-28191000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28191000119109\">28191000119109</a></td><td>http://snomed.info/sct</td><td>Chronic nephritic syndrome with membranous glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-282364005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=282364005\">282364005</a></td><td>http://snomed.info/sct</td><td>Immunoglobulin A nephropathy associated with liver disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-284961000119106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=284961000119106\">284961000119106</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-284971000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=284971000119100\">284971000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-284981000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=284981000119102\">284981000119102</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-284991000119104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=284991000119104\">284991000119104</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 due to benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-285001000119105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=285001000119105\">285001000119105</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 due to benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-285011000119108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=285011000119108\">285011000119108</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-285831000119108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=285831000119108\">285831000119108</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-285841000119104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=285841000119104\">285841000119104</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive end stage renal disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-285851000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=285851000119102\">285851000119102</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 1 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-285861000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=285861000119100\">285861000119100</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 2 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-285871000119106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=285871000119106\">285871000119106</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 3 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-285881000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=285881000119109\">285881000119109</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive chronic kidney disease stage 4 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-286371000119107\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=286371000119107\">286371000119107</a></td><td>http://snomed.info/sct</td><td>Malignant hypertensive end stage renal disease on dialysis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-28770003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28770003\">28770003</a></td><td>http://snomed.info/sct</td><td>Polycystic kidney disease, infantile type (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-367511000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=367511000119101\">367511000119101</a></td><td>http://snomed.info/sct</td><td>Hereditary mesangiocapillary glomerulonephritis, type 2 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-367551000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=367551000119100\">367551000119100</a></td><td>http://snomed.info/sct</td><td>Hereditary diffuse mesangial proliferative glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-368871000119106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=368871000119106\">368871000119106</a></td><td>http://snomed.info/sct</td><td>Acute nephritic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-368881000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=368881000119109\">368881000119109</a></td><td>http://snomed.info/sct</td><td>Rapidly progressive nephritic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-368901000119106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=368901000119106\">368901000119106</a></td><td>http://snomed.info/sct</td><td>Chronic nephritic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-368911000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=368911000119109\">368911000119109</a></td><td>http://snomed.info/sct</td><td>Nephrotic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-368921000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=368921000119102\">368921000119102</a></td><td>http://snomed.info/sct</td><td>Nephritic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-368931000119104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=368931000119104\">368931000119104</a></td><td>http://snomed.info/sct</td><td>Isolated proteinuria co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-368941000119108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=368941000119108\">368941000119108</a></td><td>http://snomed.info/sct</td><td>Hereditary nephropathy co-occurrent with membranoproliferative glomerulonephritis type III (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-425455002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425455002\">425455002</a></td><td>http://snomed.info/sct</td><td>Glomerulonephritis due to diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-434431000124103\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=434431000124103\">434431000124103</a></td><td>http://snomed.info/sct</td><td>Hypertensive end stage renal disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-445404003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=445404003\">445404003</a></td><td>http://snomed.info/sct</td><td>Familial immunoglobulin A nephropathy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-44785005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44785005\">44785005</a></td><td>http://snomed.info/sct</td><td>Minimal change disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-52042003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52042003\">52042003</a></td><td>http://snomed.info/sct</td><td>Systemic lupus erythematosus glomerulonephritis syndrome, World Health Organization class V (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-59479006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59479006\">59479006</a></td><td>http://snomed.info/sct</td><td>Mesangiocapillary glomerulonephritis, type II (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-68779003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68779003\">68779003</a></td><td>http://snomed.info/sct</td><td>Primary immunoglobulin A nephropathy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-704667004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=704667004\">704667004</a></td><td>http://snomed.info/sct</td><td>Hypertension concurrent and due to end stage renal disease on dialysis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-71064009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71064009\">71064009</a></td><td>http://snomed.info/sct</td><td>Acquired polycystic kidney disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-711000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=711000119100\">711000119100</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-712487000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=712487000\">712487000</a></td><td>http://snomed.info/sct</td><td>End stage renal disease due to benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-71421000119105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71421000119105\">71421000119105</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-714813000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=714813000\">714813000</a></td><td>http://snomed.info/sct</td><td>Recurrent hematuria co-occurrent and due to dense deposit disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-714814006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=714814006\">714814006</a></td><td>http://snomed.info/sct</td><td>Persistent hematuria co-occurrent and due to dense deposit disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-71701000119105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71701000119105\">71701000119105</a></td><td>http://snomed.info/sct</td><td>Hypertension in chronic kidney disease due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-721000119107\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=721000119107\">721000119107</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722086002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722086002\">722086002</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis due to malignant neoplastic disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722119002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722119002\">722119002</a></td><td>http://snomed.info/sct</td><td>Idiopathic membranous glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722120008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722120008\">722120008</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis caused by drug (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722168002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722168002\">722168002</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis co-occurrent with infectious disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722433005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722433005\">722433005</a></td><td>http://snomed.info/sct</td><td>Dyschondrosteosis and nephritis syndrome (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722758004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722758004\">722758004</a></td><td>http://snomed.info/sct</td><td>Complement component 3 glomerulopathy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722760002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722760002\">722760002</a></td><td>http://snomed.info/sct</td><td>Dense deposit disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-722761003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=722761003\">722761003</a></td><td>http://snomed.info/sct</td><td>Complement component 3 glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-731000119105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=731000119105\">731000119105</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-741000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=741000119101\">741000119101</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-751000119104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=751000119104\">751000119104</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-75888001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=75888001\">75888001</a></td><td>http://snomed.info/sct</td><td>Mesangiocapillary glomerulonephritis, type I (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-771000119108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=771000119108\">771000119108</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-77182004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77182004\">77182004</a></td><td>http://snomed.info/sct</td><td>Membranous glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-80321008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=80321008\">80321008</a></td><td>http://snomed.info/sct</td><td>Mesangiocapillary glomerulonephritis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-8501000119104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8501000119104\">8501000119104</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart and chronic kidney disease (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-90721000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90721000119101\">90721000119101</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 1 due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-90731000119103\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90731000119103\">90731000119103</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 2 due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-90741000119107\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90741000119107\">90741000119107</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 3 due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-90751000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90751000119109\">90751000119109</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 4 due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-90761000119106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90761000119106\">90761000119106</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease stage 5 due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-90771000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90771000119100\">90771000119100</a></td><td>http://snomed.info/sct</td><td>End stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-90791000119104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90791000119104\">90791000119104</a></td><td>http://snomed.info/sct</td><td>End stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-96441000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=96441000119101\">96441000119101</a></td><td>http://snomed.info/sct</td><td>Chronic kidney disease due to type 1 diabetes mellitus (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-96701000119107\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=96701000119107\">96701000119107</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease on dialysis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-96711000119105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=96711000119105\">96711000119105</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 5 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-96721000119103\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=96721000119103\">96721000119103</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 4 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-96731000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=96731000119100\">96731000119100</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 3 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-96741000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=96741000119109\">96741000119109</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 2 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-96751000119106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=96751000119106\">96751000119106</a></td><td>http://snomed.info/sct</td><td>Hypertensive heart AND chronic kidney disease stage 1 (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I12\"> </a>I12</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive chronic kidney disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I12.0\"> </a>I12.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13\"> </a>I13</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13.1\"> </a>I13.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease without heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13.11\"> </a>I13.11</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13.2\"> </a>I13.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Q61.2\"> </a>Q61.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Polycystic kidney, adult type</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Q61.3\"> </a>Q61.3</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Polycystic kidney, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Q61.8\"> </a>Q61.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other cystic kidney diseases</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.6",
+  "version": "20200425",
+  "name": "Chronic Kidney Disease Type or Cause",
+  "status": "active",
+  "date": "2020-04-25T01:00:20-04:00",
+  "publisher": "HL7 Patient Care WG Steward",
+  "expansion": {
+    "identifier": "urn:uuid:6532c239-52b3-4d08-81a6-a257b11d9b1d",
+    "timestamp": "2022-01-09T21:35:49-05:00",
+    "total": 128,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "104931000119100",
+      "display": "Chronic kidney disease due to hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "10757401000119104",
+      "display": "Pre-existing hypertensive heart and chronic kidney disease in mother complicating childbirth (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "10757481000119107",
+      "display": "Pre-existing hypertensive heart and chronic kidney disease in mother complicating pregnancy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "111411000119103",
+      "display": "End stage renal disease due to hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "117681000119102",
+      "display": "Chronic kidney disease stage 1 due to hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "118781000119108",
+      "display": "Pre-existing hypertensive chronic kidney disease in mother complicating pregnancy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "123609007",
+      "display": "Subacute glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "127991000119101",
+      "display": "Hypertension concurrent and due to end stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "128001000119105",
+      "display": "Hypertension concurrent and due to end stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "129151000119102",
+      "display": "Chronic kidney disease stage 4 due to hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "129161000119100",
+      "display": "Chronic kidney disease stage 5 due to hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "129171000119106",
+      "display": "Chronic kidney disease stage 3 due to hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "129181000119109",
+      "display": "Chronic kidney disease stage 2 due to hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "140101000119109",
+      "display": "Hypertension in chronic kidney disease stage 5 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "140111000119107",
+      "display": "Hypertension in chronic kidney disease stage 4 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "140121000119100",
+      "display": "Hypertension in chronic kidney disease stage 3 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "140131000119102",
+      "display": "Hypertension in chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "153851000119106",
+      "display": "Malignant hypertensive chronic kidney disease stage 5 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "153891000119101",
+      "display": "End stage renal disease on dialysis due to hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "195791000119101",
+      "display": "Chronic proliferative glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197613008",
+      "display": "Chronic mesangial proliferative glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197616000",
+      "display": "Chronic glomerulonephritis associated with another disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197617009",
+      "display": "Chronic exudative glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197618004",
+      "display": "Chronic focal glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197619007",
+      "display": "Chronic diffuse glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197626007",
+      "display": "Focal membranoproliferative glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197709005",
+      "display": "Chronic nephritic syndrome, focal and segmental glomerular lesions (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197712008",
+      "display": "Chronic nephritic syndrome, diffuse endocapillary proliferative glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197713003",
+      "display": "Chronic nephritic syndrome, diffuse mesangiocapillary glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197714009",
+      "display": "Chronic nephritic syndrome, dense deposit disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197715005",
+      "display": "Chronic nephritic syndrome, diffuse crescentic glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "20917003",
+      "display": "Chronic glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "234485006",
+      "display": "Epstein syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236399008",
+      "display": "Steroid-sensitive minimal change glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236400001",
+      "display": "Steroid-resistant minimal change glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236401002",
+      "display": "Steroid-dependent minimal change glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236407003",
+      "display": "Immunoglobulin A nephropathy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236409000",
+      "display": "Mesangiocapillary glomerulonephritis type III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236410005",
+      "display": "Mesangiocapillary glomerulonephritis type IV (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236411009",
+      "display": "Immunoglobulin M nephropathy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236412002",
+      "display": "C1q nephropathy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236413007",
+      "display": "Membranous glomerulonephritis - stage I (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236414001",
+      "display": "Membranous glomerulonephritis - stage II (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236415000",
+      "display": "Membranous glomerulonephritis - stage III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236416004",
+      "display": "Membranous glomerulonephritis - stage IV (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "236417008",
+      "display": "Membranous glomerulonephritis stage V (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "253878003",
+      "display": "Adult type polycystic kidney disease type 1 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "253879006",
+      "display": "Adult type polycystic kidney disease type 2 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "28191000119109",
+      "display": "Chronic nephritic syndrome with membranous glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "282364005",
+      "display": "Immunoglobulin A nephropathy associated with liver disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "284961000119106",
+      "display": "Chronic kidney disease due to benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "284971000119100",
+      "display": "Chronic kidney disease stage 1 due to benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "284981000119102",
+      "display": "Chronic kidney disease stage 2 due to benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "284991000119104",
+      "display": "Chronic kidney disease stage 3 due to benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "285001000119105",
+      "display": "Chronic kidney disease stage 4 due to benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "285011000119108",
+      "display": "Chronic kidney disease stage 5 due to benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "285831000119108",
+      "display": "Malignant hypertensive chronic kidney disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "285841000119104",
+      "display": "Malignant hypertensive end stage renal disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "285851000119102",
+      "display": "Malignant hypertensive chronic kidney disease stage 1 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "285861000119100",
+      "display": "Malignant hypertensive chronic kidney disease stage 2 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "285871000119106",
+      "display": "Malignant hypertensive chronic kidney disease stage 3 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "285881000119109",
+      "display": "Malignant hypertensive chronic kidney disease stage 4 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "286371000119107",
+      "display": "Malignant hypertensive end stage renal disease on dialysis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "28770003",
+      "display": "Polycystic kidney disease, infantile type (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "367511000119101",
+      "display": "Hereditary mesangiocapillary glomerulonephritis, type 2 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "367551000119100",
+      "display": "Hereditary diffuse mesangial proliferative glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "368871000119106",
+      "display": "Acute nephritic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "368881000119109",
+      "display": "Rapidly progressive nephritic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "368901000119106",
+      "display": "Chronic nephritic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "368911000119109",
+      "display": "Nephrotic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "368921000119102",
+      "display": "Nephritic syndrome co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "368931000119104",
+      "display": "Isolated proteinuria co-occurrent and due to membranoproliferative glomerulonephritis type III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "368941000119108",
+      "display": "Hereditary nephropathy co-occurrent with membranoproliferative glomerulonephritis type III (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "425455002",
+      "display": "Glomerulonephritis due to diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "434431000124103",
+      "display": "Hypertensive end stage renal disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "445404003",
+      "display": "Familial immunoglobulin A nephropathy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "44785005",
+      "display": "Minimal change disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "52042003",
+      "display": "Systemic lupus erythematosus glomerulonephritis syndrome, World Health Organization class V (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "59479006",
+      "display": "Mesangiocapillary glomerulonephritis, type II (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "68779003",
+      "display": "Primary immunoglobulin A nephropathy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "704667004",
+      "display": "Hypertension concurrent and due to end stage renal disease on dialysis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "71064009",
+      "display": "Acquired polycystic kidney disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "711000119100",
+      "display": "Chronic kidney disease stage 5 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "712487000",
+      "display": "End stage renal disease due to benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "71421000119105",
+      "display": "Hypertension in chronic kidney disease due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "714813000",
+      "display": "Recurrent hematuria co-occurrent and due to dense deposit disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "714814006",
+      "display": "Persistent hematuria co-occurrent and due to dense deposit disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "71701000119105",
+      "display": "Hypertension in chronic kidney disease due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "721000119107",
+      "display": "Chronic kidney disease stage 4 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "722086002",
+      "display": "Membranous glomerulonephritis due to malignant neoplastic disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "722119002",
+      "display": "Idiopathic membranous glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "722120008",
+      "display": "Membranous glomerulonephritis caused by drug (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "722168002",
+      "display": "Membranous glomerulonephritis co-occurrent with infectious disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "722433005",
+      "display": "Dyschondrosteosis and nephritis syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "722758004",
+      "display": "Complement component 3 glomerulopathy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "722760002",
+      "display": "Dense deposit disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "722761003",
+      "display": "Complement component 3 glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "731000119105",
+      "display": "Chronic kidney disease stage 3 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "741000119101",
+      "display": "Chronic kidney disease stage 2 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "751000119104",
+      "display": "Chronic kidney disease stage 1 due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "75888001",
+      "display": "Mesangiocapillary glomerulonephritis, type I (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "771000119108",
+      "display": "Chronic kidney disease due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "77182004",
+      "display": "Membranous glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "80321008",
+      "display": "Mesangiocapillary glomerulonephritis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "8501000119104",
+      "display": "Hypertensive heart and chronic kidney disease (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "90721000119101",
+      "display": "Chronic kidney disease stage 1 due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "90731000119103",
+      "display": "Chronic kidney disease stage 2 due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "90741000119107",
+      "display": "Chronic kidney disease stage 3 due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "90751000119109",
+      "display": "Chronic kidney disease stage 4 due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "90761000119106",
+      "display": "Chronic kidney disease stage 5 due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "90771000119100",
+      "display": "End stage renal disease on dialysis due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "90791000119104",
+      "display": "End stage renal disease on dialysis due to type 2 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "96441000119101",
+      "display": "Chronic kidney disease due to type 1 diabetes mellitus (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "96701000119107",
+      "display": "Hypertensive heart AND chronic kidney disease on dialysis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "96711000119105",
+      "display": "Hypertensive heart AND chronic kidney disease stage 5 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "96721000119103",
+      "display": "Hypertensive heart AND chronic kidney disease stage 4 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "96731000119100",
+      "display": "Hypertensive heart AND chronic kidney disease stage 3 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "96741000119109",
+      "display": "Hypertensive heart AND chronic kidney disease stage 2 (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "96751000119106",
+      "display": "Hypertensive heart AND chronic kidney disease stage 1 (disorder)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I12",
+      "display": "Hypertensive chronic kidney disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I12.0",
+      "display": "Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13",
+      "display": "Hypertensive heart and chronic kidney disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13.1",
+      "display": "Hypertensive heart and chronic kidney disease without heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13.11",
+      "display": "Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13.2",
+      "display": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Q61.2",
+      "display": "Polycystic kidney, adult type"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Q61.3",
+      "display": "Polycystic kidney, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Q61.8",
+      "display": "Other cystic kidney diseases"
+    } ]
+  }
+}

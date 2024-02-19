@@ -1,0 +1,171 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "RelatedPerson/mcc-pat-pnoelle-related-daughter"
+      },
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "mcc-pat-pnoelle-related-daughter",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">RelatedPerson Daughter</div>"
+        },
+        "patient": {
+          "reference": "Patient/mcc-pat-pnoelle",
+          "display": "Patricia Noelle"
+        },
+        "relationship": [{
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "code": "DAU",
+              "display": "natural daughter"
+            }
+          ],
+          "text": "Daughter"
+        }],
+        "name": [
+          {
+            "use": "usual",
+            "family": "Noelle",
+            "given": [
+              "Rose"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-1212",
+            "use": "mobile"
+          },
+          {
+            "system": "email",
+            "value": "rose.noelle@woohoo.com",
+            "use": "home"
+          }
+        ],
+        "gender": "female"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/mcc-pat-pnoelle"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mcc-pat-pnoelle",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patricia Noelle</div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+            "extension": [
+              {
+                "url" : "ombCategory",
+                "valueCoding" : {
+                  "system" : "urn:oid:2.16.840.1.113883.6.238",
+                  "code" : "2054-5",
+                  "display" : "Black or African American"
+                }
+              },
+              {
+                "url" : "text",
+                "valueString" : "Black or African American"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+            "extension" : [
+              {
+                "url" : "ombCategory",
+                "valueCoding" : {
+                  "system" : "urn:oid:2.16.840.1.113883.6.238",
+                  "code" : "2186-5",
+                  "display" : "Not Hispanic or Latino"
+                }
+              },
+              {
+                "url" : "text",
+                "valueString" : "Not Hispanic or Latino"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+            "valueCode": "F"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://sample.agency.gov/fhir/NamingSystem/identifier",
+            "value": "ID-100"
+          },
+          {
+            "system": "http://www.demohospital.org/identifiers/test",
+            "value": "demo"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Patricia Noelle",
+            "family": "Noelle",
+            "given": [
+              "Patricia"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1957-11-07",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "555-555-2001",
+            "use": "mobile"
+          },
+          {
+            "system": "email",
+            "value": "patricia.noelle@woohoo.com"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "7247 Breen St."
+            ],
+            "city": "Lexington",
+            "postalCode": "40511",
+            "state": "KY",
+            "country": "USA"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "Practitioner/mcc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ]
+      }
+    }
+  ]
+}

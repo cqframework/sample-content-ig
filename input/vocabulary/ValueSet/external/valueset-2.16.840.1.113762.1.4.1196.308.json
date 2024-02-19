@@ -1,0 +1,867 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1196.308",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2020-04-15T01:00:18.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 167 concepts</p><p>All codes from system <code>http://www.nlm.nih.gov/research/umls/rxnorm</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1087243\"> </a>1087243</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / folic acid / polysaccharide iron complex / succinic acid / vitamin B12 Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1087245\"> </a>1087245</td><td>calcium ascorbate 60 MG / calcium threonate 0.8 MG / ferrous asparto glycinate 50 MG / folic acid 1 MG / polysaccharide iron complex 100 MG / succinic acid 50 MG / vitamin B12 0.025 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1087296\"> </a>1087296</td><td>ascorbic acid / ferrous fumarate / folic acid / niacin / polysaccharide iron complex Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1087298\"> </a>1087298</td><td>ascorbic acid 40 MG / ferrous fumarate 62.5 MG / folic acid 1 MG / niacin 3 MG / polysaccharide iron complex 62.5 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1095421\"> </a>1095421</td><td>ferrous sulfate 140 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1098910\"> </a>1098910</td><td>ferrous sulfate 143 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1119631\"> </a>1119631</td><td>polysaccharide iron complex 30 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151291\"> </a>1151291</td><td>ascorbic acid / docusate / folic acid / iron carbonyl / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151292\"> </a>1151292</td><td>ascorbic acid / docusate / folic acid / iron carbonyl / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151631\"> </a>1151631</td><td>ascorbic acid / ferrous fumarate / folic acid / niacin / polysaccharide iron complex Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151632\"> </a>1151632</td><td>ascorbic acid / ferrous fumarate / folic acid / niacin / polysaccharide iron complex Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151635\"> </a>1151635</td><td>ascorbic acid / ferrous fumarate / folic acid / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151636\"> </a>1151636</td><td>ascorbic acid / ferrous fumarate / folic acid / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151637\"> </a>1151637</td><td>ascorbic acid / ferrous fumarate / folic acid / liver stomach concentrate / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151638\"> </a>1151638</td><td>ascorbic acid / ferrous fumarate / folic acid / liver stomach concentrate / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151643\"> </a>1151643</td><td>ascorbic acid / ferrous fumarate / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151644\"> </a>1151644</td><td>ascorbic acid / ferrous fumarate / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151645\"> </a>1151645</td><td>ascorbic acid / ferrous fumarate Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1151646\"> </a>1151646</td><td>ascorbic acid / ferrous fumarate Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152313\"> </a>1152313</td><td>ascorbic acid / iron carbonyl Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152314\"> </a>1152314</td><td>ascorbic acid / iron carbonyl Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152339\"> </a>1152339</td><td>ascorbic acid / polysaccharide iron complex Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152340\"> </a>1152340</td><td>ascorbic acid / polysaccharide iron complex Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152931\"> </a>1152931</td><td>ascorbic acid / ferrous sulfate / folic acid Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152932\"> </a>1152932</td><td>ascorbic acid / ferrous sulfate / folic acid Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152937\"> </a>1152937</td><td>ascorbic acid / ferrous sulfate Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152938\"> </a>1152938</td><td>ascorbic acid / ferrous sulfate Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1154760\"> </a>1154760</td><td>calcium ascorbate / ferrous asparto glycinate / polysaccharide iron complex / succinic acid Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1154761\"> </a>1154761</td><td>calcium ascorbate / ferrous asparto glycinate / polysaccharide iron complex / succinic acid Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1154764\"> </a>1154764</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / ferrous fumarate / folic acid / succinic acid / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1154765\"> </a>1154765</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / ferrous fumarate / folic acid / succinic acid / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1154766\"> </a>1154766</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / folic acid / polysaccharide iron complex / succinic acid / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1154767\"> </a>1154767</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / folic acid / polysaccharide iron complex / succinic acid / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1154768\"> </a>1154768</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / liver stomach concentrate / succinic acid / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1155065\"> </a>1155065</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / liver stomach concentrate / succinic acid / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1158469\"> </a>1158469</td><td>Fe heme polypeptide / polysaccharide iron complex Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1158470\"> </a>1158470</td><td>Fe heme polypeptide / polysaccharide iron complex Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1158471\"> </a>1158471</td><td>Fe heme polypeptide Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1158472\"> </a>1158472</td><td>Fe heme polypeptide Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159145\"> </a>1159145</td><td>iron carbonyl Oral Liquid Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159146\"> </a>1159146</td><td>iron carbonyl Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159147\"> </a>1159147</td><td>iron carbonyl Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159148\"> </a>1159148</td><td>iron-dextran complex Injectable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159626\"> </a>1159626</td><td>ferrous fumarate / folic acid / polysaccharide iron complex Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159627\"> </a>1159627</td><td>ferrous fumarate / folic acid / polysaccharide iron complex Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159629\"> </a>1159629</td><td>ferrous fumarate / folic acid Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159630\"> </a>1159630</td><td>ferrous fumarate / folic acid Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159631\"> </a>1159631</td><td>ferrous fumarate / polysaccharide iron complex Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159632\"> </a>1159632</td><td>ferrous fumarate / polysaccharide iron complex Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159639\"> </a>1159639</td><td>ferrous fumarate Oral Liquid Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159640\"> </a>1159640</td><td>ferrous fumarate Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159641\"> </a>1159641</td><td>ferrous fumarate Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159909\"> </a>1159909</td><td>polysaccharide iron complex Oral Liquid Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159910\"> </a>1159910</td><td>polysaccharide iron complex Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1159940\"> </a>1159940</td><td>sodium ferric gluconate complex Injectable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1160455\"> </a>1160455</td><td>polysaccharide iron complex Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1161336\"> </a>1161336</td><td>iron succinyl milk protein complex Oral Liquid Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1161337\"> </a>1161337</td><td>iron succinyl milk protein complex Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1162035\"> </a>1162035</td><td>folic acid / polysaccharide iron complex / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1162036\"> </a>1162036</td><td>folic acid / polysaccharide iron complex / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1162048\"> </a>1162048</td><td>folic acid / heme iron polypeptide / polysaccharide iron complex / vitamin B12 Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1162049\"> </a>1162049</td><td>folic acid / heme iron polypeptide / polysaccharide iron complex / vitamin B12 Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164390\"> </a>1164390</td><td>iron sucrose Injectable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164398\"> </a>1164398</td><td>ferrous gluconate Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164399\"> </a>1164399</td><td>ferrous gluconate Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164409\"> </a>1164409</td><td>ferrous sulfate / folic acid Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164410\"> </a>1164410</td><td>ferrous sulfate / folic acid Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164413\"> </a>1164413</td><td>ferrous sulfate Oral Liquid Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164414\"> </a>1164414</td><td>ferrous sulfate Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164415\"> </a>1164415</td><td>ferrous sulfate Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1164420\"> </a>1164420</td><td>ferumoxytol Injectable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1295240\"> </a>1295240</td><td>iron carbonyl Chewable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1295725\"> </a>1295725</td><td>ferrous fumarate Chewable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1540845\"> </a>1540845</td><td>ferrous fumarate 456 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1741130\"> </a>1741130</td><td>ferumoxytol Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1741260\"> </a>1741260</td><td>iron sucrose Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1741261\"> </a>1741261</td><td>10 ML iron sucrose 20 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1741267\"> </a>1741267</td><td>5 ML iron sucrose 20 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1741270\"> </a>1741270</td><td>2.5 ML iron sucrose 20 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1855529\"> </a>1855529</td><td>sodium ferric gluconate complex Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1860100\"> </a>1860100</td><td>ferrous sulfate 324 MG Delayed Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1865657\"> </a>1865657</td><td>iron-dextran complex Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198623\"> </a>198623</td><td>ferrous fumarate 200 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198624\"> </a>198624</td><td>ferrous fumarate 325 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198627\"> </a>198627</td><td>ferrous gluconate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198630\"> </a>198630</td><td>ferrous gluconate 324 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198635\"> </a>198635</td><td>ferrous sulfate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198806\"> </a>198806</td><td>polysaccharide iron complex 150 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198999\"> </a>198999</td><td>ferrous sulfate 159 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199178\"> </a>199178</td><td>ferrous fumarate 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-200076\"> </a>200076</td><td>ferrous fumarate 89 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-204632\"> </a>204632</td><td>ferrous sulfate 200 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-240742\"> </a>240742</td><td>ascorbic acid 125 MG / ferrous fumarate 200 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-242590\"> </a>242590</td><td>ferrous gluconate 240 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-242668\"> </a>242668</td><td>ascorbic acid 250 MG / iron carbonyl 100 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-242761\"> </a>242761</td><td>5 ML sodium ferric gluconate complex 12.5 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-244206\"> </a>244206</td><td>ferrous sulfate 250 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-245014\"> </a>245014</td><td>ferrous sulfate 168 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-251156\"> </a>251156</td><td>ferrous sulfate 75 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-259586\"> </a>259586</td><td>ferrous sulfate 134 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-259773\"> </a>259773</td><td>ascorbic acid 150 MG / ferrous sulfate 65 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-284159\"> </a>284159</td><td>Fe heme polypeptide 12 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-284202\"> </a>284202</td><td>ferrous fumarate 324 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-309606\"> </a>309606</td><td>folic acid 1 MG / polysaccharide iron complex 150 MG / vitamin B12 0.025 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310313\"> </a>310313</td><td>ferrous fumarate 324 MG / folic acid 1 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310318\"> </a>310318</td><td>ferrous sulfate 160 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310322\"> </a>310322</td><td>ferrous sulfate 250 MG Extended Release Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310323\"> </a>310323</td><td>ferrous sulfate 60 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310324\"> </a>310324</td><td>ferrous sulfate 325 MG Delayed Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310325\"> </a>310325</td><td>ferrous sulfate 325 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-311144\"> </a>311144</td><td>2 ML iron-dextran complex 50 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-313634\"> </a>313634</td><td>ascorbic acid 500 MG / ferrous sulfate 525 MG / folic acid 0.8 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-348622\"> </a>348622</td><td>ascorbic acid 250 MG / ferrous fumarate 200 MG / folic acid 1 MG / vitamin B12 0.01 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-348689\"> </a>348689</td><td>ascorbic acid 60 MG / ferrous fumarate 460 MG / folic acid 1 MG / vitamin B12 0.01 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-370710\"> </a>370710</td><td>ascorbic acid / iron carbonyl Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372169\"> </a>372169</td><td>ferrous fumarate Chewable Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372172\"> </a>372172</td><td>ferrous fumarate Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372175\"> </a>372175</td><td>ferrous gluconate Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372177\"> </a>372177</td><td>ferrous gluconate Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372183\"> </a>372183</td><td>ferrous sulfate Extended Release Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372184\"> </a>372184</td><td>ferrous sulfate Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372185\"> </a>372185</td><td>ferrous sulfate Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372187\"> </a>372187</td><td>ferrous sulfate Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372189\"> </a>372189</td><td>ferrous sulfate Delayed Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-374485\"> </a>374485</td><td>ferrous fumarate Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-374490\"> </a>374490</td><td>ascorbic acid / ferrous fumarate Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-374492\"> </a>374492</td><td>ascorbic acid / ferrous sulfate Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-374671\"> </a>374671</td><td>iron carbonyl Oral Suspension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-375516\"> </a>375516</td><td>Fe heme polypeptide Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-376922\"> </a>376922</td><td>polysaccharide iron complex Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-376923\"> </a>376923</td><td>polysaccharide iron complex Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-377487\"> </a>377487</td><td>ferrous gluconate Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-476740\"> </a>476740</td><td>iron succinyl milk protein complex Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-561962\"> </a>561962</td><td>iron carbonyl Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-578103\"> </a>578103</td><td>iron carbonyl Chewable Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-578104\"> </a>578104</td><td>iron carbonyl 15 MG Chewable Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-580134\"> </a>580134</td><td>ascorbic acid / ferrous fumarate / folic acid / vitamin B12 Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-582247\"> </a>582247</td><td>iron carbonyl 12 MG/ML Oral Suspension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-619032\"> </a>619032</td><td>ferrous fumarate / folic acid Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-619052\"> </a>619052</td><td>ascorbic acid / ferrous sulfate / folic acid Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-619082\"> </a>619082</td><td>folic acid / polysaccharide iron complex / vitamin B12 Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-687098\"> </a>687098</td><td>ferrous fumarate / folic acid / polysaccharide iron complex Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-687099\"> </a>687099</td><td>ferrous fumarate 162 MG / folic acid 1 MG / polysaccharide iron complex 115.2 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-702249\"> </a>702249</td><td>ferrous sulfate 44 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-708201\"> </a>708201</td><td>ferrous fumarate / polysaccharide iron complex Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-728227\"> </a>728227</td><td>polysaccharide iron complex 391 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-731372\"> </a>731372</td><td>polysaccharide iron complex 200 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-756336\"> </a>756336</td><td>polysaccharide iron complex 20 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-795765\"> </a>795765</td><td>ferrous fumarate 162 MG / polysaccharide iron complex 115 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-802502\"> </a>802502</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / ferrous fumarate / folic acid / succinic acid / vitamin B12 Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-802503\"> </a>802503</td><td>calcium ascorbate 60 MG / calcium threonate 0.8 MG / ferrous asparto glycinate 50 MG / ferrous fumarate 101 MG / folic acid 1 MG / succinic acid 50 MG / vitamin B12 0.01 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-802758\"> </a>802758</td><td>calcium ascorbate / calcium threonate / ferrous asparto glycinate / liver stomach concentrate / succinic acid / vitamin B12 Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-802759\"> </a>802759</td><td>calcium ascorbate 150 MG / calcium threonate 2 MG / ferrous asparto glycinate 70 MG / liver stomach concentrate 50 MG / succinic acid 75 MG / vitamin B12 0.01 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-809403\"> </a>809403</td><td>iron carbonyl 45 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-836263\"> </a>836263</td><td>ascorbic acid / docusate / folic acid / iron carbonyl / vitamin B12 Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-836268\"> </a>836268</td><td>ascorbic acid 120 MG / docusate sodium 50 MG / folic acid 1 MG / iron carbonyl 90 MG / vitamin B12 0.012 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-849607\"> </a>849607</td><td>Fe heme polypeptide / polysaccharide iron complex Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-849608\"> </a>849608</td><td>Fe heme polypeptide 6 MG / polysaccharide iron complex 22 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-860605\"> </a>860605</td><td>17 ML ferumoxytol 30 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-885578\"> </a>885578</td><td>24 HR ferrous sulfate 142 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-978675\"> </a>978675</td><td>folic acid / heme iron polypeptide / polysaccharide iron complex / vitamin B12 Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-978676\"> </a>978676</td><td>folic acid 1 MG / heme iron polypeptide 6 MG / polysaccharide iron complex 22 MG / vitamin B12 0.025 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-996028\"> </a>996028</td><td>calcium ascorbate / ferrous asparto glycinate / polysaccharide iron complex / succinic acid Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-996029\"> </a>996029</td><td>calcium ascorbate 50 MG / ferrous asparto glycinate 50 MG / polysaccharide iron complex 100 MG / succinic acid 50 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-996193\"> </a>996193</td><td>iron succinyl milk protein complex 53.3 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-999798\"> </a>999798</td><td>ascorbic acid / ferrous fumarate / folic acid / liver stomach concentrate / vitamin B12 Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-999799\"> </a>999799</td><td>ascorbic acid 75 MG / ferrous fumarate 333 MG / folic acid 0.5 MG / liver stomach concentrate 240 MG / vitamin B12 0.015 MG Oral Capsule</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.308",
+  "version": "20200415",
+  "name": "Iron Supplement",
+  "status": "active",
+  "date": "2020-04-15T01:00:18-04:00",
+  "publisher": "HL7 Patient Care WG Steward",
+  "expansion": {
+    "identifier": "urn:uuid:ccd65072-942d-48e7-b760-d89802d7482f",
+    "timestamp": "2022-01-10T14:00:44-05:00",
+    "total": 167,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1087243",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / folic acid / polysaccharide iron complex / succinic acid / vitamin B12 Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1087245",
+      "display": "calcium ascorbate 60 MG / calcium threonate 0.8 MG / ferrous asparto glycinate 50 MG / folic acid 1 MG / polysaccharide iron complex 100 MG / succinic acid 50 MG / vitamin B12 0.025 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1087296",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / niacin / polysaccharide iron complex Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1087298",
+      "display": "ascorbic acid 40 MG / ferrous fumarate 62.5 MG / folic acid 1 MG / niacin 3 MG / polysaccharide iron complex 62.5 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1095421",
+      "display": "ferrous sulfate 140 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1098910",
+      "display": "ferrous sulfate 143 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1119631",
+      "display": "polysaccharide iron complex 30 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151291",
+      "display": "ascorbic acid / docusate / folic acid / iron carbonyl / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151292",
+      "display": "ascorbic acid / docusate / folic acid / iron carbonyl / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151631",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / niacin / polysaccharide iron complex Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151632",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / niacin / polysaccharide iron complex Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151635",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151636",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151637",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / liver stomach concentrate / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151638",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / liver stomach concentrate / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151643",
+      "display": "ascorbic acid / ferrous fumarate / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151644",
+      "display": "ascorbic acid / ferrous fumarate / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151645",
+      "display": "ascorbic acid / ferrous fumarate Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1151646",
+      "display": "ascorbic acid / ferrous fumarate Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152313",
+      "display": "ascorbic acid / iron carbonyl Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152314",
+      "display": "ascorbic acid / iron carbonyl Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152339",
+      "display": "ascorbic acid / polysaccharide iron complex Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152340",
+      "display": "ascorbic acid / polysaccharide iron complex Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152931",
+      "display": "ascorbic acid / ferrous sulfate / folic acid Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152932",
+      "display": "ascorbic acid / ferrous sulfate / folic acid Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152937",
+      "display": "ascorbic acid / ferrous sulfate Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152938",
+      "display": "ascorbic acid / ferrous sulfate Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1154760",
+      "display": "calcium ascorbate / ferrous asparto glycinate / polysaccharide iron complex / succinic acid Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1154761",
+      "display": "calcium ascorbate / ferrous asparto glycinate / polysaccharide iron complex / succinic acid Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1154764",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / ferrous fumarate / folic acid / succinic acid / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1154765",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / ferrous fumarate / folic acid / succinic acid / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1154766",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / folic acid / polysaccharide iron complex / succinic acid / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1154767",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / folic acid / polysaccharide iron complex / succinic acid / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1154768",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / liver stomach concentrate / succinic acid / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1155065",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / liver stomach concentrate / succinic acid / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1158469",
+      "display": "Fe heme polypeptide / polysaccharide iron complex Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1158470",
+      "display": "Fe heme polypeptide / polysaccharide iron complex Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1158471",
+      "display": "Fe heme polypeptide Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1158472",
+      "display": "Fe heme polypeptide Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159145",
+      "display": "iron carbonyl Oral Liquid Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159146",
+      "display": "iron carbonyl Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159147",
+      "display": "iron carbonyl Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159148",
+      "display": "iron-dextran complex Injectable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159626",
+      "display": "ferrous fumarate / folic acid / polysaccharide iron complex Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159627",
+      "display": "ferrous fumarate / folic acid / polysaccharide iron complex Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159629",
+      "display": "ferrous fumarate / folic acid Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159630",
+      "display": "ferrous fumarate / folic acid Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159631",
+      "display": "ferrous fumarate / polysaccharide iron complex Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159632",
+      "display": "ferrous fumarate / polysaccharide iron complex Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159639",
+      "display": "ferrous fumarate Oral Liquid Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159640",
+      "display": "ferrous fumarate Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159641",
+      "display": "ferrous fumarate Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159909",
+      "display": "polysaccharide iron complex Oral Liquid Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159910",
+      "display": "polysaccharide iron complex Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1159940",
+      "display": "sodium ferric gluconate complex Injectable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1160455",
+      "display": "polysaccharide iron complex Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1161336",
+      "display": "iron succinyl milk protein complex Oral Liquid Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1161337",
+      "display": "iron succinyl milk protein complex Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1162035",
+      "display": "folic acid / polysaccharide iron complex / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1162036",
+      "display": "folic acid / polysaccharide iron complex / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1162048",
+      "display": "folic acid / heme iron polypeptide / polysaccharide iron complex / vitamin B12 Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1162049",
+      "display": "folic acid / heme iron polypeptide / polysaccharide iron complex / vitamin B12 Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164390",
+      "display": "iron sucrose Injectable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164398",
+      "display": "ferrous gluconate Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164399",
+      "display": "ferrous gluconate Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164409",
+      "display": "ferrous sulfate / folic acid Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164410",
+      "display": "ferrous sulfate / folic acid Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164413",
+      "display": "ferrous sulfate Oral Liquid Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164414",
+      "display": "ferrous sulfate Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164415",
+      "display": "ferrous sulfate Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1164420",
+      "display": "ferumoxytol Injectable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1295240",
+      "display": "iron carbonyl Chewable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1295725",
+      "display": "ferrous fumarate Chewable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1540845",
+      "display": "ferrous fumarate 456 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1741130",
+      "display": "ferumoxytol Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1741260",
+      "display": "iron sucrose Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1741261",
+      "display": "10 ML iron sucrose 20 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1741267",
+      "display": "5 ML iron sucrose 20 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1741270",
+      "display": "2.5 ML iron sucrose 20 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1855529",
+      "display": "sodium ferric gluconate complex Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1860100",
+      "display": "ferrous sulfate 324 MG Delayed Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1865657",
+      "display": "iron-dextran complex Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198623",
+      "display": "ferrous fumarate 200 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198624",
+      "display": "ferrous fumarate 325 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198627",
+      "display": "ferrous gluconate 300 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198630",
+      "display": "ferrous gluconate 324 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198635",
+      "display": "ferrous sulfate 300 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198806",
+      "display": "polysaccharide iron complex 150 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198999",
+      "display": "ferrous sulfate 159 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199178",
+      "display": "ferrous fumarate 300 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "200076",
+      "display": "ferrous fumarate 89 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "204632",
+      "display": "ferrous sulfate 200 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "240742",
+      "display": "ascorbic acid 125 MG / ferrous fumarate 200 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "242590",
+      "display": "ferrous gluconate 240 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "242668",
+      "display": "ascorbic acid 250 MG / iron carbonyl 100 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "242761",
+      "display": "5 ML sodium ferric gluconate complex 12.5 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "244206",
+      "display": "ferrous sulfate 250 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "245014",
+      "display": "ferrous sulfate 168 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "251156",
+      "display": "ferrous sulfate 75 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "259586",
+      "display": "ferrous sulfate 134 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "259773",
+      "display": "ascorbic acid 150 MG / ferrous sulfate 65 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "284159",
+      "display": "Fe heme polypeptide 12 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "284202",
+      "display": "ferrous fumarate 324 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "309606",
+      "display": "folic acid 1 MG / polysaccharide iron complex 150 MG / vitamin B12 0.025 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310313",
+      "display": "ferrous fumarate 324 MG / folic acid 1 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310318",
+      "display": "ferrous sulfate 160 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310322",
+      "display": "ferrous sulfate 250 MG Extended Release Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310323",
+      "display": "ferrous sulfate 60 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310324",
+      "display": "ferrous sulfate 325 MG Delayed Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310325",
+      "display": "ferrous sulfate 325 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "311144",
+      "display": "2 ML iron-dextran complex 50 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "313634",
+      "display": "ascorbic acid 500 MG / ferrous sulfate 525 MG / folic acid 0.8 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "348622",
+      "display": "ascorbic acid 250 MG / ferrous fumarate 200 MG / folic acid 1 MG / vitamin B12 0.01 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "348689",
+      "display": "ascorbic acid 60 MG / ferrous fumarate 460 MG / folic acid 1 MG / vitamin B12 0.01 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "370710",
+      "display": "ascorbic acid / iron carbonyl Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372169",
+      "display": "ferrous fumarate Chewable Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372172",
+      "display": "ferrous fumarate Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372175",
+      "display": "ferrous gluconate Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372177",
+      "display": "ferrous gluconate Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372183",
+      "display": "ferrous sulfate Extended Release Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372184",
+      "display": "ferrous sulfate Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372185",
+      "display": "ferrous sulfate Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372187",
+      "display": "ferrous sulfate Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372189",
+      "display": "ferrous sulfate Delayed Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "374485",
+      "display": "ferrous fumarate Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "374490",
+      "display": "ascorbic acid / ferrous fumarate Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "374492",
+      "display": "ascorbic acid / ferrous sulfate Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "374671",
+      "display": "iron carbonyl Oral Suspension"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "375516",
+      "display": "Fe heme polypeptide Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "376922",
+      "display": "polysaccharide iron complex Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "376923",
+      "display": "polysaccharide iron complex Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "377487",
+      "display": "ferrous gluconate Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "476740",
+      "display": "iron succinyl milk protein complex Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "561962",
+      "display": "iron carbonyl Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "578103",
+      "display": "iron carbonyl Chewable Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "578104",
+      "display": "iron carbonyl 15 MG Chewable Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "580134",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / vitamin B12 Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "582247",
+      "display": "iron carbonyl 12 MG/ML Oral Suspension"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "619032",
+      "display": "ferrous fumarate / folic acid Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "619052",
+      "display": "ascorbic acid / ferrous sulfate / folic acid Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "619082",
+      "display": "folic acid / polysaccharide iron complex / vitamin B12 Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "687098",
+      "display": "ferrous fumarate / folic acid / polysaccharide iron complex Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "687099",
+      "display": "ferrous fumarate 162 MG / folic acid 1 MG / polysaccharide iron complex 115.2 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "702249",
+      "display": "ferrous sulfate 44 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "708201",
+      "display": "ferrous fumarate / polysaccharide iron complex Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "728227",
+      "display": "polysaccharide iron complex 391 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "731372",
+      "display": "polysaccharide iron complex 200 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "756336",
+      "display": "polysaccharide iron complex 20 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "795765",
+      "display": "ferrous fumarate 162 MG / polysaccharide iron complex 115 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "802502",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / ferrous fumarate / folic acid / succinic acid / vitamin B12 Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "802503",
+      "display": "calcium ascorbate 60 MG / calcium threonate 0.8 MG / ferrous asparto glycinate 50 MG / ferrous fumarate 101 MG / folic acid 1 MG / succinic acid 50 MG / vitamin B12 0.01 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "802758",
+      "display": "calcium ascorbate / calcium threonate / ferrous asparto glycinate / liver stomach concentrate / succinic acid / vitamin B12 Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "802759",
+      "display": "calcium ascorbate 150 MG / calcium threonate 2 MG / ferrous asparto glycinate 70 MG / liver stomach concentrate 50 MG / succinic acid 75 MG / vitamin B12 0.01 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "809403",
+      "display": "iron carbonyl 45 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "836263",
+      "display": "ascorbic acid / docusate / folic acid / iron carbonyl / vitamin B12 Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "836268",
+      "display": "ascorbic acid 120 MG / docusate sodium 50 MG / folic acid 1 MG / iron carbonyl 90 MG / vitamin B12 0.012 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "849607",
+      "display": "Fe heme polypeptide / polysaccharide iron complex Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "849608",
+      "display": "Fe heme polypeptide 6 MG / polysaccharide iron complex 22 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "860605",
+      "display": "17 ML ferumoxytol 30 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "885578",
+      "display": "24 HR ferrous sulfate 142 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "978675",
+      "display": "folic acid / heme iron polypeptide / polysaccharide iron complex / vitamin B12 Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "978676",
+      "display": "folic acid 1 MG / heme iron polypeptide 6 MG / polysaccharide iron complex 22 MG / vitamin B12 0.025 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "996028",
+      "display": "calcium ascorbate / ferrous asparto glycinate / polysaccharide iron complex / succinic acid Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "996029",
+      "display": "calcium ascorbate 50 MG / ferrous asparto glycinate 50 MG / polysaccharide iron complex 100 MG / succinic acid 50 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "996193",
+      "display": "iron succinyl milk protein complex 53.3 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "999798",
+      "display": "ascorbic acid / ferrous fumarate / folic acid / liver stomach concentrate / vitamin B12 Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "999799",
+      "display": "ascorbic acid 75 MG / ferrous fumarate 333 MG / folic acid 0.5 MG / liver stomach concentrate 240 MG / vitamin B12 0.015 MG Oral Capsule"
+    } ]
+  }
+}

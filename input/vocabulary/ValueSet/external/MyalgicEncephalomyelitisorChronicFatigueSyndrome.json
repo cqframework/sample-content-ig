@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1222.675",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2021-09-15"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.675",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1222.675"
+  } ],
+  "version": "20210915",
+  "name": "MyalgicEncephalomyelitisOrChronicFatigueSyndrome",
+  "title": "Myalgic Encephalomyelitis or Chronic Fatigue Syndrome",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-09-15T01:00:53-04:00",
+  "publisher": "HL7 Patient Care WG Steward",
+  "expansion": {
+    "identifier": "urn:uuid:3f37dc73-0f44-4e59-a0c5-2e4a78838f5e",
+    "timestamp": "2024-02-17T12:30:07-05:00",
+    "total": 10,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "code": "51771007",
+      "display": "Postviral fatigue syndrome (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "code": "52702003",
+      "display": "Chronic fatigue syndrome (disorder)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "G93.3",
+      "display": "Postviral and related fatigue syndromes"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "G93.31",
+      "display": "Postviral fatigue syndrome"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "G93.32",
+      "display": "Myalgic encephalomyelitis/chronic fatigue syndrome"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "G93.39",
+      "display": "Other post infection and related fatigue syndromes"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "G93.4",
+      "display": "Other and unspecified encephalopathy"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "G93.40",
+      "display": "Encephalopathy, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "G93.49",
+      "display": "Other encephalopathy"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "R53.82",
+      "display": "Chronic fatigue, unspecified"
+    } ]
+  }
+}

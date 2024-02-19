@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.6929.2.1002",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2019-05-31T01:00:13.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 8 concepts</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-13705-9\"> </a><a href=\"http://details.loinc.org/LOINC/13705-9.html\">13705-9</a></td><td>Albumin/Creatinine [Mass Ratio] in 24 hour Urine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14585-4\"> </a><a href=\"http://details.loinc.org/LOINC/14585-4.html\">14585-4</a></td><td>Albumin/Creatinine [Molar ratio] in Urine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14958-3\"> </a><a href=\"http://details.loinc.org/LOINC/14958-3.html\">14958-3</a></td><td>Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14959-1\"> </a><a href=\"http://details.loinc.org/LOINC/14959-1.html\">14959-1</a></td><td>Microalbumin/Creatinine [Mass Ratio] in Urine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32294-1\"> </a><a href=\"http://details.loinc.org/LOINC/32294-1.html\">32294-1</a></td><td>Albumin/Creatinine [Ratio] in Urine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-44292-1\"> </a><a href=\"http://details.loinc.org/LOINC/44292-1.html\">44292-1</a></td><td>Microalbumin/Creatinine [Mass Ratio] in 12 hour Urine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-76401-9\"> </a><a href=\"http://details.loinc.org/LOINC/76401-9.html\">76401-9</a></td><td>Albumin/Creatinine [Ratio] in 24 hour Urine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9318-7\"> </a><a href=\"http://details.loinc.org/LOINC/9318-7.html\">9318-7</a></td><td>Albumin/Creatinine [Mass Ratio] in Urine</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.2.1002",
+  "version": "20190531",
+  "name": "Urine Albumin Creatinine Ratio",
+  "status": "active",
+  "date": "2019-05-31T01:00:13-04:00",
+  "publisher": "National Kidney Foundation Steward",
+  "expansion": {
+    "identifier": "urn:uuid:7ae99898-a29c-49db-ae78-b743f75b745a",
+    "timestamp": "2021-12-28T16:02:15-05:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "13705-9",
+      "display": "Albumin/Creatinine [Mass Ratio] in 24 hour Urine"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "14585-4",
+      "display": "Albumin/Creatinine [Molar ratio] in Urine"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "14958-3",
+      "display": "Microalbumin/Creatinine [Mass Ratio] in 24 hour Urine"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "14959-1",
+      "display": "Microalbumin/Creatinine [Mass Ratio] in Urine"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "32294-1",
+      "display": "Albumin/Creatinine [Ratio] in Urine"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "44292-1",
+      "display": "Microalbumin/Creatinine [Mass Ratio] in 12 hour Urine"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "76401-9",
+      "display": "Albumin/Creatinine [Ratio] in 24 hour Urine"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "9318-7",
+      "display": "Albumin/Creatinine [Mass Ratio] in Urine"
+    } ]
+  }
+}

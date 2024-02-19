@@ -1,0 +1,357 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1196.306",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2020-04-15T01:00:18.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 65 concepts</p><p>All codes from system <code>http://www.nlm.nih.gov/research/umls/rxnorm</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-107263\"> </a>107263</td><td>ergocalciferol 0.25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1088134\"> </a>1088134</td><td>cholecalciferol 0.25 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1092380\"> </a>1092380</td><td>cholecalciferol 0.1 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1115877\"> </a>1115877</td><td>cholecalciferol 0.1 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1148597\"> </a>1148597</td><td>cholecalciferol 0.002 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1148598\"> </a>1148598</td><td>cholecalciferol Disintegrating Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1150266\"> </a>1150266</td><td>cholecalciferol 0.625 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152703\"> </a>1152703</td><td>calcifediol Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1152704\"> </a>1152704</td><td>calcifediol Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1156131\"> </a>1156131</td><td>cholecalciferol Mucosal Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1156132\"> </a>1156132</td><td>cholecalciferol Oral Liquid Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1156133\"> </a>1156133</td><td>cholecalciferol Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1156134\"> </a>1156134</td><td>cholecalciferol Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1163905\"> </a>1163905</td><td>ergocalciferol Oral Liquid Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1163906\"> </a>1163906</td><td>ergocalciferol Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1163907\"> </a>1163907</td><td>ergocalciferol Pill</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1233031\"> </a>1233031</td><td>cholecalciferol 0.05 MG Chewable Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1233032\"> </a>1233032</td><td>cholecalciferol 0.125 MG Chewable Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1233664\"> </a>1233664</td><td>ergocalciferol 0.05 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1291276\"> </a>1291276</td><td>cholecalciferol 1.25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1295642\"> </a>1295642</td><td>cholecalciferol Disintegrating Oral Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1295745\"> </a>1295745</td><td>cholecalciferol Chewable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1312502\"> </a>1312502</td><td>cholecalciferol 0.0025 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1367410\"> </a>1367410</td><td>ergocalciferol 1.25 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1486349\"> </a>1486349</td><td>cholecalciferol 0.025 MG Disintegrating Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1650274\"> </a>1650274</td><td>cholecalciferol 0.375 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1746494\"> </a>1746494</td><td>cholecalciferol 0.125 MG Disintegrating Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1792327\"> </a>1792327</td><td>cholecalciferol 0.35 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1855066\"> </a>1855066</td><td>24 HR calcifediol 0.03 MG Extended Release Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1941742\"> </a>1941742</td><td>ergocalciferol 0.0625 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197431\"> </a>197431</td><td>calcifediol 0.02 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197645\"> </a>197645</td><td>ergocalciferol 0.625 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199362\"> </a>199362</td><td>cholecalciferol 0.025 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199832\"> </a>199832</td><td>ergocalciferol 0.01 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-237723\"> </a>237723</td><td>ergocalciferol 0.2 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-240029\"> </a>240029</td><td>cholecalciferol 0.125 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-245500\"> </a>245500</td><td>cholecalciferol 0.025 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-248506\"> </a>248506</td><td>cholecalciferol 0.25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-251154\"> </a>251154</td><td>cholecalciferol 0.01 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-309263\"> </a>309263</td><td>cholecalciferol 0.01 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310142\"> </a>310142</td><td>ergocalciferol 1.25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-366196\"> </a>366196</td><td>calcifediol Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-371479\"> </a>371479</td><td>cholecalciferol Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-371480\"> </a>371480</td><td>cholecalciferol Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-371481\"> </a>371481</td><td>cholecalciferol Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372035\"> </a>372035</td><td>ergocalciferol Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372039\"> </a>372039</td><td>ergocalciferol Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372040\"> </a>372040</td><td>ergocalciferol Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-435020\"> </a>435020</td><td>cholecalciferol 0.01 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-540336\"> </a>540336</td><td>calcifediol Extended Release Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-685054\"> </a>685054</td><td>cholecalciferol 0.25 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-705728\"> </a>705728</td><td>cholecalciferol 1.25 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-801663\"> </a>801663</td><td>cholecalciferol 0.05 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-804146\"> </a>804146</td><td>cholecalciferol 0.05 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-829993\"> </a>829993</td><td>cholecalciferol 0.833 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-829995\"> </a>829995</td><td>cholecalciferol 1.67 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-846137\"> </a>846137</td><td>cholecalciferol Chewable Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-846138\"> </a>846138</td><td>cholecalciferol 0.01 MG Chewable Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-857466\"> </a>857466</td><td>cholecalciferol 0.125 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-866406\"> </a>866406</td><td>cholecalciferol 0.075 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-880340\"> </a>880340</td><td>cholecalciferol 0.025 MG Chewable Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-885489\"> </a>885489</td><td>cholecalciferol 0.125 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-891440\"> </a>891440</td><td>cholecalciferol Mucosal Spray</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-891441\"> </a>891441</td><td>cholecalciferol 0.025 MG/ACTUAT Mucosal Spray</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-891692\"> </a>891692</td><td>cholecalciferol 0.357 MG/ML Oral Solution</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.306",
+  "version": "20200415",
+  "name": "Vitamin D",
+  "status": "active",
+  "date": "2020-04-15T01:00:18-04:00",
+  "publisher": "HL7 Patient Care WG Steward",
+  "expansion": {
+    "identifier": "urn:uuid:fec4e31d-e7c0-46f4-9ee2-03d63b6e2dd0",
+    "timestamp": "2022-01-10T14:10:44-05:00",
+    "total": 65,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "107263",
+      "display": "ergocalciferol 0.25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1088134",
+      "display": "cholecalciferol 0.25 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1092380",
+      "display": "cholecalciferol 0.1 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1115877",
+      "display": "cholecalciferol 0.1 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1148597",
+      "display": "cholecalciferol 0.002 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1148598",
+      "display": "cholecalciferol Disintegrating Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1150266",
+      "display": "cholecalciferol 0.625 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152703",
+      "display": "calcifediol Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1152704",
+      "display": "calcifediol Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1156131",
+      "display": "cholecalciferol Mucosal Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1156132",
+      "display": "cholecalciferol Oral Liquid Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1156133",
+      "display": "cholecalciferol Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1156134",
+      "display": "cholecalciferol Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1163905",
+      "display": "ergocalciferol Oral Liquid Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1163906",
+      "display": "ergocalciferol Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1163907",
+      "display": "ergocalciferol Pill"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1233031",
+      "display": "cholecalciferol 0.05 MG Chewable Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1233032",
+      "display": "cholecalciferol 0.125 MG Chewable Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1233664",
+      "display": "ergocalciferol 0.05 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1291276",
+      "display": "cholecalciferol 1.25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1295642",
+      "display": "cholecalciferol Disintegrating Oral Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1295745",
+      "display": "cholecalciferol Chewable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1312502",
+      "display": "cholecalciferol 0.0025 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1367410",
+      "display": "ergocalciferol 1.25 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1486349",
+      "display": "cholecalciferol 0.025 MG Disintegrating Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1650274",
+      "display": "cholecalciferol 0.375 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1746494",
+      "display": "cholecalciferol 0.125 MG Disintegrating Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1792327",
+      "display": "cholecalciferol 0.35 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1855066",
+      "display": "24 HR calcifediol 0.03 MG Extended Release Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1941742",
+      "display": "ergocalciferol 0.0625 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197431",
+      "display": "calcifediol 0.02 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197645",
+      "display": "ergocalciferol 0.625 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199362",
+      "display": "cholecalciferol 0.025 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199832",
+      "display": "ergocalciferol 0.01 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "237723",
+      "display": "ergocalciferol 0.2 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "240029",
+      "display": "cholecalciferol 0.125 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "245500",
+      "display": "cholecalciferol 0.025 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "248506",
+      "display": "cholecalciferol 0.25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "251154",
+      "display": "cholecalciferol 0.01 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "309263",
+      "display": "cholecalciferol 0.01 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310142",
+      "display": "ergocalciferol 1.25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "366196",
+      "display": "calcifediol Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "371479",
+      "display": "cholecalciferol Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "371480",
+      "display": "cholecalciferol Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "371481",
+      "display": "cholecalciferol Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372035",
+      "display": "ergocalciferol Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372039",
+      "display": "ergocalciferol Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372040",
+      "display": "ergocalciferol Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "435020",
+      "display": "cholecalciferol 0.01 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "540336",
+      "display": "calcifediol Extended Release Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "685054",
+      "display": "cholecalciferol 0.25 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "705728",
+      "display": "cholecalciferol 1.25 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "801663",
+      "display": "cholecalciferol 0.05 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "804146",
+      "display": "cholecalciferol 0.05 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "829993",
+      "display": "cholecalciferol 0.833 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "829995",
+      "display": "cholecalciferol 1.67 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "846137",
+      "display": "cholecalciferol Chewable Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "846138",
+      "display": "cholecalciferol 0.01 MG Chewable Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "857466",
+      "display": "cholecalciferol 0.125 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "866406",
+      "display": "cholecalciferol 0.075 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "880340",
+      "display": "cholecalciferol 0.025 MG Chewable Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "885489",
+      "display": "cholecalciferol 0.125 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "891440",
+      "display": "cholecalciferol Mucosal Spray"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "891441",
+      "display": "cholecalciferol 0.025 MG/ACTUAT Mucosal Spray"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "891692",
+      "display": "cholecalciferol 0.357 MG/ML Oral Solution"
+    } ]
+  }
+}

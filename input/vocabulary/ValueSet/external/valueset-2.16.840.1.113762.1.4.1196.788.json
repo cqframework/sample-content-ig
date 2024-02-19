@@ -1,0 +1,857 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1196.788",
+  "meta": {
+    "versionId": "13",
+    "lastUpdated": "2022-01-06T01:02:20.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 165 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-105411000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105411000\">105411000</a></td><td>http://snomed.info/sct</td><td>Social withdrawal (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-105529008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105529008\">105529008</a></td><td>http://snomed.info/sct</td><td>Lives alone (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-105531004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105531004\">105531004</a></td><td>http://snomed.info/sct</td><td>Housing unsatisfactory (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-105532006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105532006\">105532006</a></td><td>http://snomed.info/sct</td><td>Overcrowded in house (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-10987541000119104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10987541000119104\">10987541000119104</a></td><td>http://snomed.info/sct</td><td>History of military deployment (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1155680000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1155680000\">1155680000</a></td><td>http://snomed.info/sct</td><td>Limited access to nutrition supplies (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1156191002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1156191002\">1156191002</a></td><td>http://snomed.info/sct</td><td>Housing instability (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1156192009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1156192009\">1156192009</a></td><td>http://snomed.info/sct</td><td>Housing instability due to imminent risk of homelessness (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1156193004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1156193004\">1156193004</a></td><td>http://snomed.info/sct</td><td>Housing instability due to frequent change in place of residence (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1156194005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1156194005\">1156194005</a></td><td>http://snomed.info/sct</td><td>Housing instability following recent homelessness (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1156195006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1156195006\">1156195006</a></td><td>http://snomed.info/sct</td><td>Housing instability due to being behind on payments for place of residence (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1156196007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1156196007\">1156196007</a></td><td>http://snomed.info/sct</td><td>Housing instability due to threat of eviction (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-12242911000119107\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12242911000119107\">12242911000119107</a></td><td>http://snomed.info/sct</td><td>Suspected victim of elder physical abuse (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-12399491000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12399491000119102\">12399491000119102</a></td><td>http://snomed.info/sct</td><td>Suspected victim of elder sexual abuse (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-12399531000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12399531000119102\">12399531000119102</a></td><td>http://snomed.info/sct</td><td>Suspected victim of elder emotional abuse (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-129698004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=129698004\">129698004</a></td><td>http://snomed.info/sct</td><td>At risk for loneliness (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-129832003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=129832003\">129832003</a></td><td>http://snomed.info/sct</td><td>Noncompliance with dietary regimen (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15912911000119102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15912911000119102\">15912911000119102</a></td><td>http://snomed.info/sct</td><td>Suspected victim of elder neglect (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160695008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=160695008\">160695008</a></td><td>http://snomed.info/sct</td><td>Transport too expensive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160696009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=160696009\">160696009</a></td><td>http://snomed.info/sct</td><td>Transport distance too great (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160726006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=160726006\">160726006</a></td><td>http://snomed.info/sct</td><td>Lives alone no help available (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160727002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=160727002\">160727002</a></td><td>http://snomed.info/sct</td><td>Lives alone needs housekeeper (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160899000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=160899000\">160899000</a></td><td>http://snomed.info/sct</td><td>Recently unemployed (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-160900005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=160900005\">160900005</a></td><td>http://snomed.info/sct</td><td>Chronic unemployment (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-224355006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224355006\">224355006</a></td><td>http://snomed.info/sct</td><td>Served in armed forces (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-224974006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=224974006\">224974006</a></td><td>http://snomed.info/sct</td><td>Feeling stressed (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-22761000175104\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22761000175104\">22761000175104</a></td><td>http://snomed.info/sct</td><td>At increased risk for social isolation (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-22791000175108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22791000175108\">22791000175108</a></td><td>http://snomed.info/sct</td><td>At increased risk of intimate partner violence (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-266964007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=266964007\">266964007</a></td><td>http://snomed.info/sct</td><td>Left military service (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-267076002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267076002\">267076002</a></td><td>http://snomed.info/sct</td><td>Feeling lonely (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-276087003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=276087003\">276087003</a></td><td>http://snomed.info/sct</td><td>Deserted from military service (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-288671000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=288671000119101\">288671000119101</a></td><td>http://snomed.info/sct</td><td>Adult victim of physical abuse by female partner (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-288681000119103\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=288681000119103\">288681000119103</a></td><td>http://snomed.info/sct</td><td>Adult victim of physical abuse by male partner (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-293611000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=293611000119101\">293611000119101</a></td><td>http://snomed.info/sct</td><td>History of domestic physical abuse of adult (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-32911000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32911000\">32911000</a></td><td>http://snomed.info/sct</td><td>Homeless (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-412732008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412732008\">412732008</a></td><td>http://snomed.info/sct</td><td>History of domestic violence (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-418150003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418150003\">418150003</a></td><td>http://snomed.info/sct</td><td>Victim of abusive sexual relationship with partner (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419482003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419482003\">419482003</a></td><td>http://snomed.info/sct</td><td>Served in armed forces in combat (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419951006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419951006\">419951006</a></td><td>http://snomed.info/sct</td><td>Victim of abusive sexual relationship with husband (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-420180008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=420180008\">420180008</a></td><td>http://snomed.info/sct</td><td>Victim of abusive sexual relationship with wife (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422611005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422611005\">422611005</a></td><td>http://snomed.info/sct</td><td>Minimal outside social stimulation (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422650009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422650009\">422650009</a></td><td>http://snomed.info/sct</td><td>Social isolation (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422786001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422786001\">422786001</a></td><td>http://snomed.info/sct</td><td>Lacks emotional support (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-423315002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=423315002\">423315002</a></td><td>http://snomed.info/sct</td><td>Limited social contact (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-424582000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=424582000\">424582000</a></td><td>http://snomed.info/sct</td><td>Stress overload (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-424629004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=424629004\">424629004</a></td><td>http://snomed.info/sct</td><td>Transportation barrier impedes ability to use community resources (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-425022003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425022003\">425022003</a></td><td>http://snomed.info/sct</td><td>Inadequate social support (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441879005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=441879005\">441879005</a></td><td>http://snomed.info/sct</td><td>No contact with family (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-442347009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=442347009\">442347009</a></td><td>http://snomed.info/sct</td><td>Emotional stress (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-445071000124105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=445071000124105\">445071000124105</a></td><td>http://snomed.info/sct</td><td>Receives no social support (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-445281000124101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=445281000124101\">445281000124101</a></td><td>http://snomed.info/sct</td><td>Nutrition impaired due to limited access to healthful foods (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-454061000124102\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=454061000124102\">454061000124102</a></td><td>http://snomed.info/sct</td><td>Unable to afford medication (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-459601000124108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=459601000124108\">459601000124108</a></td><td>http://snomed.info/sct</td><td>Victim of elder physical abuse (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-459611000124106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=459611000124106\">459611000124106</a></td><td>http://snomed.info/sct</td><td>History of victim of elder physical abuse (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-459901000124103\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=459901000124103\">459901000124103</a></td><td>http://snomed.info/sct</td><td>History of victim of elder sexual abuse (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-470911000124109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=470911000124109\">470911000124109</a></td><td>http://snomed.info/sct</td><td>Mild food insecurity on United States household food security survey module (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-470941000124108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=470941000124108\">470941000124108</a></td><td>http://snomed.info/sct</td><td>Moderate food insecurity on United States household food security survey module (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-470951000124105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=470951000124105\">470951000124105</a></td><td>http://snomed.info/sct</td><td>Severe food insecurity on United States household food security survey module (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-471981000124106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=471981000124106\">471981000124106</a></td><td>http://snomed.info/sct</td><td>Substandard housing caused by structural insufficiency (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-471991000124109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=471991000124109\">471991000124109</a></td><td>http://snomed.info/sct</td><td>Residence does not meet functional needs (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-472001000124106\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=472001000124106\">472001000124106</a></td><td>http://snomed.info/sct</td><td>At risk of housing code violation (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-5311000175103\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5311000175103\">5311000175103</a></td><td>http://snomed.info/sct</td><td>Unable to afford visit copayment (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-5371000175108\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5371000175108\">5371000175108</a></td><td>http://snomed.info/sct</td><td>Unable to afford glucose monitoring device (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-5521000175101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5521000175101\">5521000175101</a></td><td>http://snomed.info/sct</td><td>Unable to afford blood pressure monitor (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-5731000175109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5731000175109\">5731000175109</a></td><td>http://snomed.info/sct</td><td>Unable to afford weight scale (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-697957000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=697957000\">697957000</a></td><td>http://snomed.info/sct</td><td>Suspected elderly person maltreatment (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-704349002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=704349002\">704349002</a></td><td>http://snomed.info/sct</td><td>At risk of elder abuse (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-704489009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=704489009\">704489009</a></td><td>http://snomed.info/sct</td><td>Lack of family support (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-706872008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=706872008\">706872008</a></td><td>http://snomed.info/sct</td><td>Victim of elder abuse (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-706874009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=706874009\">706874009</a></td><td>http://snomed.info/sct</td><td>At risk of elder neglect (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-706875005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=706875005\">706875005</a></td><td>http://snomed.info/sct</td><td>Insufficient food supply (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-706892001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=706892001\">706892001</a></td><td>http://snomed.info/sct</td><td>At risk of intimate partner abuse (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-706893006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=706893006\">706893006</a></td><td>http://snomed.info/sct</td><td>Victim of intimate partner abuse (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-707087005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=707087005\">707087005</a></td><td>http://snomed.info/sct</td><td>At risk of domestic violence (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-713458007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713458007\">713458007</a></td><td>http://snomed.info/sct</td><td>Lack of access to transportation (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-713820002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713820002\">713820002</a></td><td>http://snomed.info/sct</td><td>Victim of sexual assault by intimate partner (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-715046004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=715046004\">715046004</a></td><td>http://snomed.info/sct</td><td>Unable to obtain medication (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-720411002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=720411002\">720411002</a></td><td>http://snomed.info/sct</td><td>History of domestic physical abuse (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-720428004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=720428004\">720428004</a></td><td>http://snomed.info/sct</td><td>History of domestic emotional abuse (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-720741001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=720741001\">720741001</a></td><td>http://snomed.info/sct</td><td>History of domestic sexual abuse (situation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-733423003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=733423003\">733423003</a></td><td>http://snomed.info/sct</td><td>Food insecurity (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-733817003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=733817003\">733817003</a></td><td>http://snomed.info/sct</td><td>Decreased social isolation (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-73438004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73438004\">73438004</a></td><td>http://snomed.info/sct</td><td>Unemployed (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-73595000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73595000\">73595000</a></td><td>http://snomed.info/sct</td><td>Stress (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-736769008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=736769008\">736769008</a></td><td>http://snomed.info/sct</td><td>Social isolation in parenthood (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-741062008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=741062008\">741062008</a></td><td>http://snomed.info/sct</td><td>Not in labor force (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-95929000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=95929000\">95929000</a></td><td>http://snomed.info/sct</td><td>Psychologically abused elder (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-95933007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=95933007\">95933007</a></td><td>http://snomed.info/sct</td><td>Neglected elder (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-E63.9\"> </a>E63.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Nutritional deficiency, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.01XA\"> </a>T74.01XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult neglect or abandonment, confirmed, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.01XD\"> </a>T74.01XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult neglect or abandonment, confirmed, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.01XS\"> </a>T74.01XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult neglect or abandonment, confirmed, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.11XA\"> </a>T74.11XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult physical abuse, confirmed, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.11XD\"> </a>T74.11XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult physical abuse, confirmed, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.11XS\"> </a>T74.11XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult physical abuse, confirmed, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.12XA\"> </a>T74.12XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child physical abuse, confirmed, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.12XD\"> </a>T74.12XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child physical abuse, confirmed, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.12XS\"> </a>T74.12XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child physical abuse, confirmed, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.21XA\"> </a>T74.21XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult sexual abuse, confirmed, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.21XD\"> </a>T74.21XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult sexual abuse, confirmed, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.21XS\"> </a>T74.21XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult sexual abuse, confirmed, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.22XA\"> </a>T74.22XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child sexual abuse, confirmed, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.22XD\"> </a>T74.22XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child sexual abuse, confirmed, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.22XS\"> </a>T74.22XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child sexual abuse, confirmed, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.31XA\"> </a>T74.31XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult psychological abuse, confirmed, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.31XD\"> </a>T74.31XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult psychological abuse, confirmed, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.31XS\"> </a>T74.31XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult psychological abuse, confirmed, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.32XA\"> </a>T74.32XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child psychological abuse, confirmed, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.32XD\"> </a>T74.32XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child psychological abuse, confirmed, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.32XS\"> </a>T74.32XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child psychological abuse, confirmed, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.91XA\"> </a>T74.91XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Unspecified adult maltreatment, confirmed, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.91XD\"> </a>T74.91XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Unspecified adult maltreatment, confirmed, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T74.91XS\"> </a>T74.91XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Unspecified adult maltreatment, confirmed, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.01XA\"> </a>T76.01XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult neglect or abandonment, suspected, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.01XD\"> </a>T76.01XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult neglect or abandonment, suspected, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.01XS\"> </a>T76.01XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult neglect or abandonment, suspected, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.11XA\"> </a>T76.11XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult physical abuse, suspected, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.11XD\"> </a>T76.11XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult physical abuse, suspected, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.11XS\"> </a>T76.11XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult physical abuse, suspected, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.12XA\"> </a>T76.12XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child physical abuse, suspected, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.12XD\"> </a>T76.12XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child physical abuse, suspected, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.12XS\"> </a>T76.12XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child physical abuse, suspected, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.21XA\"> </a>T76.21XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult sexual abuse, suspected, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.21XD\"> </a>T76.21XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult sexual abuse, suspected, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.21XS\"> </a>T76.21XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult sexual abuse, suspected, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.22XA\"> </a>T76.22XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child sexual abuse, suspected, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.22XD\"> </a>T76.22XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child sexual abuse, suspected, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.22XS\"> </a>T76.22XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child sexual abuse, suspected, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.31XA\"> </a>T76.31XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult psychological abuse, suspected, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.31XD\"> </a>T76.31XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult psychological abuse, suspected, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.31XS\"> </a>T76.31XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adult psychological abuse, suspected, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.32XA\"> </a>T76.32XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child psychological abuse, suspected, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.32XD\"> </a>T76.32XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child psychological abuse, suspected, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.32XS\"> </a>T76.32XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Child psychological abuse, suspected, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.91XA\"> </a>T76.91XA</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Unspecified adult maltreatment, suspected, initial encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.91XD\"> </a>T76.91XD</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Unspecified adult maltreatment, suspected, subsequent encounter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-T76.91XS\"> </a>T76.91XS</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Unspecified adult maltreatment, suspected, sequela</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Y07.01\"> </a>Y07.01</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Husband, perpetrator of maltreatment and neglect</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Y07.02\"> </a>Y07.02</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Wife, perpetrator of maltreatment and neglect</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Y07.03\"> </a>Y07.03</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Male partner, perpetrator of maltreatment and neglect</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Y07.04\"> </a>Y07.04</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Female partner, perpetrator of maltreatment and neglect</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z56.0\"> </a>Z56.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Unemployment, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.00\"> </a>Z59.00</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Homelessness unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.01\"> </a>Z59.01</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Sheltered homelessness</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.02\"> </a>Z59.02</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Unsheltered homelessness</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.1\"> </a>Z59.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Inadequate housing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.41\"> </a>Z59.41</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Food insecurity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.48\"> </a>Z59.48</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other specified lack of adequate food</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.811\"> </a>Z59.811</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Housing instability, housed, with risk of homelessness</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.812\"> </a>Z59.812</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Housing instability, housed, homelessness in past 12 months</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z59.819\"> </a>Z59.819</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Housing instability, housed unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z60.2\"> </a>Z60.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Problems related to living alone</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z60.4\"> </a>Z60.4</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Social exclusion and rejection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z60.8\"> </a>Z60.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other problems related to social environment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z63.8\"> </a>Z63.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other specified problems related to primary support group</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z65.9\"> </a>Z65.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Problem related to unspecified psychosocial circumstances</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z73.3\"> </a>Z73.3</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Stress, not elsewhere classified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z91.11\"> </a>Z91.11</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Patient's noncompliance with dietary regimen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z91.120\"> </a>Z91.120</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Patient's intentional underdosing of medication regimen due to financial hardship</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z91.410\"> </a>Z91.410</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Personal history of adult physical and sexual abuse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z91.411\"> </a>Z91.411</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Personal history of adult psychological abuse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z91.412\"> </a>Z91.412</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Personal history of adult neglect</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z91.419\"> </a>Z91.419</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Personal history of unspecified adult abuse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z91.82\"> </a>Z91.82</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Personal history of military deployment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-Z91.89\"> </a>Z91.89</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other specified personal risk factors, not elsewhere classified</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.788",
+  "version": "20220106",
+  "name": "Social Determinants of Health Conditions",
+  "status": "active",
+  "date": "2022-01-06T01:02:20-05:00",
+  "publisher": "The Gravity Project Steward",
+  "expansion": {
+    "identifier": "urn:uuid:8779937e-f97f-44b2-8cb1-d386eda9d34d",
+    "timestamp": "2022-01-09T14:49:50-05:00",
+    "total": 165,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "105411000",
+      "display": "Social withdrawal (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "105529008",
+      "display": "Lives alone (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "105531004",
+      "display": "Housing unsatisfactory (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "105532006",
+      "display": "Overcrowded in house (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "10987541000119104",
+      "display": "History of military deployment (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1155680000",
+      "display": "Limited access to nutrition supplies (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1156191002",
+      "display": "Housing instability (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1156192009",
+      "display": "Housing instability due to imminent risk of homelessness (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1156193004",
+      "display": "Housing instability due to frequent change in place of residence (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1156194005",
+      "display": "Housing instability following recent homelessness (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1156195006",
+      "display": "Housing instability due to being behind on payments for place of residence (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1156196007",
+      "display": "Housing instability due to threat of eviction (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "12242911000119107",
+      "display": "Suspected victim of elder physical abuse (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "12399491000119102",
+      "display": "Suspected victim of elder sexual abuse (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "12399531000119102",
+      "display": "Suspected victim of elder emotional abuse (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "129698004",
+      "display": "At risk for loneliness (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "129832003",
+      "display": "Noncompliance with dietary regimen (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "15912911000119102",
+      "display": "Suspected victim of elder neglect (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "160695008",
+      "display": "Transport too expensive (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "160696009",
+      "display": "Transport distance too great (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "160726006",
+      "display": "Lives alone no help available (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "160727002",
+      "display": "Lives alone needs housekeeper (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "160899000",
+      "display": "Recently unemployed (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "160900005",
+      "display": "Chronic unemployment (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "224355006",
+      "display": "Served in armed forces (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "224974006",
+      "display": "Feeling stressed (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "22761000175104",
+      "display": "At increased risk for social isolation (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "22791000175108",
+      "display": "At increased risk of intimate partner violence (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "266964007",
+      "display": "Left military service (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "267076002",
+      "display": "Feeling lonely (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "276087003",
+      "display": "Deserted from military service (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "288671000119101",
+      "display": "Adult victim of physical abuse by female partner (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "288681000119103",
+      "display": "Adult victim of physical abuse by male partner (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "293611000119101",
+      "display": "History of domestic physical abuse of adult (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "32911000",
+      "display": "Homeless (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "412732008",
+      "display": "History of domestic violence (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "418150003",
+      "display": "Victim of abusive sexual relationship with partner (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "419482003",
+      "display": "Served in armed forces in combat (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "419951006",
+      "display": "Victim of abusive sexual relationship with husband (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "420180008",
+      "display": "Victim of abusive sexual relationship with wife (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "422611005",
+      "display": "Minimal outside social stimulation (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "422650009",
+      "display": "Social isolation (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "422786001",
+      "display": "Lacks emotional support (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "423315002",
+      "display": "Limited social contact (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "424582000",
+      "display": "Stress overload (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "424629004",
+      "display": "Transportation barrier impedes ability to use community resources (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "425022003",
+      "display": "Inadequate social support (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "441879005",
+      "display": "No contact with family (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "442347009",
+      "display": "Emotional stress (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "445071000124105",
+      "display": "Receives no social support (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "445281000124101",
+      "display": "Nutrition impaired due to limited access to healthful foods (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "454061000124102",
+      "display": "Unable to afford medication (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "459601000124108",
+      "display": "Victim of elder physical abuse (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "459611000124106",
+      "display": "History of victim of elder physical abuse (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "459901000124103",
+      "display": "History of victim of elder sexual abuse (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "470911000124109",
+      "display": "Mild food insecurity on United States household food security survey module (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "470941000124108",
+      "display": "Moderate food insecurity on United States household food security survey module (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "470951000124105",
+      "display": "Severe food insecurity on United States household food security survey module (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "471981000124106",
+      "display": "Substandard housing caused by structural insufficiency (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "471991000124109",
+      "display": "Residence does not meet functional needs (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "472001000124106",
+      "display": "At risk of housing code violation (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "5311000175103",
+      "display": "Unable to afford visit copayment (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "5371000175108",
+      "display": "Unable to afford glucose monitoring device (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "5521000175101",
+      "display": "Unable to afford blood pressure monitor (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "5731000175109",
+      "display": "Unable to afford weight scale (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "697957000",
+      "display": "Suspected elderly person maltreatment (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "704349002",
+      "display": "At risk of elder abuse (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "704489009",
+      "display": "Lack of family support (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "706872008",
+      "display": "Victim of elder abuse (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "706874009",
+      "display": "At risk of elder neglect (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "706875005",
+      "display": "Insufficient food supply (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "706892001",
+      "display": "At risk of intimate partner abuse (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "706893006",
+      "display": "Victim of intimate partner abuse (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "707087005",
+      "display": "At risk of domestic violence (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "713458007",
+      "display": "Lack of access to transportation (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "713820002",
+      "display": "Victim of sexual assault by intimate partner (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "715046004",
+      "display": "Unable to obtain medication (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "720411002",
+      "display": "History of domestic physical abuse (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "720428004",
+      "display": "History of domestic emotional abuse (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "720741001",
+      "display": "History of domestic sexual abuse (situation)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "733423003",
+      "display": "Food insecurity (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "733817003",
+      "display": "Decreased social isolation (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "73438004",
+      "display": "Unemployed (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "73595000",
+      "display": "Stress (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "736769008",
+      "display": "Social isolation in parenthood (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "741062008",
+      "display": "Not in labor force (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "95929000",
+      "display": "Psychologically abused elder (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "95933007",
+      "display": "Neglected elder (finding)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "E63.9",
+      "display": "Nutritional deficiency, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.01XA",
+      "display": "Adult neglect or abandonment, confirmed, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.01XD",
+      "display": "Adult neglect or abandonment, confirmed, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.01XS",
+      "display": "Adult neglect or abandonment, confirmed, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.11XA",
+      "display": "Adult physical abuse, confirmed, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.11XD",
+      "display": "Adult physical abuse, confirmed, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.11XS",
+      "display": "Adult physical abuse, confirmed, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.12XA",
+      "display": "Child physical abuse, confirmed, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.12XD",
+      "display": "Child physical abuse, confirmed, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.12XS",
+      "display": "Child physical abuse, confirmed, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.21XA",
+      "display": "Adult sexual abuse, confirmed, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.21XD",
+      "display": "Adult sexual abuse, confirmed, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.21XS",
+      "display": "Adult sexual abuse, confirmed, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.22XA",
+      "display": "Child sexual abuse, confirmed, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.22XD",
+      "display": "Child sexual abuse, confirmed, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.22XS",
+      "display": "Child sexual abuse, confirmed, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.31XA",
+      "display": "Adult psychological abuse, confirmed, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.31XD",
+      "display": "Adult psychological abuse, confirmed, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.31XS",
+      "display": "Adult psychological abuse, confirmed, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.32XA",
+      "display": "Child psychological abuse, confirmed, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.32XD",
+      "display": "Child psychological abuse, confirmed, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.32XS",
+      "display": "Child psychological abuse, confirmed, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.91XA",
+      "display": "Unspecified adult maltreatment, confirmed, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.91XD",
+      "display": "Unspecified adult maltreatment, confirmed, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T74.91XS",
+      "display": "Unspecified adult maltreatment, confirmed, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.01XA",
+      "display": "Adult neglect or abandonment, suspected, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.01XD",
+      "display": "Adult neglect or abandonment, suspected, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.01XS",
+      "display": "Adult neglect or abandonment, suspected, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.11XA",
+      "display": "Adult physical abuse, suspected, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.11XD",
+      "display": "Adult physical abuse, suspected, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.11XS",
+      "display": "Adult physical abuse, suspected, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.12XA",
+      "display": "Child physical abuse, suspected, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.12XD",
+      "display": "Child physical abuse, suspected, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.12XS",
+      "display": "Child physical abuse, suspected, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.21XA",
+      "display": "Adult sexual abuse, suspected, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.21XD",
+      "display": "Adult sexual abuse, suspected, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.21XS",
+      "display": "Adult sexual abuse, suspected, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.22XA",
+      "display": "Child sexual abuse, suspected, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.22XD",
+      "display": "Child sexual abuse, suspected, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.22XS",
+      "display": "Child sexual abuse, suspected, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.31XA",
+      "display": "Adult psychological abuse, suspected, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.31XD",
+      "display": "Adult psychological abuse, suspected, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.31XS",
+      "display": "Adult psychological abuse, suspected, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.32XA",
+      "display": "Child psychological abuse, suspected, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.32XD",
+      "display": "Child psychological abuse, suspected, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.32XS",
+      "display": "Child psychological abuse, suspected, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.91XA",
+      "display": "Unspecified adult maltreatment, suspected, initial encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.91XD",
+      "display": "Unspecified adult maltreatment, suspected, subsequent encounter"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "T76.91XS",
+      "display": "Unspecified adult maltreatment, suspected, sequela"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Y07.01",
+      "display": "Husband, perpetrator of maltreatment and neglect"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Y07.02",
+      "display": "Wife, perpetrator of maltreatment and neglect"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Y07.03",
+      "display": "Male partner, perpetrator of maltreatment and neglect"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Y07.04",
+      "display": "Female partner, perpetrator of maltreatment and neglect"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z56.0",
+      "display": "Unemployment, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.00",
+      "display": "Homelessness unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.01",
+      "display": "Sheltered homelessness"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.02",
+      "display": "Unsheltered homelessness"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.1",
+      "display": "Inadequate housing"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.41",
+      "display": "Food insecurity"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.48",
+      "display": "Other specified lack of adequate food"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.811",
+      "display": "Housing instability, housed, with risk of homelessness"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.812",
+      "display": "Housing instability, housed, homelessness in past 12 months"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z59.819",
+      "display": "Housing instability, housed unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z60.2",
+      "display": "Problems related to living alone"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z60.4",
+      "display": "Social exclusion and rejection"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z60.8",
+      "display": "Other problems related to social environment"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z63.8",
+      "display": "Other specified problems related to primary support group"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z65.9",
+      "display": "Problem related to unspecified psychosocial circumstances"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z73.3",
+      "display": "Stress, not elsewhere classified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z91.11",
+      "display": "Patient's noncompliance with dietary regimen"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z91.120",
+      "display": "Patient's intentional underdosing of medication regimen due to financial hardship"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z91.410",
+      "display": "Personal history of adult physical and sexual abuse"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z91.411",
+      "display": "Personal history of adult psychological abuse"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z91.412",
+      "display": "Personal history of adult neglect"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z91.419",
+      "display": "Personal history of unspecified adult abuse"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z91.82",
+      "display": "Personal history of military deployment"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "Z91.89",
+      "display": "Other specified personal risk factors, not elsewhere classified"
+    } ]
+  }
+}

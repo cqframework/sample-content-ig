@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1222.111",
+  "meta": {
+    "versionId": "8",
+    "lastUpdated": "2020-04-07T01:03:10.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 5 concepts</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14682-9\"> </a><a href=\"http://details.loinc.org/LOINC/14682-9.html\">14682-9</a></td><td>Creatinine [Moles/volume] in Serum or Plasma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2160-0\"> </a><a href=\"http://details.loinc.org/LOINC/2160-0.html\">2160-0</a></td><td>Creatinine [Mass/volume] in Serum or Plasma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-38483-4\"> </a><a href=\"http://details.loinc.org/LOINC/38483-4.html\">38483-4</a></td><td>Creatinine [Mass/volume] in Blood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-59826-8\"> </a><a href=\"http://details.loinc.org/LOINC/59826-8.html\">59826-8</a></td><td>Creatinine [Moles/volume] in Blood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-77140-2\"> </a><a href=\"http://details.loinc.org/LOINC/77140-2.html\">77140-2</a></td><td>Creatinine [Moles/volume] in Serum, Plasma or Blood</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.111",
+  "version": "20200407",
+  "name": "Serum or Plasma or Blood Creatinine",
+  "status": "active",
+  "date": "2020-04-07T01:03:10-04:00",
+  "publisher": "HL7 Patient Care WG Steward",
+  "expansion": {
+    "identifier": "urn:uuid:6bf5e0e9-2c2c-4388-8800-c6a6604676d8",
+    "timestamp": "2022-02-07T13:02:47-05:00",
+    "total": 5,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "14682-9",
+      "display": "Creatinine [Moles/volume] in Serum or Plasma"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "2160-0",
+      "display": "Creatinine [Mass/volume] in Serum or Plasma"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "38483-4",
+      "display": "Creatinine [Mass/volume] in Blood"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "59826-8",
+      "display": "Creatinine [Moles/volume] in Blood"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "77140-2",
+      "display": "Creatinine [Moles/volume] in Serum, Plasma or Blood"
+    } ]
+  }
+}

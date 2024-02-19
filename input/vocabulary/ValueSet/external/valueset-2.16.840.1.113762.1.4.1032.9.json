@@ -1,0 +1,477 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1032.9",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2017-12-30T17:58:27.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 89 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-10725009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10725009\">10725009</a></td><td>http://snomed.info/sct</td><td>Benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1078301000112109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1078301000112109\">1078301000112109</a></td><td>http://snomed.info/sct</td><td>Multiple drug intolerant hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-111438007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=111438007\">111438007</a></td><td>http://snomed.info/sct</td><td>Hypertension secondary to renal disease in obstetric context (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1201005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1201005\">1201005</a></td><td>http://snomed.info/sct</td><td>Benign essential hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-123799005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=123799005\">123799005</a></td><td>http://snomed.info/sct</td><td>Renovascular hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-123800009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=123800009\">123800009</a></td><td>http://snomed.info/sct</td><td>Goldblatt hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-14973001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=14973001\">14973001</a></td><td>http://snomed.info/sct</td><td>Renal sclerosis with hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-169465000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169465000\">169465000</a></td><td>http://snomed.info/sct</td><td>Hypertension caused by oral contraceptive pill (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-194783001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=194783001\">194783001</a></td><td>http://snomed.info/sct</td><td>Secondary malignant renovascular hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-194785008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=194785008\">194785008</a></td><td>http://snomed.info/sct</td><td>Secondary benign hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-194788005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=194788005\">194788005</a></td><td>http://snomed.info/sct</td><td>Hypertension secondary to endocrine disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-194791005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=194791005\">194791005</a></td><td>http://snomed.info/sct</td><td>Hypertension caused by drug (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-199008003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=199008003\">199008003</a></td><td>http://snomed.info/sct</td><td>Pre-existing secondary hypertension complicating pregnancy, childbirth and puerperium (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-26078007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26078007\">26078007</a></td><td>http://snomed.info/sct</td><td>Hypertension secondary to renal disease complicating AND/OR reason for care during childbirth (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-28119000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28119000\">28119000</a></td><td>http://snomed.info/sct</td><td>Renal hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-31992008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31992008\">31992008</a></td><td>http://snomed.info/sct</td><td>Secondary hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-371125006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=371125006\">371125006</a></td><td>http://snomed.info/sct</td><td>Labile essential hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-39018007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39018007\">39018007</a></td><td>http://snomed.info/sct</td><td>Renal arterial hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-39727004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39727004\">39727004</a></td><td>http://snomed.info/sct</td><td>Hypertension secondary to renal disease complicating AND/OR reason for care during puerperium (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-401.0\"> </a>401.0</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Malignant essential hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-401.1\"> </a>401.1</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Benign essential hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-401.9\"> </a>401.9</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Unspecified essential hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-402.00\"> </a>402.00</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Malignant hypertensive heart disease without heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-402.01\"> </a>402.01</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Malignant hypertensive heart disease with heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-402.10\"> </a>402.10</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Benign hypertensive heart disease without heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-402.11\"> </a>402.11</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Benign hypertensive heart disease with heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-402.90\"> </a>402.90</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Unspecified hypertensive heart disease without heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-402.91\"> </a>402.91</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Unspecified hypertensive heart disease with heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-403.00\"> </a>403.00</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-403.01\"> </a>403.01</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-403.10\"> </a>403.10</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive chronic kidney disease, benign, with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-403.11\"> </a>403.11</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive chronic kidney disease, benign, with chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-403.90\"> </a>403.90</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-403.91\"> </a>403.91</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.00\"> </a>404.00</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, malignant, without heart failure and with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.01\"> </a>404.01</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.02\"> </a>404.02</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, malignant, without heart failure and with chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.03\"> </a>404.03</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.10\"> </a>404.10</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, benign, without heart failure and with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.11\"> </a>404.11</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, benign, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.12\"> </a>404.12</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, benign, without heart failure and with chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.13\"> </a>404.13</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, benign, with heart failure and chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.90\"> </a>404.90</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, unspecified, without heart failure and with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.91\"> </a>404.91</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, unspecified, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.92\"> </a>404.92</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, unspecified, without heart failure and with chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-404.93\"> </a>404.93</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Hypertensive heart and chronic kidney disease, unspecified, with heart failure and chronic kidney disease stage V or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-405.01\"> </a>405.01</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Malignant renovascular hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-405.09\"> </a>405.09</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Other malignant secondary hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-405.11\"> </a>405.11</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Benign renovascular hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-405.19\"> </a>405.19</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Other benign secondary hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-405.91\"> </a>405.91</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Unspecified renovascular hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-9-cm-405.99\"> </a>405.99</td><td>http://hl7.org/fhir/sid/icd-9-cm</td><td>Other unspecified secondary hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-427889009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=427889009\">427889009</a></td><td>http://snomed.info/sct</td><td>Hypertension associated with transplantation (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-428575007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428575007\">428575007</a></td><td>http://snomed.info/sct</td><td>Hypertension secondary to kidney transplant (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-429457004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=429457004\">429457004</a></td><td>http://snomed.info/sct</td><td>Systolic essential hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-461301000124109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=461301000124109\">461301000124109</a></td><td>http://snomed.info/sct</td><td>Resistant hypertensive disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-46481004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=46481004\">46481004</a></td><td>http://snomed.info/sct</td><td>Low-renin essential hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-48146000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48146000\">48146000</a></td><td>http://snomed.info/sct</td><td>Diastolic hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-48552006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48552006\">48552006</a></td><td>http://snomed.info/sct</td><td>Hypertension secondary to renal disease complicating AND/OR reason for care during pregnancy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-56218007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=56218007\">56218007</a></td><td>http://snomed.info/sct</td><td>Systolic hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-57684003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57684003\">57684003</a></td><td>http://snomed.info/sct</td><td>Parenchymal renal hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-59621000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59621000\">59621000</a></td><td>http://snomed.info/sct</td><td>Essential hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-59720008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59720008\">59720008</a></td><td>http://snomed.info/sct</td><td>Sustained diastolic hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-65518004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=65518004\">65518004</a></td><td>http://snomed.info/sct</td><td>Labile diastolic hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-73410007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=73410007\">73410007</a></td><td>http://snomed.info/sct</td><td>Benign secondary renovascular hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-74451002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74451002\">74451002</a></td><td>http://snomed.info/sct</td><td>Secondary diastolic hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-762463000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=762463000\">762463000</a></td><td>http://snomed.info/sct</td><td>Diastolic hypertension co-occurrent with systolic hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-78975002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=78975002\">78975002</a></td><td>http://snomed.info/sct</td><td>Malignant essential hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89242004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89242004\">89242004</a></td><td>http://snomed.info/sct</td><td>Malignant secondary hypertension (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I10\"> </a>I10</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Essential (primary) hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I11.0\"> </a>I11.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart disease with heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I11.9\"> </a>I11.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart disease without heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I12.0\"> </a>I12.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I12.9\"> </a>I12.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13.0\"> </a>I13.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13.1\"> </a>I13.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease without heart failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13.10\"> </a>I13.10</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13.11\"> </a>I13.11</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I13.2\"> </a>I13.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I15\"> </a>I15</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Secondary hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I15.0\"> </a>I15.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Renovascular hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I15.1\"> </a>I15.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertension secondary to other renal disorders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I15.2\"> </a>I15.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertension secondary to endocrine disorders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I15.8\"> </a>I15.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other secondary hypertension</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I15.9\"> </a>I15.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Secondary hypertension, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I16\"> </a>I16</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive crisis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I16.0\"> </a>I16.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive urgency</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I16.1\"> </a>I16.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive emergency</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-I16.9\"> </a>I16.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypertensive crisis, unspecified</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.9",
+  "version": "20170628",
+  "name": "Hypertension",
+  "status": "active",
+  "date": "2017-06-28T01:00:04-04:00",
+  "publisher": "MITRE Steward",
+  "expansion": {
+    "identifier": "urn:uuid:b75c7cbd-014e-488f-9733-cbc3b3cf7bba",
+    "timestamp": "2022-01-09T21:38:57-05:00",
+    "total": 89,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "10725009",
+      "display": "Benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1078301000112109",
+      "display": "Multiple drug intolerant hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "111438007",
+      "display": "Hypertension secondary to renal disease in obstetric context (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1201005",
+      "display": "Benign essential hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "123799005",
+      "display": "Renovascular hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "123800009",
+      "display": "Goldblatt hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "14973001",
+      "display": "Renal sclerosis with hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "169465000",
+      "display": "Hypertension caused by oral contraceptive pill (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "194783001",
+      "display": "Secondary malignant renovascular hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "194785008",
+      "display": "Secondary benign hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "194788005",
+      "display": "Hypertension secondary to endocrine disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "194791005",
+      "display": "Hypertension caused by drug (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "199008003",
+      "display": "Pre-existing secondary hypertension complicating pregnancy, childbirth and puerperium (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "26078007",
+      "display": "Hypertension secondary to renal disease complicating AND/OR reason for care during childbirth (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "28119000",
+      "display": "Renal hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "31992008",
+      "display": "Secondary hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "371125006",
+      "display": "Labile essential hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "39018007",
+      "display": "Renal arterial hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "39727004",
+      "display": "Hypertension secondary to renal disease complicating AND/OR reason for care during puerperium (disorder)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "401.0",
+      "display": "Malignant essential hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "401.1",
+      "display": "Benign essential hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "401.9",
+      "display": "Unspecified essential hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "402.00",
+      "display": "Malignant hypertensive heart disease without heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "402.01",
+      "display": "Malignant hypertensive heart disease with heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "402.10",
+      "display": "Benign hypertensive heart disease without heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "402.11",
+      "display": "Benign hypertensive heart disease with heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "402.90",
+      "display": "Unspecified hypertensive heart disease without heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "402.91",
+      "display": "Unspecified hypertensive heart disease with heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "403.00",
+      "display": "Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "403.01",
+      "display": "Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "403.10",
+      "display": "Hypertensive chronic kidney disease, benign, with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "403.11",
+      "display": "Hypertensive chronic kidney disease, benign, with chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "403.90",
+      "display": "Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "403.91",
+      "display": "Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.00",
+      "display": "Hypertensive heart and chronic kidney disease, malignant, without heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.01",
+      "display": "Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.02",
+      "display": "Hypertensive heart and chronic kidney disease, malignant, without heart failure and with chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.03",
+      "display": "Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.10",
+      "display": "Hypertensive heart and chronic kidney disease, benign, without heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.11",
+      "display": "Hypertensive heart and chronic kidney disease, benign, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.12",
+      "display": "Hypertensive heart and chronic kidney disease, benign, without heart failure and with chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.13",
+      "display": "Hypertensive heart and chronic kidney disease, benign, with heart failure and chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.90",
+      "display": "Hypertensive heart and chronic kidney disease, unspecified, without heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.91",
+      "display": "Hypertensive heart and chronic kidney disease, unspecified, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.92",
+      "display": "Hypertensive heart and chronic kidney disease, unspecified, without heart failure and with chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "404.93",
+      "display": "Hypertensive heart and chronic kidney disease, unspecified, with heart failure and chronic kidney disease stage V or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "405.01",
+      "display": "Malignant renovascular hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "405.09",
+      "display": "Other malignant secondary hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "405.11",
+      "display": "Benign renovascular hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "405.19",
+      "display": "Other benign secondary hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "405.91",
+      "display": "Unspecified renovascular hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "405.99",
+      "display": "Other unspecified secondary hypertension"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "427889009",
+      "display": "Hypertension associated with transplantation (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "428575007",
+      "display": "Hypertension secondary to kidney transplant (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "429457004",
+      "display": "Systolic essential hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "461301000124109",
+      "display": "Resistant hypertensive disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "46481004",
+      "display": "Low-renin essential hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "48146000",
+      "display": "Diastolic hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "48552006",
+      "display": "Hypertension secondary to renal disease complicating AND/OR reason for care during pregnancy (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "56218007",
+      "display": "Systolic hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "57684003",
+      "display": "Parenchymal renal hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "59621000",
+      "display": "Essential hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "59720008",
+      "display": "Sustained diastolic hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "65518004",
+      "display": "Labile diastolic hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "73410007",
+      "display": "Benign secondary renovascular hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "74451002",
+      "display": "Secondary diastolic hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "762463000",
+      "display": "Diastolic hypertension co-occurrent with systolic hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "78975002",
+      "display": "Malignant essential hypertension (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "89242004",
+      "display": "Malignant secondary hypertension (disorder)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I10",
+      "display": "Essential (primary) hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I11.0",
+      "display": "Hypertensive heart disease with heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I11.9",
+      "display": "Hypertensive heart disease without heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I12.0",
+      "display": "Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I12.9",
+      "display": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13.0",
+      "display": "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13.1",
+      "display": "Hypertensive heart and chronic kidney disease without heart failure"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13.10",
+      "display": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13.11",
+      "display": "Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I13.2",
+      "display": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I15",
+      "display": "Secondary hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I15.0",
+      "display": "Renovascular hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I15.1",
+      "display": "Hypertension secondary to other renal disorders"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I15.2",
+      "display": "Hypertension secondary to endocrine disorders"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I15.8",
+      "display": "Other secondary hypertension"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I15.9",
+      "display": "Secondary hypertension, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I16",
+      "display": "Hypertensive crisis"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I16.0",
+      "display": "Hypertensive urgency"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I16.1",
+      "display": "Hypertensive emergency"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "I16.9",
+      "display": "Hypertensive crisis, unspecified"
+    } ]
+  }
+}

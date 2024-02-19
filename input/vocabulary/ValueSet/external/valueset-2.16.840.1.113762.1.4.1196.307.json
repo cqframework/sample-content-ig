@@ -1,0 +1,172 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1196.307",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2020-04-15T01:00:18.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 28 concepts</p><p>All codes from system <code>http://www.nlm.nih.gov/research/umls/rxnorm</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1157180\"> </a>1157180</td><td>darbepoetin alfa Injectable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1163895\"> </a>1163895</td><td>epoetin alfa Injectable Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1654923\"> </a>1654923</td><td>darbepoetin alfa Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1654949\"> </a>1654949</td><td>0.75 ML darbepoetin alfa 0.2 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1654954\"> </a>1654954</td><td>1 ML darbepoetin alfa 0.2 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1721637\"> </a>1721637</td><td>epoetin alfa Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1721684\"> </a>1721684</td><td>1 ML epoetin alfa 10000 UNT/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-239998\"> </a>239998</td><td>1 ML epoetin alfa 2000 UNT/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-239999\"> </a>239999</td><td>1 ML epoetin alfa 4000 UNT/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-240000\"> </a>240000</td><td>epoetin alfa 10000 UNT/ML Injectable Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-240377\"> </a>240377</td><td>1 ML epoetin alfa 3000 UNT/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-241999\"> </a>241999</td><td>epoetin alfa 20000 UNT/ML Injectable Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-242706\"> </a>242706</td><td>1 ML epoetin alfa 40000 UNT/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349273\"> </a>349273</td><td>1 ML darbepoetin alfa 0.025 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349274\"> </a>349274</td><td>1 ML darbepoetin alfa 0.04 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349275\"> </a>349275</td><td>1 ML darbepoetin alfa 0.06 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349276\"> </a>349276</td><td>1 ML darbepoetin alfa 0.1 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-351247\"> </a>351247</td><td>1 ML darbepoetin alfa 0.3 MG/ML Injection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-372032\"> </a>372032</td><td>epoetin alfa Injectable Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-730043\"> </a>730043</td><td>darbepoetin alfa Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-730044\"> </a>730044</td><td>0.5 ML darbepoetin alfa 0.2 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-731167\"> </a>731167</td><td>0.3 ML darbepoetin alfa 0.2 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-731171\"> </a>731171</td><td>0.3 ML darbepoetin alfa 0.5 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-731174\"> </a>731174</td><td>0.4 ML darbepoetin alfa 0.5 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-731176\"> </a>731176</td><td>0.42 ML darbepoetin alfa 0.06 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-731179\"> </a>731179</td><td>0.6 ML darbepoetin alfa 0.5 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-731181\"> </a>731181</td><td>0.4 ML darbepoetin alfa 0.1 MG/ML Prefilled Syringe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-731184\"> </a>731184</td><td>1 ML darbepoetin alfa 0.5 MG/ML Prefilled Syringe</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.307",
+  "version": "20200415",
+  "name": "Erythropoiesis Stimulating Agent",
+  "status": "active",
+  "date": "2020-04-15T01:00:18-04:00",
+  "publisher": "HL7 Patient Care WG Steward",
+  "expansion": {
+    "identifier": "urn:uuid:ca719f88-ea6b-4ea3-aed0-a280e16b8cf9",
+    "timestamp": "2022-01-10T12:37:06-05:00",
+    "total": 28,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1157180",
+      "display": "darbepoetin alfa Injectable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1163895",
+      "display": "epoetin alfa Injectable Product"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1654923",
+      "display": "darbepoetin alfa Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1654949",
+      "display": "0.75 ML darbepoetin alfa 0.2 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1654954",
+      "display": "1 ML darbepoetin alfa 0.2 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1721637",
+      "display": "epoetin alfa Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1721684",
+      "display": "1 ML epoetin alfa 10000 UNT/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "239998",
+      "display": "1 ML epoetin alfa 2000 UNT/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "239999",
+      "display": "1 ML epoetin alfa 4000 UNT/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "240000",
+      "display": "epoetin alfa 10000 UNT/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "240377",
+      "display": "1 ML epoetin alfa 3000 UNT/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "241999",
+      "display": "epoetin alfa 20000 UNT/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "242706",
+      "display": "1 ML epoetin alfa 40000 UNT/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349273",
+      "display": "1 ML darbepoetin alfa 0.025 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349274",
+      "display": "1 ML darbepoetin alfa 0.04 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349275",
+      "display": "1 ML darbepoetin alfa 0.06 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349276",
+      "display": "1 ML darbepoetin alfa 0.1 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "351247",
+      "display": "1 ML darbepoetin alfa 0.3 MG/ML Injection"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "372032",
+      "display": "epoetin alfa Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "730043",
+      "display": "darbepoetin alfa Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "730044",
+      "display": "0.5 ML darbepoetin alfa 0.2 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "731167",
+      "display": "0.3 ML darbepoetin alfa 0.2 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "731171",
+      "display": "0.3 ML darbepoetin alfa 0.5 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "731174",
+      "display": "0.4 ML darbepoetin alfa 0.5 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "731176",
+      "display": "0.42 ML darbepoetin alfa 0.06 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "731179",
+      "display": "0.6 ML darbepoetin alfa 0.5 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "731181",
+      "display": "0.4 ML darbepoetin alfa 0.1 MG/ML Prefilled Syringe"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "731184",
+      "display": "1 ML darbepoetin alfa 0.5 MG/ML Prefilled Syringe"
+    } ]
+  }
+}

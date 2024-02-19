@@ -1,0 +1,852 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1213.11",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2021-10-19T12:04:16.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 164 concepts</p><p>All codes from system <code>http://www.nlm.nih.gov/research/umls/rxnorm</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1000001\"> </a>1000001</td><td>amlodipine 5 MG / hydrochlorothiazide 25 MG / olmesartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1011718\"> </a>1011718</td><td>aliskiren 150 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1011729\"> </a>1011729</td><td>aliskiren 300 MG / valsartan 320 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-104370\"> </a>104370</td><td>captopril 25 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1091646\"> </a>1091646</td><td>azilsartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1091652\"> </a>1091652</td><td>azilsartan medoxomil 80 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1235144\"> </a>1235144</td><td>azilsartan medoxomil 40 MG / chlorthalidone 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1235151\"> </a>1235151</td><td>azilsartan medoxomil 40 MG / chlorthalidone 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1299859\"> </a>1299859</td><td>hydrochlorothiazide 12.5 MG / moexipril hydrochloride 15 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1299871\"> </a>1299871</td><td>hydrochlorothiazide 12.5 MG / moexipril hydrochloride 7.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1299890\"> </a>1299890</td><td>hydrochlorothiazide 25 MG / moexipril hydrochloride 15 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1299896\"> </a>1299896</td><td>moexipril hydrochloride 15 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1299897\"> </a>1299897</td><td>moexipril hydrochloride 7.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1435624\"> </a>1435624</td><td>enalapril maleate 1 MG/ML Oral Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-153077\"> </a>153077</td><td>valsartan 40 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-153822\"> </a>153822</td><td>candesartan cilexetil 4 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-153823\"> </a>153823</td><td>candesartan cilexetil 8 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1600716\"> </a>1600716</td><td>amlodipine 10 MG / perindopril arginine 14 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1600724\"> </a>1600724</td><td>amlodipine 2.5 MG / perindopril arginine 3.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1600728\"> </a>1600728</td><td>amlodipine 5 MG / perindopril arginine 7 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1656340\"> </a>1656340</td><td>sacubitril 24 MG / valsartan 26 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1656349\"> </a>1656349</td><td>sacubitril 49 MG / valsartan 51 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1656354\"> </a>1656354</td><td>sacubitril 97 MG / valsartan 103 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197436\"> </a>197436</td><td>captopril 25 MG / hydrochlorothiazide 15 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197437\"> </a>197437</td><td>captopril 25 MG / hydrochlorothiazide 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197438\"> </a>197438</td><td>captopril 50 MG / hydrochlorothiazide 15 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197439\"> </a>197439</td><td>captopril 50 MG / hydrochlorothiazide 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197884\"> </a>197884</td><td>lisinopril 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197885\"> </a>197885</td><td>hydrochlorothiazide 12.5 MG / lisinopril 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197886\"> </a>197886</td><td>hydrochlorothiazide 12.5 MG / lisinopril 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-197887\"> </a>197887</td><td>hydrochlorothiazide 25 MG / lisinopril 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198188\"> </a>198188</td><td>ramipril 2.5 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-198189\"> </a>198189</td><td>ramipril 5 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199351\"> </a>199351</td><td>trandolapril 2 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199352\"> </a>199352</td><td>trandolapril 4 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199353\"> </a>199353</td><td>trandolapril 1 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199622\"> </a>199622</td><td>trandolapril 0.5 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199816\"> </a>199816</td><td>trandolapril 1 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199817\"> </a>199817</td><td>trandolapril 2 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199850\"> </a>199850</td><td>valsartan 80 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-199919\"> </a>199919</td><td>valsartan 160 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-200094\"> </a>200094</td><td>irbesartan 75 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-200095\"> </a>200095</td><td>irbesartan 150 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-200096\"> </a>200096</td><td>irbesartan 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-200284\"> </a>200284</td><td>hydrochlorothiazide 12.5 MG / valsartan 80 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-200285\"> </a>200285</td><td>hydrochlorothiazide 12.5 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-205304\"> </a>205304</td><td>telmisartan 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-205305\"> </a>205305</td><td>telmisartan 80 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-205326\"> </a>205326</td><td>lisinopril 30 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-251856\"> </a>251856</td><td>ramipril 2.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-251857\"> </a>251857</td><td>ramipril 5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-261962\"> </a>261962</td><td>ramipril 10 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-282755\"> </a>282755</td><td>telmisartan 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-283316\"> </a>283316</td><td>hydrochlorothiazide 12.5 MG / telmisartan 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-283317\"> </a>283317</td><td>hydrochlorothiazide 12.5 MG / telmisartan 80 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-308962\"> </a>308962</td><td>captopril 100 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-308963\"> </a>308963</td><td>captopril 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-308964\"> </a>308964</td><td>captopril 50 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310139\"> </a>310139</td><td>eprosartan 400 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310140\"> </a>310140</td><td>eprosartan 600 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310792\"> </a>310792</td><td>hydrochlorothiazide 12.5 MG / irbesartan 150 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310793\"> </a>310793</td><td>hydrochlorothiazide 12.5 MG / irbesartan 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310796\"> </a>310796</td><td>hydrochlorothiazide 12.5 MG / quinapril 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310797\"> </a>310797</td><td>hydrochlorothiazide 12.5 MG / quinapril 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-310809\"> </a>310809</td><td>hydrochlorothiazide 25 MG / quinapril 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-311353\"> </a>311353</td><td>lisinopril 2.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-311354\"> </a>311354</td><td>lisinopril 5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-312748\"> </a>312748</td><td>quinapril 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-312749\"> </a>312749</td><td>quinapril 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-312750\"> </a>312750</td><td>quinapril 5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-314076\"> </a>314076</td><td>lisinopril 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-314077\"> </a>314077</td><td>lisinopril 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-314203\"> </a>314203</td><td>quinapril 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-317173\"> </a>317173</td><td>captopril 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349199\"> </a>349199</td><td>valsartan 80 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349200\"> </a>349200</td><td>valsartan 320 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349201\"> </a>349201</td><td>valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349353\"> </a>349353</td><td>hydrochlorothiazide 25 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349373\"> </a>349373</td><td>olmesartan medoxomil 5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349401\"> </a>349401</td><td>olmesartan medoxomil 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349405\"> </a>349405</td><td>olmesartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-349483\"> </a>349483</td><td>valsartan 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-351292\"> </a>351292</td><td>eprosartan 600 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-351293\"> </a>351293</td><td>eprosartan 600 MG / hydrochlorothiazide 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-389180\"> </a>389180</td><td>felodipine 2.5 MG / ramipril 2.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-389181\"> </a>389181</td><td>felodipine 5 MG / ramipril 5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-389185\"> </a>389185</td><td>eprosartan 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-401965\"> </a>401965</td><td>ramipril 1.25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-401968\"> </a>401968</td><td>ramipril 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-401971\"> </a>401971</td><td>olmesartan medoxomil 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-403853\"> </a>403853</td><td>hydrochlorothiazide 12.5 MG / olmesartan medoxomil 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-403854\"> </a>403854</td><td>hydrochlorothiazide 12.5 MG / olmesartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-403855\"> </a>403855</td><td>hydrochlorothiazide 25 MG / olmesartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-411434\"> </a>411434</td><td>trandolapril 4 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-477130\"> </a>477130</td><td>hydrochlorothiazide 25 MG / telmisartan 80 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-485471\"> </a>485471</td><td>hydrochlorothiazide 25 MG / irbesartan 300 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-577776\"> </a>577776</td><td>candesartan cilexetil 16 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-578325\"> </a>578325</td><td>candesartan cilexetil 16 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-578330\"> </a>578330</td><td>candesartan cilexetil 32 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-636042\"> </a>636042</td><td>hydrochlorothiazide 12.5 MG / valsartan 320 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-636045\"> </a>636045</td><td>hydrochlorothiazide 25 MG / valsartan 320 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-639536\"> </a>639536</td><td>candesartan cilexetil 2 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-639537\"> </a>639537</td><td>candesartan cilexetil 32 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-722126\"> </a>722126</td><td>amlodipine 10 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-722131\"> </a>722131</td><td>amlodipine 10 MG / valsartan 320 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-722134\"> </a>722134</td><td>amlodipine 5 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-722137\"> </a>722137</td><td>amlodipine 5 MG / valsartan 320 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-730861\"> </a>730861</td><td>amlodipine 10 MG / olmesartan medoxomil 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-730866\"> </a>730866</td><td>amlodipine 10 MG / olmesartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-730869\"> </a>730869</td><td>amlodipine 5 MG / olmesartan medoxomil 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-730872\"> </a>730872</td><td>amlodipine 5 MG / olmesartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-802749\"> </a>802749</td><td>candesartan cilexetil 32 MG / hydrochlorothiazide 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-833237\"> </a>833237</td><td>diltiazem hydrochloride 180 MG / enalapril maleate 5 MG Extended Release Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-845488\"> </a>845488</td><td>ramipril 1.25 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-848131\"> </a>848131</td><td>amlodipine 10 MG / hydrochlorothiazide 12.5 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-848135\"> </a>848135</td><td>amlodipine 10 MG / hydrochlorothiazide 25 MG / valsartan 320 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-848140\"> </a>848140</td><td>amlodipine 5 MG / hydrochlorothiazide 12.5 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-848145\"> </a>848145</td><td>amlodipine 5 MG / hydrochlorothiazide 25 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-848151\"> </a>848151</td><td>amlodipine 10 MG / hydrochlorothiazide 25 MG / valsartan 160 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-854925\"> </a>854925</td><td>perindopril erbumine 8 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-854984\"> </a>854984</td><td>perindopril erbumine 2 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-854988\"> </a>854988</td><td>perindopril erbumine 4 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-854993\"> </a>854993</td><td>indapamide 1.25 MG / perindopril erbumine 4 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-857166\"> </a>857166</td><td>fosinopril sodium 10 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-857169\"> </a>857169</td><td>fosinopril sodium 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-857174\"> </a>857174</td><td>fosinopril sodium 20 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-857183\"> </a>857183</td><td>fosinopril sodium 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-857187\"> </a>857187</td><td>fosinopril sodium 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-858804\"> </a>858804</td><td>enalapril maleate 2.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-858810\"> </a>858810</td><td>enalapril maleate 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-858813\"> </a>858813</td><td>enalapril maleate 5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-858817\"> </a>858817</td><td>enalapril maleate 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-858821\"> </a>858821</td><td>enalapril maleate 1.25 MG/ML Injectable Solution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-858824\"> </a>858824</td><td>enalapril maleate 5 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-858828\"> </a>858828</td><td>enalapril maleate 10 MG / hydrochlorothiazide 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-858921\"> </a>858921</td><td>enalapril maleate 20 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-876514\"> </a>876514</td><td>amlodipine 10 MG / telmisartan 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-876519\"> </a>876519</td><td>amlodipine 10 MG / telmisartan 80 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-876524\"> </a>876524</td><td>amlodipine 5 MG / telmisartan 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-876529\"> </a>876529</td><td>amlodipine 5 MG / telmisartan 80 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898342\"> </a>898342</td><td>amlodipine 10 MG / benazepril hydrochloride 20 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898346\"> </a>898346</td><td>amlodipine 10 MG / benazepril hydrochloride 40 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898350\"> </a>898350</td><td>amlodipine 2.5 MG / benazepril hydrochloride 10 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898353\"> </a>898353</td><td>amlodipine 5 MG / benazepril hydrochloride 10 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898356\"> </a>898356</td><td>amlodipine 5 MG / benazepril hydrochloride 20 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898359\"> </a>898359</td><td>amlodipine 5 MG / benazepril hydrochloride 40 MG Oral Capsule</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898362\"> </a>898362</td><td>benazepril hydrochloride 10 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898367\"> </a>898367</td><td>benazepril hydrochloride 20 MG / hydrochlorothiazide 12.5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898372\"> </a>898372</td><td>benazepril hydrochloride 20 MG / hydrochlorothiazide 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898378\"> </a>898378</td><td>benazepril hydrochloride 5 MG / hydrochlorothiazide 6.25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898687\"> </a>898687</td><td>benazepril hydrochloride 10 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898690\"> </a>898690</td><td>benazepril hydrochloride 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898719\"> </a>898719</td><td>benazepril hydrochloride 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-898723\"> </a>898723</td><td>benazepril hydrochloride 5 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-979464\"> </a>979464</td><td>hydrochlorothiazide 12.5 MG / losartan potassium 100 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-979468\"> </a>979468</td><td>hydrochlorothiazide 12.5 MG / losartan potassium 50 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-979471\"> </a>979471</td><td>hydrochlorothiazide 25 MG / losartan potassium 100 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-979480\"> </a>979480</td><td>losartan potassium 100 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-979485\"> </a>979485</td><td>losartan potassium 25 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-979492\"> </a>979492</td><td>losartan potassium 50 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-999967\"> </a>999967</td><td>amlodipine 5 MG / hydrochlorothiazide 12.5 MG / olmesartan medoxomil 20 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-999986\"> </a>999986</td><td>amlodipine 10 MG / hydrochlorothiazide 12.5 MG / olmesartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-999991\"> </a>999991</td><td>amlodipine 10 MG / hydrochlorothiazide 25 MG / olmesartan medoxomil 40 MG Oral Tablet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-999996\"> </a>999996</td><td>amlodipine 5 MG / hydrochlorothiazide 12.5 MG / olmesartan medoxomil 40 MG Oral Tablet</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1213.11",
+  "version": "20190917",
+  "name": "ACEis and ARBs",
+  "status": "active",
+  "date": "2019-09-17T01:00:18-04:00",
+  "publisher": "Meaningful Drug Interaction Alerts Steward",
+  "expansion": {
+    "identifier": "urn:uuid:24d2613e-f273-4b2b-84c6-b0aa792f71a1",
+    "timestamp": "2022-01-10T12:39:20-05:00",
+    "total": 164,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1000001",
+      "display": "amlodipine 5 MG / hydrochlorothiazide 25 MG / olmesartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1011718",
+      "display": "aliskiren 150 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1011729",
+      "display": "aliskiren 300 MG / valsartan 320 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "104370",
+      "display": "captopril 25 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1091646",
+      "display": "azilsartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1091652",
+      "display": "azilsartan medoxomil 80 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1235144",
+      "display": "azilsartan medoxomil 40 MG / chlorthalidone 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1235151",
+      "display": "azilsartan medoxomil 40 MG / chlorthalidone 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1299859",
+      "display": "hydrochlorothiazide 12.5 MG / moexipril hydrochloride 15 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1299871",
+      "display": "hydrochlorothiazide 12.5 MG / moexipril hydrochloride 7.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1299890",
+      "display": "hydrochlorothiazide 25 MG / moexipril hydrochloride 15 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1299896",
+      "display": "moexipril hydrochloride 15 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1299897",
+      "display": "moexipril hydrochloride 7.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1435624",
+      "display": "enalapril maleate 1 MG/ML Oral Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "153077",
+      "display": "valsartan 40 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "153822",
+      "display": "candesartan cilexetil 4 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "153823",
+      "display": "candesartan cilexetil 8 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1600716",
+      "display": "amlodipine 10 MG / perindopril arginine 14 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1600724",
+      "display": "amlodipine 2.5 MG / perindopril arginine 3.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1600728",
+      "display": "amlodipine 5 MG / perindopril arginine 7 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1656340",
+      "display": "sacubitril 24 MG / valsartan 26 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1656349",
+      "display": "sacubitril 49 MG / valsartan 51 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "1656354",
+      "display": "sacubitril 97 MG / valsartan 103 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197436",
+      "display": "captopril 25 MG / hydrochlorothiazide 15 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197437",
+      "display": "captopril 25 MG / hydrochlorothiazide 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197438",
+      "display": "captopril 50 MG / hydrochlorothiazide 15 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197439",
+      "display": "captopril 50 MG / hydrochlorothiazide 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197884",
+      "display": "lisinopril 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197885",
+      "display": "hydrochlorothiazide 12.5 MG / lisinopril 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197886",
+      "display": "hydrochlorothiazide 12.5 MG / lisinopril 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "197887",
+      "display": "hydrochlorothiazide 25 MG / lisinopril 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198188",
+      "display": "ramipril 2.5 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "198189",
+      "display": "ramipril 5 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199351",
+      "display": "trandolapril 2 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199352",
+      "display": "trandolapril 4 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199353",
+      "display": "trandolapril 1 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199622",
+      "display": "trandolapril 0.5 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199816",
+      "display": "trandolapril 1 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199817",
+      "display": "trandolapril 2 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199850",
+      "display": "valsartan 80 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "199919",
+      "display": "valsartan 160 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "200094",
+      "display": "irbesartan 75 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "200095",
+      "display": "irbesartan 150 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "200096",
+      "display": "irbesartan 300 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "200284",
+      "display": "hydrochlorothiazide 12.5 MG / valsartan 80 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "200285",
+      "display": "hydrochlorothiazide 12.5 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "205304",
+      "display": "telmisartan 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "205305",
+      "display": "telmisartan 80 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "205326",
+      "display": "lisinopril 30 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "251856",
+      "display": "ramipril 2.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "251857",
+      "display": "ramipril 5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "261962",
+      "display": "ramipril 10 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "282755",
+      "display": "telmisartan 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "283316",
+      "display": "hydrochlorothiazide 12.5 MG / telmisartan 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "283317",
+      "display": "hydrochlorothiazide 12.5 MG / telmisartan 80 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "308962",
+      "display": "captopril 100 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "308963",
+      "display": "captopril 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "308964",
+      "display": "captopril 50 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310139",
+      "display": "eprosartan 400 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310140",
+      "display": "eprosartan 600 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310792",
+      "display": "hydrochlorothiazide 12.5 MG / irbesartan 150 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310793",
+      "display": "hydrochlorothiazide 12.5 MG / irbesartan 300 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310796",
+      "display": "hydrochlorothiazide 12.5 MG / quinapril 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310797",
+      "display": "hydrochlorothiazide 12.5 MG / quinapril 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "310809",
+      "display": "hydrochlorothiazide 25 MG / quinapril 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "311353",
+      "display": "lisinopril 2.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "311354",
+      "display": "lisinopril 5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "312748",
+      "display": "quinapril 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "312749",
+      "display": "quinapril 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "312750",
+      "display": "quinapril 5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "314076",
+      "display": "lisinopril 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "314077",
+      "display": "lisinopril 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "314203",
+      "display": "quinapril 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "317173",
+      "display": "captopril 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349199",
+      "display": "valsartan 80 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349200",
+      "display": "valsartan 320 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349201",
+      "display": "valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349353",
+      "display": "hydrochlorothiazide 25 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349373",
+      "display": "olmesartan medoxomil 5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349401",
+      "display": "olmesartan medoxomil 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349405",
+      "display": "olmesartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "349483",
+      "display": "valsartan 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "351292",
+      "display": "eprosartan 600 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "351293",
+      "display": "eprosartan 600 MG / hydrochlorothiazide 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "389180",
+      "display": "felodipine 2.5 MG / ramipril 2.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "389181",
+      "display": "felodipine 5 MG / ramipril 5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "389185",
+      "display": "eprosartan 300 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "401965",
+      "display": "ramipril 1.25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "401968",
+      "display": "ramipril 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "401971",
+      "display": "olmesartan medoxomil 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "403853",
+      "display": "hydrochlorothiazide 12.5 MG / olmesartan medoxomil 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "403854",
+      "display": "hydrochlorothiazide 12.5 MG / olmesartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "403855",
+      "display": "hydrochlorothiazide 25 MG / olmesartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "411434",
+      "display": "trandolapril 4 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "477130",
+      "display": "hydrochlorothiazide 25 MG / telmisartan 80 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "485471",
+      "display": "hydrochlorothiazide 25 MG / irbesartan 300 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "577776",
+      "display": "candesartan cilexetil 16 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "578325",
+      "display": "candesartan cilexetil 16 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "578330",
+      "display": "candesartan cilexetil 32 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "636042",
+      "display": "hydrochlorothiazide 12.5 MG / valsartan 320 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "636045",
+      "display": "hydrochlorothiazide 25 MG / valsartan 320 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "639536",
+      "display": "candesartan cilexetil 2 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "639537",
+      "display": "candesartan cilexetil 32 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "722126",
+      "display": "amlodipine 10 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "722131",
+      "display": "amlodipine 10 MG / valsartan 320 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "722134",
+      "display": "amlodipine 5 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "722137",
+      "display": "amlodipine 5 MG / valsartan 320 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "730861",
+      "display": "amlodipine 10 MG / olmesartan medoxomil 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "730866",
+      "display": "amlodipine 10 MG / olmesartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "730869",
+      "display": "amlodipine 5 MG / olmesartan medoxomil 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "730872",
+      "display": "amlodipine 5 MG / olmesartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "802749",
+      "display": "candesartan cilexetil 32 MG / hydrochlorothiazide 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "833237",
+      "display": "diltiazem hydrochloride 180 MG / enalapril maleate 5 MG Extended Release Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "845488",
+      "display": "ramipril 1.25 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "848131",
+      "display": "amlodipine 10 MG / hydrochlorothiazide 12.5 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "848135",
+      "display": "amlodipine 10 MG / hydrochlorothiazide 25 MG / valsartan 320 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "848140",
+      "display": "amlodipine 5 MG / hydrochlorothiazide 12.5 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "848145",
+      "display": "amlodipine 5 MG / hydrochlorothiazide 25 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "848151",
+      "display": "amlodipine 10 MG / hydrochlorothiazide 25 MG / valsartan 160 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "854925",
+      "display": "perindopril erbumine 8 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "854984",
+      "display": "perindopril erbumine 2 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "854988",
+      "display": "perindopril erbumine 4 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "854993",
+      "display": "indapamide 1.25 MG / perindopril erbumine 4 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "857166",
+      "display": "fosinopril sodium 10 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "857169",
+      "display": "fosinopril sodium 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "857174",
+      "display": "fosinopril sodium 20 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "857183",
+      "display": "fosinopril sodium 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "857187",
+      "display": "fosinopril sodium 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "858804",
+      "display": "enalapril maleate 2.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "858810",
+      "display": "enalapril maleate 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "858813",
+      "display": "enalapril maleate 5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "858817",
+      "display": "enalapril maleate 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "858821",
+      "display": "enalapril maleate 1.25 MG/ML Injectable Solution"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "858824",
+      "display": "enalapril maleate 5 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "858828",
+      "display": "enalapril maleate 10 MG / hydrochlorothiazide 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "858921",
+      "display": "enalapril maleate 20 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "876514",
+      "display": "amlodipine 10 MG / telmisartan 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "876519",
+      "display": "amlodipine 10 MG / telmisartan 80 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "876524",
+      "display": "amlodipine 5 MG / telmisartan 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "876529",
+      "display": "amlodipine 5 MG / telmisartan 80 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898342",
+      "display": "amlodipine 10 MG / benazepril hydrochloride 20 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898346",
+      "display": "amlodipine 10 MG / benazepril hydrochloride 40 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898350",
+      "display": "amlodipine 2.5 MG / benazepril hydrochloride 10 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898353",
+      "display": "amlodipine 5 MG / benazepril hydrochloride 10 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898356",
+      "display": "amlodipine 5 MG / benazepril hydrochloride 20 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898359",
+      "display": "amlodipine 5 MG / benazepril hydrochloride 40 MG Oral Capsule"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898362",
+      "display": "benazepril hydrochloride 10 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898367",
+      "display": "benazepril hydrochloride 20 MG / hydrochlorothiazide 12.5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898372",
+      "display": "benazepril hydrochloride 20 MG / hydrochlorothiazide 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898378",
+      "display": "benazepril hydrochloride 5 MG / hydrochlorothiazide 6.25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898687",
+      "display": "benazepril hydrochloride 10 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898690",
+      "display": "benazepril hydrochloride 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898719",
+      "display": "benazepril hydrochloride 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "898723",
+      "display": "benazepril hydrochloride 5 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "979464",
+      "display": "hydrochlorothiazide 12.5 MG / losartan potassium 100 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "979468",
+      "display": "hydrochlorothiazide 12.5 MG / losartan potassium 50 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "979471",
+      "display": "hydrochlorothiazide 25 MG / losartan potassium 100 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "979480",
+      "display": "losartan potassium 100 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "979485",
+      "display": "losartan potassium 25 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "979492",
+      "display": "losartan potassium 50 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "999967",
+      "display": "amlodipine 5 MG / hydrochlorothiazide 12.5 MG / olmesartan medoxomil 20 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "999986",
+      "display": "amlodipine 10 MG / hydrochlorothiazide 12.5 MG / olmesartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "999991",
+      "display": "amlodipine 10 MG / hydrochlorothiazide 25 MG / olmesartan medoxomil 40 MG Oral Tablet"
+    }, {
+      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "version": "01012022",
+      "code": "999996",
+      "display": "amlodipine 5 MG / hydrochlorothiazide 12.5 MG / olmesartan medoxomil 40 MG Oral Tablet"
+    } ]
+  }
+}

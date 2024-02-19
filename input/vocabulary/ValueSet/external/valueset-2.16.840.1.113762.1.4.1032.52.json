@@ -1,0 +1,747 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1032.52",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2018-12-29T15:23:53.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 143 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-111490003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=111490003\">111490003</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND severe panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-111491004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=111491004\">111491004</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND panic attacks in partial remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-11941006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11941006\">11941006</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND panic attacks in full remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-126943008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=126943008\">126943008</a></td><td>http://snomed.info/sct</td><td>Separation anxiety (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1376001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1376001\">1376001</a></td><td>http://snomed.info/sct</td><td>Obsessive compulsive personality disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1380006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1380006\">1380006</a></td><td>http://snomed.info/sct</td><td>Agoraphobia without history of panic disorder with limited symptom attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15277004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15277004\">15277004</a></td><td>http://snomed.info/sct</td><td>Hallucinogen-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-16266831000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=16266831000119100\">16266831000119100</a></td><td>http://snomed.info/sct</td><td>Moderate major depressive disorder co-occurrent with anxiety single episode (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1686006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1686006\">1686006</a></td><td>http://snomed.info/sct</td><td>Sedative, hypnotic AND/OR anxiolytic-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-17496003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17496003\">17496003</a></td><td>http://snomed.info/sct</td><td>Organic anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1816003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1816003\">1816003</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, severe agoraphobic avoidance AND mild panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-18193002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=18193002\">18193002</a></td><td>http://snomed.info/sct</td><td>Hypochondriasis (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-191722009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=191722009\">191722009</a></td><td>http://snomed.info/sct</td><td>Agoraphobia with panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-191736004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=191736004\">191736004</a></td><td>http://snomed.info/sct</td><td>Obsessive-compulsive disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-192037000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=192037000\">192037000</a></td><td>http://snomed.info/sct</td><td>Acute panic state due to acute stress reaction (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-192039002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=192039002\">192039002</a></td><td>http://snomed.info/sct</td><td>Acute stupor state due to acute stress reaction (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-192042008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=192042008\">192042008</a></td><td>http://snomed.info/sct</td><td>Acute post-trauma stress state (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-197480006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=197480006\">197480006</a></td><td>http://snomed.info/sct</td><td>Anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-19766004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=19766004\">19766004</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, mild agoraphobic avoidance AND severe panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-20876004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=20876004\">20876004</a></td><td>http://snomed.info/sct</td><td>Inhalant-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-21897009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21897009\">21897009</a></td><td>http://snomed.info/sct</td><td>Generalized anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-22230001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22230001\">22230001</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND panic attacks in full remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-22621000119103\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22621000119103\">22621000119103</a></td><td>http://snomed.info/sct</td><td>Anxiety disorder caused by drug (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-231504006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=231504006\">231504006</a></td><td>http://snomed.info/sct</td><td>Mixed anxiety and depressive disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-24781009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24781009\">24781009</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, mild agoraphobic avoidance AND panic attacks in full remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-25501002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=25501002\">25501002</a></td><td>http://snomed.info/sct</td><td>Social phobia (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-271952001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271952001\">271952001</a></td><td>http://snomed.info/sct</td><td>Stress and adjustment reaction (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-30059008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=30059008\">30059008</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, severe agoraphobic avoidance AND moderate panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-313182004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=313182004\">313182004</a></td><td>http://snomed.info/sct</td><td>Chronic post-traumatic stress disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-3158007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3158007\">3158007</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND panic attacks in partial remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-31781004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=31781004\">31781004</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND mild panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-318784009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=318784009\">318784009</a></td><td>http://snomed.info/sct</td><td>Posttraumatic stress disorder, delayed onset (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-32388005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32388005\">32388005</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND moderate panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-34116005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=34116005\">34116005</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND severe panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-34938008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=34938008\">34938008</a></td><td>http://snomed.info/sct</td><td>Alcohol-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-35607004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=35607004\">35607004</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-371631005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=371631005\">371631005</a></td><td>http://snomed.info/sct</td><td>Panic disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-38328002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=38328002\">38328002</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, severe agoraphobic avoidance AND panic attacks in full remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386810004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386810004\">386810004</a></td><td>http://snomed.info/sct</td><td>Phobic disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-39951001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=39951001\">39951001</a></td><td>http://snomed.info/sct</td><td>Cannabis-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-428687006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=428687006\">428687006</a></td><td>http://snomed.info/sct</td><td>Nightmares associated with chronic post-traumatic stress disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-43150009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43150009\">43150009</a></td><td>http://snomed.info/sct</td><td>Panic disorder without agoraphobia with severe panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-436001000124105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=436001000124105\">436001000124105</a></td><td>http://snomed.info/sct</td><td>Insomnia due to anxiety and fear (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-446175003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=446175003\">446175003</a></td><td>http://snomed.info/sct</td><td>Acute posttraumatic stress disorder following military combat (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-446180007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=446180007\">446180007</a></td><td>http://snomed.info/sct</td><td>Delayed posttraumatic stress disorder following military combat (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47372000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47372000\">47372000</a></td><td>http://snomed.info/sct</td><td>Adjustment disorder with anxious mood (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-47505003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=47505003\">47505003</a></td><td>http://snomed.info/sct</td><td>Posttraumatic stress disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-4932002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4932002\">4932002</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, moderate agoraphobic avoidance AND mild panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-49564006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49564006\">49564006</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, mild agoraphobic avoidance AND moderate panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-50026000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=50026000\">50026000</a></td><td>http://snomed.info/sct</td><td>Psychoactive substance-induced organic anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-50983008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=50983008\">50983008</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, mild agoraphobic avoidance AND panic attacks in partial remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-51493001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51493001\">51493001</a></td><td>http://snomed.info/sct</td><td>Cocaine-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-52910006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52910006\">52910006</a></td><td>http://snomed.info/sct</td><td>Anxiety disorder due to a general medical condition (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-53956006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=53956006\">53956006</a></td><td>http://snomed.info/sct</td><td>Panic disorder without agoraphobia with panic attacks in partial remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-54587008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=54587008\">54587008</a></td><td>http://snomed.info/sct</td><td>Simple phobia (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-5509004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5509004\">5509004</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia AND severe panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-55967005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=55967005\">55967005</a></td><td>http://snomed.info/sct</td><td>Phencyclidine-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-56576003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=56576003\">56576003</a></td><td>http://snomed.info/sct</td><td>Panic disorder without agoraphobia (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-59923000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59923000\">59923000</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia AND panic attacks in full remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-61212007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61212007\">61212007</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, severe agoraphobic avoidance AND severe panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-61569007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61569007\">61569007</a></td><td>http://snomed.info/sct</td><td>Agoraphobia without history of panic disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-62351001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62351001\">62351001</a></td><td>http://snomed.info/sct</td><td>Generalized social phobia (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-63701002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=63701002\">63701002</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, mild agoraphobic avoidance AND mild panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-63909006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=63909006\">63909006</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia AND panic attacks in partial remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-64060000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64060000\">64060000</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, moderate agoraphobic avoidance AND panic attacks in full remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-65064003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=65064003\">65064003</a></td><td>http://snomed.info/sct</td><td>Panic disorder without agoraphobia with moderate panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-67195008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=67195008\">67195008</a></td><td>http://snomed.info/sct</td><td>Acute stress disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-69479009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=69479009\">69479009</a></td><td>http://snomed.info/sct</td><td>Anxiety hyperventilation (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-698693004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=698693004\">698693004</a></td><td>http://snomed.info/sct</td><td>Adjustment disorder with anxious mood in remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-699241002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=699241002\">699241002</a></td><td>http://snomed.info/sct</td><td>Chronic post-traumatic stress disorder following military combat (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-7031000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7031000119100\">7031000119100</a></td><td>http://snomed.info/sct</td><td>Psychogenic fugue co-occurrent and due to stress reaction (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-70655008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=70655008\">70655008</a></td><td>http://snomed.info/sct</td><td>Caffeine-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-70691001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=70691001\">70691001</a></td><td>http://snomed.info/sct</td><td>Agoraphobia (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-724654009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=724654009\">724654009</a></td><td>http://snomed.info/sct</td><td>Anxiety disorder caused by opioid (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-724693000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=724693000\">724693000</a></td><td>http://snomed.info/sct</td><td>Obsessive compulsive disorder caused by cocaine (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-724708007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=724708007\">724708007</a></td><td>http://snomed.info/sct</td><td>Anxiety disorder caused by methylenedioxymethamphetamine (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-724722007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=724722007\">724722007</a></td><td>http://snomed.info/sct</td><td>Anxiety disorder caused by dissociative drug (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-724723002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=724723002\">724723002</a></td><td>http://snomed.info/sct</td><td>Anxiety disorder caused by ketamine (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-724730008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=724730008\">724730008</a></td><td>http://snomed.info/sct</td><td>Obsessive compulsive disorder caused by psychoactive substance (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-72861004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=72861004\">72861004</a></td><td>http://snomed.info/sct</td><td>Panic disorder without agoraphobia with mild panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-74010007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74010007\">74010007</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, severe agoraphobic avoidance AND panic attacks in partial remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-76812003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=76812003\">76812003</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, moderate agoraphobic avoidance AND panic attacks in partial remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-76868007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=76868007\">76868007</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND mild panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-8185002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8185002\">8185002</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia AND moderate panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-82339009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=82339009\">82339009</a></td><td>http://snomed.info/sct</td><td>Amphetamine-induced anxiety disorder (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-82415003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=82415003\">82415003</a></td><td>http://snomed.info/sct</td><td>Agoraphobia without history of panic disorder without limited symptom attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-82494000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=82494000\">82494000</a></td><td>http://snomed.info/sct</td><td>Panic disorder without agoraphobia with panic attacks in full remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-82738004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=82738004\">82738004</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, moderate agoraphobic avoidance AND moderate panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-83631006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83631006\">83631006</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, moderate agoraphobic avoidance AND severe panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-87798009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=87798009\">87798009</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND moderate panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89948007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89948007\">89948007</a></td><td>http://snomed.info/sct</td><td>Panic disorder with agoraphobia AND mild panic attacks (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F06.4\"> </a>F06.4</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Anxiety disorder due to known physiological condition</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.180\"> </a>F10.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.280\"> </a>F10.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.980\"> </a>F10.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F12.180\"> </a>F12.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cannabis abuse with cannabis-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F12.280\"> </a>F12.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cannabis dependence with cannabis-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F12.980\"> </a>F12.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cannabis use, unspecified with anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F13.180\"> </a>F13.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F13.280\"> </a>F13.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F13.980\"> </a>F13.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F14.180\"> </a>F14.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cocaine abuse with cocaine-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F14.280\"> </a>F14.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cocaine dependence with cocaine-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F14.980\"> </a>F14.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Cocaine use, unspecified with cocaine-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F15.180\"> </a>F15.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other stimulant abuse with stimulant-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F15.280\"> </a>F15.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other stimulant dependence with stimulant-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F15.980\"> </a>F15.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other stimulant use, unspecified with stimulant-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F16.180\"> </a>F16.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hallucinogen abuse with hallucinogen-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F16.280\"> </a>F16.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hallucinogen dependence with hallucinogen-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F16.980\"> </a>F16.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hallucinogen use, unspecified with hallucinogen-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F18.180\"> </a>F18.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Inhalant abuse with inhalant-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F18.280\"> </a>F18.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Inhalant dependence with inhalant-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F18.980\"> </a>F18.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Inhalant use, unspecified with inhalant-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F19.180\"> </a>F19.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other psychoactive substance abuse with psychoactive substance-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F19.280\"> </a>F19.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other psychoactive substance dependence with psychoactive substance-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F19.980\"> </a>F19.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other psychoactive substance use, unspecified with psychoactive substance-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F40.00\"> </a>F40.00</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Agoraphobia, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F40.01\"> </a>F40.01</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Agoraphobia with panic disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F40.02\"> </a>F40.02</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Agoraphobia without panic disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F40.10\"> </a>F40.10</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Social phobia, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F40.11\"> </a>F40.11</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Social phobia, generalized</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F40.240\"> </a>F40.240</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Claustrophobia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F40.8\"> </a>F40.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other phobic anxiety disorders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F40.9\"> </a>F40.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Phobic anxiety disorder, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F41.0\"> </a>F41.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Panic disorder [episodic paroxysmal anxiety]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F41.1\"> </a>F41.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Generalized anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F41.3\"> </a>F41.3</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other mixed anxiety disorders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F41.8\"> </a>F41.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other specified anxiety disorders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F41.9\"> </a>F41.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Anxiety disorder, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F42.2\"> </a>F42.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Mixed obsessional thoughts and acts</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F42.4\"> </a>F42.4</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Excoriation (skin-picking) disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F42.8\"> </a>F42.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other obsessive-compulsive disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F42.9\"> </a>F42.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Obsessive-compulsive disorder, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F43.0\"> </a>F43.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Acute stress reaction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F43.10\"> </a>F43.10</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Post-traumatic stress disorder, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F43.11\"> </a>F43.11</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Post-traumatic stress disorder, acute</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F43.12\"> </a>F43.12</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Post-traumatic stress disorder, chronic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F43.22\"> </a>F43.22</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adjustment disorder with anxiety</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F43.23\"> </a>F43.23</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Adjustment disorder with mixed anxiety and depressed mood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F43.8\"> </a>F43.8</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Other reactions to severe stress</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F43.9\"> </a>F43.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Reaction to severe stress, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F45.21\"> </a>F45.21</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Hypochondriasis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-R46.81\"> </a>R46.81</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Obsessive-compulsive behavior</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.52",
+  "version": "20180425",
+  "name": "Anxiety",
+  "status": "active",
+  "date": "2018-04-25T01:00:04-04:00",
+  "publisher": "MITRE Steward",
+  "expansion": {
+    "identifier": "urn:uuid:2e25b7de-ea4c-4ba3-b7d7-540ce385b134",
+    "timestamp": "2022-01-09T21:31:54-05:00",
+    "total": 143,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "111490003",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND severe panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "111491004",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND panic attacks in partial remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "11941006",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND panic attacks in full remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "126943008",
+      "display": "Separation anxiety (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1376001",
+      "display": "Obsessive compulsive personality disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1380006",
+      "display": "Agoraphobia without history of panic disorder with limited symptom attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "15277004",
+      "display": "Hallucinogen-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "16266831000119100",
+      "display": "Moderate major depressive disorder co-occurrent with anxiety single episode (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1686006",
+      "display": "Sedative, hypnotic AND/OR anxiolytic-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "17496003",
+      "display": "Organic anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "1816003",
+      "display": "Panic disorder with agoraphobia, severe agoraphobic avoidance AND mild panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "18193002",
+      "display": "Hypochondriasis (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "191722009",
+      "display": "Agoraphobia with panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "191736004",
+      "display": "Obsessive-compulsive disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "192037000",
+      "display": "Acute panic state due to acute stress reaction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "192039002",
+      "display": "Acute stupor state due to acute stress reaction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "192042008",
+      "display": "Acute post-trauma stress state (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "197480006",
+      "display": "Anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "19766004",
+      "display": "Panic disorder with agoraphobia, mild agoraphobic avoidance AND severe panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "20876004",
+      "display": "Inhalant-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "21897009",
+      "display": "Generalized anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "22230001",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND panic attacks in full remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "22621000119103",
+      "display": "Anxiety disorder caused by drug (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "231504006",
+      "display": "Mixed anxiety and depressive disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "24781009",
+      "display": "Panic disorder with agoraphobia, mild agoraphobic avoidance AND panic attacks in full remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "25501002",
+      "display": "Social phobia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "271952001",
+      "display": "Stress and adjustment reaction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "30059008",
+      "display": "Panic disorder with agoraphobia, severe agoraphobic avoidance AND moderate panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "313182004",
+      "display": "Chronic post-traumatic stress disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "3158007",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND panic attacks in partial remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "31781004",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND mild panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "318784009",
+      "display": "Posttraumatic stress disorder, delayed onset (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "32388005",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in partial remission AND moderate panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "34116005",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND severe panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "34938008",
+      "display": "Alcohol-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "35607004",
+      "display": "Panic disorder with agoraphobia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "371631005",
+      "display": "Panic disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "38328002",
+      "display": "Panic disorder with agoraphobia, severe agoraphobic avoidance AND panic attacks in full remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "386810004",
+      "display": "Phobic disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "39951001",
+      "display": "Cannabis-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "428687006",
+      "display": "Nightmares associated with chronic post-traumatic stress disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "43150009",
+      "display": "Panic disorder without agoraphobia with severe panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "436001000124105",
+      "display": "Insomnia due to anxiety and fear (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "446175003",
+      "display": "Acute posttraumatic stress disorder following military combat (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "446180007",
+      "display": "Delayed posttraumatic stress disorder following military combat (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "47372000",
+      "display": "Adjustment disorder with anxious mood (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "47505003",
+      "display": "Posttraumatic stress disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "4932002",
+      "display": "Panic disorder with agoraphobia, moderate agoraphobic avoidance AND mild panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "49564006",
+      "display": "Panic disorder with agoraphobia, mild agoraphobic avoidance AND moderate panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "50026000",
+      "display": "Psychoactive substance-induced organic anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "50983008",
+      "display": "Panic disorder with agoraphobia, mild agoraphobic avoidance AND panic attacks in partial remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "51493001",
+      "display": "Cocaine-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "52910006",
+      "display": "Anxiety disorder due to a general medical condition (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "53956006",
+      "display": "Panic disorder without agoraphobia with panic attacks in partial remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "54587008",
+      "display": "Simple phobia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "5509004",
+      "display": "Panic disorder with agoraphobia AND severe panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "55967005",
+      "display": "Phencyclidine-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "56576003",
+      "display": "Panic disorder without agoraphobia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "59923000",
+      "display": "Panic disorder with agoraphobia AND panic attacks in full remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "61212007",
+      "display": "Panic disorder with agoraphobia, severe agoraphobic avoidance AND severe panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "61569007",
+      "display": "Agoraphobia without history of panic disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "62351001",
+      "display": "Generalized social phobia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "63701002",
+      "display": "Panic disorder with agoraphobia, mild agoraphobic avoidance AND mild panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "63909006",
+      "display": "Panic disorder with agoraphobia AND panic attacks in partial remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "64060000",
+      "display": "Panic disorder with agoraphobia, moderate agoraphobic avoidance AND panic attacks in full remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "65064003",
+      "display": "Panic disorder without agoraphobia with moderate panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "67195008",
+      "display": "Acute stress disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "69479009",
+      "display": "Anxiety hyperventilation (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "698693004",
+      "display": "Adjustment disorder with anxious mood in remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "699241002",
+      "display": "Chronic post-traumatic stress disorder following military combat (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "7031000119100",
+      "display": "Psychogenic fugue co-occurrent and due to stress reaction (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "70655008",
+      "display": "Caffeine-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "70691001",
+      "display": "Agoraphobia (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "724654009",
+      "display": "Anxiety disorder caused by opioid (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "724693000",
+      "display": "Obsessive compulsive disorder caused by cocaine (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "724708007",
+      "display": "Anxiety disorder caused by methylenedioxymethamphetamine (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "724722007",
+      "display": "Anxiety disorder caused by dissociative drug (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "724723002",
+      "display": "Anxiety disorder caused by ketamine (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "724730008",
+      "display": "Obsessive compulsive disorder caused by psychoactive substance (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "72861004",
+      "display": "Panic disorder without agoraphobia with mild panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "74010007",
+      "display": "Panic disorder with agoraphobia, severe agoraphobic avoidance AND panic attacks in partial remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "76812003",
+      "display": "Panic disorder with agoraphobia, moderate agoraphobic avoidance AND panic attacks in partial remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "76868007",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND mild panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "8185002",
+      "display": "Panic disorder with agoraphobia AND moderate panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "82339009",
+      "display": "Amphetamine-induced anxiety disorder (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "82415003",
+      "display": "Agoraphobia without history of panic disorder without limited symptom attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "82494000",
+      "display": "Panic disorder without agoraphobia with panic attacks in full remission (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "82738004",
+      "display": "Panic disorder with agoraphobia, moderate agoraphobic avoidance AND moderate panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "83631006",
+      "display": "Panic disorder with agoraphobia, moderate agoraphobic avoidance AND severe panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "87798009",
+      "display": "Panic disorder with agoraphobia, agoraphobic avoidance in full remission AND moderate panic attacks (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20210901",
+      "code": "89948007",
+      "display": "Panic disorder with agoraphobia AND mild panic attacks (disorder)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F06.4",
+      "display": "Anxiety disorder due to known physiological condition"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F10.180",
+      "display": "Alcohol abuse with alcohol-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F10.280",
+      "display": "Alcohol dependence with alcohol-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F10.980",
+      "display": "Alcohol use, unspecified with alcohol-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F12.180",
+      "display": "Cannabis abuse with cannabis-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F12.280",
+      "display": "Cannabis dependence with cannabis-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F12.980",
+      "display": "Cannabis use, unspecified with anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F13.180",
+      "display": "Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F13.280",
+      "display": "Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F13.980",
+      "display": "Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F14.180",
+      "display": "Cocaine abuse with cocaine-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F14.280",
+      "display": "Cocaine dependence with cocaine-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F14.980",
+      "display": "Cocaine use, unspecified with cocaine-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F15.180",
+      "display": "Other stimulant abuse with stimulant-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F15.280",
+      "display": "Other stimulant dependence with stimulant-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F15.980",
+      "display": "Other stimulant use, unspecified with stimulant-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F16.180",
+      "display": "Hallucinogen abuse with hallucinogen-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F16.280",
+      "display": "Hallucinogen dependence with hallucinogen-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F16.980",
+      "display": "Hallucinogen use, unspecified with hallucinogen-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F18.180",
+      "display": "Inhalant abuse with inhalant-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F18.280",
+      "display": "Inhalant dependence with inhalant-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F18.980",
+      "display": "Inhalant use, unspecified with inhalant-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F19.180",
+      "display": "Other psychoactive substance abuse with psychoactive substance-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F19.280",
+      "display": "Other psychoactive substance dependence with psychoactive substance-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F19.980",
+      "display": "Other psychoactive substance use, unspecified with psychoactive substance-induced anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F40.00",
+      "display": "Agoraphobia, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F40.01",
+      "display": "Agoraphobia with panic disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F40.02",
+      "display": "Agoraphobia without panic disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F40.10",
+      "display": "Social phobia, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F40.11",
+      "display": "Social phobia, generalized"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F40.240",
+      "display": "Claustrophobia"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F40.8",
+      "display": "Other phobic anxiety disorders"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F40.9",
+      "display": "Phobic anxiety disorder, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F41.0",
+      "display": "Panic disorder [episodic paroxysmal anxiety]"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F41.1",
+      "display": "Generalized anxiety disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F41.3",
+      "display": "Other mixed anxiety disorders"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F41.8",
+      "display": "Other specified anxiety disorders"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F41.9",
+      "display": "Anxiety disorder, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F42.2",
+      "display": "Mixed obsessional thoughts and acts"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F42.4",
+      "display": "Excoriation (skin-picking) disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F42.8",
+      "display": "Other obsessive-compulsive disorder"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F42.9",
+      "display": "Obsessive-compulsive disorder, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F43.0",
+      "display": "Acute stress reaction"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F43.10",
+      "display": "Post-traumatic stress disorder, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F43.11",
+      "display": "Post-traumatic stress disorder, acute"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F43.12",
+      "display": "Post-traumatic stress disorder, chronic"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F43.22",
+      "display": "Adjustment disorder with anxiety"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F43.23",
+      "display": "Adjustment disorder with mixed anxiety and depressed mood"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F43.8",
+      "display": "Other reactions to severe stress"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F43.9",
+      "display": "Reaction to severe stress, unspecified"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "F45.21",
+      "display": "Hypochondriasis"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2022",
+      "code": "R46.81",
+      "display": "Obsessive-compulsive behavior"
+    } ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.13.190.5.16",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2014-06-30"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.190.5.16",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.13.190.5.16"
+  } ],
+  "version": "20140630",
+  "name": "Expired",
+  "title": "Expired",
+  "status": "active",
+  "experimental": false,
+  "date": "2014-06-30T01:00:02-04:00",
+  "publisher": "Yale",
+  "expansion": {
+    "identifier": "urn:uuid:f03bf9af-b02a-4c47-9c55-f5ff7d62f8ff",
+    "timestamp": "2024-02-17T12:29:23-05:00",
+    "total": 8,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "code": "183676005",
+      "display": "Died in hospital (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "code": "419099009",
+      "display": "Dead (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "code": "419620001",
+      "display": "Death (event)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "798",
+      "display": "Sudden death, cause unknown"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "798.1",
+      "display": "Instantaneous death"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "798.2",
+      "display": "Death occurring in less than 24 hours from onset of symptoms, not otherwise explained"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-9-cm",
+      "version": "2013",
+      "code": "798.9",
+      "display": "Unattended death"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "R99",
+      "display": "Ill-defined and unknown cause of mortality"
+    } ]
+  }
+}

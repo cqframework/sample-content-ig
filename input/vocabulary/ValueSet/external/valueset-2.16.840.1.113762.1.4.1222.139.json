@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1222.139",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2020-06-09T13:43:15.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 2 concepts</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14647-2\"> </a><a href=\"http://details.loinc.org/LOINC/14647-2.html\">14647-2</a></td><td>Cholesterol [Moles/volume] in Serum or Plasma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2093-3\"> </a><a href=\"http://details.loinc.org/LOINC/2093-3.html\">2093-3</a></td><td>Cholesterol [Mass/volume] in Serum or Plasma</td></tr></table></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.139",
+  "version": "20200407",
+  "name": "Total Cholesterol",
+  "status": "active",
+  "date": "2020-04-07T01:01:04-04:00",
+  "publisher": "HL7 Patient Care WG Steward",
+  "expansion": {
+    "identifier": "urn:uuid:ab334248-f2ca-46e1-9ee5-e60e657bf81b",
+    "timestamp": "2022-02-07T12:48:44-05:00",
+    "total": 2,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "14647-2",
+      "display": "Cholesterol [Moles/volume] in Serum or Plasma"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.71",
+      "code": "2093-3",
+      "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+    } ]
+  }
+}

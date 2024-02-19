@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1222.1488",
+  "meta": {
+    "versionId": "7",
+    "lastUpdated": "2023-12-21T17:43:03.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2022-06-08"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.1488",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1222.1488"
+  } ],
+  "version": "20220608",
+  "name": "PosturalTachycardiaSyndromePOTSDiagnosis",
+  "title": "Postural tachycardia syndrome (POTS) Diagnosis",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-06-08T01:03:01-04:00",
+  "publisher": "HL7 Patient Care WG Steward",
+  "expansion": {
+    "identifier": "urn:uuid:7c54da4f-44ec-4eeb-aea0-a89db346ae9c",
+    "timestamp": "2024-02-17T12:30:09-05:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "code": "1217211002",
+      "display": "Postural orthostatic tachycardia syndrome due to norepinephrine transporter deficiency (disorder)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/731000124108/version/20230901",
+      "code": "371073003",
+      "display": "Postural orthostatic tachycardia syndrome (disorder)"
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2024",
+      "code": "I49.8",
+      "display": "Other specified cardiac arrhythmias"
+    } ]
+  }
+}

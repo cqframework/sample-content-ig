@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1160.35",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2024-02-07T17:40:01.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2023-01-07"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.35",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1160.35"
+  } ],
+  "version": "20230107",
+  "name": "PrediabetesOralGlucoseToleranceTests",
+  "title": "Prediabetes Oral Glucose Tolerance Tests",
+  "status": "active",
+  "date": "2023-01-07T01:02:49-05:00",
+  "publisher": "American Medical Association Steward",
+  "expansion": {
+    "identifier": "urn:uuid:f63cb246-d67b-4cd4-9cb5-9b4c1a8597a1",
+    "timestamp": "2024-02-17T12:30:55-05:00",
+    "total": 3,
+    "offset": 0,
+    "parameter": [ {
+      "name": "count",
+      "valueInteger": 1000
+    }, {
+      "name": "offset",
+      "valueInteger": 0
+    } ],
+    "contains": [ {
+      "system": "http://loinc.org",
+      "version": "2.76",
+      "code": "14995-5",
+      "display": "Glucose [Moles/volume] in Serum or Plasma --2 hours post 75 g glucose PO"
+    }, {
+      "system": "http://loinc.org",
+      "version": "2.76",
+      "code": "1518-0",
+      "display": "Glucose [Mass/volume] in Serum or Plasma --2 hours post 75 g glucose PO"
+    }, {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "version": "2024",
+      "code": "82951",
+      "display": "Glucose; tolerance test (GTT), 3 specimens (includes glucose)"
+    } ]
+  }
+}

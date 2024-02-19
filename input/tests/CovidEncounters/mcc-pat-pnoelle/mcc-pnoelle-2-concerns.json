@@ -1,0 +1,136 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mcc-cond-pnoelle-employment"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mcc-cond-pnoelle-employment",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Unemployed</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "health-concern"
+              }
+            ],
+            "text": "Health Concern"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "73438004",
+              "display": "Unemployed (finding)"
+            }
+          ],
+          "text": "Unemployed"
+        },
+        "subject": {
+          "reference": "Patient/mcc-pat-pnoelle",
+          "display": "Patricia Noelle"
+        },
+        "onsetDateTime": "2010-03-22",
+        "asserter": {
+          "reference": "Practitioner/mcc-prac-johnson-sam",
+          "display": "Sam Johnson"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/mcc-cond-pnoelle-transportation"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "mcc-cond-pnoelle-transportation",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Unable to drive a car</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+                "code": "health-concern"
+              }
+            ],
+            "text": "Health Concern"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "300635000",
+              "display": "Unable to drive a car (finding)"
+            }
+          ],
+          "text": "Unable to drive a car"
+        },
+        "subject": {
+          "reference": "Patient/mcc-pat-pnoelle",
+          "display": "Patricia Noelle"
+        },
+        "onsetDateTime": "2012-09-15",
+        "asserter": {
+          "reference": "Practitioner/mcc-prac-johnson-sam",
+          "display": "Sam Johnson"
+        }
+      }
+    }
+  ]
+}
