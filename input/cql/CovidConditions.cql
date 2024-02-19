@@ -9,18 +9,31 @@ include CovidConcepts called Cx
 
 context Patient
 
+// TODO: iterate over CategorizedConditions and insert count for each (don't duplicate condition name here)
 define ReportConditions: 
 {
-  CardiovascularDisease: Count(CardiovascularDiseaseConditions) > 0,
-  Diabetes: Count(DiabetesConditions) > 0,
-  CKD: Count(ChronicKidneyDiseaseConditions) > 0,
+  "Acute COVID 19 Diagnosis": Count("Acute COVID 19 Diagnosis") > 0,
+  "Post Acute Sequelae of Sars Cov 2 infection (PASC)": Count("Post Acute Sequelae of Sars Cov 2 infection (PASC)") > 0,
+  "Acute Myocardial Infarction": Count("Acute Myocardial Infarction") > 0,
+  "Ischemic Heart Disease": Count("Ischemic Heart Disease") > 0,
+  "Acute Coronary Syndromes": Count("Acute Coronary Syndromes") > 0,
+  "Hypertension, Primary and Secondary Diagnosis": Count("Hypertension, Primary and Secondary Diagnosis") > 0,
+  "Type 1 Diabetes": Count("Type 1 Diabetes") > 0,
+  "Type II Diabetes": Count("Type II Diabetes") > 0,
+  "Chronic kidney disease all stages (1 through 5)": Count("Chronic kidney disease all stages (1 through 5)") > 0,
   OtherConditions: PreferredConditionCodes(OtherConditions)
 }
 
 define CategorizedConditions: 
-  CardiovascularDiseaseConditions
-  union DiabetesConditions
-  union ChronicKidneyDiseaseConditions
+  "Acute COVID 19 Diagnosis"
+  union "Post Acute Sequelae of Sars Cov 2 infection (PASC)"
+  union "Acute Myocardial Infarction"
+  union "Ischemic Heart Disease"
+  union "Acute Coronary Syndromes"
+  union "Hypertension, Primary and Secondary Diagnosis"
+  union "Type 1 Diabetes"
+  union "Type II Diabetes"
+  union "Chronic kidney disease all stages (1 through 5)"
 
 /// Returns a list of Resource.id for all categorized conditions.
 define CategorizedConditionIds:
@@ -82,49 +95,32 @@ define AllActiveConditions:
     sort by Coalesce(recordedDate.value, (onset as FHIR.dateTime).value) descending
 
 //
-// Cardiovascular Conditions
+// Select all active Conditions
 //
 
-define CardiovascularDiseaseConditions:
-  "Hypertension Conditions"
-  union "Heart Attack Conditions"
-  union "Heart Failure"
+define "Acute COVID 19 Diagnosis":
+  SelectActiveConditions([Condition: Cx."Acute COVID 19 Diagnosis"])
 
-define "Hypertension Conditions":
-  "Hypertension, Persistent"
-    union "Hypertension, Primary and Secondary"
-    union "Hypertension, Essential or Primary"
-    union "Hypertension, Pulmonary Hypertension"
-
-define "Heart Attack Conditions":
-  "Acute Coronary Syndromes"
-    union "Acute Myocardial Infarction"
-
-define "Acute Coronary Syndromes":
-  SelectActiveConditions([Condition: Cx."Acute Coronary Syndromes"])
+define "Post Acute Sequelae of Sars Cov 2 infection (PASC)":
+  SelectActiveConditions([Condition: Cx."Post Acute Sequelae of Sars Cov 2 infection (PASC)"])
 
 define "Acute Myocardial Infarction":
   SelectActiveConditions([Condition: Cx."Acute Myocardial Infarction"])
 
-define "Heart Failure":
-  SelectActiveConditions([Condition: Cx."Heart Failure"])
+define "Ischemic Heart Disease":
+  SelectActiveConditions([Condition: Cx."Ischemic Heart Disease"])
 
-define "Hypertension, Persistent":
-  SelectActiveConditions([Condition: Cx."Hypertension, Persistent"])
+define "Acute Coronary Syndromes":
+  SelectActiveConditions([Condition: Cx."Acute Coronary Syndromes"])
 
-define "Hypertension, Primary and Secondary":
-  SelectActiveConditions([Condition: Cx."Hypertension, Primary and Secondary"])
+define "Hypertension, Primary and Secondary Diagnosis":
+  SelectActiveConditions([Condition: Cx."Hypertension, Primary and Secondary Diagnosis"])
 
-define "Hypertension, Essential or Primary":
-  SelectActiveConditions([Condition: Cx."Hypertension, Essential or Primary"])
+define "Chronic kidney disease all stages (1 through 5)":
+  SelectActiveConditions([Condition: Cx."Chronic kidney disease all stages (1 through 5)"])
 
-define "Hypertension, Pulmonary Hypertension":
-  SelectActiveConditions([Condition: Cx."Hypertension, Pulmonary Hypertension"])
-
-define ChronicKidneyDiseaseConditions:
-  SelectActiveConditions([Condition: Cx."Chronic Kidney Disease All Stages"])
-    // union "Acute Renal Failure"
-
-define DiabetesConditions:
+define "Type 1 Diabetes":
   SelectActiveConditions([Condition: Cx."Type 1 Diabetes"])
-  union SelectActiveConditions([Condition: Cx."Type II Diabetes"])
+
+define "Type II Diabetes":
+  SelectActiveConditions([Condition: Cx."Type II Diabetes"])
