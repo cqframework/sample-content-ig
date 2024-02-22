@@ -3,7 +3,6 @@ library DataElementHelpers version '1.0.0'
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.1.000'
-include USCoreCommon version '0.1.0' called UC
 
 codesystem "LOINC": 'http://loinc.org'
 code "Blood pressure": '85354-9' from "LOINC" display 'Blood pressure systolic and diastolic'
