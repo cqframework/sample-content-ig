@@ -2,8 +2,8 @@ library DataElementHelpers version '1.0.0'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.1'
-include FHIRCommon version '4.0.1' called FC
+include FHIRHelpers version '4.1.000'
+include USCoreCommon version '0.1.0' called UC
 
 codesystem "LOINC": 'http://loinc.org'
 code "Blood pressure": '85354-9' from "LOINC" display 'Blood pressure systolic and diastolic'
@@ -142,28 +142,21 @@ define function ReportMostRecentResult(observations List<Observation>):
 define function ReportMostRecentResult(observations List<Observation>, displayName String):
   ReportObservation(MostRecent(observations), displayName)
 
-// BUG: this works in VSCode but returns null in JavaScript execution.
-// define function SelectActiveConditions(conditions List<Condition>):
-//   conditions Cond
-//     where (Cond.clinicalStatus ~ FC."active"
-//           or Cond.clinicalStatus ~ FC."relapse"
-//           or Cond.clinicalStatus ~ FC."recurrence")
-//       and Cond.verificationStatus ~ FC."confirmed"
-//     sort by recordedDate.value descending
-
 define function SelectActiveMedications(medRequests List<MedicationRequest>):
   medRequests MedReq
     where MedReq.status in {'active'}
 
+/*
 define function MostRecentProcedure(procedures List<Procedure>):
   First(
     procedures P
-      sort by start of FC.ToInterval(performed) descending
+      sort by start of UC.ToInterval(performed) descending
   )
 
 define function PerformedWithin(procedures List<Procedure>, lookback System.Quantity):
   procedures P
-    where end of FC.ToInterval(P.performed) on or after day of AsOf - lookback
+    where end of UC.ToInterval(P.performed) on or after day of AsOf - lookback
+*/
 
 /*
  * Helpers for Observation data elements.

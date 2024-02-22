@@ -1,0 +1,536 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-covid"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-covid",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "94534-5",
+              "display": "SARS coronavirus 2 RdRp gene [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2021-02-23T12:50:55.165",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-alt"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-alt",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1742-6",
+              "display": "ALT"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2021-02-26T17:50:52.165T17:50:52.165",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity" : {
+          "value" : 25.0,
+          "unit" : "U/L"
+        },
+        "referenceRange" : [
+          {
+            "low" : {
+              "code" : "U/L",
+              "value" : 9.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "U/L"
+            },
+            "high" : {
+              "code" : "U/L",
+              "value" : 46.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "U/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-ast"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-ast",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1920-8",
+              "display": "AST"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2021-02-26T17:50:52.165",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity" : {
+          "value" : 19.0,
+          "unit" : "U/L"
+        },
+        "referenceRange" : [
+          {
+            "low" : {
+              "code" : "U/L",
+              "value" : 10.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "U/L"
+            },
+            "high" : {
+              "code" : "U/L",
+              "value" : 35.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "U/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-creatinine"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-creatinine",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "display" : "CREATININE",
+              "code" : "2160-0"
+
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2021-02-26T17:50:52.165",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity" : {
+          "value" : 1.37,
+          "unit" : "mg/dL"
+        },
+        "referenceRange" : [
+          {
+            "low" : {
+              "code" : "mg/dL",
+              "value" : 0.7,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "mg/dL"
+            },
+            "high" : {
+              "code" : "mg/dL",
+              "value" : 1.25,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "mg/dL"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-neutrophil"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-neutrophil",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "751-8",
+              "display": "Neutrophils [#/volume] in Blood by Automated count"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2021-02-26T17:50:52.165",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value" : 8130.0,
+          "unit" : "cells/uL"
+        },
+        "referenceRange" : [
+          {
+            "low" : {
+              "code" : "cells/uL",
+              "value" : 1500.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "cells/uL"
+            },
+            "high" : {
+              "code" : "cells/uL",
+              "value" : 7800.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "cells/uL"
+            }
+          }
+        ],
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ],
+            "text": "H"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-wbc"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-wbc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "display" : "WHITE BLOOD CELL COUNT",
+              "code" : "6690-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2021-02-26T17:50:52.165",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value" : 9.7,
+          "unit" : "Thousand/uL"
+        },
+        "referenceRange" : [
+          {
+            "low" : {
+              "code" : "Thousand/uL",
+              "value" : 3.8,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "Thousand/uL"
+            },
+            "high" : {
+              "code" : "Thousand/uL",
+              "value" : 10.8,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "Thousand/uL"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-lymphocytes"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-lymphocytes",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "display" : "ABSOLUTE LYMPHOCYTES",
+              "code" : "731-0"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2021-02-26T17:50:52.165",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value" : 4130.0,
+          "unit" : "cells/uL"
+        },
+        "referenceRange" : [
+          {
+            "low" : {
+              "code" : "cells/uL",
+              "value" : 850.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "cells/uL"
+            },
+            "high" : {
+              "code" : "cells/uL",
+              "value" : 3900.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "cells/uL"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-platelets"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-platelets",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "display" : "PLATELET COUNT",
+              "code" : "777-3"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2021-02-26T17:50:52.165",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value" : 207.0,
+          "unit" : "Thousand/uL"
+        },
+        "referenceRange" : [
+          {
+            "low" : {
+              "code" : "Thousand/uL",
+              "value" : 140.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "Thousand/uL"
+            },
+            "high" : {
+              "code" : "Thousand/uL",
+              "value" : 400.0,
+              "system" : "http://unitsofmeasure.org",
+              "unit" : "Thousand/uL"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

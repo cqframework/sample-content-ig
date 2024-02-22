@@ -2,13 +2,15 @@ library CovidEncounters version '1.0.0'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.1'
-include FHIRCommon version '4.0.1' called FC
-include DataElementHelpers called DE
+include FHIRHelpers version '4.1.000'
+include FHIRCommon version '1.0.0' called FC
+include USCoreFHIRElements version '1.0.0' called UE
 include CovidConcepts called Cx
+// include DataElementHelpers called DE
 
 codesystem "ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
+// Value sets for Encounter.type codes.
 valueset "Emergency Department Visit": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292'
 valueset "Encounter Inpatient": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307'
 
@@ -20,7 +22,7 @@ valueset "Outpatient Consultation": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.8
 valueset "Telehealth Services": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1031'
 valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080'
 
-// Encounter Class Codes
+// Encounter.class codes
 code "ambulatory": 'AMB' from ActCode display 'ambulatory'
 code "emergency": 'EMER' from ActCode display 'emergency'
 code "field": 'FLD' from ActCode display 'field'

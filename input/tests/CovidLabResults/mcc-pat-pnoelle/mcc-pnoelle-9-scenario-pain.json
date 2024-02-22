@@ -1,0 +1,169 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+      {
+        "request": {
+          "method": "PUT",
+          "url": "Goal/mcc-goal-pnoelle-back-pain"
+        },
+        "resource": {
+          "resourceType": "Goal",
+          "id": "mcc-goal-pnoelle-back-pain",
+          "meta": {
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Goal"
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Back pain personal goal</div>"
+          },
+          "achievementStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+                "code": "in-progress",
+                "display": "In Progress"
+              }
+            ],
+            "text": "In Progress"
+          },
+          "lifecycleStatus": "active",
+          "description": {
+            "text": "I would like to be more mobile without pain.  When pain is severe, I experience extreme weakness in my legs.  I require assistance to walk during these episodes  of pain. Lying in bed is the only time when I am pain-free.  My PT doesn't think therapy is helping me."
+          },
+          "subject": {
+            "reference": "Patient/mcc-pat-pnoelle",
+            "display": "Patricia Noelle"
+          },
+          "startDate": "2021-11-30",
+          "expressedBy": {
+            "reference": "Patient/mcc-pat-pnoelle",
+            "display": "Patricia Noelle"
+          },
+          "addresses": [
+            {
+              "reference": "Condition/mcc-cond-pnoelle-back-pain",
+              "display": "Chronic low back pain"
+            }
+          ],
+          "note": [
+            {
+              "text": "I have a herniated disk causing pain. Sitting makes pain much worse for a long time after sitting (hours to days). Not being able to sit makes social activities harder."
+            }
+          ]
+        }
+      },
+      {
+        "request": {
+          "method": "PUT",
+          "url": "Observation/mcc-obs-barrier-pnoelle-sitting"
+        },
+        "resource": {
+          "resourceType": "Observation",
+          "id": "mcc-obs-barrier-pnoelle-sitting",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient barrier: sitting</div>"
+          },
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "survey"
+                }
+              ],
+              "text": "Survey"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/mcc/CodeSystem/observation-category",
+                  "code": "barrier"
+                }
+              ],
+              "text": "Barrier"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "code": "mpq-1036",
+                "display": "What are the biggest barriers to achieving your activity goals? For example: I have a lot of stress from work which makes my pain worse.",
+                "system": "http://fhir.org/guides/cqf/cds4cpm/CodeSystem/mypain-questionnaire-codes"
+              },
+              {
+                "code": "87535-1",
+                "system": "http://loinc.org",
+                "display": "Challenges to maintaining treatments or health behaviors"      
+              }
+            ]
+          },
+          "subject": {
+            "reference": "Patient/mcc-pat-pnoelle",
+            "display": "Patricia Noelle"
+          },
+          "issued": "2021-11-30T15:00:00.000Z",
+          "performer": [
+            {
+              "reference": "Patient/mcc-pat-pnoelle",
+              "display": "Patricia Noelle"
+            }
+          ],
+          "valueString": "I have a herniated disk causing pain. Sitting makes pain much worse for a long time after sitting (hours to days). Not being able to sit makes social activities harder."
+        }
+      },
+      {
+        "request": {
+          "method": "PUT",
+          "url": "Goal/mcc-goal-pnoelle-sitting"
+        },
+        "resource": {
+          "resourceType": "Goal",
+          "id": "mcc-goal-pnoelle-sitting",
+          "meta": {
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Goal"
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sitting for 30 min without pain.</div>"
+          },
+          "achievementStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+                "code": "in-progress",
+                "display": "In Progress"
+              }
+            ],
+            "text": "In Progress"
+          },
+          "lifecycleStatus": "active",
+          "description": {
+            "text": "Sit comfortably without pain for at least 30 minutes."
+          },
+          "subject": {
+            "reference": "Patient/mcc-pat-pnoelle",
+            "display": "Patricia Noelle"
+          },
+          "startDate": "2021-12-15",
+          "expressedBy": {
+            "reference": "Practitioner/mcc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          },
+          "addresses": [
+            {
+              "reference": "Observation/mcc-obs-barrier-pnoelle-sitting",
+              "display": "Challenges to maintaining treatments or health behaviors"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

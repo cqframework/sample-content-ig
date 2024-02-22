@@ -1,0 +1,442 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/mcc-obs-pnoelle-imaging"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mcc-obs-pnoelle-imaging",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bone Density [Use Case: (Due to Patricia’s age) Women 65 and older: screening for osteoporosis with bone measurement testing to prevent osteoporotic fractures in women 65 years and older]</div>"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "imaging"
+                            }
+                        ],
+                        "text": "Imaging"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "24701-5",
+                            "display": "Femur DXA Bone density"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/mcc-pat-pnoelle"
+                },
+                "effectiveDateTime": "2017-11-30",
+                "performer": [
+                    {
+                        "reference": "Practitioner/mcc-prac-carlson-john",
+                        "display": "Dr. John Carlson, MD"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 0.887,
+                    "unit": "'g/cm-2",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "'g/cm-2"
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "7771000",
+                            "display": "Left Femur"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/mcc-obs-pnoelle-exam"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mcc-obs-pnoelle-exam",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Use Case: Due to her Chronic Hypertension and Chronic Kidney Disease, Patricia gets routine EKG checks</div>"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "exam"
+                            }
+                        ],
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "43478001",
+                            "display": "Abdominal tenderness (finding)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/mcc-pat-pnoelle"
+                },
+                "effectiveDateTime": "2017-11-30",
+                "performer": [
+                    {
+                        "reference": "Practitioner/mcc-prac-carlson-john",
+                        "display": "Dr. John Carlson, MD"
+                    }
+                ],
+                "valueBoolean": true
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/mcc-obs-pnoelle-procedure"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mcc-obs-pnoelle-procedure",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Use Case: Due to her Chronic Hypertension and Chronic Kidney Disease, Patricia gets routine EKG checks</div>"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "procedure"
+                            }
+                        ],
+                        "text": "Procedure"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11524-6",
+                            "display": "EKG study"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/mcc-pat-pnoelle"
+                },
+                "effectiveDateTime": "2022-02-19T09:30:35+01:00",
+                "performer": [
+                    {
+                        "reference": "Practitioner/mcc-prac-carlson-john",
+                        "display": "Dr. John Carlson, MD"
+                    }
+                ],
+                "device": {
+                    "display": "12 lead EKG Device Metric"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.6.24",
+                                    "code": "131329",
+                                    "display": "MDC_ECG_ELEC_POTL_I"
+                                }
+                            ]
+                        },
+                        "valueSampledData": {
+                            "origin": {
+                                "value": 2048
+                            },
+                            "period": 10,
+                            "factor": 1.612,
+                            "lowerLimit": -3300,
+                            "upperLimit": 3300,
+                            "dimensions": 1,
+                            "data": "2041 2043 2037 2047 2060 2062 2051 2023 2014 2027 2034 2033 2040 2047 2047 2053 2058 2064 2059 2063 2061 2052 2053 2038 1966 1885 1884 2009 2129 2166 2137 2102 2086 2077 2067 2067 2060 2059 2062 2062 2060 2057 2045 2047 2057 2054 2042 2029 2027 2018 2007 1995 2001 2012 2024 2039 2068 2092 2111 2125 2131 2148 2137 2138 2128 2128 2115 2099 2097 2096 2101 2101 2091 2073 2076 2077 2084 2081 2088 2092 2070 2069 2074 2077 2075 2068 2064 2060 2062 2074 2075 2074 2075 2063 2058 2058 2064 2064 2070 2074 2067 2060 2062 2063 2061 2059 2048 2052 2049 2048 2051 2059 2059 2066 2077 2073"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.6.24",
+                                    "code": "131330",
+                                    "display": "MDC_ECG_ELEC_POTL_II"
+                                }
+                            ]
+                        },
+                        "valueSampledData": {
+                            "origin": {
+                                "value": 2048
+                            },
+                            "period": 10,
+                            "factor": 1.612,
+                            "lowerLimit": -3300,
+                            "upperLimit": 3300,
+                            "dimensions": 1,
+                            "data": "2041 2043 2037 2047 2060 2062 2051 2023 2014 2027 2034 2033 2040 2047 2047 2053 2058 2064 2059 2063 2061 2052 2053 2038 1966 1885 1884 2009 2129 2166 2137 2102 2086 2077 2067 2067 2060 2059 2062 2062 2060 2057 2045 2047 2057 2054 2042 2029 2027 2018 2007 1995 2001 2012 2024 2039 2068 2092 2111 2125 2131 2148 2137 2138 2128 2128 2115 2099 2097 2096 2101 2101 2091 2073 2076 2077 2084 2081 2088 2092 2070 2069 2074 2077 2075 2068 2064 2060 2062 2074 2075 2074 2075 2063 2058 2058 2064 2064 2070 2074 2067 2060 2062 2063 2061 2059 2048 2052 2049 2048 2051 2059 2059 2066 2077 2073"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "urn:oid:2.16.840.1.113883.6.24",
+                                    "code": "131389",
+                                    "display": "MDC_ECG_ELEC_POTL_III"
+                                }
+                            ]
+                        },
+                        "valueSampledData": {
+                            "origin": {
+                                "value": 2048
+                            },
+                            "period": 10,
+                            "factor": 1.612,
+                            "lowerLimit": -3300,
+                            "upperLimit": 3300,
+                            "dimensions": 1,
+                            "data": "2041 2043 2037 2047 2060 2062 2051 2023 2014 2027 2034 2033 2040 2047 2047 2053 2058 2064 2059 2063 2061 2052 2053 2038 1966 1885 1884 2009 2129 2166 2137 2102 2086 2077 2067 2067 2060 2059 2062 2062 2060 2057 2045 2047 2057 2054 2042 2029 2027 2018 2007 1995 2001 2012 2024 2039 2068 2092 2111 2125 2131 2148 2137 2138 2128 2128 2115 2099 2097 2096 2101 2101 2091 2073 2076 2077 2084 2081 2088 2092 2070 2069 2074 2077 2075 2068 2064 2060 2062 2074 2075 2074 2075 2063 2058 2058 2064 2064 2070 2074 2067 2060 2062 2063 2061 2059 2048 2052 2049 2048 2051 2059 2059 2066 2077 2073"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/mcc-obs-pnoelle-survey"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mcc-obs-pnoelle-survey",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Use Case: Due to her unable to drive a car condition, Patricia completes a PROMIS questionnaire assessing her transportation need</div>"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-tags",
+                                "code": "sdoh",
+                                "display": "SDOH"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "survey",
+                                "display": "Survey"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "92392-0",
+                            "display": "Transportation Insecurity"
+                        }
+                    ],
+                    "text": "Transportation Insecurity [PROMIS]"
+                },
+                "subject": {
+                    "reference": "Patient/mcc-pat-pnoelle"
+                },
+                "effectiveDateTime": "2017-11-30",
+                "performer": [
+                    {
+                        "reference": "Practitioner/mcc-prac-carlson-john",
+                        "display": "Dr. John Carlson, MD"
+                    }
+                ],
+                "valueString": "I can use public transportation"
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/mcc-obs-pnoelle-activity"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mcc-obs-pnoelle-activity",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">[Use Case: Due to her Chronic Hypertension and Diabetes, Patricia walks and uses an activity tracker</div>"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "activity"
+                            }
+                        ],
+                        "text": "Activity"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "55423-8",
+                            "display": "Number of steps in unspecified time Pedometer"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/mcc-pat-pnoelle"
+                },
+                "effectiveDateTime": "2022-03-28T06:30:40",
+                "performer": [
+                    {
+                        "reference": "Practitioner/mcc-prac-carlson-john",
+                        "display": "Dr. John Carlson, MD"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 10000,
+                    "unit": "steps"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/mcc-obs-pnoelle-social-history"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mcc-obs-pnoelle-social-history",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Smoking Status</div>"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "social-history"
+                            }
+                        ],
+                        "text": "social-history"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/mcc-pat-pnoelle"
+                },
+                "effectiveDateTime": "2017-11-30",
+                "performer": [
+                    {
+                        "reference": "Practitioner/mcc-prac-carlson-john",
+                        "display": "Dr. John Carlson, MD"
+                    }
+                ],
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "428041000124106"
+                        }
+                    ],
+                    "text": "Current some day smoker"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/mcc-obs-pnoelle-therapy"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mcc-obs-pnoelle-therapy",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Use Case: Patricia tolerates ROM therapy due to her chronic back pain</div>"
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "therapy"
+                            }
+                        ],
+                        "text": "Therapy"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA29031-4",
+                            "display": "Flexibility exercises: Muscle lengthening"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/mcc-pat-pnoelle"
+                },
+                "effectiveDateTime": "2017-11-30",
+                "performer": [
+                    {
+                        "reference": "Practitioner/mcc-prac-carlson-john",
+                        "display": "Dr. John Carlson, MD"
+                    }
+                ],
+                "valueString": "Core strengthening exercises to decrease complaints of back pain include posterior pelvic tilts, abdominal crunches 2x 15.",
+                "bodySite": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "37822005",
+                            "display": "Lower back structure (body structure)"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

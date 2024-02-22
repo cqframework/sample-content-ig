@@ -2,13 +2,25 @@ library CovidConditions version '1.0.0'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.1'
-include FHIRCommon version '4.0.1' called FC
-include DataElementHelpers called DE
+include FHIRHelpers version '4.1.000'
+include FHIRCommon version '1.0.0' called FC
+include USCoreFHIRElements version '1.0.0' called UE
 include CovidConcepts called Cx
+// include DataElementHelpers called DE
 
 context Patient
 
+/// Report QA analysis with count of resources, no PHI.
+define ReportConditionsQA: 
+{
+  "All Conditions": Count(UE."All Conditions"),
+  "Active Problem List": Count(UE."Active Confirmed Problem List Items"),
+  "Resolved Problem List": null,
+  "Encounter Diagnoses": Count(UE."All Encounter Diagnoses"),
+  "Conditions Without Preferred Code": null
+}
+
+/// Report boolean values for input to ML model. Also list of codes for active problem list items.
 define ReportConditions: 
 {
   "Acute COVID 19 Diagnosis": Count("Acute COVID 19 Diagnosis") > 0,
@@ -54,7 +66,7 @@ define ReportConditions:
   "Housing insecurity": Count("Housing insecurity") > 0,
   "Transportation insecurity": Count("Transportation insecurity") > 0,
 
-  "Condition Codes": PreferredConditionCodes(AllActiveConditions)
+  "Condition Codes": PreferredConditionCodes(UE."Active Confirmed Problem List Items")
 }
 
 define function SelectActiveConditions(conditions List<Condition>):
