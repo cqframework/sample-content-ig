@@ -15,38 +15,56 @@ define ReportLabResultsQA:
 {
   "Lab Results Count": Count(UE."All Laboratory Results"),
   "COVID19 Lab Tests": Count("COVID19 Lab Tests"),
-  "Prediabetes HbA1c Tests": Count("Prediabetes HbA1c Tests"),
-  // "Hemoglobin A1C": Count("Hemoglobin A1C"),
+  // "Prediabetes HbA1c Tests": Count("Prediabetes HbA1c Tests"),
+  "Hemoglobin A1C": Count("Hemoglobin A1C"),
   "Estimated Glomerular Filtration Rate": Count("Estimated Glomerular Filtration Rate"),
 
-  "Lab Results Without Preferred Code": null
+  "Lab Results Without Preferred Code": Count("Lab Results Without Preferred Code")
 }
 
 // Most recent FHIR Observation for each laboratory data element.
 define ReportLabResults: {
-  "COVID19 Lab Tests": ReportMostRecentResult("COVID19 Lab Tests"),
-  "Prediabetes HbA1c Tests": ReportMostRecentResult("Prediabetes HbA1c Tests"),
-  // "Hemoglobin A1C": ReportMostRecentResult("Hemoglobin A1C"),
-  "Estimated Glomerular Filtration Rate": ReportMostRecentResult("Estimated Glomerular Filtration Rate")
+  "COVID19 Lab Tests": "COVID19 Lab Tests".mostRecentResult(),
+  // "Prediabetes HbA1c Tests": "Prediabetes HbA1c Tests".mostRecentResult(),
+  "Hemoglobin A1C": "Hemoglobin A1C".mostRecentResult(),
+  "Estimated Glomerular Filtration Rate": "Estimated Glomerular Filtration Rate".mostRecentResult()
 }
 
-define function ReportMostRecentResult(observations List<Observation>):
-  ReportObservation(DE.MostRecent(observations))
+define "Lab Results Without Preferred Code":
+  UE."All Laboratory Results" obs
+    where obs.preferredCode() is null
 
-// TODO convert all units to metric, omit the units
-define function ReportObservation(o FHIR.Observation):
-  DE.ResultText(o)
+// Returns a System.Code with sytem and code parameters
+define fluent function preferredCode(observation Observation):
+  First(
+    observation.code.coding c
+      let preferredCode: c.preferredCoding()
+      where preferredCode.code is not null
+      return preferredCode
+  )
+
+define fluent function preferredCoding(c FHIR.Coding):
+  case
+    when c.system.value = 'http://loinc.org' then
+      System.Code { system: 'http://loinc.org', code: c.code.value, display: c.display.value }
+    else
+      null
+  end
+
+// TODO: omit the units
+define fluent function mostRecentResult(observations List<Observation>):
+  DE.ResultText(observations.mostRecent())
 
 // Lab Result FHIR Observations sorted in descending order by issue date.
 
 define "COVID19 Lab Tests":
-  DE.SelectByStatus([Observation: Cx."COVID19 Lab Tests"])
+  ([Observation: Cx."COVID19 Lab Tests"]).resulted()
 
-define "Prediabetes HbA1c Tests":
-  DE.SelectByStatus([Observation: Cx."Prediabetes HbA1c Tests"])
+// define "Prediabetes HbA1c Tests":
+//   ([Observation: Cx."Prediabetes HbA1c Tests"]).resulted()
 
 define "Hemoglobin A1C":
-  DE.SelectByStatus([Observation: Cx."Hemoglobin A1C"])
+  ([Observation: Cx."Hemoglobin A1C"]).resulted()
 
 define "Estimated Glomerular Filtration Rate":
-  DE.SelectByStatus([Observation: Cx."Estimated Glomerular Filtration Rate"])
+  ([Observation: Cx."Estimated Glomerular Filtration Rate"]).resulted()

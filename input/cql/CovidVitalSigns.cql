@@ -13,59 +13,90 @@ context Patient
 /// Report QA analysis with count of resources, no PHI.
 define ReportVitalSignsQA: 
 {
-  "Vital Signs Count": Count(UE."All Vital Signs"),
-  "Blood Pressure Count": Count("Blood Pressure Observations"),
-  "Oxygen Saturation Count": Count("Oxygen Saturation Observations"),
-  "Body Weight Count": Count("Body Weight Observations"),
-  "Body Height Count": Count("Body Height Observations"),
-  "BMI Count": Count("Body Mass Index Observations"),
+  "All Vital Signs": Count(UE."All Vital Signs"),
+  "Blood Pressure": Count("Blood Pressure"),
+  "Body Weight": Count("Body Weight"),
+  "Body Height": Count("Body Height"),
+  "BMI": Count("Body Mass Index"),
+  "Body Temperature": Count("Body Temperature"),
+  "Heart Rate": Count("Heart Rate"),
+  "Oxygen Saturation": Count("Oxygen Saturation"),
+  "Respiratory Rate": Count("Respiratory Rate"),
 
-  "Vital Signs Without Preferred Code": null
+  "Vital Signs Without Preferred Code": Count("Vital Signs Without Preferred Code")
 }
 
 // Most recent FHIR Observation for each vital sign data element.
 define ReportVitalSigns: {
-  "Blood Pressure": ReportMostRecentResult("Blood Pressure Observations"),
-  "Systolic Blood Pressure": null,
-  "Diastolic Blood Pressure": null,
-  "Body Height": ReportMostRecentResult("Body Height Observations"),
-  "Body Weight": ReportMostRecentResult("Body Weight Observations"),
-  "BMI": ReportMostRecentResult("Body Mass Index Observations"),
-  "Body Temperature": ReportMostRecentResult("Body Temperature Observations"),
-  "Heart Rate": ReportMostRecentResult("Heart Rate Observations"),
-  "Oxygen Saturation": ReportMostRecentResult("Oxygen Saturation Observations"),
-  "Respiratory Rate": ReportMostRecentResult("Respiratory Rate Observations")
+  "Blood Pressure": "Blood Pressure".mostRecentResult(),
+  "Systolic Blood Pressure": ToString("Blood Pressure".mostRecent().systolicValue()),
+  "Diastolic Blood Pressure": ToString("Blood Pressure".mostRecent().diastolicValue()),
+  "Body Weight": "Body Weight".mostRecentResult(),
+  "Body Height": "Body Height".mostRecentResult(),
+  "BMI": "Body Mass Index".mostRecentResult(),
+  "Body Temperature": "Body Temperature".mostRecentResult(),
+  "Heart Rate": "Heart Rate".mostRecentResult(),
+  "Oxygen Saturation": "Oxygen Saturation".mostRecentResult(),
+  "Respiratory Rate": "Respiratory Rate".mostRecentResult()
 }
 
-define function ReportMostRecentResult(observations List<Observation>):
-  ReportObservation(DE.MostRecent(observations))
+define "Vital Signs Without Preferred Code":
+  UE."All Vital Signs" obs
+    where obs.preferredCode() is null
+
+// Returns a System.Code with sytem and code parameters
+define fluent function preferredCode(observation Observation):
+  First(
+    observation.code.coding c
+      let preferredCode: c.preferredCoding()
+      where preferredCode.code is not null
+      return preferredCode
+  )
+
+define fluent function preferredCoding(c FHIR.Coding):
+  case
+    when c.system.value = 'http://loinc.org' then
+      System.Code { system: 'http://loinc.org', code: c.code.value, display: c.display.value }
+    else
+      null
+  end
 
 // TODO convert all units to metric, omit the units
-define function ReportObservation(o FHIR.Observation):
-  DE.ResultText(o)
+define fluent function mostRecentResult(observations List<Observation>):
+  DE.ResultText(observations.mostRecent())
 
-// Vital Sign FHIR Observations sorted in descending order by issue date.
+define fluent function systolicValue(o Observation): 
+  if o.code ~ Cx."Blood pressure" then
+    (singleton from (o.component C where (C.code ~ Cx."Systolic blood pressure"))).value as FHIR.Quantity
+  else
+    null
 
-define "Blood Pressure Observations":
-  DE.SelectByStatus([Observation: Cx."Blood pressure"])
+define fluent function diastolicValue(o Observation): 
+  if o.code ~ Cx."Blood pressure" then
+    (singleton from (o.component C where (C.code ~ Cx."Diastolic blood pressure"))).value as FHIR.Quantity
+  else
+    null
 
-define "Body Temperature Observations":
-  DE.SelectByStatus([Observation: Cx."Body temperature"])
+define "Blood Pressure":
+  ([Observation: Cx."Blood pressure"]).resulted()
 
-define "Body Height Observations":
-  DE.SelectByStatus([Observation: Cx."Body height"])
+define "Body Temperature":
+  ([Observation: Cx."Body temperature"]).resulted()
 
-define "Body Weight Observations":
-  DE.SelectByStatus([Observation: Cx."Body weight"])
+define "Body Height":
+  ([Observation: Cx."Body height"]).resulted()
 
-define "Body Mass Index Observations":
-  DE.SelectByStatus([Observation: Cx."Body mass index"])
+define "Body Weight":
+  ([Observation: Cx."Body weight"]).resulted()
 
-define "Heart Rate Observations":
-  DE.SelectByStatus([Observation: Cx."Heart rate"])
+define "Body Mass Index":
+  ([Observation: Cx."Body mass index"]).resulted()
 
-define "Oxygen Saturation Observations":
-  DE.SelectByStatus([Observation: Cx."Oxygen saturation"])
+define "Heart Rate":
+  ([Observation: Cx."Heart rate"]).resulted()
 
-define "Respiratory Rate Observations":
-  DE.SelectByStatus([Observation: Cx."Respiratory rate"])
+define "Oxygen Saturation":
+  ([Observation: Cx."Oxygen saturation"]).resulted()
+
+define "Respiratory Rate":
+  ([Observation: Cx."Respiratory rate"]).resulted()

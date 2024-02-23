@@ -136,10 +136,10 @@ define function ReportMedication(medReq MedicationRequest, category String):
   }
 
 define function ReportMostRecentResult(observations List<Observation>):
-  ReportObservation(MostRecent(observations), null)
+  ReportObservation(observations.mostRecent(), null)
 
 define function ReportMostRecentResult(observations List<Observation>, displayName String):
-  ReportObservation(MostRecent(observations), displayName)
+  ReportObservation(observations.mostRecent(), displayName)
 
 define function SelectActiveMedications(medRequests List<MedicationRequest>):
   medRequests MedReq
@@ -193,7 +193,7 @@ define function ResultText(o Observation):
   // If Blood pressure observation, then extract component values.
   if o.code ~ "Blood pressure" then
     ToString(((singleton from (o.component C where (C.code ~ "Systolic blood pressure"))).value as FHIR.Quantity).value)
-     + '/' + ToString(((singleton from (o.component C where (C.code ~ "Diastolic blood pressure"))).value as FHIR.Quantity).value) + ' mmHg'
+     + '/' + ToString(((singleton from (o.component C where (C.code ~ "Diastolic blood pressure"))).value as FHIR.Quantity).value) + ' mm[Hg]'
   else if o.value is FHIR.Quantity then
     QuantityText(o.value as FHIR.Quantity)
   else if o.value is CodeableConcept then
@@ -207,7 +207,7 @@ define function SelectByStatus(observations List<Observation>):
   observations Obs
 	where Obs.status in {'final', 'amended', 'corrected', 'preliminary'}
 
-define function MostRecent(observations List<Observation>):
+define fluent function mostRecent(observations List<Observation>):
   First(
     observations O
       // Note: Cannot use FindDate() because execution engine cannot sort by result of a function.

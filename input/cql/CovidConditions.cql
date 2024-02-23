@@ -66,7 +66,7 @@ define ReportConditions:
   "Housing insecurity": Count("Housing insecurity") > 0,
   "Transportation insecurity": Count("Transportation insecurity") > 0,
 
-  "Condition Codes": PreferredConditionCodes(UE."Active Confirmed Problem List Items")
+  "Problem List Codes": UE."Active Confirmed Problem List Items".preferredCodes()
 }
 
 define "Inactive Problem List":
@@ -81,17 +81,17 @@ define "Uncategorized Conditions":
 
 define "Conditions Without Preferred Code":
   UE."All Conditions" condition
-    where PreferredConditionConcept(condition.code) is null
+    where condition.preferredCode() is null
 
-define function PreferredConditionCodes(conditions List<Condition>):
-  conditions C
-    where PreferredConditionConcept(C.code) is not null
-    return PreferredConditionConcept(C.code).code
+define fluent function preferredCodes(conditions List<Condition>):
+  conditions condition
+    where condition.preferredCode() is not null
+    return condition.preferredCode().code
   
 // Returns a System.Code with sytem and code parameters
-define function PreferredConditionConcept(concept FHIR.CodeableConcept):
+define fluent function preferredCode(condition Condition):
   First(
-    concept.coding c
+    condition.code.coding c
       let preferredCode: PreferredConditionCoding(c)
       where preferredCode.code is not null
       return preferredCode
