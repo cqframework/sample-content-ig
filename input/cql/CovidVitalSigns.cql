@@ -6,7 +6,6 @@ include FHIRHelpers version '4.1.000'
 include FHIRCommon version '1.0.0' called FC
 include USCoreFHIRElements version '1.0.0' called UE
 include CovidConcepts called Cx
-include DataElementHelpers called DE
 
 context Patient
 
@@ -63,7 +62,7 @@ define fluent function preferredCoding(c FHIR.Coding):
 
 // TODO convert all units to metric, omit the units
 define fluent function mostRecentResult(observations List<Observation>):
-  DE.ResultText(observations.mostRecent())
+  FC.ResultText(observations.mostRecent())
 
 define fluent function systolicValue(o Observation): 
   if o.code ~ Cx."Blood pressure" then

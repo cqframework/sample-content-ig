@@ -6,7 +6,6 @@ include FHIRHelpers version '4.1.000'
 include FHIRCommon version '1.0.0' called FC
 include USCoreFHIRElements version '1.0.0' called UE
 include CovidConcepts called Cx
-include DataElementHelpers called DE
 
 context Patient
 
@@ -53,7 +52,7 @@ define fluent function preferredCoding(c FHIR.Coding):
 
 // TODO: omit the units
 define fluent function mostRecentResult(observations List<Observation>):
-  DE.ResultText(observations.mostRecent())
+  FC.ResultText(observations.mostRecent())
 
 // Lab Result FHIR Observations sorted in descending order by issue date.
 

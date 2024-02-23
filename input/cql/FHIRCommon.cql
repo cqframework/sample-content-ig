@@ -113,6 +113,10 @@ code "observation-cancelled": 'cancelled' from "ObservationStatusCodes" display 
 code "observation-entered-in-error": 'entered-in-error' from "ObservationStatusCodes" display 'Entered in Error'
 code "observation-unknown": 'unknown' from "ObservationStatusCodes" display 'Unknown'
 
+code "Blood pressure": '85354-9' from "LOINC" display 'Blood pressure systolic and diastolic'
+code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
+code "Diastolic blood pressure": '8462-4' from "LOINC" display 'Diastolic blood pressure'
+
 context Patient
 
 /* Candidates for FHIRCommon */
@@ -299,7 +303,6 @@ define fluent function corrected(observations List<Observation>):
   observations observation
     where observation.status ~ "observation-corrected".code
 
-
 /*
 @description: Returns true if the given MedicationRequest has a category of Community
 */
@@ -326,36 +329,30 @@ define fluent function hasCategory(medicationRequest MedicationRequest, category
 
 /*
 @description: Normalizes a value that is a choice of timing-valued types to an equivalent interval
-@comment: Normalizes a choice type of DateTime, Quanitty, Interval<DateTime>, or Interval<Quantity> types
+@comment: Normalizes a choice type of FHIR.dateTime, FHIR.Period, FHIR.Timing, FHIR.instance, FHIR.string, FHIR.Age, or FHIR.Range types
 to an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible
-representations for timing-valued elements in QICore, allowing this function to be used across any resource.
-The input can be provided as a DateTime, Quantity, Interval<DateTime> or Interval<Quantity>.
-The intent of this function is to provide a clear and concise mechanism to treat single
-elements that have multiple possible representations as intervals so that logic doesn't have to account
-for the variability. More complex calculations (such as medication request period or dispense period
-calculation) need specific guidance and consideration. That guidance may make use of this function, but
-the focus of this function is on single element calculations where the semantics are unambiguous.
-If the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.
-If the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,
-and the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.
-If the input is a DateTime Interval, the result is the input.
-If the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result
-is a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending
-immediately before one year later than the date the patient turned the age given as the end of the quantity interval.
-Any other input will reslt in a null DateTime Interval
+representations for timing-valued elements in FHIR, allowing this function to be used across any resource. NOTE: Due to the
+complexity of determining a single interval from a Timing or String type, this function will throw a run-time exception if it is used
+with a Timing or String.
 */
-define fluent function toInterval(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>>):
+define function ToInterval(choice Choice<FHIR.dateTime, FHIR.Period, FHIR.Timing, FHIR.instant, FHIR.string, FHIR.Age, FHIR.Range>):
   case
-	  when choice is DateTime then
-    	Interval[choice as DateTime, choice as DateTime]
-		when choice is Interval<DateTime> then
-  		choice as Interval<DateTime>
-		when choice is Quantity then
-		  Interval[Patient.birthDate + (choice as Quantity),
-			  Patient.birthDate + (choice as Quantity) + 1 year)
-		when choice is Interval<Quantity> then
-		  Interval[Patient.birthDate + (choice.low as Quantity),
-			  Patient.birthDate + (choice.high as Quantity) + 1 year)
+	  when choice is FHIR.dateTime then
+    	Interval[FHIRHelpers.ToDateTime(choice as FHIR.dateTime), FHIRHelpers.ToDateTime(choice as FHIR.dateTime)]
+		when choice is FHIR.Period then
+  		FHIRHelpers.ToInterval(choice as FHIR.Period)
+		when choice is FHIR.instant then
+			Interval[FHIRHelpers.ToDateTime(choice as FHIR.instant), FHIRHelpers.ToDateTime(choice as FHIR.instant)]
+		when choice is FHIR.Age then
+		  Interval[FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(choice as FHIR.Age),
+			  FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(choice as FHIR.Age) + 1 year)
+		when choice is FHIR.Range then
+		  Interval[FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity((choice as FHIR.Range).low),
+			  FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity((choice as FHIR.Range).high) + 1 year)
+		when choice is FHIR.Timing then
+		  Message(null as Interval<DateTime>, true, '1', 'Error', 'Cannot compute a single interval from a Timing type')
+    when choice is FHIR.string then
+      Message(null as Interval<DateTime>, true, '1', 'Error', 'Cannot compute an interval from a String value')
 		else
 			null as Interval<DateTime>
 	end
@@ -372,30 +369,20 @@ before one year later than the date the patient turned the ending age of the qua
 */
 define fluent function abatementInterval(condition Condition):
 	if condition.abatement is FHIR.dateTime then
-	  Interval[condition.abatement as FHIR.dateTime, condition.abatement as FHIR.dateTime]
-	else if condition.abatement is FHIR.Quantity then
-		Interval[Patient.birthDate + (condition.abatement as FHIR.Age),
-			Patient.birthDate + (condition.abatement as FHIR.Age) + 1 year)
-	// else if condition.abatement is Interval<System.Quantity> then
-	//   Interval[Patient.birthDate + (condition.abatement.low as System.Quantity),
-	// 	  Patient.birthDate + (condition.abatement.high as System.Quantity) + 1 year)
-	// else if condition.abatement is Interval<DateTime> then
-	//   Interval[condition.abatement.low, condition.abatement.high)
-	else null as Interval<DateTime>
-
-/*
-@description: Returns an interval representing the normalized prevalence period of a given Condition.
-@comment: Uses the toInterval and abatementInterval functions to determine the widest potential interval from
-onset to abatement as specified in the given Condition. If the condition is active, the resulting interval will have
-a closed ending boundary. If the condition is not active, the resulting interval will have an open ending boundary.
-*/
-define fluent function prevalenceInterval(condition Condition):
-if condition.clinicalStatus ~ "active"
-  or condition.clinicalStatus ~ "recurrence"
-  or condition.clinicalStatus ~ "relapse" then
-  Interval[start of condition.onset.toInterval(), end of condition.abatementInterval()]
-else
-  Interval[start of condition.onset.toInterval(), end of condition.abatementInterval())
+	  Interval[FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime), FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime)]
+	else if condition.abatement is FHIR.Period then
+	  FHIRHelpers.ToInterval(condition.abatement as FHIR.Period)
+	else if condition.abatement is FHIR.string then
+    Message(null as Interval<DateTime>, true, '1', 'Error', 'Cannot compute an interval from a String value')
+	else if condition.abatement is FHIR.Age then
+		Interval[FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(condition.abatement as FHIR.Age),
+			FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(condition.abatement as FHIR.Age) + 1 year)
+	else if condition.abatement is FHIR.Range then
+	  Interval[FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity((condition.abatement as FHIR.Range).low),
+		  FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity((condition.abatement as FHIR.Range).high) + 1 year)
+	else if condition.abatement is FHIR.boolean then
+	  Interval[end of ToInterval(condition.onset), condition.recordedDate)
+	else null
 
 /*
 @description: Returns the tail of the given uri (i.e. everything after the last slash in the URI).
@@ -426,41 +413,27 @@ define fluent function hasEnd(period Interval<DateTime> ):
   )
 
 /*
-@description: Given an interval, returns the ending point if the interval has an ending boundary specified,
-otherwise, returns the starting point
-*/
-define fluent function latest(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>> ):
-  (choice.toInterval()) period
-    return
-      if (period.hasEnd()) then end of period
-      else start of period
-
-/*
-@description: Given an interval, return the starting point if the interval has a starting boundary specified,
-otherwise, return the ending point
-*/
-define fluent function earliest(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>> ):
-  (choice.toInterval()) period
-    return
-      if (period.hasStart()) then start of period
-      else end of period
-
-/*
 @description: Returns the most recent Condition
 */
-define function MostRecent(conditions List<Condition>):
+define fluent function mostRecent(conditions List<Condition>):
   Last(
     conditions C
       sort by recordedDate
   )
 
 /*
-@description: Return the most recent Observation
+@description: Returns the most recent Observation
 */
-define function MostRecent(observations List<Observation>):
-  Last(
+define fluent function mostRecent(observations List<Observation>):
+  First(
     observations O
-      sort by issued
+      // Note: Cannot use FindDate() because execution engine cannot sort by result of a function.
+      sort by Coalesce(
+        issued.value,
+        (effective as FHIR.dateTime).value,
+        (effective as FHIR.instant).value,
+        (effective as FHIR.Period)."end".value,
+        (effective as FHIR.Period)."start".value) descending
   )
 
 define function MostRecentMR(medicationRequests List<"MedicationRequest">):
@@ -479,3 +452,45 @@ define function MostRecentSR(serviceRequests List<FHIR.ServiceRequest>):
 define function Mobile(contactPoints List<ContactPoint>):
   singleton from (contactPoints P where P.use = 'mobile')
 
+define function ResultText(o Observation):
+  // If Blood pressure observation, then extract component values.
+  if o.code ~ "Blood pressure" then
+    ToString(((singleton from (o.component C where (C.code ~ "Systolic blood pressure"))).value as FHIR.Quantity).value)
+     + '/' + ToString(((singleton from (o.component C where (C.code ~ "Diastolic blood pressure"))).value as FHIR.Quantity).value) + ' mm[Hg]'
+  else if o.value is FHIR.Quantity then
+    QuantityText(o.value as FHIR.Quantity)
+  else if o.value is CodeableConcept then
+    ConceptText(o.value as CodeableConcept)
+  else if o.value is FHIR.string then
+    o.value as FHIR.string
+  else
+    null
+
+// Returns the first-found display text for a CodeableConcept, looking first at the `text` attribute, then the
+// `display` on each `coding` until it finds a non-null value.
+// @param c - a FHIR CodeableConcept to get text from
+// @returns {System.String} the display text or null if none is found
+define function ConceptText(c FHIR.CodeableConcept):
+  Coalesce(c.text.value, Coalesce((c.coding) c2 return c2.display.value), Coalesce((c.coding) c3 return c3.code.value))
+
+// Returns a text representation of a Quantity with the Quantity's value and unit.
+// If the unit is {score}, then omit it (as it is not useful to display)
+// @param q - a FHIR Quantity to get text for
+// @returns {System.String} the text representation of the Quantity
+define function QuantityText(q FHIR.Quantity):
+  if (q is null) then null
+  else if (q.unit is not null and q.unit.value != '{score}') then ToString(q.value.value) + ' ' + q.unit.value
+  else if (q.code is not null and q.code.value != '{score}') then ToString(q.value.value) + ' ' + q.code.value
+  else ToString(q.value.value)
+
+define function QuantityTextWithComparator(q FHIR.Quantity):
+  if (q is null) then null
+  else if (q.comparator is not null) then q.comparator.value + ' ' + QuantityText(q)
+  else QuantityText(q)
+
+define function RangeText(r FHIR.Range):
+  if (r is null) then null
+  else if (r.low is not null and r.high is not null) then 'between ' + ToString(r.low.value.value) + ' and ' + ToString(r.high.value.value)
+  else if (r.low is not null and r.high is null) then 'above ' + ToString(r.low.value.value)
+  else if (r.low is null and r.high is not null) then 'below ' + ToString(r.high.value.value)
+  else null
