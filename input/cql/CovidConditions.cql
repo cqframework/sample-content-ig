@@ -6,7 +6,6 @@ include FHIRHelpers version '4.1.000'
 include FHIRCommon version '1.0.0' called FC
 include USCoreFHIRElements version '1.0.0' called UE
 include CovidConcepts called Cx
-// include DataElementHelpers called DE
 
 context Patient
 
@@ -15,9 +14,10 @@ define ReportConditionsQA:
 {
   "All Conditions": Count(UE."All Conditions"),
   "Active Problem List": Count(UE."Active Confirmed Problem List Items"),
-  "Resolved Problem List": null,
+  "Inactive Problem List": Count("Inactive Problem List"),
   "Encounter Diagnoses": Count(UE."All Encounter Diagnoses"),
-  "Conditions Without Preferred Code": null
+  "Uncategorized Conditions": Count("Uncategorized Conditions"),
+  "Conditions Without Preferred Code": Count("Conditions Without Preferred Code")
 }
 
 /// Report boolean values for input to ML model. Also list of codes for active problem list items.
@@ -69,18 +69,19 @@ define ReportConditions:
   "Condition Codes": PreferredConditionCodes(UE."Active Confirmed Problem List Items")
 }
 
-define function SelectActiveConditions(conditions List<Condition>):
-  conditions Cond
-    where (Cond.clinicalStatus ~ FC."active"
-          or Cond.clinicalStatus ~ FC."relapse"
-          or Cond.clinicalStatus ~ FC."recurrence")
-      and Cond.verificationStatus ~ FC."confirmed"
-    sort by recordedDate.value descending
+define "Inactive Problem List":
+  UE."All Problem List Items" condition
+    where condition.isActive() is not true
+      or condition.isConfirmed() is not true
 
-/// All active conditions sorted in descending order by recorded or onset date.
-define AllActiveConditions:
-  [Condition] C
-    sort by Coalesce(recordedDate.value, (onset as FHIR.dateTime).value) descending
+define "Uncategorized Conditions":
+  UE."All Conditions" condition
+    where condition.isProblemListItem() is not true
+      and condition.isEncounterDiagnosis() is not true
+
+define "Conditions Without Preferred Code":
+  UE."All Conditions" condition
+    where PreferredConditionConcept(condition.code) is null
 
 define function PreferredConditionCodes(conditions List<Condition>):
   conditions C
@@ -107,134 +108,134 @@ define function PreferredConditionCoding(c FHIR.Coding):
   end
 
 //
-// Use value sets to categorize active Conditions
+// Use value sets to categorize active, confirmed Conditions
 //
 
 define "Acute COVID 19 Diagnosis":
-  SelectActiveConditions([Condition: Cx."Acute COVID 19 Diagnosis"])
+  ([Condition: Cx."Acute COVID 19 Diagnosis"]).active().confirmed()
 
 define "Post Acute Sequelae of Sars Cov 2 infection (PASC)":
-  SelectActiveConditions([Condition: Cx."Post Acute Sequelae of Sars Cov 2 infection (PASC)"])
+  ([Condition: Cx."Post Acute Sequelae of Sars Cov 2 infection (PASC)"]).active().confirmed()
 
 define "Acute Myocardial Infarction":
-  SelectActiveConditions([Condition: Cx."Acute Myocardial Infarction"])
+  ([Condition: Cx."Acute Myocardial Infarction"]).active().confirmed()
 
 define "Ischemic Heart Disease":
-  SelectActiveConditions([Condition: Cx."Ischemic Heart Disease"])
+  ([Condition: Cx."Ischemic Heart Disease"]).active().confirmed()
 
 define "Acute Coronary Syndromes":
-  SelectActiveConditions([Condition: Cx."Acute Coronary Syndromes"])
+  ([Condition: Cx."Acute Coronary Syndromes"]).active().confirmed()
 
 define "Bronchiectasis Diagnosis":
-  SelectActiveConditions([Condition: Cx."Bronchiectasis Diagnosis"])
+  ([Condition: Cx."Bronchiectasis Diagnosis"]).active().confirmed()
 
 define "Hypertension, Pulmonary hypertension":
-  SelectActiveConditions([Condition: Cx."Hypertension, Pulmonary hypertension"])
+  ([Condition: Cx."Hypertension, Pulmonary hypertension"]).active().confirmed()
 
 define "Pulmonary embolism diagnosis":
-  SelectActiveConditions([Condition: Cx."Pulmonary embolism diagnosis"])
+  ([Condition: Cx."Pulmonary embolism diagnosis"]).active().confirmed()
 
 define "Cerebrovascular disease diagnosis":
-  SelectActiveConditions([Condition: Cx."Cerebrovascular disease diagnosis"])
+  ([Condition: Cx."Cerebrovascular disease diagnosis"]).active().confirmed()
 
 define "Chronic kidney disease all stages (1 through 5)":
-  SelectActiveConditions([Condition: Cx."Chronic kidney disease all stages (1 through 5)"])
+  ([Condition: Cx."Chronic kidney disease all stages (1 through 5)"]).active().confirmed()
 
 define "Cirrhosis or other liver disease":
-  SelectActiveConditions([Condition: Cx."Cirrhosis or other liver disease"])
+  ([Condition: Cx."Cirrhosis or other liver disease"]).active().confirmed()
 
 define "Chronic obstructive pulmonary disease (COPD) Diagnosis":
-  SelectActiveConditions([Condition: Cx."Chronic obstructive pulmonary disease (COPD) Diagnosis"])
+  ([Condition: Cx."Chronic obstructive pulmonary disease (COPD) Diagnosis"]).active().confirmed()
 
 define "Type 1 Diabetes":
-  SelectActiveConditions([Condition: Cx."Type 1 Diabetes"])
+  ([Condition: Cx."Type 1 Diabetes"]).active().confirmed()
 
 define "Type II Diabetes":
-  SelectActiveConditions([Condition: Cx."Type II Diabetes"])
+  ([Condition: Cx."Type II Diabetes"]).active().confirmed()
 
 define "Heart Failure Diagnosis":
-  SelectActiveConditions([Condition: Cx."Heart Failure Diagnosis"])
+  ([Condition: Cx."Heart Failure Diagnosis"]).active().confirmed()
 
 define "Coronary Artery Disease No MI":
-  SelectActiveConditions([Condition: Cx."Coronary Artery Disease No MI"])
+  ([Condition: Cx."Coronary Artery Disease No MI"]).active().confirmed()
 
 define "Cardiomyopathy":
-  SelectActiveConditions([Condition: Cx."Cardiomyopathy"])
+  ([Condition: Cx."Cardiomyopathy"]).active().confirmed()
 
 define "Interstitial lung disease diagnosis":
-  SelectActiveConditions([Condition: Cx."Interstitial lung disease diagnosis"])
+  ([Condition: Cx."Interstitial lung disease diagnosis"]).active().confirmed()
 
 define "Ever tobacco smoker":
-  SelectActiveConditions([Condition: Cx."Ever tobacco smoker"])
+  ([Condition: Cx."Ever tobacco smoker"]).active().confirmed()
 
 define "Tuberculosis Disorders":
-  SelectActiveConditions([Condition: Cx."Tuberculosis Disorders"])
+  ([Condition: Cx."Tuberculosis Disorders"]).active().confirmed()
 
 define "Obesity Conditions":
-  SelectActiveConditions([Condition: Cx."Obesity Conditions"])
+  ([Condition: Cx."Obesity Conditions"]).active().confirmed()
 
 define "Pregnancy":
-  SelectActiveConditions([Condition: Cx."Pregnancy"])
+  ([Condition: Cx."Pregnancy"]).active().confirmed()
 
 define "Depression Diagnosis":
-  SelectActiveConditions([Condition: Cx."Depression Diagnosis"])
+  ([Condition: Cx."Depression Diagnosis"]).active().confirmed()
 
 define "Schizophrenia":
-  SelectActiveConditions([Condition: Cx."Schizophrenia"])
+  ([Condition: Cx."Schizophrenia"]).active().confirmed()
 
 define "HIV":
-  SelectActiveConditions([Condition: Cx."HIV"])
+  ([Condition: Cx."HIV"]).active().confirmed()
 
 define "Dementia and Related Intracranial Pathologies":
-  SelectActiveConditions([Condition: Cx."Dementia and Related Intracranial Pathologies"])
+  ([Condition: Cx."Dementia and Related Intracranial Pathologies"]).active().confirmed()
 
 define "Overweight or Obese":
-  SelectActiveConditions([Condition: Cx."Overweight or Obese"])
+  ([Condition: Cx."Overweight or Obese"]).active().confirmed()
 
 define "Sickle cell disease and related blood disorders":
-  SelectActiveConditions([Condition: Cx."Sickle cell disease and related blood disorders"])
+  ([Condition: Cx."Sickle cell disease and related blood disorders"]).active().confirmed()
 
 define "Substance abuse":
-  SelectActiveConditions([Condition: Cx."Substance abuse"])
+  ([Condition: Cx."Substance abuse"]).active().confirmed()
 
 define "Cystic fibrosis":
-  SelectActiveConditions([Condition: Cx."Cystic fibrosis"])
+  ([Condition: Cx."Cystic fibrosis"]).active().confirmed()
 
 define "Thalassemia":
-  SelectActiveConditions([Condition: Cx."Thalassemia"])
+  ([Condition: Cx."Thalassemia"]).active().confirmed()
 
 define "Asthma diagnosis":
-  SelectActiveConditions([Condition: Cx."Asthma diagnosis"])
+  ([Condition: Cx."Asthma diagnosis"]).active().confirmed()
 
 define "Hypertension, Primary and Secondary Diagnosis":
-  SelectActiveConditions([Condition: Cx."Hypertension, Primary and Secondary Diagnosis"])
+  ([Condition: Cx."Hypertension, Primary and Secondary Diagnosis"]).active().confirmed()
 
 define "Chronic Pain Conditions":
-  SelectActiveConditions([Condition: Cx."Chronic Pain Conditions"])
+  ([Condition: Cx."Chronic Pain Conditions"]).active().confirmed()
 
 define "PostTraumatic stress disorder PTSD":
-  SelectActiveConditions([Condition: Cx."PostTraumatic stress disorder PTSD"])
+  ([Condition: Cx."PostTraumatic stress disorder PTSD"]).active().confirmed()
 
 define "Myalgic Encephalomyelitis or Chronic Fatigue Syndrome":
-  SelectActiveConditions([Condition: Cx."Myalgic Encephalomyelitis or Chronic Fatigue Syndrome"])
+  ([Condition: Cx."Myalgic Encephalomyelitis or Chronic Fatigue Syndrome"]).active().confirmed()
 
 define "Postural tachycardia syndrome (POTS) Diagnosis":
-  SelectActiveConditions([Condition: Cx."Postural tachycardia syndrome (POTS) Diagnosis"])
+  ([Condition: Cx."Postural tachycardia syndrome (POTS) Diagnosis"]).active().confirmed()
 
 define "Ehlers-Danlos syndrome":
-  SelectActiveConditions([Condition: Cx."Ehlers-Danlos syndrome"])
+  ([Condition: Cx."Ehlers-Danlos syndrome"]).active().confirmed()
 
 define "Stroke":
-  SelectActiveConditions([Condition: Cx."Stroke"])
+  ([Condition: Cx."Stroke"]).active().confirmed()
 
 define "Food insecurity diagnoses":
-  SelectActiveConditions([Condition: Cx."Food insecurity diagnoses"])
+  ([Condition: Cx."Food insecurity diagnoses"]).active().confirmed()
 
 define "Housing insecurity":
-  SelectActiveConditions([Condition: Cx."Housing insecurity"])
+  ([Condition: Cx."Housing insecurity"]).active().confirmed()
 
 define "Transportation insecurity":
-  SelectActiveConditions([Condition: Cx."Transportation insecurity"])
+  ([Condition: Cx."Transportation insecurity"]).active().confirmed()
 
 
 /*
