@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9Logic",
+  "url": "http://hl7.org/fhir/uv/mycontentig/Library/PHQ9Logic",
   "version": "0.1.0",
   "name": "PHQ9Logic",
   "title": "PHQ-9 Depression Scoring Logic",
@@ -67,7 +67,8 @@
     "name": "Responses",
     "use": "out",
     "min": 0,
-    "max": "*"
+    "max": "*",
+    "type": "QuestionnaireResponse"
   }, {
     "name": "CalculateTotalScore",
     "use": "out",

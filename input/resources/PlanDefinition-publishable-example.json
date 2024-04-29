@@ -4,7 +4,7 @@
     "meta": {
         "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition" ]
     },
-    "url": "http://hl7.org/fhir/uv/crmi/PlanDefinition/publishable-example",
+    "url": "http://hl7.org/fhir/uv/mycontentig/PlanDefinition/publishable-example",
     "identifier": [ {
       "use": "official",
       "value": "ANC.DT.01"
@@ -40,8 +40,8 @@
       } ],
       "action": [ {
         "id": "1",
-        "title": "Proceed with ANC contact ",
-        "description": "Proceed with ANC contact ",
+        "title": "Proceed with ANC contact",
+        "description": "Proceed with ANC contact",
         "textEquivalent": "If no danger signs are present, the health worker can continue with the normal ANC contact",
         "documentation": [ {
           "type": "citation",

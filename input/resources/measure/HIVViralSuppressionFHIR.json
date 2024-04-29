@@ -242,7 +242,7 @@
       "reference": "#effective-data-requirements"
     }
   } ],
-  "url": "http://ecqi.healthit.gov/ecqms/Measure/HIVViralSuppressionFHIR",
+  "url": "http://hl7.org/fhir/uv/mycontentig/Measure/HIVViralSuppressionFHIR",
   "identifier": [ {
     "use": "usual",
     "type": {
@@ -294,14 +294,14 @@
   "version": "0.0.001",
   "name": "HIVViralSuppressionFHIR",
   "title": "HIV Viral SuppressionFHIR",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "date": "2023-08-21T16:10:36+00:00",
   "publisher": "Health Resources & Services Administration",
   "contact": [ {
     "telecom": [ {
       "system": "url",
-      "value": " https://www.hrsa.gov/"
+      "value": "https://www.hrsa.gov/"
     } ]
   } ],
   "description": "Percentage of patients, regardless of age, diagnosed with HIV prior to or during the first 90 days of the measurement period, with an eligible encounter in the first 240 days of the measurement period, whose last HIV viral load test result was less than 200 copies/mL during the measurement period",
@@ -331,7 +331,7 @@
     "name": "Health Resources & Services Administration",
     "telecom": [ {
       "system": "url",
-      "value": " https://www.hrsa.gov/"
+      "value": "https://www.hrsa.gov/"
     } ]
   } ],
   "library": [ "http://ecqi.healthit.gov/ecqms/Library/HIVViralSuppressionFHIR" ],
@@ -339,7 +339,7 @@
   "rationale": "HIV is a communicable infection that leads to a progressive disease with a long asymptomatic period. Approximately 40,000 persons in the United States are newly infected with HIV each year (Centers for Disease Control and Prevention, 2021, p. 51). Without treatment, most persons develop acquired immunodeficiency syndrome (AIDS) within 10 years of HIV infection.\n\nHIV viral suppression is a long-standing priority outcome among the HIV community in the United States and around the world. The National HIV/AIDS Strategy for the United States from 2022-2025, developed by the White House Office of National AIDS Policy with input from the HIV community across the United States, prioritizes increasing HIV viral suppression rates to 95% (The White House, 2020). The DHHS Panel on Antiretroviral Guidelines for Adults and Adolescents defines viral suppression as a viral load below the lower limits of detection in its guidelines on virologic failure, and it defines viral suppression as a viral load of less than 200 copies/mL as part of its guidelines for the use of antiretroviral therapy to prevent HIV transmission (Panel on Antiretroviral Guidelines for Adults and Adolescents, 2022).\n\nAntiretroviral therapy (ART) delays the progression to AIDS and increases the length of survival. ART reduces HIV-associated morbidity and mortality by maximally inhibiting HIV replication to achieve viral suppression (Hogg et al., 2001; Lundgern et al., 2015). ART has also been shown to reduce transmission of HIV (Rodger et al., 2019). Studies show disparities in rates of viral suppression by race and ethnicity among MSM and among women, with Black and Hispanic or Latino/a study participants having lower rates of viral suppression than White participants (Buchacz et al., 2020; Buchacz et al., 2018; Geter et al., 2018). This measure will help providers direct their attention and quality improvement efforts towards improving HIV viral suppression rates.",
   "clinicalRecommendationStatement": "Adult guidelines:\n\"The primary goal of antiretroviral therapy (ART) is to prevent HIV-associated morbidity and mortality. This goal is accomplished by using effective ART to achieve and maintain a plasma HIV-1 RNA (viral load) below the quantification limits of commercially available assays. Durable viral suppression improves immune function and overall quality of life, lowers the risk of both AIDS-defining and non-AIDS–defining complications, and allows persons with HIV to live a lifespan approaching that of persons without HIV\" (Panel on Antiretroviral Guidelines for Adults and Adolescents, 2022, p. E-1).\n\n\"ART is recommended for all individuals with HIV to reduce the morbidity and mortality associated with HIV infection and to prevent HIV transmission to sexual partners and infants (AI). ART should be initiated as soon as possible after HIV diagnosis (AI)\" (Panel on Antiretroviral Guidelines for Adults and Adolescents, 2022, p. E-2).\n\n\"The guidelines and the AIDS Clinical Trials Group (ACTG) now define virologic failure as a confirmed viral load >200 copies/mL- a threshold that eliminates most cases of apparent viremia caused by viral load blips or assay variability\" (Panel on Antiretroviral Guidelines for Adults and Adolescents, 2022, p. C-6).\n\n\"Individuals who are adherent to their ARV regimen and do not harbor resistance mutations to the component drugs can generally achieve suppression 8 to 24 weeks after ART initiation; rarely, in some patients it may take longer\" (Panel on Antiretroviral Guidelines for Adults and Adolescents, 2022, p. C-6).\n\nPediatric guidelines: \n\"Based on accumulated experience with currently available assays, the current definition of virologic suppression is a plasma viral load below the detection limit of the assay used (generally <20 to 75 copies/mL)\" (Panel on Antiretroviral Therapy and Medical Management of Children Living with HIV, 2022, p. D-5).\n\n\"Temporary viral load elevations (\"blips\") that are between the level of detection and 200 copies/mL to 500 copies/mL are often detected in adults and children who are on ART; these temporary elevations do not represent virologic failure, as long as the values have returned to below the level of detection when testing is repeated\" (Panel on Antiretroviral Therapy and Medical Management of Children Living with HIV, 2022, p. D-5).",
   "group": [ {
-    "id": "64873a03be23a058642d5816",
+    "id": "group-64873a03be23a058642d5816",
     "extension": [ {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
       "valueCodeableConcept": {
@@ -400,7 +400,8 @@
         } ]
       },
       "criteria": {
-        "language": "text/cql-identifier"
+        "language": "text/cql-identifier",
+        "expression": "Numerator"
       }
     }, {
       "id": "E492BC05-FD48-4459-8574-5CF67CC14C66",
@@ -426,7 +427,8 @@
         } ]
       },
       "criteria": {
-        "language": "text/cql-identifier"
+        "language": "text/cql-identifier",
+        "expression": "Numerator"
       }
     }, {
       "id": "4e8d7586-8625-42d1-9cff-c02d3d4b87f3",
@@ -438,7 +440,8 @@
         } ]
       },
       "criteria": {
-        "language": "text/cql-identifier"
+        "language": "text/cql-identifier",
+        "expression": "Numerator"
       }
     } ]
   } ]

@@ -16,7 +16,7 @@
       "valueCanonical": "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9Logic"
     }
   ],
-  "url": "http://somewhere.org/fhir/uv/mycontentig/Questionnaire/phq-9-questionnaire",
+  "url": "http://hl7.org/fhir/uv/mycontentig/Questionnaire/phq-9-questionnaire",
   "identifier": [
     {
       "use": "official",

@@ -12,21 +12,21 @@
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
         "code": "IMP",
-        "display": "Inpatient"
+        "display": "inpatient encounter"
       }
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
         "code": "ACUTE",
-        "display": "Acute"
+        "display": "inpatient acute"
       }
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
         "code": "NONAC",
-        "display": "Nonacute"
+        "display": "inpatient non-acute"
       }
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
@@ -340,20 +340,14 @@
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
       "mustSupport": [ "url", "extension" ],
       "codeFilter": [ {
-        "path": "url",
-        "code": [ {
-          "code": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-        } ]
+        "path": "url"
       } ]
     }, {
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
       "mustSupport": [ "url", "extension" ],
       "codeFilter": [ {
-        "path": "url",
-        "code": [ {
-          "code": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-        } ]
+        "path": "url"
       } ]
     }, {
       "type": "Encounter",
@@ -363,10 +357,7 @@
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
       }, {
-        "path": "status.value",
-        "code": [ {
-          "code": "finished"
-        } ]
+        "path": "status.value"
       } ]
     }, {
       "type": "Encounter",
@@ -376,19 +367,10 @@
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
       }, {
-        "path": "status.value",
-        "code": [ {
-          "code": "finished"
-        } ]
+        "path": "status.value"
       } ],
       "dateFilter": [ {
-        "path": "period",
-        "valuePeriod": {
-          "extension": [ {
-            "url": "http://hl7.org/fhir/uv/crmi-analysisException",
-            "valueString": "Error attempting to determine filter value: toFhirValue not implemented for Subtract"
-          } ]
-        }
+        "path": "period"
       } ]
     }, {
       "type": "Encounter",
@@ -508,35 +490,7 @@
       } ]
     } ]
   } ],
-  "extension": [ {
-    "id": "supplementalDataGuidance",
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
-    "extension": [ {
-      "url": "guidance"
-    }, {
-      "url": "usage",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-          "code": "supplemental-data",
-          "display": "Supplemental Data"
-        } ],
-        "text": "Supplemental Data Guidance"
-      }
-    } ]
-  }, {
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
-  }, {
-    "id": "effective-data-requirements",
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
-    "valueReference": {
-      "reference": "#effective-data-requirements"
-    }
-  } ],
-  "url": "http://ecqi.healthit.gov/ecqms/Measure/HybridHospitalWideMortalityFHIR",
+  "url": "http://hl7.org/fhir/uv/mycontentig/Measure/HybridHospitalWideMortalityFHIR",
   "identifier": [ {
     "use": "usual",
     "type": {
@@ -597,7 +551,7 @@
   "version": "0.0.001",
   "name": "HybridHospitalWideMortalityFHIR",
   "title": "Core Clinical Data Elements for the Hybrid Hospital-Wide (All-Condition, All-Procedure) Risk-Standardized Mortality Measure (HWM) FHIR",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "date": "2023-08-21T16:10:36+00:00",
   "publisher": "Centers for Medicare & Medicaid Services (CMS)",
@@ -607,6 +561,23 @@
       "value": "https://www.cms.gov/"
     } ]
   } ],
+  "useContext" : [
+    {
+      "code" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code" : "program"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/quality-programs",
+            "code" : "ep-ec",
+            "display" : "EP/EC"
+          }
+        ]
+      }
+    }
+  ],
   "description": "This logic is intended to extract electronic clinical data. This is not an electronic clinical quality measure and this logic will not produce measure results. Instead, it will produce a file containing the data that CMS will link with administrative claims to risk adjust the Hybrid HWM outcome measure. It is designed to extract the first resulted set of vital signs and basic laboratory results obtained from encounters for adult Medicare Fee-For-Service patients admitted to acute care short stay hospitals.",
   "purpose": "UNKNOWN",
   "usage": "This FHIR-based measure has been derived from the QDM-based measure: CMS844v3.1 (QDM 5.6). Please refer to the HL7 QI-Core Implementation Guide (http://hl7.org/fhir/us/qicore/index.html) for more information on QI-Core and mapping recommendations from QDM to QI-Core 4.1.1 (http://hl7.org/fhir/us/qicore/qdm-to-qicore.html).  These specifications are for use for data with discharges that occur between July 1, 2023 and June 30, 2024.\n\nThis logic guides the user to extract the FIRST resulted HWM-specific core clinical data elements for all Medicare Fee-For-Service encounters for patients age 65 to 94 (Initial Population) directly admitted to the hospital or admitted to the same facility after being treated in another area, such as the emergency department or hospital outpatient location.\n\nThe logic supports extraction of the FIRST set of HWM-specific core clinical data elements in two different ways, depending on if the patient was a direct admission, meaning that the patient was admitted directly to an inpatient unit without first receiving care in the emergency department or other hospital outpatient locations within the same admitting facility:\n\n1. If the patient was a direct admission, the logic supports extraction of the FIRST resulted vital signs within 2 hours (120 minutes) after the start of the inpatient admission, and the FIRST resulted laboratory tests within 24 hours (1440 minutes) after the start of the inpatient admission.\n2. If the patient has values captured prior to admission, for example from the emergency department, pre-operative, or other outpatient area within the hospital, the logic supports extraction of the FIRST resulted vital signs and laboratory tests within 24 hours (1440 minutes) PRIOR to the start of the inpatient admission. All clinical systems used in inpatient and outpatient locations within the hospital facility should be queried when looking for core clinical data element values related to a patient who is subsequently admitted.\n\nValue sets for the laboratory tests represent the LOINC codes currently available for these tests. If the institution is using local codes to capture and store relevant laboratory test data, those sites should map that information to the LOINC code for reporting of the core clinical data elements.\n\nNOTE: Do not report ALL values on an encounter during their entire admission. Only report the FIRST resulted value for EACH core clinical data element collected in the appropriate timeframe, if available.\n\nFor each core clinical data element, please report values using one of the appropriate units of measurement listed below, which represent valid UCUM codes: \n\nCore Clinical Data Element                        UCUM Unit\n\nBicarbonate-----------------------------------meq/L \n                                                              mmol/L \n\nCreatinine-------------------------------------mg/dL \n                                                               umol/L\n\nHeart rate------------------------------------{Beats}/min\n\nHematocrit -----------------------------------%\n\nOxygen saturation (by pulse oximetry)-----%{Oxygen}\n\nPlatelet----------------------------------------10*3/uL\n                                                              10*9/L\n                                                              /mm3\n\nSodium----------------------------------------meq/L\n                                                              mmol/L \n\nSystolic blood pressure----------------------mm[Hg]\n\nTemperature----------------------------------Cel\n                                                              [degF]      \n                                                \nWhite blood cell count ----------------------{Cells}/uL\n                                                              10*3/uL\n                                                              10*9/L \n                                                              /mm3\n\nFor each encounter please also submit the following Linking Variables: \nCMS Certification Number; \nHealth Insurance Claim Number (HICN) or Medicare Beneficiary Identifier (MBI);\nDate of Birth;\nSex;\nInpatient Admission Date; and,\nDischarge Date.\n\nThe initial population includes patients with inpatient hospitalizations and patients from Acute Hospital Care at Home programs, who are treated and billed as inpatients but receive care in their home.",
@@ -635,7 +606,7 @@
   "rationale": "The intent of this logic is to extract the FIRST set of clinical data elements from hospital electronic health records (EHRs) for all qualifying encounters. The data will be linked with administrative claims to risk adjust the Hybrid HWM outcome measure. This work addresses stakeholder concerns that clinical data garnered from patients, and used by clinicians to guide diagnostic decisions and treatment, are preferable to administrative claims data when profiling hospitals’ case mix. We are calling the list of data elements for extraction the \"HWM-specific core clinical data elements\". The core clinical data elements are the first set of vital signs and basic laboratory tests resulted from encounters for adult Medicare Fee-For-Service patients, age 65 to 94 (Initial Population), after they arrive at the hospital to which they are subsequently admitted. For example, this first set of data values are often captured in the emergency department or in the pre-operative area, sometimes hours before a patient is admitted to that same facility. \nEncounters over the age of 94 are not included to avoid holding hospitals responsible for the survival of the oldest elderly patients, who may be less likely to have survival as a primary goal. While we acknowledge that many elderly patients do have survival beyond 30 days as a primary goal for their hospitalization, with input from our Technical Expert Panel and work groups, we decided to only include encounters between 65 and 94 years of age.\n\nThese core clinical data elements were selected because they: 1. reflect patients' clinical status when they first present to the hospital; 2. are clinically and statistically relevant to patient outcomes; 3. are consistently obtained on adult inpatient encounters based on current clinical practice; 4. are captured with a standard definition and recorded in a standard format across providers; and 5. are entered in structured fields that are feasibly retrieved from current EHR systems (YNHHSC/CORE, 2015). \n\nAdditional data called Linking Variables are used to link EHR data files with administrative claims data for CMS to calculate results for the Hybrid HWM measure, which are: CMS Certification Number; Health Insurance Claim Number (HICN) or Medicare Beneficiary Identifier (MBI); date of birth; sex; admission date; and discharge date.",
   "clinicalRecommendationStatement": "The logic is not meant to guide or alter the care patients receive. The purpose of this core clinical data elements logic is to extract clinical data that are already routinely captured in EHRs from encounters for hospitalized adult patients. It is not intended to require that clinical staff perform additional measurements or tests that are not needed for diagnostic assessment or treatment of patients.",
   "group": [ {
-    "id": "6385011c4ba3d47c885c02aa",
+    "id": "group-6385011c4ba3d47c885c02aa",
     "extension": [ {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
       "valueCodeableConcept": {

@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasure",
+  "url": "http://hl7.org/fhir/uv/mycontentig/Library/QuestionnaireMeasure",
   "version": "0.1.0",
   "name": "QuestionnaireMeasure",
   "title": "Measure calculating scores from multiple questionnaires example",
