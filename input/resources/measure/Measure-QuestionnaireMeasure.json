@@ -170,7 +170,7 @@
   "experimental": true,
   "date": "2023-07-30T04:59:04-07:00",
   "description": "Example measure illustrating a continuous variable measure calculating scores from multiple questionnaires",
-  "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasure" ],
+  "library": [ "http://hl7.org/fhir/uv/mycontentig/Library/QuestionnaireMeasure" ],
   "scoring": {
     "coding": [ {
       "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",

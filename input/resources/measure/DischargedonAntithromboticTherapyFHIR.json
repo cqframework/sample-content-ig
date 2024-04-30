@@ -629,6 +629,11 @@
       } ]
     } ]
   } ],
+  "extension" : [
+  {
+  "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+  "valueCanonical" : "#effective-data-requirements"
+}],
   "url": "http://hl7.org/fhir/uv/mycontentig/Measure/DischargedonAntithromboticTherapyFHIR",
   "identifier": [ {
     "use": "usual",

@@ -380,12 +380,17 @@
       }]
     }]
   }],
+
   "extension" : [{
     "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
     "valueReference" : {
       "reference" : "Device/cqf-tooling"
     }
-  }],
+  },
+  {
+  "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+  "valueCanonical" : "#effective-data-requirements"
+}],
   "url" : "http://hl7.org/fhir/uv/mycontentig/Measure/publishable-example",
   "version" : "1.0.0-ballot",
   "name" : "ANCIND01",
@@ -420,7 +425,7 @@
       "url" : "https://apps.who.int/iris/bitstream/handle/10665/136101/WHO_RHR_14.26_eng.pdf"
     }
   }],
-  "library" : ["http://hl7.org/fhir/uv/crmi/Library/ANCCohort"],
+
   "scoring" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
