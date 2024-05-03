@@ -34,7 +34,7 @@
       "display": "Hemoglobin A1c/Hemoglobin.total in Blood by calculation"
     }, {
       "system": "http://loinc.org",
-      "version": "2.71",
+      "version": "2.72",
       "code": "17856-6",
       "display": "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
     }, {
