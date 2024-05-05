@@ -1,0 +1,36 @@
+{
+  "systems" : [
+    {
+      "system" : "http://loinc.org",
+      "server" : "http://tx.fhir.org/r4"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "server" : "http://tx.fhir.org/r4"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "server" : "http://tx.fhir.org/r4"
+    },
+    {
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "server" : "http://tx.fhir.org/r4"
+    },
+    {
+      "system" : "urn:ietf:bcp:13",
+      "server" : "http://tx.fhir.org/r4"
+    },
+    {
+      "system" : "urn:ietf:bcp:47",
+      "server" : "http://tx.fhir.org/r4"
+    },
+    {
+      "system" : "urn:iso:std:iso:3166",
+      "server" : "http://tx.fhir.org/r4"
+    },
+    {
+      "system" : "urn:iso:std:iso:3166:-2",
+      "server" : "http://tx.fhir.org/r4"
+    }
+  ]
+}
