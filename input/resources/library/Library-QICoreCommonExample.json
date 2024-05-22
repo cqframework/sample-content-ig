@@ -79,7 +79,7 @@
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "QICore model information",
-    "resource": "https://hl7.org/fhir/us/cqfmeasures/STU4/Library-USCore-ModelInfo.html"
+    "resource": "http://hl7.org/fhir/us/qicore/Library/QICore-ModelInfo"
   }, {
     "type": "depends-on",
     "display": "Library FHIRHelpers",
