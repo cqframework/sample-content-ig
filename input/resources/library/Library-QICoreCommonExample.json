@@ -79,11 +79,11 @@
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "QICore model information",
-    "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
+    "resource": "https://hl7.org/fhir/us/cqfmeasures/STU4/Library-USCore-ModelInfo.html"
   }, {
     "type": "depends-on",
     "display": "Library FHIRHelpers",
-    "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+    "resource": "http://fhir.org/guides/cqf/common/Library-FHIRHelpers.html"
   }, {
     "type": "depends-on",
     "display": "Code system LOINC",
@@ -135,7 +135,7 @@
   }, {
     "type": "depends-on",
     "display": "Code system USCoreObservationCategoryExtensionCodes",
-    "resource": "http://hl7.org/fhir/us/core/CodeSystem/us-core-observation-category"
+    "resource": "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category"
   }, {
     "type": "depends-on",
     "display": "Code system ConditionCategory",
