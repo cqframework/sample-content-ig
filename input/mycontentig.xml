@@ -38,6 +38,11 @@
   <license value="Apache-2.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="sample">
+    <uri value="http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"/>
+    <packageId value="example.fhir.uv.myig"/>
+    <version value="dev"/>
+  </dependsOn>
   <dependsOn id="cpg">
     <uri value="http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"/>
     <packageId value="hl7.fhir.uv.cpg"/>
@@ -80,16 +85,6 @@
       <name value="CQFToolingDevice" />
       <description value="A Device that represents a CQF Tooling version." />
       <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Library/FHIRHelpers" />
-        <display value="FHIR Helpers Library" />
-      </reference>
-      <name value="FHIRHelpers" />
-      <description value="FHIR Helpers Library" />
-      <exampleBoolean value="false" />
-      <groupingId value="common-libraries" />
     </resource>
     <resource>
       <reference>

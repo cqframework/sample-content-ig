@@ -3,7 +3,7 @@
   "id": "phq-9-questionnaireresponse",
   "questionnaire": "http://somewhere.org/fhir/uv/mycontentig/Questionnaire/phq-9-questionnaire",
   "status": "completed",
-  "subject": "Patient/example",
+  "subject": { "reference": "Patient/example" },
   "authored": "2021-09-13T16:29:00-07:00",
   "item": [
     {

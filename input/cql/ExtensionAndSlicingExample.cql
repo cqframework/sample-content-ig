@@ -1,4 +1,4 @@
-library ExtensionAndSlicingExample version '0.1.0'
+library ExtensionAndSlicingExample version '0.4.1'
 
 using FHIR version '4.0.1'
 
