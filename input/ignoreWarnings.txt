@@ -1,10 +1,6 @@
 == Suppressed Messages ==
 
-# The expression language text/cql-identifier is not supported, so can't be validated
-# Constraint failed: cqm-4: 'Group population criteria SHOULD be simple expression names found within the primary library for the measure. The criteria SHOULD NOT include a namespace.' (defined in http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/measure-cqfm)
-# Constraint failed: cmp-2: 'Scoring must be specified at the root, or on each group'
-
-
-
-
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
+# (And include comments like this justifying why)
 
