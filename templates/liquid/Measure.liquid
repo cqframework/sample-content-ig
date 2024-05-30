@@ -346,24 +346,6 @@
         </tr>
         {% endif %}
 
-        {% if Measure.improvementNotation.exists() %}
-            <tr>
-                <th scope="row"><b>Improvement Notation: </b></th>
-                <td style="padding-left: 4px;">
-                    {% if Measure.improvementNotation.coding.exists() %}
-                        {% for coding in Measure.improvementNotation.coding %}
-                            <p style="margin-bottom: 5px;">
-                                <span>{{iif(coding.display.exists(), coding.display, coding.code)}} {{iif(coding.system != 'http://terminology.hl7.org/CodeSystem/measure-improvement-notation', '(' + coding.system + ')', '')}}</span>
-                            </p>
-                        {% endfor %}
-                    {% endif %}
-                    {% if Measure.improvementNotation.coding.exists().not() and Measure.improvementNotation.text.exists() %}
-                        {{Measure.improvementNotation.text}}
-                    {% endif %}
-                </td>
-            </tr>
-        {% endif %}
-
         {% if Measure.usage.exists() %}
             <tr>
                 <th scope="row"><b>Guidance (Usage): </b></th>
