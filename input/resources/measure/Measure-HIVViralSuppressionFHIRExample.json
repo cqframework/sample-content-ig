@@ -111,68 +111,7 @@
         "url": "displaySequence",
         "valueInteger": 5
       } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "Latest"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Given an interval, returns the ending point if the interval has an ending boundary specified,\notherwise, returns the starting point\n@deprecated: This function is deprecated. Use the fluent function `latest()` instead\n*/\ndefine function \"Latest\"(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>> ):\n  (choice.toInterval()) period\n    return\n      if (HasEnd(period)) then end of period\n      else start of period"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 6
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "toInterval"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval<DateTime>, or Interval<Quantity> types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval<DateTime> or Interval<Quantity>.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nAny other input will reslt in a null DateTime Interval\n*/\ndefine fluent function toInterval(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>>):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval<DateTime> then\n  \t\tchoice as Interval<DateTime>\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval<Quantity> then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\telse\n\t\t\tnull as Interval<DateTime>\n\tend"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 7
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "ToInterval"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval<DateTime>, or Interval<Quantity> types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval<DateTime> or Interval<Quantity>.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nAny other input will reslt in a null DateTime Interval\n@deprecated: This function is deprecated. Use the fluent function `toInterval()` instead\n*/\ndefine function ToInterval(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>>):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval<DateTime> then\n  \t\tchoice as Interval<DateTime>\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval<Quantity> then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\twhen choice is QICore.Timing then\n            null as Interval<DateTime>\n\t\telse\n\t\t\tnull as Interval<DateTime>\n\tend"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 8
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "ToPrevalenceInterval"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Returns an interval representing the normalized prevalence period of a given Condition.\n@comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from\nonset to abatement as specified in the given Condition. If the condition is active, the resulting interval will have\na closed ending boundary. If the condition is not active, the resulting interval will have an open ending boundary.\n@deprecated: This function is deprecated. Use the `prevalenceInterval()` fluent function instead\n*/\ndefine function ToPrevalenceInterval(condition Condition):\nif condition.clinicalStatus ~ \"active\"\n  or condition.clinicalStatus ~ \"recurrence\"\n  or condition.clinicalStatus ~ \"relapse\" then\n  Interval[start of ToInterval(condition.onset), end of ToAbatementInterval(condition)]\nelse\n  Interval[start of ToInterval(condition.onset), end of ToAbatementInterval(condition))"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 9
-      } ]
     } ],
-    "name": "EffectiveDataRequirements",
     "status": "active",
     "type": {
       "coding": [ {
@@ -183,7 +122,7 @@
     "relatedArtifact": [ {
       "type": "depends-on",
       "display": "Library FHIRHelpers",
-      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+      "resource": "http://fhir.org/guides/cqf/common/Library-FHIRHelpers.html"
     }, {
       "type": "depends-on",
       "display": "Library QICoreCommon",
@@ -292,7 +231,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
@@ -300,7 +239,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008"
@@ -308,7 +247,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240"
@@ -316,7 +255,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1048"
@@ -324,7 +263,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
@@ -332,7 +271,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
@@ -340,7 +279,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023"
@@ -348,7 +287,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1022"
@@ -356,7 +295,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1024"
@@ -364,7 +303,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080"
@@ -372,7 +311,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1030"
@@ -444,7 +383,7 @@
   "title": "HIV Viral Suppression FHIR Example",
   "status": "draft",
   "experimental": false,
-  "date": "2024-05-06T01:40:05+00:00",
+  "date": "2024-05-16T19:49:47+00:00",
   "publisher": "Health Resources & Services Administration",
   "contact": [ {
     "telecom": [ {
@@ -479,7 +418,7 @@
     "name": "Health Resources & Services Administration",
     "telecom": [ {
       "system": "url",
-      "value": " https://www.hrsa.gov/"
+      "value": "https://www.hrsa.gov/"
     } ]
   } ],
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample" ],
@@ -539,18 +478,6 @@
         "expression": "Denominator"
       }
     }, {
-      "id": "02767a1a-3174-47b6-8c31-84e10114824f",
-      "code": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-          "code": "denominator-exclusion",
-          "display": "Denominator Exclusion"
-        } ]
-      },
-      "criteria": {
-        "language": "text/cql-identifier"
-      }
-    }, {
       "id": "E492BC05-FD48-4459-8574-5CF67CC14C66",
       "code": {
         "coding": [ {
@@ -563,30 +490,6 @@
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Numerator"
-      }
-    }, {
-      "id": "c5d8edbc-2566-4a49-b298-f39723e037c6",
-      "code": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-          "code": "numerator-exclusion",
-          "display": "Numerator Exclusion"
-        } ]
-      },
-      "criteria": {
-        "language": "text/cql-identifier"
-      }
-    }, {
-      "id": "4e8d7586-8625-42d1-9cff-c02d3d4b87f3",
-      "code": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-          "code": "denominator-exception",
-          "display": "Denominator Exception"
-        } ]
-      },
-      "criteria": {
-        "language": "text/cql-identifier"
       }
     } ]
   } ]

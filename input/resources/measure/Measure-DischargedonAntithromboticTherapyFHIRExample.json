@@ -381,128 +381,7 @@
         "url": "displaySequence",
         "valueInteger": 23
       } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "CQMCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "principalDiagnosis"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Returns the condition that is specified as the principal diagnosis for the encounter\n*/\ndefine fluent function principalDiagnosis(Encounter Encounter ):\n\tsingleton from ((Encounter.diagnosis D where D.rank = 1) PD\n      return singleton from ([Condition] C where C.id = PD.condition.reference.getId())\n\t)"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 24
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "getId"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Returns the tail of the given uri (i.e. everything after the last slash in the URI).\n@comment: This function can be used to determine the logical id of a given resource. It can be used in\na single-server environment to trace references. However, this function does not attempt to resolve\nor distinguish the base of the given url, and so cannot be used safely in multi-server environments.\n*/\ndefine fluent function getId(uri String):\n  Last(Split(uri, '/'))"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 25
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "FHIRHelpers"
-      }, {
-        "url": "name",
-        "valueString": "ToString"
-      }, {
-        "url": "statement",
-        "valueString": "define function ToString(value uri): value.value"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 26
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "FHIRHelpers"
-      }, {
-        "url": "name",
-        "valueString": "ToCode"
-      }, {
-        "url": "statement",
-        "valueString": "define function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 27
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "CQMCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "hospitalizationWithObservation"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Hospitalization with Observation returns the total interval from the start of any immediately prior emergency department visit through the observation visit to the discharge of the given encounter\n*/\ndefine fluent function hospitalizationWithObservation(TheEncounter Encounter ):\n  TheEncounter Visit\n  \t\tlet ObsVisit: Last([Encounter: \"Observation Services\"] LastObs\n  \t\t\t\twhere LastObs.status = 'finished'\n            and LastObs.period ends 1 hour or less on or before start of Visit.period\n  \t\t\t\tsort by end of period\n  \t\t\t),\n  \t\t\tVisitStart: Coalesce(start of ObsVisit.period, start of Visit.period),\n  \t\t\tEDVisit: Last([Encounter: \"Emergency Department Visit\"] LastED\n  \t\t\t\twhere LastED.status = 'finished'\n            and LastED.period ends 1 hour or less on or before VisitStart\n  \t\t\t\tsort by end of period\n  \t\t\t)\n  \t\treturn Interval[Coalesce(start of EDVisit.period, VisitStart), end of Visit.period]"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 28
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "FHIRHelpers"
-      }, {
-        "url": "name",
-        "valueString": "ToConcept"
-      }, {
-        "url": "statement",
-        "valueString": "define function ToConcept(concept FHIR.CodeableConcept):\n    if concept is null then\n        null\n    else\n        System.Concept {\n            codes: concept.coding C return ToCode(C),\n            display: concept.text.value\n        }"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 29
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "isCommunity"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Returns true if the given MedicationRequest has a category of Community\n*/\ndefine fluent function isCommunity(medicationRequest MedicationNotRequested):\n  exists (medicationRequest.category C\n    where C ~ Community\n  )"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 30
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "isDischarge"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Returns true if the given MedicationRequest has a category of Discharge\n*/\ndefine fluent function isDischarge(medicationRequest MedicationNotRequested):\n  exists (medicationRequest.category C\n    where C ~ Discharge\n  )"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 31
-      } ]
     } ],
-    "name": "EffectiveDataRequirements",
     "status": "active",
     "type": {
       "coding": [ {
@@ -521,7 +400,7 @@
     }, {
       "type": "depends-on",
       "display": "Library FHIRHelpers",
-      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+      "resource": "http://fhir.org/guides/cqf/common/Library-FHIRHelpers.html"
     }, {
       "type": "depends-on",
       "display": "Library CQMCommon",
@@ -530,6 +409,10 @@
       "type": "depends-on",
       "display": "Library QICoreCommon",
       "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "http://fhir.org/guides/cqf/common/Library-FHIRHelpers.html"
     }, {
       "type": "depends-on",
       "display": "Code system MedicationRequestCategory",
@@ -616,49 +499,49 @@
       "use": "out",
       "min": 0,
       "max": "*",
-      "type": "Resource"
+      "type": "Any"
     }, {
       "name": "Denominator",
       "use": "out",
       "min": 0,
       "max": "*",
-      "type": "Resource"
+      "type": "Any"
     }, {
       "name": "SDE Payer",
       "use": "out",
       "min": 0,
       "max": "*",
-      "type": "Resource"
+      "type": "Any"
     }, {
       "name": "Initial Population",
       "use": "out",
       "min": 0,
       "max": "*",
-      "type": "Resource"
+      "type": "Any"
     }, {
       "name": "SDE Ethnicity",
       "use": "out",
       "min": 0,
       "max": "1",
-      "type": "Resource"
+      "type": "Any"
     }, {
       "name": "Denominator Exclusions",
       "use": "out",
       "min": 0,
       "max": "*",
-      "type": "Resource"
+      "type": "Any"
     }, {
       "name": "SDE Race",
       "use": "out",
       "min": 0,
       "max": "1",
-      "type": "Resource"
+      "type": "Any"
     }, {
       "name": "Denominator Exceptions",
       "use": "out",
       "min": 0,
       "max": "*",
-      "type": "Resource"
+      "type": "Any"
     } ],
     "dataRequirement": [ {
       "type": "Patient",
@@ -667,7 +550,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "rank", "rank.value", "condition", "condition.reference", "condition.reference.value", "hospitalization", "hospitalization.dischargeDisposition" ],
+      "mustSupport": [ "type", "period" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.424"
@@ -675,7 +558,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period", "rank", "rank.value", "condition", "condition.reference", "condition.reference.value", "hospitalization", "hospitalization.dischargeDisposition" ],
+      "mustSupport": [ "type", "status", "status.value", "period" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
@@ -683,7 +566,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "status", "status.value", "period", "rank", "rank.value", "condition", "condition.reference", "condition.reference.value", "hospitalization", "hospitalization.dischargeDisposition" ],
+      "mustSupport": [ "type", "status", "status.value", "period" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
@@ -695,7 +578,7 @@
     }, {
       "type": "MedicationRequest",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationrequest" ],
-      "mustSupport": [ "medication", "authoredOn", "authoredOn.value", "status", "status.value", "intent", "intent.value", "doNotPerform", "doNotPerform.value" ],
+      "mustSupport": [ "medication" ],
       "codeFilter": [ {
         "path": "medication",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.62"
@@ -703,19 +586,11 @@
     }, {
       "type": "MedicationRequest",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationrequest" ],
-      "mustSupport": [ "medication", "authoredOn", "authoredOn.value", "status", "status.value", "intent", "intent.value", "doNotPerform", "doNotPerform.value" ],
+      "mustSupport": [ "medication" ],
       "codeFilter": [ {
         "path": "medication",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.52"
       } ]
-    }, {
-      "type": "MedicationRequest",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationrequest" ],
-      "mustSupport": [ "medication.reference", "authoredOn", "authoredOn.value", "status", "status.value", "intent", "intent.value", "doNotPerform", "doNotPerform.value" ]
-    }, {
-      "type": "Medication",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medication" ],
-      "mustSupport": [ "id" ]
     }, {
       "type": "Coverage",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
@@ -743,7 +618,7 @@
     }, {
       "type": "MedicationRequest",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-mednotrequested" ],
-      "mustSupport": [ "medication", "reasonCode", "intent", "intent.value", "authoredOn", "authoredOn.value" ],
+      "mustSupport": [ "medication" ],
       "codeFilter": [ {
         "path": "medication",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.62"
@@ -751,7 +626,7 @@
     }, {
       "type": "MedicationRequest",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-mednotrequested" ],
-      "mustSupport": [ "medication", "reasonCode", "intent", "intent.value", "authoredOn", "authoredOn.value" ],
+      "mustSupport": [ "medication" ],
       "codeFilter": [ {
         "path": "medication",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1110.62"
@@ -763,7 +638,7 @@
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
     "extension": [ {
       "url": "guidance",
-      "valueString": "Patient's Ethnicity:\nHispanic or Latino\nNot Hispanic or Latino\n Patient's Payer:\nCategories of types of health care payer entities as defined by the US Public Health Data Consortium SOP code system\n Patient's Race:\nNative Hawaiian or Other Pacific Islander\nAsian\nAmerican Indian or Alaska Native\nOther Race\nWhite\nBlack or African American\n Patient's Sex:\nGender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.\n"
+      "valueMarkdown": "Patient's Ethnicity:\nHispanic or Latino\nNot Hispanic or Latino\n Patient's Payer:\nCategories of types of health care payer entities as defined by the US Public Health Data Consortium SOP code system\n Patient's Race:\nNative Hawaiian or Other Pacific Islander\nAsian\nAmerican Indian or Alaska Native\nOther Race\nWhite\nBlack or African American\n Patient's Sex:\nGender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.\n"
     }, {
       "url": "usage",
       "valueCodeableConcept": {
@@ -836,7 +711,7 @@
   "title": "Discharged on Antithrombotic Therapy FHIR Example",
   "status": "draft",
   "experimental": false,
-  "date": "2024-05-06T01:40:05+00:00",
+  "date": "2024-05-16T19:49:47+00:00",
   "publisher": "The Joint Commission",
   "contact": [ {
     "telecom": [ {
@@ -971,18 +846,6 @@
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Numerator"
-      }
-    }, {
-      "id": "5f33f3ea-6ffb-4897-85dd-872dd7ac55b8",
-      "code": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-          "code": "numerator-exclusion",
-          "display": "Numerator Exclusion"
-        } ]
-      },
-      "criteria": {
-        "language": "text/cql-identifier"
       }
     } ]
   } ],

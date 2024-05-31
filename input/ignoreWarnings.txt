@@ -1,6 +1,28 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
-# (And include comments like this justifying why)
+# Additional files that can be utlized in the future
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 
+# Accepted references to draft published content
+INFORMATION: Measure/DischargedonAntithromboticTherapyFHIRExample: Measure.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm|4.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Measure/DischargedonAntithromboticTherapyFHIRExample: Measure.contained[0]/*Library/effective-data-requirements*/.extension[0].value.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0
+INFORMATION: Measure/DischargedonAntithromboticTherapyFHIRExample: Measure.contained[0]/*Library/effective-data-requirements*/.extension[1].value.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0
+INFORMATION: Measure/DischargedonAntithromboticTherapyFHIRExample: Measure.extension[0].extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-data-usage|1.0.0
+INFORMATION: Measure/HIVViralSuppressionFHIRExample: Measure.group[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
+INFORMATION: Measure/DischargedonAntithromboticTherapyFHIRExample: Measure.group[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
+INFORMATION: Measure/DischargedonAntithromboticTherapyFHIRExample: Measure.group[0].extension[2].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-type|3.0.0
+INFORMATION: Measure/HIVViralSuppressionFHIRExample: Measure.group[0].extension[2].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-type|3.0.0
+INFORMATION: Measure/HybridHospitalWideMortalityFHIRExample: Measure.extension[0].extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-data-usage|1.0.0
+INFORMATION: Measure/HybridHospitalWideMortalityFHIRExample: Measure.group[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
+INFORMATION: Measure/HybridHospitalWideMortalityFHIRExample: Measure.group[0].extension[2].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-type|3.0.0
+
+# These warnings are there so the convention in naming the group is being followed
+WARNING: Measure/DischargedonAntithromboticTherapyFHIRExample: Measure.group[0].id: Constraint failed: cqm-3: 'Group identifiers SHOULD use the convention: "group-[group number]", where [group number] corresponds with the group naming convention for the criteria within the group' (defined in http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/measure-cqfm)
+WARNING: Measure/HIVViralSuppressionFHIRExample: Measure.group[0].id: Constraint failed: cqm-3: 'Group identifiers SHOULD use the convention: "group-[group number]", where [group number] corresponds with the group naming convention for the criteria within the group' (defined in http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/measure-cqfm)
+WARNING: Measure/HybridHospitalWideMortalityFHIRExample: Measure.group[0].id: Constraint failed: cqm-3: 'Group identifiers SHOULD use the convention: "group-[group number]", where [group number] corresponds with the group naming convention for the criteria within the group' (defined in http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/measure-cqfm)
+
+# We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present
+INFORMATION: Measure/HybridHospitalWideMortalityFHIRExample: Measure.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm|4.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)

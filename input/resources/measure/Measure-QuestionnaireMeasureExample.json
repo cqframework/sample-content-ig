@@ -106,68 +106,7 @@
         "url": "displaySequence",
         "valueInteger": 4
       } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QuestionnaireMeasureExample"
-      }, {
-        "url": "name",
-        "valueString": "MeasureObservation"
-      }, {
-        "url": "statement",
-        "valueString": "/*\nMeasure observation is a function defined in terms of the types of members of the measure\npopulation, Patient in this case. In a population evaluation scenario, the measure\nobservation is evaluated for every member of the population.\n\nIn an individual report scenario, however, the measure observation is evaluated for\nthe current patient. Note that the patient context is flowing through the call here\n*/\ndefine function \"MeasureObservation\"(patient Patient):\n  PHQ9Logic.CalculateTotalScore"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 5
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "FHIRHelpers"
-      }, {
-        "url": "name",
-        "valueString": "ToString"
-      }, {
-        "url": "statement",
-        "valueString": "define function ToString(value string): value.value"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 6
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "PHQ9LogicExample"
-      }, {
-        "url": "name",
-        "valueString": "AnswerCardinality"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@source: https://www.med.umich.edu/1info/FHP/practiceguides/depress/score.pdf\n*/\ndefine function \"AnswerCardinality\"(answer Coding):\n  case\n    when answer ~ \"Not at all\" then 0\n    when answer ~ \"Several days\" then 1\n    when answer ~ \"More than half the days\" then 2\n    when answer ~ \"Nearly every day\" then 3\n    else null\n  end"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 7
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "FHIRHelpers"
-      }, {
-        "url": "name",
-        "valueString": "ToCode"
-      }, {
-        "url": "statement",
-        "valueString": "define function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 8
-      } ]
     } ],
-    "name": "EffectiveDataRequirements",
     "status": "active",
     "type": {
       "coding": [ {
@@ -182,7 +121,7 @@
     }, {
       "type": "depends-on",
       "display": "Library FHIRHelpers",
-      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+      "resource": "http://fhir.org/guides/cqf/common/Library-FHIRHelpers.html"
     }, {
       "type": "depends-on",
       "display": "Code system LOINC",
@@ -229,7 +168,7 @@
   "title": "Questionnaire Measure Example",
   "status": "draft",
   "experimental": true,
-  "date": "2024-05-05T18:40:05-07:00",
+  "date": "2024-05-16T12:49:47-07:00",
   "description": "Example measure illustrating a continuous variable measure calculating scores from multiple questionnaires",
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample" ],
   "scoring": {
@@ -253,6 +192,10 @@
   },
   "group": [ {
     "id": "group-1",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+      "valueCode": "Questionnaire"
+    } ],
     "population": [ {
       "id": "8A48538B-80BB-4E8B-9716-559C657278FD",
       "code": {
