@@ -739,6 +739,13 @@
                                         </tr>
                                     {% endif %}
 
+                                    {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo').exists() %}
+                                    <tr>
+                                        <th scope="row"><b>Applies To: </b></th>
+                                        <td style="padding-left: 4px;">{{group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo').value}}</td>
+                                    </tr>
+                                    {% endif %}
+
                                 </td>
                                 {% for population in group.population %}
                                 <tr>
