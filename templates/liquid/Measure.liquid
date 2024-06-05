@@ -630,7 +630,7 @@
                             <tr>
                                 {% for group in Measure.group %}
                                 <td> {{group.id}} </td>
-                                <td>
+                                <td style="padding-left: 4px;" colspan="3">
                                     {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring').exists() %}
                                         <b>Group scoring:</b>
                                         {% for extension in group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring') %}
