@@ -480,11 +480,11 @@
                             {% endfor %}
                         </ul>
                     {% endif %}
-                    {% if Measure.relatedArtifact.where(type = 'depends-on').exists() and
+                    {% if Measure.relatedArtifact.display.where(type = 'depends-on').exists() and
                             Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements').exists().not() %}
                         <p><b>Dependencies</b></p>
                         <ul>
-                            {% for artifact in Measure.relatedArtifact.where(type = 'depends-on') %}
+                            {% for artifact in Measure.relatedArtifact.display.where(type = 'depends-on') %}
                                 <li>{{artifact.resource}}</li>
                             {% endfor %}
                         </ul>
