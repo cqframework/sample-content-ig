@@ -82,13 +82,6 @@
             </tr>
         {% endif %}
 
-        {% if Measure.date.exists() %}
-            <tr>
-                <th scope="row"><b>Date: </b></th>
-                <td style="padding-left: 4px;">{{Measure.date}}</td>
-            </tr>
-        {% endif %}
-
         {% if Measure.publisher.exists() %}
             <tr>
                 <th scope="row"><b>Publisher: </b></th>

@@ -82,13 +82,6 @@
         </tr>
         {% endif %}
 
-        {% if ActivityDefinition.lastReviewDate.exists() %}
-        <tr>
-            <th scope="row"><b>Last review date: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.lastReviewDate}}</td>
-        </tr>
-        {% endif %}
-
         {% if ActivityDefinition.publisher.exists() %}
         <tr>
             <th scope="row"><b>Publisher (steward): </b></th>

@@ -258,13 +258,6 @@
         </tr>
         {% endif %}
 
-        {% if PlanDefinition.lastReviewDate.exists() %}
-        <tr>
-            <th scope="row"><b>Last Review Date: </b></th>
-            <td style="padding-left: 4px;">{{PlanDefinition.lastReviewDate}}</td>
-        </tr>
-        {% endif %}
-
         {% if PlanDefinition.effectivePeriod.exists() %}
         <tr>
             <th scope="row"><b>Effective Period: </b></th>
