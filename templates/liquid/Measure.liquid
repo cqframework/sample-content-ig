@@ -363,16 +363,25 @@
                                     </tr>
                                 {% endfor %}
                                 {% if group.stratifier.exists() %}
-                                  <tr><b>Stratifier Criteria: </b></tr>
+                                    {% assign counter = 1 %}
+                                    <tr><b>Stratifier Criteria: </b></tr>
                                     {% for stratifier in group.stratifier %}
                                         <tr>
-                                            <td>{{stratifier.code.coding[0].display}}:</td>
+                                            {% assign label = "Stratum " | append: counter %}
+                                            {% if stratifier.code.coding[0].display %}
+                                                <td>{{ label }}: {{stratifier.code.coding[0].display}}</td>
+                                            {% elsif stratifier.code.coding[0].code %}
+                                                <td>{{ label }}: {{stratifier.code.coding[0].code}}</td>
+                                            {% else %}
+                                                <td>{{ label }}:</td>
+                                            {% endif %}
                                             {% if stratifier.description.exists() %}
                                                 <td>{{stratifier.description}}</td>
                                             {% else %}
                                                 <td>None</td>
                                             {% endif %}
                                         </tr>
+                                        {% assign counter = counter | plus: 1 %}
                                     {% endfor %}
                                 {% endif %}
                             </table>
