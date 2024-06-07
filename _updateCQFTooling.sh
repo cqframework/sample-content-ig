@@ -5,7 +5,7 @@
 r=releases
 g=org.opencds.cqf
 a=tooling-cli
-v=2.4.0
+v=3.4.0
 
 dlurl='https://oss.sonatype.org/service/local/artifact/maven/redirect?r='${r}'&g='${g}'&a='${a}'&v='${v}''
 

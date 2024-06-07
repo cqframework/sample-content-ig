@@ -49,7 +49,7 @@
 
         {% if ActivityDefinition.effectivePeriod.exists() %}
         <tr>
-            <th scope="row"><b>Effective period: </b></th>
+            <th scope="row"><b>Effective Period: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.effectivePeriod.start}}..{{ActivityDefinition.effectivePeriod.end}}</td>
         </tr>
         {% endif %}
@@ -79,13 +79,6 @@
         <tr>
             <th scope="row"><b>Approval date: </b></th>
             <td style="padding-left: 4px;">{{ActivityDefinition.approvalDate}}</td>
-        </tr>
-        {% endif %}
-
-        {% if ActivityDefinition.lastReviewDate.exists() %}
-        <tr>
-            <th scope="row"><b>Last review date: </b></th>
-            <td style="padding-left: 4px;">{{ActivityDefinition.lastReviewDate}}</td>
         </tr>
         {% endif %}
 
@@ -224,7 +217,7 @@
         
         {% if ActivityDefinition.relatedArtifact.exists() %}
         <tr>
-            <th scope="row"><b>Related Artifact Dependencies: </b></th>
+            <th scope="row"><b>Terminology and Other Dependencies: </b></th>
             <td style="padding-left: 4px;">
                 <ul>
                     {% for artifact in ActivityDefinition.relatedArtifact %}
