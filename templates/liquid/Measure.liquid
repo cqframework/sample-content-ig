@@ -684,19 +684,19 @@
                                         </tr>
                                     {% endif %}
 
-                                    {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-measureType').exists() %}
+                                    {% if group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type').exists() %}
                                         <tr>
-                                        {% for extension in group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-measureType') %}
+                                        {% for extension in group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type') %}
                                             <th scope="row"><b>Type: </b></th>
                                             <td style="padding-left: 4px;">
-                                                {% if extension.coding.exists() %}
-                                                    {% for coding in extension.coding %}
+                                                {% if extension.value.coding.exists() %}
+                                                    {% for coding in extension.value.coding %}
                                                         <p style="margin-bottom: 5px;">
                                                             <span>{{iif(coding.display.exists(), coding.display, coding.code)}} {{iif(coding.system != 'http://terminology.hl7.org/CodeSystem/measure-type', '(' + coding.system + ')', '')}}</span>
                                                         </p>
                                                     {% endfor %}
                                                 {% endif %}
-                                                {% if extension.coding.exists().not() and extension.text.exists() %}
+                                                {% if extension.value.coding.exists().not() and extension.text.exists() %}
                                                     {{extension.text}}
                                                 {% endif %}
                                             </td>
