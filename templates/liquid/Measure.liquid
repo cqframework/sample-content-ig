@@ -527,7 +527,7 @@
         {% if Measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements').exists() %}
             {% for contained in Measure.contained.where(id = 'effective-data-requirements') %}
                 <tr>
-                    <th scope="row"><b>Related Artifact Dependencies: </b></th>
+                    <th scope="row"><b>Terminology and Other Dependencies: </b></th>
                     <td style="padding-left: 4px;">
                         {% for relatedArtifact in contained.relatedArtifact.where(type = 'depends-on') %}
                             <li>{{relatedArtifact.resource}}</li>
