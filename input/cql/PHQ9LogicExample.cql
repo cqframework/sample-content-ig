@@ -1,4 +1,4 @@
-library PHQ9Logic
+library PHQ9LogicExample version '0.4.1'
 
 using FHIR version '4.0.1'
 

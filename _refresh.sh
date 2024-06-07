@@ -1,6 +1,6 @@
 #!/bin/bash
 #DO NOT EDIT WITH WINDOWS
-tooling_jar=tooling-1.4.1-SNAPSHOT-jar-with-dependencies.jar
+tooling_jar=tooling-cli-3.4.0.jar
 input_cache_path=./input-cache
 ig_ini_path=$PWD/ig.ini
 
@@ -11,7 +11,6 @@ wget -q --spider tx.fhir.org
 if [ $? -eq 0 ]; then
 	echo "Online"
 	fsoption=""
-	# fsoption="-fs https://cds-sandbox.alphora.com/cqf-ruler-r4/fhir/"
 else
 	echo "Offline"
 	fsoption=""

@@ -1,5 +1,5 @@
 @ECHO OFF
-SET tooling_jar=tooling-1.4.1-SNAPSHOT-jar-with-dependencies.jar
+SET tooling_jar=tooling-cli-3.4.0.jar
 SET input_cache_path=%~dp0input-cache
 SET ig_ini_path=%~dp0ig.ini
 
@@ -12,7 +12,6 @@ GOTO igpublish
 :isonline
 ECHO We're online, setting publish to local sandbox FHIR server
 SET fsoption=
-REM SET fsoption=-fs http://localhost:8080/cqf-ruler-r4/fhir/
 
 :igpublish
 

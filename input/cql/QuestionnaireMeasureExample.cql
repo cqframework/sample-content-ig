@@ -1,10 +1,10 @@
-library QuestionnaireMeasure
+library QuestionnaireMeasureExample version '0.4.1'
 
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
 
-include PHQ9Logic
+include PHQ9LogicExample called PHQ9Logic
 
 parameter "Measurement Period" Interval<Date> default Interval[@2021-01-01, @2021-12-31]
 

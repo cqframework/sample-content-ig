@@ -1,0 +1,813 @@
+{
+  "resourceType": "Measure",
+  "id": "HybridHospitalWideMortalityFHIRExample",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm" ]
+  },
+  "contained": [ {
+    "resourceType": "Library",
+    "id": "effective-data-requirements",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "IMP",
+        "display": "Inpatient"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "ACUTE",
+        "display": "Acute"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "NONAC",
+        "display": "Nonacute"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "OBSENC",
+        "display": "Observation Encounter"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElementsExample"
+      }, {
+        "url": "name",
+        "valueString": "SDE Sex"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Sex\":\n  case\n      when Patient.gender = 'male' then Code { code: 'M', system: 'http://hl7.org/fhir/v3/AdministrativeGender', display: 'Male' }\n      when Patient.gender = 'female' then Code { code: 'F', system: 'http://hl7.org/fhir/v3/AdministrativeGender', display: 'Female' }\n      else null\n    end"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 0
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "SDE Sex"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Sex\":\n  SDE.\"SDE Sex\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 1
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "Inpatient Encounters"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Inpatient Encounters\":\n  from\n    [\"Encounter\": \"Encounter Inpatient\"] InpatientEncounter,\n    [\"Coverage\": \"Medicare payer\"] Payer\n    where InpatientEncounter.status = 'finished'\n      and ( InpatientEncounter.class ~ \"IMP\"\n          or InpatientEncounter.class ~ \"ACUTE\"\n          or InpatientEncounter.class ~ \"NONAC\"\n          or InpatientEncounter.class ~ \"OBSENC\"\n      )\n      and AgeInYearsAt(date from start of InpatientEncounter.period) in Interval[65, 94]\n      and InpatientEncounter.hospitalizationWithObservationLengthofStay ( ) < 365\n      and InpatientEncounter.period ends during day of \"Measurement Period\"\n    return InpatientEncounter"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 2
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "Results"
+      }, {
+        "url": "statement",
+        "valueString": "/*Inpatient encounter initially listed as AMB class; changed this to inpatient classes as discussed with CORE team- AM*/\n\n\ndefine \"Results\":\n  flatten {\n    //First physical exams (vital signs)       \n  \"FirstPhysicalExamWithEncounterId\"([Observation: \"Heart Rate\"], 'FirstHeartRate'), \"FirstPhysicalExamWithEncounterId\"([Observation: \"Systolic Blood Pressure\"], 'FirstSystolicBP'), \"FirstPhysicalExamWithEncounterId\"([Observation: \"Body temperature\"], 'FirstTemperature'), \"FirstPhysicalExamWithEncounterId\"([Observation: \"Oxygen Saturation by Pulse Oximetry\"], 'FirstO2Saturation'),\n    //First lab tests\n  \"FirstLabTestWithEncounterId\"([Observation: \"Hematocrit lab test\"], 'FirstHematocrit'), \"FirstLabTestWithEncounterId\"([Observation: \"Platelet count lab test\"], 'FirstPlateletCount'), \"FirstLabTestWithEncounterId\"([Observation: \"White blood cells count lab test\"], 'FirstWhiteBloodCell'), \"FirstLabTestWithEncounterId\"([Observation: \"Sodium lab test\"], 'FirstSodium'), \"FirstLabTestWithEncounterId\"([Observation: \"Bicarbonate lab test\"], 'FirstBicarbonate'), \"FirstLabTestWithEncounterId\"([Observation: \"Creatinine lab test\"], 'FirstCreatinine') }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 3
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElementsExample"
+      }, {
+        "url": "name",
+        "valueString": "SDE Payer"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Payer\":\n  [Coverage: type in \"Payer Type\"] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 4
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "SDE Payer"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Payer\":\n  SDE.\"SDE Payer\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 5
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Initial Population\":\n  \"Inpatient Encounters\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 6
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElementsExample"
+      }, {
+        "url": "name",
+        "valueString": "SDE Ethnicity"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Ethnicity\":\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 7
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "SDE Ethnicity"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 8
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElementsExample"
+      }, {
+        "url": "name",
+        "valueString": "SDE Race"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Race\":\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 9
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "SDE Race"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Race\":\n  SDE.\"SDE Race\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 10
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "FirstPhysicalExamWithEncounterId"
+      }, {
+        "url": "statement",
+        "valueString": "define function \"FirstPhysicalExamWithEncounterId\"(ExamList List<Observation>, CCDE String):\n  \"Inpatient Encounters\" Encounter\n    let firstexam: First(ExamList Exam\n        where start of QICoreCommon.\"ToInterval\"(Exam.effective) is not null\n          and start of QICoreCommon.\"ToInterval\"(Exam.effective) during Interval[start of Encounter.period - 1440 minutes, start of Encounter.period + 120 minutes]\n          and Exam.status in { 'final', 'amended', 'preliminary' }\n          and Exam.value is not null\n        sort by start of QICoreCommon.\"ToInterval\"(effective)\n    )\n    return '\\r\\n' & CCDE & ',' & Encounter.id & ' , ' & ( ToString(firstexam.value as Quantity) ) & ',' & ToString(start of QICoreCommon.\"ToInterval\"(firstexam.effective))"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 11
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CQMCommonExample"
+      }, {
+        "url": "name",
+        "valueString": "hospitalizationWithObservationLengthofStay"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Hospitalization with Observation Length of Stay returns the length in days from the start of any immediately prior emergency department visit through the observation visit to the discharge of the given encounter\n*/\ndefine fluent function hospitalizationWithObservationLengthofStay(TheEncounter \"Encounter\" ):\n  ((TheEncounter.\"hospitalizationWithObservation\"(). \"lengthInDays\"()))"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 12
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CQMCommonExample"
+      }, {
+        "url": "name",
+        "valueString": "lengthInDays"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Calculates the difference in calendar days between the start and end of the given interval.\n*/\ndefine fluent function lengthInDays(Value Interval<DateTime> ):\n  difference in days between start of Value and end of Value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 13
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CQMCommonExample"
+      }, {
+        "url": "name",
+        "valueString": "hospitalizationWithObservation"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Hospitalization with Observation returns the total interval from the start of any immediately prior emergency department visit through the observation visit to the discharge of the given encounter\n*/\ndefine fluent function hospitalizationWithObservation(TheEncounter Encounter ):\n  TheEncounter Visit\n  \t\tlet ObsVisit: Last([Encounter: \"Observation Services\"] LastObs\n  \t\t\t\twhere LastObs.status = 'finished'\n            and LastObs.period ends 1 hour or less on or before start of Visit.period\n  \t\t\t\tsort by end of period\n  \t\t\t),\n  \t\t\tVisitStart: Coalesce(start of ObsVisit.period, start of Visit.period),\n  \t\t\tEDVisit: Last([Encounter: \"Emergency Department Visit\"] LastED\n  \t\t\t\twhere LastED.status = 'finished'\n            and LastED.period ends 1 hour or less on or before VisitStart\n  \t\t\t\tsort by end of period\n  \t\t\t)\n  \t\treturn Interval[Coalesce(start of EDVisit.period, VisitStart), end of Visit.period]"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 14
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "QICoreCommonExample"
+      }, {
+        "url": "name",
+        "valueString": "ToInterval"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval<DateTime>, or Interval<Quantity> types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval<DateTime> or Interval<Quantity>.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nAny other input will reslt in a null DateTime Interval\n@deprecated: This function is deprecated. Use the fluent function `toInterval()` instead\n*/\ndefine function ToInterval(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>>):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval<DateTime> then\n  \t\tchoice as Interval<DateTime>\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval<Quantity> then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\twhen choice is QICore.Timing then\n            null as Interval<DateTime>\n\t\telse\n\t\t\tnull as Interval<DateTime>\n\tend"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 15
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HybridHospitalWideMortalityFHIRExample"
+      }, {
+        "url": "name",
+        "valueString": "FirstLabTestWithEncounterId"
+      }, {
+        "url": "statement",
+        "valueString": "define function \"FirstLabTestWithEncounterId\"(LabList List<Observation>, CCDE String):\n  \"Inpatient Encounters\" Encounter\n    let firstlab: First(LabList Lab\n        where Lab.issued is not null\n          and Lab.issued during Interval[start of Encounter.period - 1440 minutes, start of Encounter.period + 1440 minutes]\n          and Lab.status in { 'final', 'amended', 'preliminary' }\n          and Lab.value is not null\n        sort by issued\n    )\n    return '\\r\\n' & CCDE & ',' & Encounter.id & ',' & ( ToString(firstlab.value as Quantity) ) & ',' & ToString(firstlab.issued)"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 16
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value uri): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 17
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToCode"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 18
+      } ]
+    } ],
+    "name": "EffectiveDataRequirements",
+    "status": "active",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "module-definition"
+      } ]
+    },
+    "relatedArtifact": [ {
+      "type": "depends-on",
+      "display": "Library SDE",
+      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+    }, {
+      "type": "depends-on",
+      "display": "Library CQMCommon",
+      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample"
+    }, {
+      "type": "depends-on",
+      "display": "Library QICoreCommon",
+      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample"
+    }, {
+      "type": "depends-on",
+      "display": "Code system ActCode",
+      "resource": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Encounter Inpatient",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Medicare payer",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.10"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Observation Services",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Emergency Department Visit",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Heart Rate",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.149"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Systolic Blood Pressure",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.163"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Body temperature",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.152"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Oxygen Saturation by Pulse Oximetry",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.151"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Hematocrit lab test",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.114"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Platelet count lab test",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.127"
+    }, {
+      "type": "depends-on",
+      "display": "Value set White blood cells count lab test",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.129"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Sodium lab test",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.119"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Bicarbonate lab test",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.139"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Creatinine lab test",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.2363"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Payer Type",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+    } ],
+    "parameter": [ {
+      "name": "Measurement Period",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Period"
+    }, {
+      "name": "SDE Sex",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Coding"
+    }, {
+      "name": "Results",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "string"
+    }, {
+      "name": "SDE Payer",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Resource"
+    }, {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Resource"
+    }, {
+      "name": "SDE Ethnicity",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    }, {
+      "name": "SDE Race",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    } ],
+    "dataRequirement": [ {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "id", "id.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "status", "status.value", "period", "id", "id.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "status", "status.value", "class", "period", "id", "id.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
+      } ]
+    }, {
+      "type": "Coverage",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
+      "mustSupport": [ "type" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.10"
+      } ]
+    }, {
+      "type": "Coverage",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
+      "mustSupport": [ "type", "period" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.149"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.163"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.152"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.151"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.114"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.127"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.129"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.119"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1045.139"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation" ],
+      "mustSupport": [ "code", "effective", "status", "status.value", "value", "issued", "issued.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.2363"
+      } ]
+    } ]
+  } ],
+  "extension": [ {
+    "id": "supplementalDataGuidance",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
+    "extension": [ {
+      "url": "guidance"
+    }, {
+      "url": "usage",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+          "code": "supplemental-data",
+          "display": "Supplemental Data"
+        } ],
+        "text": "Supplemental Data Guidance"
+      }
+    } ]
+  }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
+  }, {
+    "id": "effective-data-requirements",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
+    "valueReference": {
+      "reference": "#effective-data-requirements"
+    }
+  } ],
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HybridHospitalWideMortalityFHIRExample",
+  "identifier": [ {
+    "use": "usual",
+    "type": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
+        "code": "short-name"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/shortName",
+    "value": "CMS844FHIR"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
+        "code": "version-independent"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:965255e9-dfeb-42d0-8416-2c4b7ecc5109"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
+        "code": "version-specific"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:2c92808482113ece0182c5d4fc662f1a"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
+        "code": "endorser"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/nqfId",
+    "value": "3502",
+    "assigner": {
+      "display": "NQF"
+    }
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/identifier-type",
+        "code": "publisher"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/cmsId",
+    "value": "844FHIR",
+    "assigner": {
+      "display": "CMS"
+    }
+  } ],
+  "name": "HybridHospitalWideMortalityFHIRExample",
+  "title": "Core Clinical Data Elements for the Hybrid Hospital-Wide (All-Condition, All-Procedure) Risk-Standardized Mortality Measure (HWM) FHIR Example",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-05-06T01:40:05+00:00",
+  "publisher": "Centers for Medicare & Medicaid Services (CMS)",
+  "contact": [ {
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.cms.gov/"
+    } ]
+  } ],
+  "description": "This logic is intended to extract electronic clinical data. This is not an electronic clinical quality measure and this logic will not produce measure results. Instead, it will produce a file containing the data that CMS will link with administrative claims to risk adjust the Hybrid HWM outcome measure. It is designed to extract the first resulted set of vital signs and basic laboratory results obtained from encounters for adult Medicare Fee-For-Service patients admitted to acute care short stay hospitals.",
+  "purpose": "UNKNOWN",
+  "usage": "This FHIR-based measure has been derived from the QDM-based measure: CMS844v3.1 (QDM 5.6). Please refer to the HL7 QI-Core Implementation Guide (http://hl7.org/fhir/us/qicore/index.html) for more information on QI-Core and mapping recommendations from QDM to QI-Core 4.1.1 (http://hl7.org/fhir/us/qicore/qdm-to-qicore.html).  These specifications are for use for data with discharges that occur between July 1, 2023 and June 30, 2024.\n\nThis logic guides the user to extract the FIRST resulted HWM-specific core clinical data elements for all Medicare Fee-For-Service encounters for patients age 65 to 94 (Initial Population) directly admitted to the hospital or admitted to the same facility after being treated in another area, such as the emergency department or hospital outpatient location.\n\nThe logic supports extraction of the FIRST set of HWM-specific core clinical data elements in two different ways, depending on if the patient was a direct admission, meaning that the patient was admitted directly to an inpatient unit without first receiving care in the emergency department or other hospital outpatient locations within the same admitting facility:\n\n1. If the patient was a direct admission, the logic supports extraction of the FIRST resulted vital signs within 2 hours (120 minutes) after the start of the inpatient admission, and the FIRST resulted laboratory tests within 24 hours (1440 minutes) after the start of the inpatient admission.\n2. If the patient has values captured prior to admission, for example from the emergency department, pre-operative, or other outpatient area within the hospital, the logic supports extraction of the FIRST resulted vital signs and laboratory tests within 24 hours (1440 minutes) PRIOR to the start of the inpatient admission. All clinical systems used in inpatient and outpatient locations within the hospital facility should be queried when looking for core clinical data element values related to a patient who is subsequently admitted.\n\nValue sets for the laboratory tests represent the LOINC codes currently available for these tests. If the institution is using local codes to capture and store relevant laboratory test data, those sites should map that information to the LOINC code for reporting of the core clinical data elements.\n\nNOTE: Do not report ALL values on an encounter during their entire admission. Only report the FIRST resulted value for EACH core clinical data element collected in the appropriate timeframe, if available.\n\nFor each core clinical data element, please report values using one of the appropriate units of measurement listed below, which represent valid UCUM codes: \n\nCore Clinical Data Element                        UCUM Unit\n\nBicarbonate-----------------------------------meq/L \n                                                              mmol/L \n\nCreatinine-------------------------------------mg/dL \n                                                               umol/L\n\nHeart rate------------------------------------{Beats}/min\n\nHematocrit -----------------------------------%\n\nOxygen saturation (by pulse oximetry)-----%{Oxygen}\n\nPlatelet----------------------------------------10*3/uL\n                                                              10*9/L\n                                                              /mm3\n\nSodium----------------------------------------meq/L\n                                                              mmol/L \n\nSystolic blood pressure----------------------mm[Hg]\n\nTemperature----------------------------------Cel\n                                                              [degF]      \n                                                \nWhite blood cell count ----------------------{Cells}/uL\n                                                              10*3/uL\n                                                              10*9/L \n                                                              /mm3\n\nFor each encounter please also submit the following Linking Variables: \nCMS Certification Number; \nHealth Insurance Claim Number (HICN) or Medicare Beneficiary Identifier (MBI);\nDate of Birth;\nSex;\nInpatient Admission Date; and,\nDischarge Date.\n\nThe initial population includes patients with inpatient hospitalizations and patients from Acute Hospital Care at Home programs, who are treated and billed as inpatients but receive care in their home.",
+  "copyright": "Limited proprietary coding is contained in these specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets.\n\nThis material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2021 International Health Terminology Standards Development Organisation. All rights reserved.\n\nLOINC(R) copyright 2004-2021 Regenstrief Institute, Inc.",
+  "approvalDate": "2023-08-14",
+  "lastReviewDate": "2023-08-14",
+  "effectivePeriod": {
+    "start": "2024-07-01",
+    "end": "2025-06-30"
+  },
+  "author": [ {
+    "name": "Mathematica",
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.mathematica.org/"
+    } ]
+  }, {
+    "name": "Yale New Haven Health Service Corporation/ Center for Outcomes Research and Evaluation",
+    "telecom": [ {
+      "system": "url",
+      "value": "https://medicine.yale.edu/core/"
+    } ]
+  } ],
+  "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample" ],
+  "disclaimer": "These performance specifications are not clinical guidelines and do not establish a standard of medical care, and have not been tested for all potential applications.\n\nTHE MEASURES AND SPECIFICATIONS ARE PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND.\n\nDue to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].",
+  "rationale": "The intent of this logic is to extract the FIRST set of clinical data elements from hospital electronic health records (EHRs) for all qualifying encounters. The data will be linked with administrative claims to risk adjust the Hybrid HWM outcome measure. This work addresses stakeholder concerns that clinical data garnered from patients, and used by clinicians to guide diagnostic decisions and treatment, are preferable to administrative claims data when profiling hospitals’ case mix. We are calling the list of data elements for extraction the \"HWM-specific core clinical data elements\". The core clinical data elements are the first set of vital signs and basic laboratory tests resulted from encounters for adult Medicare Fee-For-Service patients, age 65 to 94 (Initial Population), after they arrive at the hospital to which they are subsequently admitted. For example, this first set of data values are often captured in the emergency department or in the pre-operative area, sometimes hours before a patient is admitted to that same facility. \nEncounters over the age of 94 are not included to avoid holding hospitals responsible for the survival of the oldest elderly patients, who may be less likely to have survival as a primary goal. While we acknowledge that many elderly patients do have survival beyond 30 days as a primary goal for their hospitalization, with input from our Technical Expert Panel and work groups, we decided to only include encounters between 65 and 94 years of age.\n\nThese core clinical data elements were selected because they: 1. reflect patients' clinical status when they first present to the hospital; 2. are clinically and statistically relevant to patient outcomes; 3. are consistently obtained on adult inpatient encounters based on current clinical practice; 4. are captured with a standard definition and recorded in a standard format across providers; and 5. are entered in structured fields that are feasibly retrieved from current EHR systems (YNHHSC/CORE, 2015). \n\nAdditional data called Linking Variables are used to link EHR data files with administrative claims data for CMS to calculate results for the Hybrid HWM measure, which are: CMS Certification Number; Health Insurance Claim Number (HICN) or Medicare Beneficiary Identifier (MBI); date of birth; sex; admission date; and discharge date.",
+  "clinicalRecommendationStatement": "The logic is not meant to guide or alter the care patients receive. The purpose of this core clinical data elements logic is to extract clinical data that are already routinely captured in EHRs from encounters for hospitalized adult patients. It is not intended to require that clinical staff perform additional measurements or tests that are not needed for diagnostic assessment or treatment of patients.",
+  "group": [ {
+    "id": "6385011c4ba3d47c885c02aa",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+          "code": "cohort",
+          "display": "Cohort"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+      "valueCode": "Encounter"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "outcome",
+          "display": "Outcome"
+        } ]
+      }
+    } ],
+    "population": [ {
+      "id": "24BB5BA9-820F-4958-B8AA-AA8962E9E398",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "description": "All Medicare Fee-For-Service encounters age 65 to 94 years at the start of an inpatient admission, who are discharged during the measurement period (length of stay <365 days).\n\nNOTE: All Medicare Fee-For-Service encounters meeting the above criteria should be included, regardless if Medicare Fee-For-Service is the primary, secondary, or tertiary payer.",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Initial Population"
+      }
+    } ]
+  } ],
+  "supplementalData": [ {
+    "id": "results",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "Results",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "Results"
+    }
+  }, {
+    "id": "sde-ethnicity",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Ethnicity",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Ethnicity"
+    }
+  }, {
+    "id": "sde-payer",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Payer",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Payer"
+    }
+  }, {
+    "id": "sde-race",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Race",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Race"
+    }
+  }, {
+    "id": "sde-sex",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Sex",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Sex"
+    }
+  } ]
+}
