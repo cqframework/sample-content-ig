@@ -497,7 +497,7 @@
                         <p><b>Dependencies</b></p>
                         <ul>
                             {% for artifact in Measure.relatedArtifact.where(type = 'depends-on') %}
-                                <li>{{artifact.resource}}</li>
+                                <li>{{artifact.display}}</li>
                             {% endfor %}
                         </ul>
                     {% endif %}
