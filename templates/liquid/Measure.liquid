@@ -355,11 +355,17 @@
                                 {% for population in group.population %}
                                     <tr>
                                         <td>{{population.code.coding[0].display}}:</td>
-                                        {% if population.description.exists() %}
-                                            <td>{{population.description}}</td>
-                                        {% else %}
+
+                                        {% if population.criteria.expression.exists().not() %}
                                             <td>None</td>
+                                        {% else %}
+                                            {% if population.description.exists() %}
+                                                <td>{{population.description}}</td>
+                                            {% else %}
+                                                <td>None</td>
+                                            {% endif %}
                                         {% endif %}
+
                                     </tr>
                                 {% endfor %}
                                 {% if group.stratifier.exists() %}
@@ -368,17 +374,22 @@
                                     {% for stratifier in group.stratifier %}
                                         <tr>
                                             {% assign label = "Stratum " | append: counter %}
-                                            {% if stratifier.code.coding[0].display %}
-                                                <td>{{ label }}: {{stratifier.code.coding[0].display}}</td>
-                                            {% elsif stratifier.code.coding[0].code %}
-                                                <td>{{ label }}: {{stratifier.code.coding[0].code}}</td>
-                                            {% else %}
-                                                <td>{{ label }}:</td>
-                                            {% endif %}
-                                            {% if stratifier.description.exists() %}
-                                                <td>{{stratifier.description}}</td>
-                                            {% else %}
+                                            <td>
+                                                {% if stratifier.code.coding[0].display %}
+                                                    {{stratifier.code.coding[0].display}}:
+                                                {% else %}
+                                                    {{ label }}:
+                                                {% endif %}
+                                            </td>
+
+                                            {% if stratifier.criteria.expression.exists().not() %}
                                                 <td>None</td>
+                                            {% else %}
+                                                {% if stratifier.description.exists() %}
+                                                    <td>{{stratifier.description}}</td>
+                                                {% else %}
+                                                    <td>None</td>
+                                                {% endif %}
                                             {% endif %}
                                         </tr>
                                         {% assign counter = counter | plus: 1 %}
