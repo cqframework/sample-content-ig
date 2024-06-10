@@ -242,7 +242,7 @@
       "reference": "#effective-data-requirements"
     }
   } ],
-  "url": "http://hl7.org/fhir/uv/mycontentig/Measure/HIVViralSuppressionFHIR",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HIVViralSuppressionFHIRExample",
   "identifier": [ {
     "use": "usual",
     "type": {

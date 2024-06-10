@@ -2,9 +2,7 @@
 <!-- Start by finding all references to "mycontentig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
   <id value="example.fhir.uv.mycontentig"/>
- <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="cqi"/>
-  </extension>
+-  <url value="http://somewhere.org/fhir/uv/mycontentig/ImplementationGuide/example.fhir.uv.mycontentig"/>
   <url value="http://hl7.org/fhir/uv/mycontentig/ImplementationGuide/example.fhir.uv.mycontentig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.4.1"/>
@@ -12,12 +10,12 @@
   <title value="Your User Friendly Name for MyContentIG Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="HL7 International / Clinical Quality Information"/>
+  <publisher value="HL7 International - [Some] Work Group"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/cqi"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
   <description value="A brief description of what MyContentIG is about (probably the same text as in your readme)"/>
