@@ -164,7 +164,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/QuestionnaireMeasureExample",
-  "name": "QuestionnaireMeasure",
+  "name": "QuestionnaireMeasureExample",
   "title": "Questionnaire Measure Example",
   "status": "draft",
   "experimental": true,
@@ -174,8 +174,8 @@
   "scoring": {
     "coding": [ {
       "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
-      "code": "cohort",
-      "display": "Cohort"
+      "code": "continuous-variable",
+      "display": "Continuous Variable"
     } ]
   },
   "type": [ {
@@ -191,31 +191,9 @@
     } ]
   },
   "group": [ {
-    "id": "group-6385011c4ba3d47c885c02aa",
-    "extension": [ {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
-          "code": "cohort",
-          "display": "Cohort"
-        } ]
-      }
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
-      "valueCode": "Encounter"
-    }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
-          "code": "outcome",
-          "display": "Outcome"
-        } ]
-      }
-    } ],
+    "id": "group-1",
     "population": [ {
-      "id": "24BB5BA9-820F-4958-B8AA-AA8962E9E398",
+      "id": "8A48538B-80BB-4E8B-9716-559C657278FD",
       "code": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/measure-population",
@@ -223,77 +201,43 @@
           "display": "Initial Population"
         } ]
       },
-      "description": "All Medicare Fee-For-Service encounters age 65 to 94 years at the start of an inpatient admission, who are discharged during the measurement period (length of stay <365 days).\n\nNOTE: All Medicare Fee-For-Service encounters meeting the above criteria should be included, regardless if Medicare Fee-For-Service is the primary, secondary, or tertiary payer.",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Initial Population"
       }
+    }, {
+      "id": "8FBD6CFA-99E4-4108-B083-91067C55170E",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population",
+          "display": "Measure Population"
+        } ]
+      },
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Measure Population"
+      }
+    }, {
+      "id": "8B71AD15-47EB-4939-8318-1DF60CABCFD6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
+        "valueCode": "average"
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
+        "valueString": "8FBD6CFA-99E4-4108-B083-91067C55170E"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-observation",
+          "display": "Measure Observation"
+        } ]
+      },
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "MeasureObservation"
+      }
     } ]
-  } ],
-  "supplementalData": [ {
-    "id": "results",
-    "usage": [ {
-      "coding": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "supplemental-data"
-      } ]
-    } ],
-    "description": "Results",
-    "criteria": {
-      "language": "text/cql-identifier",
-      "expression": "Results"
-    }
-  }, {
-    "id": "sde-ethnicity",
-    "usage": [ {
-      "coding": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "supplemental-data"
-      } ]
-    } ],
-    "description": "SDE Ethnicity",
-    "criteria": {
-      "language": "text/cql-identifier",
-      "expression": "SDE Ethnicity"
-    }
-  }, {
-    "id": "sde-payer",
-    "usage": [ {
-      "coding": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "supplemental-data"
-      } ]
-    } ],
-    "description": "SDE Payer",
-    "criteria": {
-      "language": "text/cql-identifier",
-      "expression": "SDE Payer"
-    }
-  }, {
-    "id": "sde-race",
-    "usage": [ {
-      "coding": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "supplemental-data"
-      } ]
-    } ],
-    "description": "SDE Race",
-    "criteria": {
-      "language": "text/cql-identifier",
-      "expression": "SDE Race"
-    }
-  }, {
-    "id": "sde-sex",
-    "usage": [ {
-      "coding": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "supplemental-data"
-      } ]
-    } ],
-    "description": "SDE Sex",
-    "criteria": {
-      "language": "text/cql-identifier",
-      "expression": "SDE Sex"
-    }
   } ]
 }

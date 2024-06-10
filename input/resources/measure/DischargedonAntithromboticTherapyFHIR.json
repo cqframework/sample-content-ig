@@ -545,17 +545,7 @@
     }, {
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
-      "mustSupport": [ "url", "extension" ],
-      "codeFilter": [ {
-        "path": "url"
-      } ]
-    }, {
-      "type": "Patient",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
-      "mustSupport": [ "url", "extension" ],
-      "codeFilter": [ {
-        "path": "url"
-      } ]
+      "mustSupport": [ "url", "extension" ]
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
@@ -583,8 +573,6 @@
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143"
-      }, {
-        "path": "status.value"
       } ]
     }, {
       "type": "Encounter",
@@ -593,11 +581,6 @@
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
-      }, {
-        "path": "status.value"
-      } ],
-      "dateFilter": [ {
-        "path": "period"
       } ]
     }, {
       "type": "Condition",
@@ -629,12 +612,36 @@
       } ]
     } ]
   } ],
-  "extension" : [
-  {
-  "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
-  "valueCanonical" : "#effective-data-requirements"
-}],
-  "url": "http://hl7.org/fhir/uv/mycontentig/Measure/DischargedonAntithromboticTherapyFHIR",
+  "extension": [ {
+    "id": "supplementalDataGuidance",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
+    "extension": [ {
+      "url": "guidance",
+      "valueString": "Patient's Ethnicity:\nHispanic or Latino\nNot Hispanic or Latino\n Patient's Payer:\nCategories of types of health care payer entities as defined by the US Public Health Data Consortium SOP code system\n Patient's Race:\nNative Hawaiian or Other Pacific Islander\nAsian\nAmerican Indian or Alaska Native\nOther Race\nWhite\nBlack or African American\n Patient's Sex:\nGender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.\n"
+    }, {
+      "url": "usage",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+          "code": "supplemental-data",
+          "display": "Supplemental Data"
+        } ],
+        "text": "Supplemental Data Guidance"
+      }
+    } ]
+  }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
+  }, {
+    "id": "effective-data-requirements",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
+    "valueReference": {
+      "reference": "#effective-data-requirements"
+    }
+  } ],
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/DischargedonAntithromboticTherapyFHIRExample",
   "identifier": [ {
     "use": "usual",
     "type": {
@@ -679,10 +686,9 @@
       "display": "CMS"
     }
   } ],
-  "version": "0.8.000",
-  "name": "DischargedonAntithromboticTherapyFHIR",
-  "title": "Discharged on Antithrombotic TherapyFHIR",
-  "status": "active",
+  "name": "DischargedonAntithromboticTherapyFHIRExample",
+  "title": "Discharged on Antithrombotic Therapy FHIR Example",
+  "status": "draft",
   "experimental": false,
   "date": "2023-08-21T16:10:36+00:00",
   "publisher": "The Joint Commission",
@@ -727,7 +733,7 @@
   "rationale": "The effectiveness of antithrombotic agents in reducing stroke mortality, stroke-related morbidity and recurrence rates has been studied in several large clinical trials. While the use of these agents for patients with acute ischemic stroke and transient ischemic attacks continues to be the subject of study, substantial evidence is available from completed studies. Data at this time suggest that antithrombotic therapy should be prescribed at discharge following acute ischemic stroke to reduce stroke mortality and morbidity as long as no contraindications exist.\n\nor patients with a stroke due to a cardioembolic source (e.g. atrial fibrillation, mechanical heart valve), warfarin is recommended unless contraindicated. In recent years, novel oral anticoagulant agents (NOACs) have been developed and approved by the U.S. Food and Drug Administration (FDA) for stroke prevention, and may be considered as an alternative to warfarin for select patients. Anticoagulation therapy is not generally recommended for secondary stroke prevention in patients presumed to have a non-cardioembolic stroke.\nAnticoagulants at doses to prevent venous thromboembolism are insufficient antithrombotic therapy to prevent recurrent ischemic stroke or transient ischemic attack (TIA).",
   "clinicalRecommendationStatement": "Clinical trial results suggest that antithrombotic therapy should be prescribed at discharge following acute ischemic stroke to reduce stroke mortality and morbidity as long as no contraindications exist",
   "group": [ {
-    "id": "group-64403d17d4d7050edabb0562",
+    "id": "64403d17d4d7050edabb0562",
     "extension": [ {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
       "valueCodeableConcept": {
@@ -760,7 +766,8 @@
         } ]
       },
       "description": "Inpatient hospitalizations for patients age 18 and older, discharged from inpatient care (non-elective admissions) with a principal diagnosis of ischemic or hemorrhagic stroke and a length of stay less than or equal to 120 days that ends during the measurement period",
-      "criteria": {"language": "text/cql-identifier",
+      "criteria": {
+        "language": "text/cql-identifier",
         "expression": "Initial Population"
       }
     }, {
@@ -773,7 +780,8 @@
         } ]
       },
       "description": "Inpatient hospitalizations for patients with a principal diagnosis of Ischemic stroke",
-      "criteria": {"language": "text/cql-identifier",
+      "criteria": {
+        "language": "text/cql-identifier",
         "expression": "Denominator"
       }
     }, {
@@ -828,8 +836,7 @@
         } ]
       },
       "criteria": {
-        "language": "text/cql-identifier",
-        "expression": "Numerator"
+        "language": "text/cql-identifier"
       }
     } ]
   } ],

@@ -46,38 +46,20 @@
     <packageId value="fhir.cqf.common"/>
     <version value="4.0.1"/>
   </dependsOn>
-  <dependsOn id="measures">
+  <dependsOn id="cqfmeasures">
     <uri value="http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures"/>
     <packageId value="hl7.fhir.us.cqfmeasures"/>
-    <version value="3.0.0"/>
-  </dependsOn>
-  <dependsOn id="crmi">
-    <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
-    <packageId value="hl7.fhir.uv.crmi"/>
-    <version value="1.0.0-snapshot"/>
-  </dependsOn>
-  <dependsOn id="qicore">
-    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
-    <packageId value="hl7.fhir.us.qicore"/>
-    <version value="6.0.0"/>
+    <version value="4.0.0"/>
   </dependsOn>
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-    
-    <!-- Groupings -->
-    <grouping id="common-libraries">
-      <name value="Common Logic Libraries" />
-    </grouping>
-    <!-- Device -->
     <resource>
       <reference>
-        <reference value="Device/cqf-tooling" />
-        <display value="CQF Tooling Device" />
+        <reference value="Device/cqf-tooling"/>
       </reference>
-      <name value="CQFToolingDevice" />
-      <description value="A Device that represents a CQF Tooling version." />
-      <exampleBoolean value="false" />
+      <name value="CQF Tooling"/>
+      <description value="CQF Tooling used in the generation of this IG"/>
     </resource>
     <resource>
       <reference>
@@ -140,6 +122,22 @@
         <generation value="markdown"/>
       </page>
     </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/device"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/library"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/measure"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/questionnaire"/>
+    </parameter>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
@@ -151,7 +149,7 @@
       <value value="CI Build"/>
     </parameter>
     <parameter>
-      <code value="find-other-resources"/>
+      <code value="autoload-resources"/>
       <value value="true"/>
     </parameter>
     <parameter>
