@@ -121,7 +121,7 @@
     }, {
       "type": "depends-on",
       "display": "Library FHIRHelpers",
-      "resource": "http://fhir.org/guides/cqf/common/Library-FHIRHelpers.html"
+      "resource": "http://fhir.org/guides/cqf/common/Library/FHIRHelpers"
     }, {
       "type": "depends-on",
       "display": "Code system LOINC",
