@@ -369,30 +369,17 @@
                                     </tr>
                                 {% endfor %}
                                 {% if group.stratifier.exists() %}
-                                    {% assign counter = 1 %}
-                                    <tr><b>Stratifier Criteria: </b></tr>
+                                  <tr><b>Stratifier Criteria: </b></tr>
                                     {% for stratifier in group.stratifier %}
                                         <tr>
-                                            {% assign label = "Stratum " | append: counter %}
-                                            <td>
-                                                {% if stratifier.code.coding[0].display %}
-                                                    {{stratifier.code.coding[0].display}}:
-                                                {% else %}
-                                                    {{ label }}:
-                                                {% endif %}
-                                            </td>
-
-                                            {% if stratifier.criteria.expression.exists().not() %}
-                                                <td>None</td>
+                                            {% if stratifier.code.coding[0].display.exists() %}
+                                                <td>{{stratifier.code.coding[0].display}}:</td>
+                                            {% else if stratifier.code.coding[0].code.exists() %}
+                                                <td>{{stratifier.code.coding[0].code}}:</td>
                                             {% else %}
-                                                {% if stratifier.description.exists() %}
-                                                    <td>{{stratifier.description}}</td>
-                                                {% else %}
-                                                    <td>None</td>
-                                                {% endif %}
+                                                <td>Stratum:</td>
                                             {% endif %}
                                         </tr>
-                                        {% assign counter = counter | plus: 1 %}
                                     {% endfor %}
                                 {% endif %}
                             </table>
