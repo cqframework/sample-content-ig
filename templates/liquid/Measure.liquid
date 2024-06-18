@@ -374,7 +374,7 @@
                                         <tr>
                                             {% if stratifier.code.coding[0].display.exists() %}
                                                 <td>{{stratifier.code.coding[0].display}}:</td>
-                                            {% elseif stratifier.code.coding[0].code.exists() %}
+                                            {% elsif stratifier.code.coding[0].code.exists() %}
                                                 <td>{{stratifier.code.coding[0].code}}:</td>
                                             {% else %}
                                                 <td>Stratum:</td>
