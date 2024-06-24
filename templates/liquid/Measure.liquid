@@ -379,6 +379,12 @@
                                             {% else %}
                                                 <td>Stratum:</td>
                                             {% endif %}
+
+                                            {% if stratifier.description.exists() %}
+                                                <td>{{stratifier.description}}</td>
+                                            {% else %}
+                                                <td>None</td>
+                                            {% endif %}
                                         </tr>
                                     {% endfor %}
                                 {% endif %}
