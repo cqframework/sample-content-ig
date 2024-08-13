@@ -37,7 +37,7 @@ input/vocabulary/valueset
 input/vocabulary/valueset/external
 ```
 
-This is also the same structure as the [Atom CQL Plugin](https://github.com/cqframework/atom_cql_support) uses to support CQL authoring and evaluation as part of the Atom plugin.
+This is also the same structure as the [VSCode CQL extension](https://github.com/cqframework/vscode-cql) uses to support CQL authoring and evaluation as part of the VSCode extension.
 
 The `bundles/<artifact-resource-type-name>` folder is where artifact bundles are placed.
 
