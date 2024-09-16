@@ -16,7 +16,7 @@ codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeS
 codesystem "AllergyIntoleranceClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'
 codesystem "AllergyIntoleranceVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'
 codesystem "ObservationCategoryCodes": 'http://terminology.hl7.org/CodeSystem/observation-category'
-codesystem "USCoreObservationCategoryExtensionCodes": 'http://hl7.org/fhir/us/core/CodeSystem/us-core-observation-category'  
+codesystem "USCoreObservationCategoryExtensionCodes": 'http://terminology.hl7.org/CodeSystem/observation-category'  
 codesystem "ConditionCategory": 'http://terminology.hl7.org/CodeSystem/condition-category'
 codesystem "USCoreConditionCategoryExtensionCodes": 'http://hl7.org/fhir/us/core/CodeSystem/condition-category'
 
