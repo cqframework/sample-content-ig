@@ -449,7 +449,7 @@
   "contact": [ {
     "telecom": [ {
       "system": "url",
-      "value": " https://www.hrsa.gov/"
+      "value": "https://www.hrsa.gov/"
     } ]
   } ],
   "description": "Percentage of patients, regardless of age, diagnosed with HIV prior to or during the first 90 days of the measurement period, with an eligible encounter in the first 240 days of the measurement period, whose last HIV viral load test result was less than 200 copies/mL during the measurement period",
@@ -467,7 +467,7 @@
     }
   } ],
   "purpose": "UNKNOWN",
-  "usage": "HIV viral load data should be captured either as a numeric value or as a character/text value, depending on whether a given viral load result falls above or below the lab’s lower limit of detection. For viral loads at or above the lower limit of detection, the viral load should be captured as a numeric value (expressed as the number of copies/mL). For viral loads below the lower limit of detection, the viral load should be populated with a character/text value equivalent to \"Below lower limit of detection.\" The EHR need not record this character value using this exact wording (for example, the character value could be recorded as \"<20 copies/mL\" or \"not detected\"), but values below the lower limit of detection should be documented to allow the submitter to accurately map them to a value of \"Below lower limit of detection\" for reporting purposes.\n\nThis eCQM is a patient-based measure.\n\nThis FHIR-based measure has been derived from the QDM-based measure: CMS314v1. \n\nPlease refer to the HL7 QI-Core Implementation Guide (http://hl7.org/fhir/us/qicore/index.html) for more information on QI-Core and mapping recommendations from QDM to QI-Core 4.1.1 (http://hl7.org/fhir/us/qicore/qdm-to-qicore.html).",
+  "usage": "HIV viral load data should be captured either as a numeric value or as a character/text value, depending on whether a given viral load result falls above or below the lab's lower limit of detection. For viral loads at or above the lower limit of detection, the viral load should be captured as a numeric value (expressed as the number of copies/mL). For viral loads below the lower limit of detection, the viral load should be populated with a character/text value equivalent to \"Below lower limit of detection.\" The EHR need not record this character value using this exact wording (for example, the character value could be recorded as \"<20 copies/mL\" or \"not detected\"), but values below the lower limit of detection should be documented to allow the submitter to accurately map them to a value of \"Below lower limit of detection\" for reporting purposes.\n\nThis eCQM is a patient-based measure.\n\nThis FHIR-based measure has been derived from the QDM-based measure: CMS314v1. \n\nPlease refer to the HL7 QI-Core Implementation Guide (http://hl7.org/fhir/us/qicore/index.html) for more information on QI-Core and mapping recommendations from QDM to QI-Core 4.1.1 (http://hl7.org/fhir/us/qicore/qdm-to-qicore.html).",
   "copyright": "This measure was developed by the Health Resources & Services Administration (HRSA) of the U.S. Department of Health & Human Services (HHS). It is in the public domain.\n\nCitation of HRSA as the source of the original measure is appreciated. Any modified versions may not be represented as approved, endorsed, or authorized by HRSA or HHS. 42 U.S.C. Section 1320b-10. Users of modified versions should clearly explain how they deviate from HRSA's original measure.\n\nLimited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets. \n\nCPT(R) contained in the Measure specifications is copyright 2004-2022 American Medical Association. LOINC(R) is copyright 2004-2022 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2022 International Health Terminology Standards Development Organisation. ICD-10 is copyright 2022 World Health Organization. All Rights Reserved.\n\nDue to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].",
   "approvalDate": "2023-08-14",
   "lastReviewDate": "2023-08-14",
@@ -479,7 +479,7 @@
     "name": "Health Resources & Services Administration",
     "telecom": [ {
       "system": "url",
-      "value": " https://www.hrsa.gov/"
+      "value": "https://www.hrsa.gov/"
     } ]
   } ],
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample" ],
