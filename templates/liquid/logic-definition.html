@@ -1,4 +1,4 @@
-{% for extension in include.contained.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}        
+{% for extension in include.contained.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' or url = 'http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition') %}        
 <tr>
   <th scope="row" class="row-header" rowspan="2">
     {% if extension.extension.where(url = 'name').exists() and extension.extension.where(url = 'libraryName') %}
