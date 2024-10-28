@@ -1,0 +1,6 @@
+{% if include.library.identifier.exists() or include.library.version.exists() or include.library.type.exists() %}
+{%include section-header.html header='Library Metadata' %}
+{%include default-list.html header='Identifier' content=include.library.identifier %}
+{%include default.html header='Version Number' content=include.library.version %}
+{%include default.html header='Library Type' content=include.library.type %}
+{% endif %}

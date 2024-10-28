@@ -183,7 +183,7 @@
     "relatedArtifact": [ {
       "type": "depends-on",
       "display": "Library FHIRHelpers",
-      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1"
     }, {
       "type": "depends-on",
       "display": "Library QICoreCommon",
@@ -444,7 +444,7 @@
   "title": "HIV Viral Suppression FHIR Example",
   "status": "draft",
   "experimental": false,
-  "date": "2024-05-06T01:40:05+00:00",
+  "date": "2024-10-28T19:19:09+00:00",
   "publisher": "Health Resources & Services Administration",
   "contact": [ {
     "telecom": [ {
