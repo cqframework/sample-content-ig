@@ -7,9 +7,9 @@
   {% for contained in include.measure.contained.where(id.contains('effective-data-requirements')) %}
   {%include related-artifact.html relatedArtifact=contained.relatedArtifact %}
   {%include direct-reference-code.html contained=contained %}
-  {% for parameter in contained.parameter %}
-  {%include parameter.html header='Parameter' parameter=parameter %}
-  {% endfor %}
+  {% if contained.parameter.exists() %}
+  {%include parameter.html header='Parameter' parameter=contained.parameter %}
+  {% endif %}
   {% if contained.dataRequirement.exists() %}
   <tr>
     <th class="section-header" colspan="2" scope="row"><a name="effective-data-requirements"> </a>Measure Logic Data Requirements</th>
