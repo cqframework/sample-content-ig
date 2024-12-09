@@ -1,0 +1,9 @@
+{% if include.library.identifier.exists() or include.library.version.exists() or include.library.type.exists() or include.library.subject.exists() or include.library.parameter.exists() or include.library.dataRequirement.exists() %}
+{%include section-header.html header='Library Metadata' %}
+{%include default-list.html header='Identifier' content=include.library.identifier %}
+{%include default.html header='Version Number' content=include.library.version %}
+{%include default.html header='Library Type' content=include.library.type %}
+{%include default.html header='Library Subject' content=include.library.subject %}
+{%include parameter.html header='Parameter' parameter=include.library.parameter %}
+{%include datarequirement.html header='Data Requirement' dataRequirement=include.library.dataRequirement %}
+{% endif %}
