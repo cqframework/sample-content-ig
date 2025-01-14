@@ -1,0 +1,8 @@
+{% if include.plandefinition.identifier.exists() or include.plandefinition.version.exists() or include.plandefinition.type.exists() or
+include.plandefinition.subject.exists() %}
+{%include section-header.html header='PlanDefinition Metadata' %}
+{%include default-list.html header='Identifier' content=include.plandefinition.identifier %}
+{%include default.html header='Version Number' content=include.plandefinition.version %}
+{%include default.html header='PlanDefinition Type' content=include.plandefinition.type %}
+{%include default.html header='PlanDefinition Subject' content=include.plandefinition.subject %}
+{% endif %}
