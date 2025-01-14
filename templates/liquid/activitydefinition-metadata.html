@@ -1,0 +1,7 @@
+{% if include.activitydefinition.identifier.exists() or include.activitydefinition.version.exists() or
+include.activitydefinition.subject.exists() %}
+{%include section-header.html header='ActivityDefinition Metadata' %}
+{%include default-list.html header='Identifier' content=include.activitydefinition.identifier %}
+{%include default.html header='Version Number' content=include.activitydefinition.version %}
+{%include default.html header='ActivityDefinition Subject' content=include.activitydefinition.subject %}
+{% endif %}
