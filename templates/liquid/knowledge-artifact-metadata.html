@@ -32,6 +32,13 @@
 {%include default-list.html header='PlanDefinition Endorser' content=Resource.endorser %}
 {%include default.html header='PlanDefinition Steward' content=Resource.publisher %}
 {% endif %}
+{% if Resource.is(ActivityDefinition) %}
+{%include default-list.html header='ActivityDefinition Developer' content=Resource.author %}
+{%include default-list.html header='ActivityDefinition Editor' content=Resource.editor %}
+{%include default-list.html header='ActivityDefinition Reviewer' content=Resource.reviewer %}
+{%include default-list.html header='ActivityDefinition Endorser' content=Resource.endorser %}
+{%include default.html header='ActivityDefinition Steward' content=Resource.publisher %}
+{% endif %}
 {%include default-list.html header='Steward Contact Details' content=Resource.contact %}
 {%include default.html header='Copyright' content=Resource.copyright %}
 {%include related-artifact.html relatedArtifact=Resource.relatedArtifact %}
