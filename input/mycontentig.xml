@@ -35,7 +35,7 @@
   </jurisdiction>
   <packageId value="example.fhir.uv.mycontentig"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
-  <license value="Apache-2.0"/>
+  <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
   <dependsOn id="sample">
