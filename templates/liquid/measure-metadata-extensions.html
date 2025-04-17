@@ -9,3 +9,7 @@
 {% for scoringUnit in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit') %}
   {%include default.html header='Scoring Unit' content=scoringUnit.value %}
 {% endfor %}
+{% for definitionTerm in include.measure.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/cqf-definitionTerm') %}
+  {%assign termheader = definitionTerm.extension.where(url ='term').value + ' Definition' %}
+  {%include default.html header=termheader content=definitionTerm.extension.where(url ='definition').value %}
+{% endfor %}

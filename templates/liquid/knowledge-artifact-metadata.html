@@ -12,34 +12,34 @@
 {%include default-list.html header='Use Context' content=Resource.useContext %}
 {%include default-list.html header='Topic' content=Resource.topic %}
 {% if Resource.is(Measure) %}
-{%include default-list.html header='Measure Developer' content=Resource.author %}
-{%include default-list.html header='Measure Editor' content=Resource.editor %}
-{%include default-list.html header='Measure Reviewer' content=Resource.reviewer %}
-{%include default-list.html header='Measure Endorser' content=Resource.endorser %}
+{%include contactdetail-list.html header='Measure Developer' contactdetails=Resource.author %}
+{%include contactdetail-list.html header='Measure Editor' contactdetails=Resource.editor %}
+{%include contactdetail-list.html header='Measure Reviewer' contactdetails=Resource.reviewer %}
+{%include contactdetail-list.html header='Measure Endorser' contactdetails=Resource.endorser %}
 {%include default.html header='Measure Steward' content=Resource.publisher %}
 {% endif %}
 {% if Resource.is(Library) %}
-{%include default-list.html header='Library Developer' content=Resource.author %}
-{%include default-list.html header='Library Editor' content=Resource.editor %}
-{%include default-list.html header='Library Reviewer' content=Resource.reviewer %}
-{%include default-list.html header='Library Endorser' content=Resource.endorser %}
+{%include contactdetail-list.html header='Library Developer' contactdetails=Resource.author %}
+{%include contactdetail-list.html header='Library Editor' contactdetails=Resource.editor %}
+{%include contactdetail-list.html header='Library Reviewer' contactdetails=Resource.reviewer %}
+{%include contactdetail-list.html header='Library Endorser' contactdetails=Resource.endorser %}
 {%include default.html header='Library Steward' content=Resource.publisher %}
 {% endif %}
 {% if Resource.is(PlanDefinition) %}
-{%include default-list.html header='PlanDefinition Developer' content=Resource.author %}
-{%include default-list.html header='PlanDefinition Editor' content=Resource.editor %}
-{%include default-list.html header='PlanDefinition Reviewer' content=Resource.reviewer %}
-{%include default-list.html header='PlanDefinition Endorser' content=Resource.endorser %}
+{%include contactdetail-list.html header='PlanDefinition Developer' contactdetails=Resource.author %}
+{%include contactdetail-list.html header='PlanDefinition Editor' contactdetails=Resource.editor %}
+{%include contactdetail-list.html header='PlanDefinition Reviewer' contactdetails=Resource.reviewer %}
+{%include contactdetail-list.html header='PlanDefinition Endorser' contactdetails=Resource.endorser %}
 {%include default.html header='PlanDefinition Steward' content=Resource.publisher %}
 {% endif %}
 {% if Resource.is(ActivityDefinition) %}
-{%include default-list.html header='ActivityDefinition Developer' content=Resource.author %}
-{%include default-list.html header='ActivityDefinition Editor' content=Resource.editor %}
-{%include default-list.html header='ActivityDefinition Reviewer' content=Resource.reviewer %}
-{%include default-list.html header='ActivityDefinition Endorser' content=Resource.endorser %}
+{%include contactdetail-list.html header='ActivityDefinition Developer' contactdetails=Resource.author %}
+{%include contactdetail-list.html header='ActivityDefinition Editor' contactdetails=Resource.editor %}
+{%include contactdetail-list.html header='ActivityDefinition Reviewer' contactdetails=Resource.reviewer %}
+{%include contactdetail-list.html header='ActivityDefinition Endorser' contactdetails=Resource.endorser %}
 {%include default.html header='ActivityDefinition Steward' content=Resource.publisher %}
 {% endif %}
-{%include default-list.html header='Steward Contact Details' content=Resource.contact %}
+{%include contactdetail-list.html header='Steward Contact Details' contactdetails=Resource.contact %}
 {%include default.html header='Copyright' content=Resource.copyright %}
 {%include related-artifact.html relatedArtifact=Resource.relatedArtifact %}
 {%include knowledge-artifact-metadata-extensions.html resource=Resource %}

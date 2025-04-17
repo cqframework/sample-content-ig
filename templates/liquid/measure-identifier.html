@@ -15,6 +15,6 @@
     {%include default.html header='Publisher Identifier' content=identifier.value %}
   {% endif %}
 {% endfor %}
-{% for identifier in include.measure.identifier.where(type.coding.where(code != 'short-name' and code != 'version-independent' and code != 'version-specific' and code != 'publisher').exists()) %}
-  {%include default.html header='Identifier' content=identifier %}
+{% for identifier in include.measure.identifier.where(type.exists().not() or type.coding.where(code != 'short-name' and code != 'version-independent' and code != 'version-specific' and code != 'publisher').exists()) %}
+  {%include default.html header='Identifier' content=identifier.value %}
 {% endfor %}

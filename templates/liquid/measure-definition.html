@@ -1,0 +1,7 @@
+{% for definition in include.measure.definition %}
+{%include default.html header='Definition' content=definition %}
+{% for definitionTermExt in definition.extension.where(url ='http://hl7.org/fhir/StructureDefinition/cqf-definitionTerm') %}
+{%assign termheader = definition.extension.where(url ='term').value + 'Identifier' %}
+{%include default.html header=termheader content=definition.extension.where(url ='definition').value %}
+{% endfor %}
+{% endfor %}
