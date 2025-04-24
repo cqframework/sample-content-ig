@@ -1,5 +1,8 @@
 {
   "urn:ietf:bcp:13|null" : null,
+  "https://madie.cms.gov/measure/nqfId" : null,
   "http://hl7.org/fhir/fhir-types|null" : null,
-  "http://unstats.un.org/unsd/methods/m49/m49.htm|null" : null
+  "http://unstats.un.org/unsd/methods/m49/m49.htm|null" : null,
+  "https://madie.cms.gov/measure/shortName" : null,
+  "https://madie.cms.gov/measure/cmsId" : null
 }
