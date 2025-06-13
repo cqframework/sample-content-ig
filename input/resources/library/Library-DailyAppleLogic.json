@@ -1,0 +1,25 @@
+{
+  "resourceType": "Library",
+  "id": "DailyAppleLogic",
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic",
+  "name": "DailyAppleLogic",
+  "title": "Daily Apple Logic",
+  "status": "active",
+  "experimental": false,
+  "type": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/library-type",
+      "code": "logic-library"
+    } ]
+  },
+  "date": "2020-11-29T15:54:22-07:00",
+  "description": "This library defines logic for representing the Daily Apple Recommendation.",
+  "topic": [ {
+    "text": "FHIR"
+  }, {
+    "text": "CQL"
+  } ],
+  "content": [ {
+    "id": "ig-loader-DailyAppleLogic.cql"
+  } ]
+}

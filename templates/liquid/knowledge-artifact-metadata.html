@@ -1,45 +1,35 @@
-{%include section-header.html header='Knowledge Artifact Metadata' %}
-{%include default.html header='Name (machine-readable)' content=Resource.name %}
-{%include default.html header='Title (human-readable)' content=Resource.title %}
-{%include default.html header='Subtitle' content=Resource.subtitle %}
-{%include default.html header='Status' content=Resource.status %}
-{%include default.html header='Experimental' content=Resource.experimental %}
-{%include default.html header='Description' content=Resource.description %}
-{%include default.html header='Purpose' content=Resource.purpose %}
-{%include default.html header='Clinical Usage' content=Resource.usage %}
-{%include default.html header='Approval Date' content=Resource.approvalDate %}
-{%include period.html header='Effective Period' period=Resource.effectivePeriod %}
-{%include default-list.html header='Use Context' content=Resource.useContext %}
-{%include default-list.html header='Topic' content=Resource.topic %}
-{% if Resource.is(Measure) %}
-{%include contactdetail-list.html header='Measure Developer' contactdetails=Resource.author %}
-{%include contactdetail-list.html header='Measure Editor' contactdetails=Resource.editor %}
-{%include contactdetail-list.html header='Measure Reviewer' contactdetails=Resource.reviewer %}
-{%include contactdetail-list.html header='Measure Endorser' contactdetails=Resource.endorser %}
-{%include default.html header='Measure Steward' content=Resource.publisher %}
+{%include section-header.html header='Metadata' %}
+{%include default.html header='Name (machine-readable)' content=include.resource.name %}
+{%include default.html header='Title (human-readable)' content=include.resource.title %}
+{%include default.html header='Subtitle' content=include.resource.subtitle %}
+{%include knowledge-artifact-identifier.html resource=include.resource %}
+{%include default.html header='Version' content=include.resource.version %}
+{% if include.resource.status != 'active' %}
+{%include default.html header='Status' content=include.resource.status %}
 {% endif %}
-{% if Resource.is(Library) %}
-{%include contactdetail-list.html header='Library Developer' contactdetails=Resource.author %}
-{%include contactdetail-list.html header='Library Editor' contactdetails=Resource.editor %}
-{%include contactdetail-list.html header='Library Reviewer' contactdetails=Resource.reviewer %}
-{%include contactdetail-list.html header='Library Endorser' contactdetails=Resource.endorser %}
-{%include default.html header='Library Steward' content=Resource.publisher %}
+{% if include.resource.experimental = true %}
+{%include default.html header='Experimental' content=include.resource.experimental %}
 {% endif %}
-{% if Resource.is(PlanDefinition) %}
-{%include contactdetail-list.html header='PlanDefinition Developer' contactdetails=Resource.author %}
-{%include contactdetail-list.html header='PlanDefinition Editor' contactdetails=Resource.editor %}
-{%include contactdetail-list.html header='PlanDefinition Reviewer' contactdetails=Resource.reviewer %}
-{%include contactdetail-list.html header='PlanDefinition Endorser' contactdetails=Resource.endorser %}
-{%include default.html header='PlanDefinition Steward' content=Resource.publisher %}
+{%include default.html header='Subject Type' content=include.resource.subject %}
+{%include default.html header='Description' content=include.resource.description %}
+{% if include.resource.purpose.exists() and include.resource.purpose != 'UNKNOWN' %}
+{%include default.html header='Purpose' content=include.resource.purpose %}
 {% endif %}
-{% if Resource.is(ActivityDefinition) %}
-{%include contactdetail-list.html header='ActivityDefinition Developer' contactdetails=Resource.author %}
-{%include contactdetail-list.html header='ActivityDefinition Editor' contactdetails=Resource.editor %}
-{%include contactdetail-list.html header='ActivityDefinition Reviewer' contactdetails=Resource.reviewer %}
-{%include contactdetail-list.html header='ActivityDefinition Endorser' contactdetails=Resource.endorser %}
-{%include default.html header='ActivityDefinition Steward' content=Resource.publisher %}
-{% endif %}
-{%include contactdetail-list.html header='Steward Contact Details' contactdetails=Resource.contact %}
-{%include default.html header='Copyright' content=Resource.copyright %}
-{%include related-artifact.html relatedArtifact=Resource.relatedArtifact %}
-{%include knowledge-artifact-metadata-extensions.html resource=Resource %}
+{%include default.html header='Guidance (Usage)' content=include.resource.usage %}
+{%include default.html header='Approval Date' content=include.resource.approvalDate %}
+{%include default.html header='Last Review Date' content=include.resource.lastReviewDate %}
+{%include period.html header='Effective Period' period=include.resource.effectivePeriod %}
+{%include default-list.html header='Use Context' content=include.resource.useContext %}
+{%include default-list.html header='Jurisdiction' content=include.resource.jurisdiction %}
+{%include default-list.html header='Topic' content=include.resource.topic %}
+{%include default.html header='Steward (Publisher)' content=include.resource.publisher %}
+{%include contactdetail-list.html header='Steward Contact' contactdetails=include.resource.contact %}
+{%include contactdetail-list.html header='Developer' contactdetails=include.resource.author %}
+{%include contactdetail-list.html header='Editor' contactdetails=include.resource.editor %}
+{%include contactdetail-list.html header='Reviewer' contactdetails=include.resource.reviewer %}
+{%include contactdetail-list.html header='Endorser' contactdetails=include.resource.endorser %}
+{%include default.html header='Copyright' content=include.resource.copyright %}
+{%include default.html header='Disclaimer' content=include.resource.disclaimer %}
+{%include related-artifact.html relatedArtifact=include.resource.relatedArtifact %}
+{%include knowledge-artifact-comment.html include.resource=include.resource %}
+{%include knowledge-artifact-capability.html include.resource=include.resource %}

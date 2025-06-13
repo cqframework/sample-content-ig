@@ -141,6 +141,10 @@
     </parameter>
     <parameter>
       <code value="path-resource" />
+      <value value="input/resources/activitydefinition"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
       <value value="input/resources/device"/>
     </parameter>
     <parameter>
@@ -150,6 +154,10 @@
     <parameter>
       <code value="path-resource" />
       <value value="input/resources/measure"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/plandefinition"/>
     </parameter>
     <parameter>
       <code value="path-resource" />
