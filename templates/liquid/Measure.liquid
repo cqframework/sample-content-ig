@@ -1,6 +1,11 @@
 {%include narrative-start.html %}
 {%include measure-metadata.html measure=Measure %}
 {%include measure-population-criteria.html measure=Measure %}
+{% for supplementalDataGuidance in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance') %}
+  {% if supplementalDataGuidance.extension.where(url = 'guidance').exists() %}
+    {%include default.html header='Supplemental Data Guidance' content=supplementalDataGuidance.extension.where(url = 'guidance').value %}
+  {% endif %}
+{% endfor %}
 {%include measure-supplementaldata.html measure=Measure %}
 {%include measure-logic.html measure=Measure %}
 {%include version.html %}

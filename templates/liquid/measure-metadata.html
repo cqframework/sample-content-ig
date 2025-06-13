@@ -1,5 +1,11 @@
 {%include knowledge-artifact-metadata.html resource=include.measure %}
+{% for populationBasis in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis') %}
+  {%include default.html header='Measure Basis' content=populationBasis.value %}
+{% endfor %}
 {%include default.html header='Measure Scoring' content=include.measure.scoring %}
+{% for scoringUnit in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit') %}
+  {%include default.html header='Measure Scoring Unit' content=scoringUnit.value %}
+{% endfor %}
 {%include default.html header='Measure Composite Scoring' content=include.measure.compositeScoring %}
 {%include default-list.html header='Type' content=include.measure.type %}
 {%include default.html header='Risk Adjustment' content=include.measure.riskAdjustment %}
@@ -7,5 +13,4 @@
 {%include default.html header='Rationale' content=include.measure.rationale %}
 {%include default.html header='Clinical Recommendation Statement' content=include.measure.clinicalRecommendationStatement %}
 {%include default.html header='Improvement Notation' content=include.measure.improvementNotation %}
-{%include default.html header='Guidance' content=include.measure.guidance %}
-{%include measure-metadata-extensions.html measure=include.measure %}
+{%include knowledge-artifact-guidance.html resource=include.measure %}
