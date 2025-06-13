@@ -1,5 +1,5 @@
 {% for populationBasis in include.group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis') %}
-  {%include default.html header='Population Basis' content=populationBasis.value %}
+  {%include default.html header='Basis' content=populationBasis.value %}
 {% endfor %}
 {% for scoring in include.group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring') %}
   {%include default.html header='Scoring' content=scoring.value %}

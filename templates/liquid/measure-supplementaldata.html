@@ -1,3 +1,8 @@
+{% for supplementalDataGuidance in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance') %}
+  {% if supplementalDataGuidance.extension.where(url = 'guidance').exists() %}
+    {%include default.html header='Supplemental Data Guidance' content=supplementalDataGuidance.extension.where(url = 'guidance').value %}
+  {% endif %}
+{% endfor %}
 {% if include.measure.supplementalData.exists() %}
   {%include section-header.html header='Supplemental Data Elements' %}
 {% endif %}

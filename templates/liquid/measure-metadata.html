@@ -6,8 +6,11 @@
 {% for scoringUnit in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit') %}
   {%include default.html header='Measure Scoring Unit' content=scoringUnit.value %}
 {% endfor %}
+{% for scoringPrecision in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringPrecision') %}
+  {%include default.html header='Measure Scoring Precision' content=scoringPrecision.value %}
+{% endfor %}
 {%include default.html header='Measure Composite Scoring' content=include.measure.compositeScoring %}
-{%include default-list.html header='Type' content=include.measure.type %}
+{%include default-list.html header='Measure Type' content=include.measure.type %}
 {%include default.html header='Risk Adjustment' content=include.measure.riskAdjustment %}
 {%include default.html header='Rate Aggregation' content=include.measure.rateAggregation %}
 {%include default.html header='Rationale' content=include.measure.rationale %}

@@ -1,0 +1,14 @@
+{% for population in include.group.population %}
+  {% if population.code.exists() and population.code.coding.exists() %}
+    {% if population.criteria.exists() %}
+      {% if population.criteria.language.startsWith('text/cql') %}
+        {% for extension in include.contained.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition' or url = 'http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition') %}
+          {% if extension.extension.where(url = 'name').value = population.criteria.expression %}
+            {% assign aheader = population.code.coding.first().display %}
+            {%include logic-definition-primary.html extension=extension header=aheader %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}

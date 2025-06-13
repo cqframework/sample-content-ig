@@ -1,14 +1,15 @@
 <tr>
   <th scope="row" class="row-header" rowspan="2">
     {% if include.extension.extension.where(url = 'name').exists() and include.extension.extension.where(url = 'libraryName') %}
-      {% assign logicDefUrl = include.extension.extension.where(url = 'libraryName').value.lower().replace(' ', '-') + '-' + include.extension.extension.where(url = 'name').value.lower().replace(' ', '-') %}
+      {% assign logicDefUrl = 'primary-' + include.extension.extension.where(url = 'libraryName').value.lower().replace(' ', '-') + '-' + include.extension.extension.where(url = 'name').value.lower().replace(' ', '-') %}
       <a name="{{logicDefUrl}}"> </a>
     {% endif %}
+    {% if include.header.exists() %}
+    {{include.header}}
+    {% else %}
     Logic Definition
+    {% endif %}
   </th>
-{% for lNameExtension in include.extension.extension.where(url = 'libraryName') %}
-  <td class="content-container"><em>Library Name:</em> {{lNameExtension.value}}</td>
-{% endfor %}
 </tr>
 <tr>
 {% for statementExtension in include.extension.extension.where(url = 'statement') %}

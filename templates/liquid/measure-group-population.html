@@ -49,7 +49,7 @@
         {% endif %}
         {% if population.criteria.exists() %}
           {% if population.criteria.language.startsWith('text/cql') and population.criteria.expression.exists() and include.library.exists() %}
-            {% assign logicDefAnchor = '#' + include.library.first().replaceMatches('.*/Library/', '').lower().replace(' ', '-') + '-' + population.criteria.expression.lower().replace(' ', '-') %}
+            {% assign logicDefAnchor = '#primary-' + include.library.first().replaceMatches('.*/Library/', '').lower().replace(' ', '-') + '-' + population.criteria.expression.lower().replace(' ', '-') %}
             <em>Logic Definition</em>: <a href="{{logicDefAnchor}}">{{population.criteria.expression}}</a> 
           {% endif %}
         {% endif %}
