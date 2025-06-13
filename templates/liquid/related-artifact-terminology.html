@@ -1,7 +1,7 @@
 {% if include.relatedArtifact.exists() %}
 {% for relatedArtifact in include.relatedArtifact %}
+{% if relatedArtifact.type = 'depends-on' and (relatedArtifact.display.lower().contains('value') or relatedArtifact.resource.lower().contains('value')) or (relatedArtifact.display.lower().contains('code') or relatedArtifact.resource.lower().contains('code')) %}
 <tr>
-  {% if relatedArtifact.type = 'depends-on' and (relatedArtifact.display.lower().contains('value') or relatedArtifact.resource.lower().contains('value')) or (relatedArtifact.display.lower().contains('code') or relatedArtifact.resource.lower().contains('code')) %}
   {% if relatedArtifact.display.lower().contains('value') or relatedArtifact.resource.lower().contains('value') %}
   {%include row-header.html header='Value Set' %}
   {% endif %}
@@ -37,7 +37,7 @@
     <em>Canonical URL</em>: <tt>{{relatedArtifact.resource.toString()}}</tt>
     {% endif %}
   </td>
-  {% endif %} 
 </tr>
+{% endif %} 
 {% endfor %}
 {% endif %}
