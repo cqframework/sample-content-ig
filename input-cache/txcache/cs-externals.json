@@ -3,6 +3,8 @@
   "https://madie.cms.gov/measure/nqfId" : null,
   "http://hl7.org/fhir/fhir-types|null" : null,
   "http://unstats.un.org/unsd/methods/m49/m49.htm|null" : null,
+  "http://hl7.org/fhir/uv/cqm/ValueSet/intended-venue" : null,
   "https://madie.cms.gov/measure/shortName" : null,
+  "http://hl7.org/fhir/uv/cqm/ValueSet/intended-venue|null" : null,
   "https://madie.cms.gov/measure/cmsId" : null
 }
