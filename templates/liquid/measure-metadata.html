@@ -1,12 +1,12 @@
 {%include knowledge-artifact-metadata.html resource=include.measure %}
-{% for populationBasis in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis') %}
+{% for populationBasis in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-populationBasis') %}
   {%include default.html header='Measure Basis' content=populationBasis.value %}
 {% endfor %}
 {%include default.html header='Measure Scoring' content=include.measure.scoring %}
-{% for scoringUnit in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit') %}
+{% for scoringUnit in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-scoringUnit') %}
   {%include default.html header='Measure Scoring Unit' content=scoringUnit.value %}
 {% endfor %}
-{% for scoringPrecision in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringPrecision') %}
+{% for scoringPrecision in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringPrecision' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-scoringPrecision') %}
   {%include default.html header='Measure Scoring Precision' content=scoringPrecision.value %}
 {% endfor %}
 {%include default.html header='Measure Composite Scoring' content=include.measure.compositeScoring %}
