@@ -45,6 +45,12 @@
     <br />
     <em>Canonical URL</em>: <tt>{{relatedArtifact.resource.toString()}}</tt>
     {% endif %}
+    {% for group in extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-groupId' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-groupId') %}
+    <em>Group Id</em>: {{group.value}}
+    {% endfor %}
+    {% for weight in extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-weight') %}
+    <em>Weight</em>: {{weight.value}}
+    {% endfor %}
   </td>
 </tr>
 {% endfor %}
