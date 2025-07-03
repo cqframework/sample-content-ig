@@ -48,9 +48,13 @@
           <em>Description</em>: No description provided
         {% endif %}
         {% if population.criteria.exists() %}
-          {% if population.criteria.language.startsWith('text/cql') and population.criteria.expression.exists() and include.library.exists() %}
-            {% assign logicDefAnchor = '#primary-' + include.library.first().replaceMatches('.*/Library/', '').lower().replace(' ', '-') + '-' + population.criteria.expression.lower().replace(' ', '-') %}
-            <em>Logic Definition</em>: <a href="{{logicDefAnchor}}">{{population.criteria.expression}}</a> 
+          {% if population.criteria.language.startsWith('text/cql') and population.criteria.expression.exists() %}
+            {% if include.library.exists() and include.contained.where(id.contains('effective-data-requirements')).exists() %}
+              {% assign logicDefAnchor = '#primary-' + include.library.first().replaceMatches('.*/Library/', '').lower().replace(' ', '-') + '-' + population.criteria.expression.lower().replace(' ', '-') %}
+              <em>Logic Definition</em>: <a href="{{logicDefAnchor}}">{{population.criteria.expression}}</a> 
+            {% else %}
+              <em>Logic Definition</em>: {{population.criteria.expression}}</a>
+            {% endif %}
           {% endif %}
         {% endif %}
       </td>
