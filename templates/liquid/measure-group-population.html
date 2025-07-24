@@ -59,10 +59,10 @@
         {% endif %}
         {% for criteriaReference in population.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference' or url = 'http://hl7.org/fhir/StructureDefinition/cqf-criteriaReference') %}
           <em>Input Population</em>: {{criteriaReference.value}}
-        {% endif %}
+        {% endfor %}
         {% for aggregateMethod in population.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-aggregateMethod') %}
           <em>AggregateMethod</em>: {{aggregateMethod.value}}
-        {% endif %}
+        {% endfor %}
       </td>
     </tr>
   {% endif %}
