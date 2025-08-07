@@ -1,4 +1,4 @@
-library TJCOverallExample version '8.9.000'
+library TJCOverallExample version '0.4.1'
 
 using QICore version '4.1.1'
 

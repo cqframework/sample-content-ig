@@ -1,7 +1,7 @@
 {
     "resourceType": "ActivityDefinition",
     "id": "DailyAppleActivity",
-    "url": "http://fhir.org/guides/cqf/cpg/example/ActivityDefinition/DailyAppleActivity",
+    "url": "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity",
     "name": "DailyAppleActivity",
     "title": "Daily Apple Activity",
     "status": "active",

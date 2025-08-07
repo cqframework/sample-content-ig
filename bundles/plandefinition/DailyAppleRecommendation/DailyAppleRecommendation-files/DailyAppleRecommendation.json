@@ -1,0 +1,37 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "DailyAppleRecommendation",
+  "contained": [ {
+    "resourceType": "Library",
+    "id": "effective-data-requirements",
+    "name": "EffectiveDataRequirements",
+    "status": "active",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "module-definition"
+      } ]
+    }
+  } ],
+  "extension": [ {
+    "id": "effective-data-requirements",
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
+  } ],
+  "url": "http://somewhere.org/fhir/uv/mycontentig/PlanDefinition/DailyAppleRecommendation",
+  "name": "DailyAppleRecommendation",
+  "title": "Daily Apple Recommendation",
+  "date": "2025-08-07T11:40:29-06:00",
+  "description": "An apple a day keeps the doctor away",
+  "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic" ],
+  "action": [ {
+    "textEquivalent": "An apple a day keeps the doctor away",
+    "condition": [ {
+      "kind": "applicability",
+      "expression": {
+        "expression": "No Daily Apple Order"
+      }
+    } ],
+    "definitionCanonical": "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity"
+  } ]
+}

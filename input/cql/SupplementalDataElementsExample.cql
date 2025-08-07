@@ -13,7 +13,7 @@ Updated "Payer" value set name to "Payer Type"
 @update: JSR 2023-07-20 ->
 Updated FHIRHelpers version to 4.3.000
 */
-library SupplementalDataElementsExample version '0.4.1'
+library SupplementalDataElementsExample version '0.4.9-cibuild'
 
 using QICore version '4.1.1'
 
