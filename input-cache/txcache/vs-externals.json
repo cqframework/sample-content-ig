@@ -1,4 +1,14 @@
 {
+  "http://hl7.org/fhir/Library/QICore-ModelInfo" : null,
+  "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm" : null,
+  "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm" : null,
+  "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure" : null,
+  "http://fhir.org/guides/cqf/cpg/example/ValueSet/Apple" : null,
   "http://hl7.org/fhir/ValueSet/knowledge-representation-level" : null,
-  "http://loinc.org/vs/LL358-3" : null
+  "http://loinc.org/vs/LL358-3" : null,
+  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-mednotrequested" : null,
+  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition" : null,
+  "http://fhir.org/guides/cqf/cpg/example/Library/DailyAppleLogic" : null,
+  "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1" : null,
+  "http://utah.edu/fhir/lcs-cds/ValueSet/conditionclinical" : null
 }
