@@ -1,9 +1,5 @@
 <tr>
   <th scope="row" class="row-header" rowspan="2">
-    {% if include.extension.extension.where(url = 'name').exists() and include.extension.extension.where(url = 'libraryName') %}
-      {% assign logicDefUrl = 'primary-' + include.extension.extension.where(url = 'libraryName').value.lower().replace(' ', '-') + '-' + include.extension.extension.where(url = 'name').value.lower().replace(' ', '-') %}
-      <a name="{{logicDefUrl}}"> </a>
-    {% endif %}
     {% if include.header.exists() %}
     {{include.header}}
     {% else %}
@@ -14,7 +10,18 @@
 <tr>
 {% for statementExtension in include.extension.extension.where(url = 'statement') %}
   <td>
+    {% assign slibraryName = include.extension.extension.where(url = 'libraryName').value %}
+    {% assign sname = include.extension.extension.where(url = 'name').value %}
+    {% assign sdefinitionUrl = slibraryName.lower().replace(' ', '-') + '-' + sname.lower().replace(' ', '-') %}
+    {% if include.groupKey.exists() and include.populationKey.exists() %}
+      {% assign popDefAnchor = include.groupKey + '-' + populationKey %}
+      <a name="{{popDefAnchor}}"> </a>
+    {% endif %}
     <pre class="content-container highlight language-cql" style="border: none;"><code class="language-cql">{{statementExtension.value}}</code></pre>
+    {% if sdefinitionUrl.exists() %}
+      {% assign slogicDefUrl = '#' + sdefinitionUrl %}
+      <a href="{{slogicDefUrl}}"><em>Definition</em></a>
+    {% endif %}
   </td>
 {% endfor %}
 </tr>

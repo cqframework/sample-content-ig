@@ -1,4 +1,4 @@
-{% for directReferenceCode in include.contained.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode' or url = 'http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode') %}
+{% for directReferenceCode in include.contained.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode' or url = 'http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode') %}
   <tr>
     <th scope="row" class="row-header">Direct Reference Code</th>
     <td class="content-container">

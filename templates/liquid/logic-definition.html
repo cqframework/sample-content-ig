@@ -1,9 +1,5 @@
 <tr>
   <th scope="row" class="row-header" rowspan="2">
-    {% if include.extension.extension.where(url = 'name').exists() and include.extension.extension.where(url = 'libraryName') %}
-      {% assign logicDefUrl = include.extension.extension.where(url = 'libraryName').value.lower().replace(' ', '-') + '-' + include.extension.extension.where(url = 'name').value.lower().replace(' ', '-') %}
-      <a name="{{logicDefUrl}}"> </a>
-    {% endif %}
     Logic Definition
   </th>
 {% for lNameExtension in include.extension.extension.where(url = 'libraryName') %}
@@ -13,6 +9,12 @@
 <tr>
 {% for statementExtension in include.extension.extension.where(url = 'statement') %}
   <td>
+    {% assign dlibraryName = include.extension.extension.where(url = 'libraryName').value %}
+    {% assign dname = include.extension.extension.where(url = 'name').value %}
+    {% assign ddefinitionUrl = dlibraryName.lower().replace(' ', '-') + '-' + dname.lower().replace(' ', '-') %}
+    {% if ddefinitionUrl.exists() %}
+      <a name="{{ddefinitionUrl}}"> </a>
+    {% endif %}
     <pre class="content-container highlight language-cql" style="border: none;"><code class="language-cql">{{statementExtension.value}}</code></pre>
   </td>
 {% endfor %}

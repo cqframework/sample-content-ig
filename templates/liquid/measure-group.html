@@ -1,7 +1,9 @@
 {% for group in include.measure.group %}
-  {% if group.id.exists() %}
-    {%assign groupid = 'Measure Group (Rate)' + ' (ID: ' + group.id + ')' %}
-    {%include section-header.html header=groupid %}
+  {%assign groupLinkId = group.extension.where(url.endsWith('linkId')).value %}
+  {%assign groupKey = iif(groupLinkId.exists(), groupLinkId, iif(group.id.exists(), group.id, 'grp')) %}
+  {% if groupLinkId.exists() or group.id.exists() %}
+    {%assign groupLabel = 'Measure Group (Rate)' + ' (ID: ' + groupKey + ')' %}
+    {%include section-header.html header=groupLabel %}
   {% else %}
     {%include section-header.html header='Measure Group (Rate)' %}
   {% endif %}
@@ -9,6 +11,6 @@
     {%include default.html header='Summary' content=group.description %}
   {% endif %}
   {%include measure-group-scoring.html group=group %}
-  {%include measure-group-population.html group=group library=include.measure.library %}
-  {%include measure-group-stratifier.html group=group %}
+  {%include measure-group-population.html group=group groupKey=groupKey measure=include.measure %}
+  {%include measure-group-stratifier.html group=group groupKey=groupKey %}
 {% endfor %}

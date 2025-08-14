@@ -1,5 +1,7 @@
 {% for population in include.group.population %}
   {% if population.code.exists() and population.code.coding.exists() %}
+    {%assign populationLinkId = population.extension.where(url.endsWith('linkId')).value %}
+    {%assign populationKey = iif(populationLinkId.exists(), populationLinkId, iif(population.id.exists(), population.id, population.code.coding.first().code)) %}
     <tr>
       {% if population.code.coding.first().display.exists() %}
         {%include row-header.html header=population.code.coding.first().display %}
@@ -37,28 +39,36 @@
         {% endif %}
       {% endif %}
       <td class="content-container">
-        {% if population.id.exists() %}
-        <em>ID</em>: {{population.id}}
+        {% if populationLinkId.exists() or population.id.exists() %}
+        <em>ID</em>: {{populationKey}}
         <br />
         {% endif %}
         {% if population.description.exists() %}
           <em>Description</em>:
           <p class="tab-one" style="white-space: pre-line">{{population.description}}</p>
         {% else %}
+          {% if population.criteria.description.exists() %}
+          <em>Description</em>:
+          <p class="tab-one" style="white-space: pre-line">{{population.criteria.description}}</p>
+          {% else %}
           <em>Description</em>: No description provided
+          {% endif %}
         {% endif %}
         {% if population.criteria.exists() %}
           {% if population.criteria.language.startsWith('text/cql') and population.criteria.expression.exists() %}
-            {% if include.library.exists() and include.contained.where(id.contains('effective-data-requirements')).exists() %}
-              {% assign logicDefAnchor = '#primary-' + include.library.first().replaceMatches('.*/Library/', '').lower().replace(' ', '-') + '-' + population.criteria.expression.lower().replace(' ', '-') %}
-              <em>Logic Definition</em>: <a href="{{logicDefAnchor}}">{{population.criteria.expression}}</a> 
+            {% if include.measure.library.exists() and include.measure.contained.where(id.contains('effective-data-requirements')).exists() %}
+              {% assign popDefAnchor = '#' + include.groupKey + '-' + populationKey %}
+              <em>Criteria</em>: <a href="{{popDefAnchor}}">{{population.criteria.expression}}</a> 
             {% else %}
-              <em>Logic Definition</em>: {{population.criteria.expression}}
+              <em>Criteria</em>: {{population.criteria.expression}}
             {% endif %}
+          {% endif %}
+          {% if population.criteria.language.startsWith('text/plain') and population.criteria.expression.exists() %}
+            <em>Criteria</em>: {{population.criteria.expression}}
           {% endif %}
         {% endif %}
         {% for criteriaReference in population.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference' or url = 'http://hl7.org/fhir/StructureDefinition/cqf-criteriaReference') %}
-          <em>Input Population</em>: {{criteriaReference.value}}
+          <br/><em>Input Population</em>: {{criteriaReference.value}}
         {% endfor %}
         {% for aggregateMethod in population.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-aggregateMethod') %}
           <em>AggregateMethod</em>: {{aggregateMethod.value}}
