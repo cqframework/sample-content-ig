@@ -56,11 +56,6 @@
     "valueReference": {
       "reference": "#options"
     }
-  }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample",
   "version": "0.4.1",

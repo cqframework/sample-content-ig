@@ -126,6 +126,11 @@
     "valueReference": {
       "reference": "#effective-data-requirements"
     }
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HRExampleCVMeasureCQLLibraryNameDT",
   "identifier": [ {
@@ -180,7 +185,7 @@
   "title": "HR Example CV (Measure Name in Details Tab of MADiE UI)",
   "status": "draft",
   "experimental": true,
-  "date": "2025-08-14T15:49:32+00:00",
+  "date": "2025-08-14T17:02:17+00:00",
   "publisher": "ICF",
   "contact": [ {
     "telecom": [ {
