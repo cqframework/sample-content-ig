@@ -2,7 +2,7 @@
   {% if population.code.exists() and population.code.coding.exists() %}
     {% if population.criteria.exists() %}
       {% if population.criteria.language.startsWith('text/cql') %}
-        {% for extension in include.contained.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition' or url = 'http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition') %}
+        {% for extension in include.contained.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition' or url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition') %}
           {% if extension.extension.where(url = 'name').value = population.criteria.expression %}
             {% if population.code.coding.first().display.exists() %}
               {% assign aheader = population.code.coding.first().display %}

@@ -13,6 +13,9 @@
   {% if relatedArtifact.where(type = 'depends-on').exists() %}
   {%include row-header.html header='Dependency' %}
   {% endif %}
+  {% if relatedArtifact.where(type = 'composed-of').exists() %}
+  {%include row-header.html header='Component' %}
+  {% endif %}
   <td class="content-container">
     {% if relatedArtifact.display.exists() %}
     <em>Description</em>: {{relatedArtifact.display}}

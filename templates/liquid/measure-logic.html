@@ -3,7 +3,7 @@
 {%include default.html header='Primary Library' content=include.measure.library %}
 {% endif %}
 
-{% if include.measure.extension.where(url = 'http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements' or url = 'http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements').exists() %}
+{% if include.measure.extension.where(url = 'http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements' or url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements').exists() %}
 <tr>
   <th scope="row" class="row-header">Contents</th>
   <td class="content-container">
