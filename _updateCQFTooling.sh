@@ -2,17 +2,10 @@
 #DO NOT EDIT WITH WINDOWS
 #exit 1
 
-r=releases
-g=org.opencds.cqf
-a=tooling-cli
-v=3.8.0
-
-dlurl='https://oss.sonatype.org/service/local/artifact/maven/redirect?r='${r}'&g='${g}'&a='${a}'&v='${v}''
-
-echo ${dlurl}
+dlurl='https://repo1.maven.org/maven2/org/opencds/cqf/tooling/3.9.1/tooling-cli-3.9.1.jar'
+tooling_jar=tooling-cli-3.9.1.jar
 
 input_cache_path=./input-cache/
-tooling_jar=tooling-cli-3.8.0.jar
 
 set -e
 if ! type "curl" > /dev/null; then
@@ -53,7 +46,6 @@ fi
 read -r -p "$message" response
 if [[ "$response" =~ ^([yY])$ ]]; then
 	echo "Downloading most recent tooling to $jarlocationname - it's ~110 MB, so this may take a bit"
-#	wget "https://oss.sonatype.org/service/local/repositories/snapshots/content/org/opencds/cqf/tooling/1.0-SNAPSHOT/tooling-1.0-20200107.163002-6-jar-with-dependencies.jar" -O "$jarlocation"
 	curl $dlurl -L -o "$jarlocation" --create-dirs
 	echo "Download complete."
 else
