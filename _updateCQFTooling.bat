@@ -1,7 +1,8 @@
 @ECHO OFF
 
-SET "dlurl=https://repo1.maven.org/maven2/org/opencds/cqf/tooling/3.9.1/tooling-cli-3.9.1.jar"
-SET tooling_jar=tooling-cli-3.9.1.jar
+SET version=3.9.1
+SET tooling_jar=tooling-cli-%version%.jar
+SET "dlurl=https://repo1.maven.org/maven2/org/opencds/cqf/tooling-cli/%version%/%tooling_jar%%"
 SET input_cache_path=%~dp0input-cache\
 SET skipPrompts=false
 IF "%~1"=="/f" SET skipPrompts=true
@@ -52,7 +53,7 @@ IF "%skipPrompts%"=="false" (
 GOTO:done
 
 :download
-ECHO Downloading most recent refresh to %jarlocationname% - it's ~110 MB, so this may take a bit
+ECHO Downloading tooling v%version% to %jarlocationname% - it's ~210 MB, so this may take a bit
 
 FOR /f "tokens=4-5 delims=. " %%i IN ('ver') DO SET VERSION=%%i.%%j
 IF "%version%" == "10.0" GOTO win10

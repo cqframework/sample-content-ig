@@ -2,8 +2,11 @@
 #DO NOT EDIT WITH WINDOWS
 #exit 1
 
-dlurl='https://repo1.maven.org/maven2/org/opencds/cqf/tooling/3.9.1/tooling-cli-3.9.1.jar'
-tooling_jar=tooling-cli-3.9.1.jar
+# this script is only intended for downloading release packages
+# snapshot versions must be downloaded 'manually'
+v=3.9.1
+tooling_jar=tooling-cli-${v}.jar
+dlurl='https://repo1.maven.org/maven2/org/opencds/cqf/tooling-cli/'${v}'/'${tooling_jar}
 
 input_cache_path=./input-cache/
 
@@ -45,7 +48,7 @@ fi
 
 read -r -p "$message" response
 if [[ "$response" =~ ^([yY])$ ]]; then
-	echo "Downloading most recent tooling to $jarlocationname - it's ~110 MB, so this may take a bit"
+	echo "Downloading tooling v$v to $jarlocationname - it's ~210 MB, so this may take a bit"
 	curl $dlurl -L -o "$jarlocation" --create-dirs
 	echo "Download complete."
 else
