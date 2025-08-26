@@ -131,10 +131,25 @@
         "valueString": "ToString"
       }, {
         "url": "statement",
-        "valueString": "define function ToString(value string): value.value"
+        "valueString": "define function ToString(value uri): value.value"
       }, {
         "url": "displaySequence",
         "valueInteger": 6
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value string): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 7
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -149,7 +164,7 @@
         "valueString": "/*\n@source: https://www.med.umich.edu/1info/FHP/practiceguides/depress/score.pdf\n*/\ndefine function \"AnswerCardinality\"(answer Coding):\n  case\n    when answer ~ \"Not at all\" then 0\n    when answer ~ \"Several days\" then 1\n    when answer ~ \"More than half the days\" then 2\n    when answer ~ \"Nearly every day\" then 3\n    else null\n  end"
       }, {
         "url": "displaySequence",
-        "valueInteger": 7
+        "valueInteger": 8
       } ]
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
@@ -164,7 +179,7 @@
         "valueString": "define function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 8
+        "valueInteger": 9
       } ]
     } ],
     "name": "EffectiveDataRequirements",
@@ -182,13 +197,19 @@
     }, {
       "type": "depends-on",
       "display": "Library FHIRHelpers",
-      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1"
     }, {
       "type": "depends-on",
       "display": "Code system LOINC",
       "resource": "http://loinc.org"
     } ],
     "parameter": [ {
+      "name": "response",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "QuestionnaireResponse"
+    }, {
       "name": "Measurement Period",
       "use": "in",
       "min": 0,
@@ -208,6 +229,10 @@
       "type": "boolean"
     } ],
     "dataRequirement": [ {
+      "type": "QuestionnaireResponse",
+      "profile": [ "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" ],
+      "mustSupport": [ "questionnaire", "item", "answer" ]
+    }, {
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]
     } ]
@@ -229,7 +254,7 @@
   "title": "Questionnaire Measure Example",
   "status": "draft",
   "experimental": true,
-  "date": "2024-05-05T18:40:05-07:00",
+  "date": "2025-08-14T10:02:17-07:00",
   "description": "Example measure illustrating a continuous variable measure calculating scores from multiple questionnaires",
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample" ],
   "scoring": {

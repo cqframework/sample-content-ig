@@ -1,6 +1,7 @@
 @ECHO OFF
-SET "dlurl=https://oss.sonatype.org/service/local/artifact/maven/redirect?r=releases&g=org.opencds.cqf&a=tooling-cli&v=3.4.0"
-SET tooling_jar=tooling-cli-3.4.0.jar
+SET version=3.9.1
+SET tooling_jar=tooling-cli-%version%.jar
+SET "dlurl=https://repo1.maven.org/maven2/org/opencds/cqf/tooling-cli/%version%/%tooling_jar%%"
 SET input_cache_path=%~dp0input-cache\
 SET skipPrompts=false
 IF "%~1"=="/f" SET skipPrompts=true
@@ -30,7 +31,7 @@ IF NOT EXIST "%input_cache_path%%tooling_jar%" (
 :create
 ECHO Will place refresh jar here: %input_cache_path%%tooling_jar%
 IF "%skipPrompts%"=="false" (
-    SET /p create=Ok? [Y/N]
+    SET /p create="Ok? [Y/N] "
     IF /I "%create%"=="Y" goto:mkdir
 ) ELSE goto:mkdir
 
@@ -40,7 +41,7 @@ GOTO:download
 
 :upgrade
 IF "%skipPrompts%"=="false" (
-    SET /p overwrite="Overwrite %jarlocation%? (Y/N)"
+    SET /p overwrite="Overwrite %jarlocation%? (Y/N) "
     IF /I "%overwrite%"=="Y" (
         GOTO:download
     )
@@ -50,7 +51,7 @@ IF "%skipPrompts%"=="false" (
 GOTO:done
 
 :download
-ECHO Downloading most recent refresh to %jarlocationname% - it's ~110 MB, so this may take a bit
+ECHO Downloading tooling v%version% to %jarlocationname% - it's ~210 MB, so this may take a bit
 
 FOR /f "tokens=4-5 delims=. " %%i IN ('ver') DO SET VERSION=%%i.%%j
 IF "%version%" == "10.0" GOTO win10

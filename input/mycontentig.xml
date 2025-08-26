@@ -7,7 +7,7 @@
   </extension>-->
   <url value="http://somewhere.org/fhir/uv/mycontentig/ImplementationGuide/example.fhir.uv.mycontentig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.4.3"/>
+  <version value="0.5.0-cibuild"/>
   <name value="YourComputableMyContentIGNameHere"/>
   <title value="Your User Friendly Name for MyContentIG Here"/>
   <status value="draft"/>
@@ -35,7 +35,7 @@
   </jurisdiction>
   <packageId value="example.fhir.uv.mycontentig"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
-  <license value="Apache-2.0"/>
+  <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
   <dependsOn id="sample">
@@ -141,6 +141,10 @@
     </parameter>
     <parameter>
       <code value="path-resource" />
+      <value value="input/resources/activitydefinition"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
       <value value="input/resources/device"/>
     </parameter>
     <parameter>
@@ -150,6 +154,10 @@
     <parameter>
       <code value="path-resource" />
       <value value="input/resources/measure"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/plandefinition"/>
     </parameter>
     <parameter>
       <code value="path-resource" />

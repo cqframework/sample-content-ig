@@ -6,6 +6,11 @@
       "candidates" : []
     },
     {
+      "system" : "http://ihe.net/qrph/adx/",
+      "authoritative" : [],
+      "candidates" : []
+    },
+    {
       "system" : "http://loinc.org",
       "authoritative" : [],
       "candidates" : ["http://tx.fhir.org/r4"]

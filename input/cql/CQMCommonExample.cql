@@ -1,4 +1,4 @@
-library CQMCommonExample version '0.4.1'
+library CQMCommonExample version '0.5.0-cibuild'
 
 using QICore version '4.1.1'
 

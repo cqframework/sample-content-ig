@@ -1,4 +1,4 @@
-library DependencyExample version '0.4.1'
+library DependencyExample version '0.5.0-cibuild'
 
 using FHIR version '4.0.1'
 

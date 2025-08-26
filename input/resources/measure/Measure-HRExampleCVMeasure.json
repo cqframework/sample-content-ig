@@ -1,0 +1,385 @@
+{
+  "resourceType": "Measure",
+  "id": "HRExampleCVMeasure",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cv-measure-cqfm" ]
+  },
+  "contained": [ {
+    "resourceType": "Library",
+    "id": "effective-data-requirements",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HRExampleCVMeasureCQLLibrary"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Initial Population\":\n  AgeInYearsAt(date from \n    end of \"Measurement Period\"\n  ) in Interval[18, 75]"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 0
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HRExampleCVMeasureCQLLibrary"
+      }, {
+        "url": "name",
+        "valueString": "Measure Population Exclusions"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Measure Population Exclusions\":\n  \"Initial Population\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 1
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HRExampleCVMeasureCQLLibrary"
+      }, {
+        "url": "name",
+        "valueString": "Measure Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Measure Population\":\n  \"Initial Population\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 2
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "HRExampleCVMeasureCQLLibrary"
+      }, {
+        "url": "name",
+        "valueString": "Measure Observation 1"
+      }, {
+        "url": "statement",
+        "valueString": "define function \"Measure Observation 1\"():\n  if AgeInYearsAt(date from start of \"Measurement Period\") >= 18 then 1 \n    else 0"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 3
+      } ]
+    } ],
+    "name": "EffectiveDataRequirements",
+    "status": "active",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "module-definition"
+      } ]
+    },
+    "parameter": [ {
+      "name": "Measurement Period",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Period"
+    }, {
+      "name": "Measure Population Exclusions",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Measure Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    } ],
+    "dataRequirement": [ {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
+    } ]
+  } ],
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/cqf-definitionTerm",
+    "extension": [ {
+      "url": "term",
+      "valueString": "Definition Section of Details Tab in MADiE UI \"Term\" free text. Character limit not determined. QDM Equivalent: ?."
+    }, {
+      "url": "definition",
+      "valueMarkdown": "Definition Section of Details Tab in MADiE UI \"Definition\" free text. Character limit not determined QDM Equivalent: ?. Conditional field, will not display if not populated."
+    } ]
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueReference": {
+      "reference": "#effective-data-requirements"
+    }
+  }, {
+    "id": "effective-data-requirements",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
+    "valueReference": {
+      "reference": "#effective-data-requirements"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
+  } ],
+  "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HRExampleCVMeasureCQLLibraryNameDT",
+  "identifier": [ {
+    "use": "usual",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "short-name",
+        "display": "Short Name"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/shortName",
+    "value": "HRExCV(eCQM Abbreviated Title)DT"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "version-independent",
+        "display": "Version Independent"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:69cbf966-a8a7-4c0a-8970-b22e45d75cf3"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "version-specific",
+        "display": "Version Specific"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:f93267bf-fa94-477f-ad0a-22376ffa122e"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "endorser",
+        "display": "Endorser"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/cbeId",
+    "value": "4EndorsementNumber",
+    "assigner": {
+      "display": "CMS Consensus Based Entity"
+    }
+  } ],
+  "name": "HRExampleCVMeasure",
+  "title": "HR Example CV (Measure Name in Details Tab of MADiE UI)",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-08-14T17:02:17+00:00",
+  "publisher": "ICF",
+  "contact": [ {
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.icf.com/"
+    } ]
+  } ],
+  "description": "Description Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM equivalent: Description.",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "venue",
+      "display": "Venue"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/intended-venue-codes",
+        "code": "eh",
+        "display": "EH"
+      } ]
+    }
+  } ],
+  "purpose": "Purpose Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Conditional field, will not display if not populated.",
+  "usage": "Guidance (Usage) Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: Guidance. Conditional field, will not display if not populated.",
+  "copyright": "Copyright Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: Copyright. Displays “UNKNOWN” if not populated.",
+  "effectivePeriod": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "author": [ {
+    "name": "ICF",
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.icf.com/"
+    } ]
+  } ],
+  "relatedArtifact": [ {
+    "type": "citation",
+    "citation": "CITATION References Section of Details Tab in MADiE UI \"Type\" selected from drop down (Citation or Justification) \"Reference\" free text after selection. Character limit not determined. QDM Equivalent: Reference. Conditional field, will not display if not populated."
+  }, {
+    "type": "justification",
+    "display": "JUSTIFICATION References Section of Details Tab in MADiE UI \"Type\" selected from drop down (Citation or Justification) \"Reference\" free text after selection. Character limit not determined. QDM Equivalent: Reference. Conditional field, will not display if not populated."
+  } ],
+  "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary" ],
+  "disclaimer": "Disclaimer Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Displays “UNKNOWN” if not populated.",
+  "rationale": "Rationale Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: Rational. Conditional field, will not display if not populated.",
+  "clinicalRecommendationStatement": "Clinical Recommendation Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: Clinical Recommendation Statement. Conditional field, will not display if not populated.",
+  "group": [ {
+    "id": "Group_1",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+          "code": "continuous-variable",
+          "display": "Continuous Variable"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+      "valueCode": "boolean"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringUnit",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://unitsofmeasure.org/",
+          "code": "Scoring Unit Field",
+          "display": "Scoring Unit Field"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "intermediate-outcome",
+          "display": "Intermediate Outcome"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "outcome",
+          "display": "Outcome"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "patient-reported-outcome",
+          "display": "Patient Reported Outcome"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "process",
+          "display": "Process"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "structure",
+          "display": "Structure"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringPrecision",
+      "valuePositiveInt": 1
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-improvementNotation",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+          "code": "increase",
+          "display": "Increased score indicates improvement"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance",
+      "valueMarkdown": "Improvement Notation Description Field of Reporting Section on Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Improvement Notation required field selected by dropdown (Increased score indicates improvement and Decreased score indicates improvement)."
+    } ],
+    "description": "Population Criteria 1 Description on Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Measure type selectable from drop down, multi select; for this example selected all options. Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error. Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). Note to self, changing scoring deletes all population information. Scoring Unit free text entry. Scoring Precision selectable integers.",
+    "population": [ {
+      "id": "InitialPopulation_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "description": "Initial Population Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Initial Population. Initial Population required field selected by dropdown (Defines from CQL Editor Tab).",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Initial Population"
+      }
+    }, {
+      "id": "MeasurePopulation_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population",
+          "display": "Measure Population"
+        } ]
+      },
+      "description": "Measure Population Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: ? Measure Population required field selected by dropdown (Defines from CQL Editor Tab).",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Measure Population"
+      }
+    }, {
+      "id": "MeasurePopulationExclusion_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-exclusion",
+          "display": "Measure Population Exclusion"
+        } ]
+      },
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Measure Population Exclusions"
+      }
+    }, {
+      "id": "MeasureObservation_1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
+        "valueString": "Sum"
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
+        "valueString": "MeasurePopulation_1"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-observation",
+          "display": "Measure Observation"
+        } ]
+      },
+      "description": "Measure Observation Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: ? Measure Observation required field selected by dropdown (Defines from CQL Editor Tab).",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Measure Observation 1"
+      }
+    } ]
+  } ]
+}

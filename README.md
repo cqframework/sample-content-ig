@@ -1,6 +1,8 @@
 # sample-content-ig
 A sample, template-driven content implementation guide that provides an illustration of a content IG, with examples of using CQL with FHIR libraries and vocabulary. A content IG is one that includes computable representations of clinical knowledge artifacts as FHIR Resources, specifically Library, ActivityDefinition, PlanDefinition, and Measure resources.
 
+CI Build for master branch: [https://build.fhir.org/ig/cqframework/sample-content-ig/branches/master/](https://build.fhir.org/ig/cqframework/sample-content-ig/branches/master/)
+
 
 ## Building the IG
 In addition to the [FHIR Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation), this
@@ -37,7 +39,7 @@ input/vocabulary/valueset
 input/vocabulary/valueset/external
 ```
 
-This is also the same structure as the [Atom CQL Plugin](https://github.com/cqframework/atom_cql_support) uses to support CQL authoring and evaluation as part of the Atom plugin.
+This is also the same structure as the [VSCode CQL extension](https://github.com/cqframework/vscode-cql) uses to support CQL authoring and evaluation as part of the VSCode extension.
 
 The `bundles/<artifact-resource-type-name>` folder is where artifact bundles are placed.
 
