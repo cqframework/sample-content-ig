@@ -1,5 +1,4 @@
 @ECHO OFF
-
 SET version=3.9.1
 SET tooling_jar=tooling-cli-%version%.jar
 SET "dlurl=https://repo1.maven.org/maven2/org/opencds/cqf/tooling-cli/%version%/%tooling_jar%%"
@@ -36,7 +35,6 @@ IF "%skipPrompts%"=="false" (
     IF /I "%create%"=="Y" goto:mkdir
 ) ELSE goto:mkdir
 
-GOTO:done
 :mkdir
     mkdir "%input_cache_path%" 2> NUL
 GOTO:download
