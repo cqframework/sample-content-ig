@@ -1,11 +1,11 @@
 {% if include.content.text %}
    {{include.content.text }}
 {% else %}
-   {% loop coding in include.content %}
+   {% for coding in include.content %}
       {% if  coding.display %}
          {{ coding.display }}
       {% else %}
-         {{include.content.coding.system}} {{include.content.coding.code}}
+         {{include.content.coding.code}} from {{include.content.coding.system}}
       {% endif %}
-   {% endloop %}
+   {% endfor %}
 {% endif %}
