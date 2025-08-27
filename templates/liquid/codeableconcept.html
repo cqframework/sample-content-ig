@@ -1,1 +1,11 @@
-This is a codeable concept
+{% if include.content.text %}
+   {{include.content.text }}
+{% else %}
+   {% loop coding in include.content %}
+      {% if  coding.display %}
+         {{ coding.display }}
+      {% else %}
+         {{include.content.coding.system}} {{include.content.coding.code}}
+      {% endif %}
+   {% endloop %}
+{% endif %}
