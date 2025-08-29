@@ -5,7 +5,7 @@
       {% if  coding.display %}
          {{ coding.display }}
       {% else %}
-         {{include.content.coding.code}} from {{include.content.coding.system}}
+         {{coding.code}} from {{coding.system}}
       {% endif %}
    {% endfor %}
 {% endif %}
