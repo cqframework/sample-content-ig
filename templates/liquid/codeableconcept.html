@@ -1,11 +1,1 @@
-{% if include.content.text %}
-   {{include.content.text }}
-{% else %}
-   {% for coding in include.content %}
-      {% if  coding.display %}
-         {{ coding.display }}
-      {% else %}
-         {{coding.code}} from {{coding.system}}
-      {% endif %}
-   {% endfor %}
-{% endif %}
+{% if include.content.text.exists() %}{{include.content.text}}{% else %}{% for coding in include.content.coding %}{%include coding.html content=coding %}{% endfor %}{% endif %}
