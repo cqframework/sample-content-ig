@@ -1,4 +1,4 @@
-library HRExampleProportionMeasureCQLLibrary version '0.5.0'
+library HRExampleProportionMeasureCQLLibrary version '0.5.1-cibuild'
 
 using QICore version '4.1.1'
 

@@ -1,4 +1,4 @@
-library HybridHospitalWideMortalityFHIRExample version '0.5.0'
+library HybridHospitalWideMortalityFHIRExample version '0.5.1-cibuild'
 
 /*This FHIR-based measure has been derived from CMS844v4.0.0 - QDM 5.6 Specifications*/
 

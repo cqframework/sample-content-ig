@@ -63,7 +63,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/RetrieveExample",
-  "version": "0.5.0",
+  "version": "0.5.1-cibuild",
   "name": "RetrieveExample",
   "type": {
     "coding": [ {
