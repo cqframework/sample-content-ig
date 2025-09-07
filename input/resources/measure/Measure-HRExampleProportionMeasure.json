@@ -8,7 +8,48 @@
     "resourceType": "Library",
     "id": "effective-data-requirements",
     "extension": [ {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "184115007",
+        "display": "Patient sex unknown (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "248152002",
+        "display": "Female (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "248153007",
+        "display": "Male (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "code": "asked-declined"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+        "code": "M",
+        "display": "Male"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+        "code": "F",
+        "display": "Female"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -23,7 +64,7 @@
         "valueInteger": 0
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -38,7 +79,7 @@
         "valueInteger": 1
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -53,7 +94,7 @@
         "valueInteger": 2
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -68,7 +109,7 @@
         "valueInteger": 3
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -83,7 +124,7 @@
         "valueInteger": 4
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -98,10 +139,10 @@
         "valueInteger": 5
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "SupplementalDataElementsExample"
+        "valueString": "SupplementalDataElements"
       }, {
         "url": "name",
         "valueString": "SDE Race"
@@ -113,7 +154,7 @@
         "valueInteger": 6
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -128,7 +169,7 @@
         "valueInteger": 7
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -143,22 +184,22 @@
         "valueInteger": 8
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "SupplementalDataElementsExample"
+        "valueString": "SupplementalDataElements"
       }, {
         "url": "name",
         "valueString": "SDE Sex"
       }, {
         "url": "statement",
-        "valueString": "define \"SDE Sex\":\n  case\n      when Patient.gender = 'male' then Code { code: 'M', system: 'http://hl7.org/fhir/v3/AdministrativeGender', display: 'Male' }\n      when Patient.gender = 'female' then Code { code: 'F', system: 'http://hl7.org/fhir/v3/AdministrativeGender', display: 'Female' }\n      else null\n    end"
+        "valueString": "define \"SDE Sex\":\n  case\n    when Patient.sex = '184115007' then \"Patient sex unknown\"\n    when Patient.sex = '248152002' then \"Female\"\n    when Patient.sex = '248153007' then \"Male\"\n    when Patient.sex = 'asked-declined' then \"Asked But Declined\"\n    when Patient.gender = 'male' then \"M\"\n    when Patient.gender = 'female' then \"F\"\n    else null\n  end"
       }, {
         "url": "displaySequence",
         "valueInteger": 9
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -173,7 +214,7 @@
         "valueInteger": 10
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -188,7 +229,7 @@
         "valueInteger": 11
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -203,7 +244,7 @@
         "valueInteger": 12
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -218,7 +259,7 @@
         "valueInteger": 13
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -233,10 +274,10 @@
         "valueInteger": 14
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "SupplementalDataElementsExample"
+        "valueString": "SupplementalDataElements"
       }, {
         "url": "name",
         "valueString": "SDE Payer"
@@ -248,7 +289,7 @@
         "valueInteger": 15
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -263,10 +304,10 @@
         "valueInteger": 16
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "SupplementalDataElementsExample"
+        "valueString": "SupplementalDataElements"
       }, {
         "url": "name",
         "valueString": "SDE Ethnicity"
@@ -278,7 +319,7 @@
         "valueInteger": 17
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -293,7 +334,7 @@
         "valueInteger": 18
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -308,7 +349,7 @@
         "valueInteger": 19
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -323,7 +364,7 @@
         "valueInteger": 20
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -338,7 +379,7 @@
         "valueInteger": 21
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -353,7 +394,7 @@
         "valueInteger": 22
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HRExampleProportionMeasureCQLLibrary"
@@ -368,7 +409,7 @@
         "valueInteger": 23
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -383,7 +424,7 @@
         "valueInteger": 24
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -392,13 +433,13 @@
         "valueString": "ToCode"
       }, {
         "url": "statement",
-        "valueString": "define function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
+        "valueString": "/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
       }, {
         "url": "displaySequence",
         "valueInteger": 25
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -407,7 +448,7 @@
         "valueString": "ToInterval"
       }, {
         "url": "statement",
-        "valueString": "define function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
+        "valueString": "/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
       }, {
         "url": "displaySequence",
         "valueInteger": 26
@@ -423,12 +464,28 @@
     },
     "relatedArtifact": [ {
       "type": "depends-on",
+      "display": "QICore model information",
+      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
+    }, {
+      "type": "depends-on",
       "display": "Library SDE",
-      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample"
+      "resource": "https://madie.cms.gov/Library/SupplementalDataElements|4.0.000"
     }, {
       "type": "depends-on",
       "display": "Library FHIRHelpers",
-      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1"
+      "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
+    }, {
+      "type": "depends-on",
+      "display": "Code system SNOMEDCT",
+      "resource": "http://snomed.info/sct"
+    }, {
+      "type": "depends-on",
+      "display": "Code system DataAbsentReason",
+      "resource": "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+    }, {
+      "type": "depends-on",
+      "display": "Code system AdministrativeGender",
+      "resource": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"
     }, {
       "type": "depends-on",
       "display": "Value set Payer Type",
@@ -440,18 +497,6 @@
       "min": 0,
       "max": "1",
       "type": "Period"
-    }, {
-      "name": "RAV Patient Too Old at Start of Measurement Period",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "RAV Patient Too Young at Start of Measurement Period",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
     }, {
       "name": "Denominator Exception",
       "use": "out",
@@ -465,23 +510,11 @@
       "max": "1",
       "type": "boolean"
     }, {
-      "name": "SDE Race",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Resource"
-    }, {
       "name": "Numerator Exclusion",
       "use": "out",
       "min": 0,
       "max": "1",
       "type": "boolean"
-    }, {
-      "name": "SDE Sex",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Coding"
     }, {
       "name": "Numerator",
       "use": "out",
@@ -495,35 +528,17 @@
       "max": "1",
       "type": "boolean"
     }, {
-      "name": "Patient Age Less than 18 Years Start of Measurement Period",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
       "name": "Denominator",
       "use": "out",
       "min": 0,
       "max": "1",
       "type": "boolean"
     }, {
-      "name": "SDE Payer",
-      "use": "out",
-      "min": 0,
-      "max": "*",
-      "type": "Resource"
-    }, {
       "name": "Initial Population",
       "use": "out",
       "min": 0,
       "max": "1",
       "type": "boolean"
-    }, {
-      "name": "SDE Ethnicity",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Resource"
     }, {
       "name": "Denominator2",
       "use": "out",
@@ -532,12 +547,6 @@
       "type": "boolean"
     }, {
       "name": "Denominator Exclusions",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "Patient Age 18 Years or Older at Start of Measurement Period",
       "use": "out",
       "min": 0,
       "max": "1",
@@ -560,11 +569,59 @@
       "min": 0,
       "max": "1",
       "type": "boolean"
+    }, {
+      "name": "SDE Race",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    }, {
+      "name": "SDE Sex",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Coding"
+    }, {
+      "name": "SDE Payer",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Resource"
+    }, {
+      "name": "SDE Ethnicity",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    }, {
+      "name": "RAV Patient Too Old at Start of Measurement Period",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "RAV Patient Too Young at Start of Measurement Period",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Patient Age Less than 18 Years Start of Measurement Period",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Patient Age 18 Years or Older at Start of Measurement Period",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
     } ],
     "dataRequirement": [ {
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
-      "mustSupport": [ "url", "extension" ]
+      "mustSupport": [ "url", "extension", "gender", "gender.value" ]
     }, {
       "type": "Coverage",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
@@ -580,7 +637,7 @@
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
     "extension": [ {
       "url": "guidance",
-      "valueString": "Supplemental Data Section of Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Conditional field, will not display if not populated. Definition selected from dropdown (Defines in CQL Editor). For this example, selected SDE Payer, SDE Ethnicity, SDE Race and SDE Sex. Appears to default to Individual, Subject List, Summary and Data Collection for Include in Report Type."
+      "valueString": "<p><strong>Supplemental Data Section of Population Criteria Tab of MADiE UI </strong></p>\n<ul>\n <li><p>Free text.</p></li>\n <li><p>Character limit not determined.</p></li>\n <li><p>Definition selected from dropdown (Defines in CQL Editor).</p></li>\n <li><p>For this example, selected SDE Payer, SDE Ethnicity, SDE Race and SDE Sex.</p></li>\n <li><p>Appears to default to Individual, Subject List, Summary and Data Collection for Include in Report Type.</p></li>\n</ul>\n<p><em>Conditional field, will not display if not populated. </em></p>\n<p><strong>QDM Equivalent: Supplemental Data Elements</strong></p>\n<p><strong>Populates Supplemental Data Guidance in FHIR human readable</strong></p>"
     }, {
       "url": "usage",
       "valueCodeableConcept": {
@@ -597,7 +654,7 @@
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
     "extension": [ {
       "url": "guidance",
-      "valueString": "Risk Adjustment Section of Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Risk Adjustment. Conditional field, will not display if not populated. Definition selected from dropdown, multi select (Defines in CQL Editor). Appears to default to Individual, Subject List, Summary and Data Collection for Include in Report Type."
+      "valueString": "<p><strong>Risk Adjustment Section of Population Criteria Tab of MADiE UI </strong></p>\n<ul>\n <li><p>Free text.</p></li>\n <li><p>Character limit not determined.</p></li>\n <li><p>Definition selected from dropdown, multi select (Defines in CQL Editor).</p></li>\n <li><p>Appears to default to Individual, Subject List, Summary and Data Collection for Include in Report Type.</p></li>\n</ul>\n<p><em>Conditional field, will not display if not populated.</em></p>\n<p><strong>QDM Equivalent: Risk Adjustment</strong></p>"
     }, {
       "url": "usage",
       "valueCodeableConcept": {
@@ -616,26 +673,15 @@
       "valueString": "Definition Section of Details Tab in MADiE UI \"Term\" free text. Character limit not determined. QDM Equivalent: ?."
     }, {
       "url": "definition",
-      "valueMarkdown": "Definition Section of Details Tab in MADiE UI \"Definition\" free text. Character limit not determined QDM Equivalent: ?. Conditional field, will not display if not populated."
+      "valueMarkdown": "**Definition Section of Details Tab in MADiE UI**\n\n* \"Definition\" free text.\n\n* Character limit not determined\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Definition**\n"
     } ]
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueReference": {
       "reference": "#effective-data-requirements"
     }
-  }, {
-    "id": "effective-data-requirements",
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
-    "valueReference": {
-      "reference": "#effective-data-requirements"
-    }
-  }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
   } ],
-  "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HRExampleProportionMeasure",
+  "url": "https://madie.cms.gov/Measure/HRExampleProportionMeasureCQLLibrary",
   "identifier": [ {
     "use": "usual",
     "type": {
@@ -685,10 +731,10 @@
     }
   } ],
   "name": "HRExampleProportionMeasure",
-  "title": "HR Example Proportion (Measure Name in Details Tab of MADiE UI)",
+  "title": "HR Example Proportion (Measure Name in Details Tab of MADiE UI)\n",
   "status": "draft",
   "experimental": true,
-  "date": "2025-08-14T17:02:17+00:00",
+  "date": "2025-08-28T14:02:45+00:00",
   "publisher": "ICF",
   "contact": [ {
     "telecom": [ {
@@ -696,7 +742,7 @@
       "value": "https://www.icf.com/"
     } ]
   } ],
-  "description": "Description Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM equivalent: Description.",
+  "description": "**Description Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM equivalent: Description**\n",
   "useContext": [ {
     "code": {
       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
@@ -711,9 +757,9 @@
       } ]
     }
   } ],
-  "purpose": "Purpose Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Conditional field, will not display if not populated.",
-  "usage": "Guidance (Usage) Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: Guidance. Conditional field, will not display if not populated.",
-  "copyright": "Copyright Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: Copyright. Displays “UNKNOWN” if not populated.",
+  "purpose": "**Purpose Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: N/A**\n",
+  "usage": "**Guidance (Usage) Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Guidance**\n",
+  "copyright": "**Copyright Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Displays \"UNKNOWN\" if not populated.*\n\n**QDM Equivalent: Copyright**\n",
   "effectivePeriod": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -727,12 +773,12 @@
   } ],
   "relatedArtifact": [ {
     "type": "citation",
-    "citation": "References Section of Details Tab in MADiE UI \"Type\" selected from drop down (Citation or Justification) \"Reference\" free text after selection. Character limit not determined. QDM Equivalent: Reference. Conditional field, will not display if not populated."
+    "citation": "**CITATION References Section of Details Tab in MADiE UI**\n\n* Type\" selected from drop down (Citation or Justification)\n\n* Reference\" free text after selection.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Reference**\n"
   } ],
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary" ],
-  "disclaimer": "Disclaimer Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Displays “UNKNOWN” if not populated.",
-  "rationale": "Rationale Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: Rational. Conditional field, will not display if not populated.",
-  "clinicalRecommendationStatement": "Clinical Recommendation Section of Details Tab in MADiE UI Free text. Character limit not determined. QDM Equivalent: Clinical Recommendation Statement. Conditional field, will not display if not populated.",
+  "disclaimer": "**Disclaimer Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Displays \"UNKNOWN\" if not populated.*\n\n**QDM Equivalent: Disclaimer**\n",
+  "rationale": "**Rationale Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Rationale**\n",
+  "clinicalRecommendationStatement": "**Clinical Recommendation Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Clinical Recommendation Statement**\n",
   "group": [ {
     "id": "Group_1",
     "extension": [ {
@@ -803,7 +849,7 @@
       }
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation",
-      "valueCode": "Rate Aggregation Field of Reporting Section on Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Rate Aggregation."
+      "valueString": "**Rate Aggregation Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Rate Aggregation**\n"
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringPrecision",
       "valuePositiveInt": 1
@@ -818,9 +864,9 @@
       }
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance",
-      "valueMarkdown": "Improvement Notation Description Field of Reporting Section on Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Improvement Notation required field selected by dropdown (Increased score indicates improvement and Decreased score indicates improvement)."
+      "valueMarkdown": "**Improvement Notation Description Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Improvement Notation required field selected by dropdown (Increased score indicates improvement and Decreased score indicates improvement).\n\n**QDM Equivalent: Improvement Notation**\n"
     } ],
-    "description": "Population Criteria 1 Description on Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Measure type selectable from drop down, multi select; for this example selected all options. Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error. Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). Note to self, changing scoring deletes all population information. Scoring Unit free text entry. Scoring Precision selectable integers. small edit to support export",
+    "description": "**Population Criteria 1 Description on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM Equivalent: N/A**\n\n**Populates Summary Field in FHIR human readable**\n\n|                                                                        Additional MADiE Page Notes:                                                                         |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| * Measure type selectable from drop down, multi select; for this example selected all options.                                                                              |\n| * Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error.                                           |\n| * Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). *Note to self, changing scoring deletes all population information.* |\n| * Aggregate Function selectable from dropdown.                                                                                                                              |\n| * Scoring Unit free text entry.                                                                                                                                             |\n| * Scoring Precision selectable integers.                                                                                                                                    |\n\n",
     "population": [ {
       "id": "InitialPopulation_1",
       "code": {
@@ -830,7 +876,7 @@
           "display": "Initial Population"
         } ]
       },
-      "description": "Initial Population Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Initial Population. Initial Population required field selected by dropdown (Defines from CQL Editor Tab).",
+      "description": "**Initial Population Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Initial Population required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Initial Population**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Initial Population"
@@ -844,7 +890,7 @@
           "display": "Denominator"
         } ]
       },
-      "description": "Denominator Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Denominator. Denominator required field selected by dropdown (Defines from CQL Editor Tab).",
+      "description": "**Denominator Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Denominator required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Denominator**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Denominator"
@@ -858,7 +904,7 @@
           "display": "Denominator Exclusion"
         } ]
       },
-      "description": "Denominator Exclusion Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Denominator Exclusion. Denominator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab). Conditional field, will not display if not populated.",
+      "description": "**Denominator Exclusion Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Denominator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab).\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Denominator Exclusion**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Denominator Exclusions"
@@ -872,7 +918,7 @@
           "display": "Numerator"
         } ]
       },
-      "description": "Numerator Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not detemined. QDM Equivalent: Numerator. Numerator required field selected by dropdown (Defines from CQL Editor Tab).",
+      "description": "**Numerator Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Numerator required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Numerator**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Numerator"
@@ -886,7 +932,7 @@
           "display": "Numerator Exclusion"
         } ]
       },
-      "description": "Numerator Exclusion Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Numerator Exclusion. Numerator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab). Conditional field, will not display if not populated.",
+      "description": "**Numerator Exclusion Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Numerator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab).\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Numerator Exclusion**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Numerator Exclusion"
@@ -900,7 +946,7 @@
           "display": "Denominator Exception"
         } ]
       },
-      "description": "Denominator Exception Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Denominator Exception. Denominator Exception is not required field selected by dropdown (Defines from CQL Editor Tab). Conditional field, will not display if not populated.",
+      "description": "**Denominator Exception Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Denominator Exception is not required field selected by dropdown (Defines from CQL Editor Tab).\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Denominator Exception**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Denominator Exception"
@@ -963,7 +1009,7 @@
           } ]
         }
       } ],
-      "description": "Stratification 1 Description in Stratifications Section of Population Criteria Tab of MADiE UI Stratification 1 required field selected by dropdown (Defines from CQL Editor tab). Association 1 appears to default to all defined populations. Free Text. Character limit not determined. QDM Equivalent: Stratification. Conditional field, does not show if not populated.",
+      "description": "**Stratification 1 Description in Stratifications Section of Population Criteria Tab of MADiE UI**\n\n* Free Text.\n\n* Character limit not determined.\n\nStratification 1 required field selected by dropdown (Defines from CQL Editor tab).\n\nAssociation 1 appears to default to all defined populations.\n\n*Conditional field, does not show if not populated.*\n\n**QDM Equivalent: Stratification**\n\n<br />\n\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Patient Age Less than 18 Years Start of Measurement Period"
@@ -1025,7 +1071,7 @@
           } ]
         }
       } ],
-      "description": "Stratification 2 Description in Stratifications Section of Population Criteria Tab of MADiE UI Stratification 2 required field selected by dropdown (Defines from CQL Editor tab). Association 2 appears to default to all defined populations. Free Text. Character limit not determined. QDM Equivalent: Stratification. Conditional field, does not show if not populated.",
+      "description": "**Stratification 2 Description in Stratifications Section of Population Criteria Tab of MADiE UI**\n\n* Free Text.\n\n* Character limit not determined.\n\nStratification 2 required field selected by dropdown (Defines from CQL Editor tab).\n\nAssociation 2 appears to default to all defined populations.\n\n*Conditional field, does not show if not populated.*\n\n**QDM Equivalent: Stratification**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Patient Age 18 Years or Older at Start of Measurement Period"
@@ -1100,7 +1146,7 @@
         } ]
       }
     } ],
-    "description": "Population Criteria 2 Description on Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: ?. Measure type selectable from drop down, multi select; for this example selected all options. Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error. Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). Note to self, changing scoring deletes all population information. Scoring Unit free text entry. Scoring Precision selectable integers. small edit to support export2",
+    "description": "**Population Criteria 2 Description on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM Equivalent: N/A**\n\n**Populates Summary Field in FHIR human readable**\n\n|                                                                        Additional MADiE Page Notes:                                                                         |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| * Measure type selectable from drop down, multi select; for this example selected all options.                                                                              |\n| * Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error.                                           |\n| * Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). *Note to self, changing scoring deletes all population information.* |\n| * Aggregate Function selectable from dropdown.                                                                                                                              |\n| * Scoring Unit free text entry.                                                                                                                                             |\n| * Scoring Precision selectable integers.                                                                                                                                    |\n\n",
     "population": [ {
       "id": "InitialPopulation_2",
       "code": {
@@ -1110,7 +1156,7 @@
           "display": "Initial Population"
         } ]
       },
-      "description": "Initial Population Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Initial Population. Initial Population required field selected by dropdown (Defines from CQL Editor Tab).",
+      "description": "**Initial Population Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Initial Population required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Initial Population**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Initial Population2"
@@ -1124,7 +1170,7 @@
           "display": "Denominator"
         } ]
       },
-      "description": "Denominator Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Denominator. Denominator required field selected by dropdown (Defines from CQL Editor Tab).",
+      "description": "**Denominator Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Denominator required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Denominator**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Denominator2"
@@ -1138,7 +1184,7 @@
           "display": "Denominator Exclusion"
         } ]
       },
-      "description": "Denominator Exclusion in Population Criteria 2 Description Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Denominator Exclusion. Denominator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab). Conditional field, will not display if not populated.",
+      "description": "**Denominator Exclusion in Population Criteria 2 Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Denominator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab).\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Denominator Exclusion**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Denominator Exclusions2"
@@ -1152,7 +1198,7 @@
           "display": "Numerator"
         } ]
       },
-      "description": "Numerator Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI Free text. Character limit not detemined. QDM Equivalent: Numerator. Numerator required field selected by dropdown (Defines from CQL Editor Tab).",
+      "description": "**Numerator Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Numerator required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Numerator**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Numerator2"
@@ -1166,7 +1212,7 @@
           "display": "Numerator Exclusion"
         } ]
       },
-      "description": "Numerator Exclusion Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Numerator Exclusion. Numerator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab). Conditional field, will not display if not populated.",
+      "description": "**Numerator Exclusion Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Numerator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab).\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Numerator Exclusion**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Numerator Exclusion2"
@@ -1180,10 +1226,135 @@
           "display": "Denominator Exception"
         } ]
       },
-      "description": "Denominator Exception Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI Free text. Character limit not determined. QDM Equivalent: Denominator Exception. Denominator Exception is not required field selected by dropdown (Defines from CQL Editor Tab). Conditional field, will not display if not populated.",
+      "description": "**Denominator Exception Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Denominator Exception is not required field selected by dropdown (Defines from CQL Editor Tab).\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Denominator Exception**\n",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Denominator Exception2"
+      }
+    } ],
+    "stratifier": [ {
+      "id": "Stratification_2_1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "initial-population",
+            "display": "Initial Population"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "denominator",
+            "display": "Denominator"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "denominator-exclusion",
+            "display": "Denominator Exclusion"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "numerator",
+            "display": "Numerator"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "numerator-exclusion",
+            "display": "Numerator Exclusion"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "denominator-exception",
+            "display": "Denominator Exception"
+          } ]
+        }
+      } ],
+      "description": "**Stratification 1 Description Stratifications Section of Population Criteria 2 Tab of MADiE UI**\n\n* Free Text.\n\n* Character limit not determined.\n\nStratification 1 required field selected by dropdown (Defines from CQL Editor tab).\n\nAssociation 1 appears to default to all defined populations.\n\n*Conditional field, does not show if not populated.*\n\n**QDM Equivalent: Stratification**\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Patient Age Less than 18 Years Start of Measurement Period"
+      }
+    }, {
+      "id": "Stratification_2_2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "initial-population",
+            "display": "Initial Population"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "denominator",
+            "display": "Denominator"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "denominator-exclusion",
+            "display": "Denominator Exclusion"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "numerator",
+            "display": "Numerator"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "numerator-exclusion",
+            "display": "Numerator Exclusion"
+          } ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-appliesTo",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+            "code": "denominator-exception",
+            "display": "Denominator Exception"
+          } ]
+        }
+      } ],
+      "description": "**Stratification 2 Description Stratifications Section of Population Criteria 2 Tab of MADiE UI**\n\n* Free Text.\n\n* Character limit not determined.\n\nStratification 2 required field selected by dropdown (Defines from CQL Editor tab).\n\nAssociation 2 appears to default to all defined populations.\n\n*Conditional field, does not show if not populated.*\n\n**QDM Equivalent: Stratification**\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Patient Age 18 Years or Older at Start of Measurement Period"
       }
     } ]
   } ],
@@ -1208,7 +1379,7 @@
         "code": "supplemental-data"
       } ]
     } ],
-    "description": "SDE Ethnicity",
+    "description": "SDE Ethnicity\n",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "SDE Ethnicity"
@@ -1234,7 +1405,7 @@
         "code": "supplemental-data"
       } ]
     } ],
-    "description": "SDE Payer",
+    "description": "SDE Payer\n",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "SDE Payer"
@@ -1260,7 +1431,7 @@
         "code": "supplemental-data"
       } ]
     } ],
-    "description": "SDE Race",
+    "description": "SDE Race\n",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "SDE Race"
@@ -1286,7 +1457,7 @@
         "code": "supplemental-data"
       } ]
     } ],
-    "description": "SDE Sex",
+    "description": "SDE Sex\n",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "SDE Sex"
@@ -1312,7 +1483,7 @@
         "code": "risk-adjustment-factor"
       } ]
     } ],
-    "description": "RAV Patient Too Young at Start of Measurement Period",
+    "description": "RAV Patient Too Young at Start of Measurement Period\n",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "RAV Patient Too Young at Start of Measurement Period"
@@ -1338,7 +1509,7 @@
         "code": "risk-adjustment-factor"
       } ]
     } ],
-    "description": "RAV Patient Too Old at Start of Measurement Period",
+    "description": "RAV Patient Too Old at Start of Measurement Period\n",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "RAV Patient Too Old at Start of Measurement Period"

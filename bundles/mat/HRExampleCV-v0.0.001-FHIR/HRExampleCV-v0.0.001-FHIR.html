@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffff;;
+            margin: 0px;
+            padding: 10px;
+            height: 100%;
+            font-size: 1em;
+        }
+
+        p, li {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+        }
+
+        td {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        tr {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        table.colstu td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #fff5e6;
+        }
+
+        table.colsd td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #efefef;
+        }
+
+        table.colsn td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6ffe6;
+        }
+
+        table.colse td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6e6e6;
+        }
+
+        table.colsi td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #ffffe6;
+        }
+
+        table.list td {
+            border-top: 1px silver solid;
+            border-spacing: 0;
+        }
+
+        table.bare td {
+            border-spacing: 0;
+        }
+
+        ul.dict li {
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+        }
+
+        table.dict td {
+            padding: 3px 7px 2px 7px;
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.dict p {
+            font-size: 11px;
+        }
+
+        table {
+            margin-bottom: 10px;
+            border-collapse: collapse;
+        }
+
+        table.codes td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid {
+            margin-bottom: 10px;
+            border: 1px black solid;
+            margin-right: auto;
+
+        }
+
+        table.grid th {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: bold;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        ul, ol {
+            margin: 10px 0;
+            padding: 0 0 0 25px;
+        }
+
+        .dense li {
+            margin: 0 0 0 0;
+        }
+
+        li {
+            margin: 0 0 5px 0;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0 0 4px 0;
+            font-family: verdana;
+            border-bottom: 1px solid #7e7e7e;
+            padding-bottom: 2px;
+        }
+
+        h2 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 14px;
+            margin: 0 0 3px 0;
+            margin-top: 15px;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+        }
+
+        h3 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 12px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 11px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        div.sidebar h2 {
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+            padding-top: 0px;
+            margin-top: 0px;
+            font-weight: normal;
+            margin-left: 8px;
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+
+        div.sidebar p {
+            padding-bottom: 0px;
+            padding-top: 10px;
+            font-weight: normal;
+            margin-left: 8px;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        div.sidebar ul {
+            list-style: none;
+            padding: 0px;
+            margin-left: 6px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        div.sidebar li {
+            margin: 0px 0px 0px 6px;
+            padding: 0px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        a {
+            color: #428bca;
+            text-decoration: none;
+        }
+
+        a.xmltag :visited {
+            color: Navy;
+        }
+
+        a.xmltag :hover {
+            color: Blue;
+        }
+
+        pre {
+            display: block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        pre a {
+            color: darkgreen;
+            text-decoration: none;
+            border: 0;
+
+        }
+
+        /* PrismJS 1.21.0
+        https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=keep-markup */
+        /**
+         * prism.js default theme for JavaScript, CSS and HTML
+         * Based on dabblet (http://dabblet.com)
+         * @author Lea Verou
+         */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            text-shadow: 0 1px white;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.95em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        @media print {
+            code[class*="language-"],
+            pre[class*="language-"] {
+                text-shadow: none;
+            }
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #f5f2f0;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+        /*
+  ===============================
+  Liquid Narrative Styling Start
+  ===============================
+  */
+
+        .narrative-table {
+            border: 1pt inset rgb(0, 0, 0);
+            line-height: 10pt;
+            border-collapse: separate;
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 2px;
+        }
+
+
+        .narrative-table ul,
+        .content-container ul {
+            list-style: disc;
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table ol,
+        .content-container ol {
+            list-style: decimal;
+            padding: 0 0 0 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table strong,
+        .content-container strong {
+            font-weight: 700;
+        }
+
+        .narrative-table>tbody {
+            display: table-row-group;
+            vertical-align: middle;
+        }
+
+        .narrative-table>tbody>tr {
+            display: table-row;
+            background-color: lightgray;
+            vertical-align: inherit;
+        }
+
+        .narrative-table>tbody>tr>th {
+            padding: 5px;
+        }
+
+        .section-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .row-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .tab-one {
+            padding-left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .row-header {
+                min-width: 138px;
+                max-width: 138px;
+            }
+
+            .content-container {
+                max-width: 576px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .row-header {
+                min-width: 181px;
+                max-width: 181px;
+            }
+
+            .content-container {
+                max-width: 745px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .row-header {
+                min-width: 213px;
+                max-width: 213px;
+            }
+
+            .content-container {
+                max-width: 873px;
+            }
+        }
+
+        /*
+        ===============================
+        Liquid Narrative Styling End
+        ===============================
+        */
+
+        /*
+        ===============================
+        Rich text editor styling
+        ===============================
+        */
+
+        table.rich-text-table th,td {
+            border: 1px solid #9c9c9c;
+            box-sizing: border-box;
+            min-width: 1em;
+            padding: 6px 8px;
+            position: relative;
+            vertical-align: top;
+        }
+        table.rich-text-table th {
+            background-color: #3d25140d;
+        }
+    </style>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml" class="col-12">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">HR Example CV (Measure Name in Details Tab of MADiE UI)</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">0.0.001</td>
+</tr>
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Short Name</th>
+
+
+<td class="content-container">HRExCV(eCQM Abbreviated Title)DT</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Independent)</th>
+
+
+<td class="content-container">urn:uuid:69cbf966-a8a7-4c0a-8970-b22e45d75cf3</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Specific)</th>
+
+
+<td class="content-container">urn:uuid:f93267bf-fa94-477f-ad0a-22376ffa122e</td>
+</tr>
+
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">CMS Consensus Based Entity Identifier</th>
+
+
+<td class="content-container">4EndorsementNumber</td>
+</tr>
+
+  
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">Effective Period</th>
+
+
+<td class="content-container">2026-01-01 through 2026-12-31</td>
+</tr>
+
+  
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Experimental</th>
+
+
+<td class="content-container">true</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Use Context</th>
+
+
+<td class="content-container">org.hl7.fhir.r5.model.UsageContext@4326715</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">ICF</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Developer</th>
+
+
+<td class="content-container">ICF</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><p><strong>Description Section of Details Tab in MADiE UI</strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><strong>QDM equivalent: Description</strong></p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Purpose</th>
+
+
+<td class="content-container"><p><strong>Purpose Section of Details Tab in MADiE UI</strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: N/A</strong></p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Copyright</th>
+
+
+<td class="content-container"><p><strong>Copyright Section of Details Tab in MADiE UI</strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><em>Displays “UNKNOWN” if not populated.</em></p>
+<p><strong>QDM Equivalent: Copyright</strong></p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Disclaimer</th>
+
+
+<td class="content-container"><p><strong>Disclaimer Section of Details Tab in MADiE UI</strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><em>Displays “UNKNOWN” if not populated.</em></p>
+<p><strong>QDM Equivalent: Disclaimer </strong></p></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Rationale</th>
+
+
+<td class="content-container"><p><strong>Rationale Section of Details Tab in MADiE UI </strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: Rationale </strong></p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Clinical Recommendation Statement</th>
+
+
+<td class="content-container"><p><strong>Clinical Recommendation Section of Details Tab in MADiE UI</strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: Clinical Recommendation Statement </strong></p></td>
+</tr>
+
+
+
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p><strong>CITATION References Section of Details Tab in MADiE UI </strong></p>
+<ul>
+ <li><p>Type&quot; selected from drop down (Citation or Justification)</p></li>
+ <li><p>Reference&quot; free text after selection.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: Reference</strong></p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Justification</th>
+
+
+  
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: <p><strong>JUSTIFICATION References Section of Details Tab in MADiE UI </strong></p>
+<ul>
+ <li><p>&quot;Type&quot; selected from drop down (Citation or Justification)</p></li>
+ <li><p>&quot;Reference&quot; free text after selection.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: Reference</strong></p>
+    
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Definition Section of Details Tab in MADiE UI &quot;Term&quot; free text. Character limit not determined. QDM Equivalent: ?.: <p><strong>Definition Section of Details Tab in MADiE UI</strong></p>
+<ul>
+ <li><p>&quot;Definition&quot; free text.</p></li>
+ <li><p>Character limit not determined</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: Definition</strong></p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Guidance (Usage)</th>
+
+
+<td class="content-container"><p><strong>Guidance (Usage) Section of Details Tab in MADiE UI</strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: Guidance</strong></p></td>
+</tr>
+
+
+
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+    
+<tr>
+
+
+<th scope="row" class="row-header">Summary</th>
+
+
+<td class="content-container"><p><strong>Population Criteria 1 Description on Population Criteria Tab of MADiE UI </strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+</ul>
+<p><strong>QDM Equivalent: N/A</strong></p>
+<p><strong>Populates Summary Field in FHIR human readable</strong></p>
+<table style="min-width: 25px" class="rich-text-table">
+ <colgroup>
+  <col style="min-width: 25px"/>
+ </colgroup>
+ <tbody>
+  <tr>
+   <th colspan="1" rowspan="1"><p>Additional MADiE Page Notes:</p></th>
+  </tr>
+  <tr>
+   <td colspan="1" rowspan="1">
+    <ul>
+     <li><p>Measure type selectable from drop down, multi select; for this example selected all options.</p></li>
+    </ul></td>
+  </tr>
+  <tr>
+   <td colspan="1" rowspan="1">
+    <ul>
+     <li><p>Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error.</p></li>
+    </ul></td>
+  </tr>
+  <tr>
+   <td colspan="1" rowspan="1">
+    <ul>
+     <li><p>Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio).</p></li>
+    </ul><p><em>Note to self, changing scoring deletes all population information. </em></p></td>
+  </tr>
+  <tr>
+   <td colspan="1" rowspan="1">
+    <ul>
+     <li><p>Aggregate Function selectable from dropdown.</p></li>
+    </ul></td>
+  </tr>
+  <tr>
+   <td colspan="1" rowspan="1">
+    <ul>
+     <li><p>Scoring Unit free text entry.</p></li>
+    </ul></td>
+  </tr>
+  <tr>
+   <td colspan="1" rowspan="1">
+    <ul>
+     <li><p>Scoring Precision selectable integers.</p></li>
+    </ul></td>
+  </tr>
+ </tbody>
+</table></td>
+</tr>
+
+  
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Basis</th>
+
+
+<td class="content-container">boolean</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Scoring</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-scoring#continuous-variable: 'Continuous Variable']</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Scoring Unit</th>
+
+
+<td class="content-container">[http://unitsofmeasure.org/#Scoring Unit Field: 'Scoring Unit Field']</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Scoring Precision</th>
+
+
+<td class="content-container">1</td>
+</tr>
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#intermediate-outcome: 'Intermediate Outcome']</td>
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#outcome: 'Outcome']</td>
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#patient-reported-outcome: 'Patient Reported Outcome']</td>
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#process: 'Process']</td>
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#structure: 'Structure']</td>
+</tr>
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Improvement Notation</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase: 'Increased score indicates improvement']</td>
+</tr>
+
+
+  
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Initial Population</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: InitialPopulation_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p><strong>Initial Population Description Field in Population Criteria Tab of MADiE UI </strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+ <li><p>Initial Population required field selected by dropdown (Defines from CQL Editor Tab).</p></li>
+</ul>
+<p><strong>QDM Equivalent: Initial Population</strong></p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-hrexamplecvmeasurecqllibrarynamedt-initial-population">Initial Population</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Measure Population</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: MeasurePopulation_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p><strong>Measure Population Description Field in Population Criteria Tab of MADiE UI </strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+ <li><p>Measure Population required field selected by dropdown (Defines from CQL Editor Tab).</p></li>
+</ul>
+<p><strong>QDM Equivalent: Measure Population</strong></p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-hrexamplecvmeasurecqllibrarynamedt-measure-population">Measure Population</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Measure Population Exclusion</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: MeasurePopulationExclusion_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p><strong>Measure Population Exclusion Description Field in Population Criteria Tab of MADiE UI </strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+ <li><p>Numerator Exclusion is not required field selected by dropdown (Defines from CQL Editor Tab).</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: Measure Population Exclusions</strong></p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-hrexamplecvmeasurecqllibrarynamedt-measure-population-exclusions">Measure Population Exclusions</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Measure Observation</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: MeasureObservation_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p><strong>Measure Observation Description Field in Population Criteria Tab of MADiE UI</strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+ <li><p>Measure Observation required field selected by dropdown (Defines from CQL Editor Tab).</p></li>
+</ul>
+<p><strong>QDM Equivalent: Measure Observation</strong></p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-hrexamplecvmeasurecqllibrarynamedt-measure-observation-1">Measure Observation 1</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+
+
+  
+    
+<tr>
+
+
+<th scope="row" class="row-header">Supplemental Data Guidance</th>
+
+
+<td class="content-container"><p><strong>Supplemental Data Section of Population Criteria Tab of MADiE UI </strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+ <li><p>Definition selected from dropdown (Defines in CQL Editor).</p></li>
+ <li><p>For this example, selected SDE Payer, SDE Ethnicity, SDE Race and SDE Sex.</p></li>
+ <li><p>Appears to default to Individual, Subject List, Summary and Data Collection for Include in Report Type.</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated. </em></p>
+<p><strong>QDM Equivalent: Supplemental Data Elements</strong></p>
+<p><strong>Populates Supplemental Data Guidance in FHIR human readable</strong></p></td>
+</tr>
+
+  
+
+  
+    
+<tr>
+
+
+<th scope="row" class="row-header">Supplemental Data Guidance</th>
+
+
+<td class="content-container"><p><strong>Risk Adjustment Section of Population Criteria Tab of MADiE UI </strong></p>
+<ul>
+ <li><p>Free text.</p></li>
+ <li><p>Character limit not determined.</p></li>
+ <li><p>Definition selected from dropdown, multi select (Defines in CQL Editor).</p></li>
+ <li><p>Appears to default to Individual, Subject List, Summary and Data Collection for Include in Report Type.</p></li>
+</ul>
+<p><em>Conditional field, will not display if not populated.</em></p>
+<p><strong>QDM Equivalent: Risk Adjustment</strong></p></td>
+</tr>
+
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Supplemental Data Elements</th>
+
+
+</tr>
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-ethnicity
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Ethnicity
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#hrexamplecvmeasurecqllibrarynamedt-sde-ethnicity">SDE Ethnicity</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-payer
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Payer
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#hrexamplecvmeasurecqllibrarynamedt-sde-payer">SDE Payer</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-race
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Race
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#hrexamplecvmeasurecqllibrarynamedt-sde-race">SDE Race</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-sex
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Sex
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#hrexamplecvmeasurecqllibrarynamedt-sde-sex">SDE Sex</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: rav-patient-too-young-at-start-of-measurement-period
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#risk-adjustment-factor]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: RAV Patient Too Young at Start of Measurement Period
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#hrexamplecvmeasurecqllibrarynamedt-rav-patient-too-young-at-start-of-measurement-period">RAV Patient Too Young at Start of Measurement Period</a> 
+      
+    
+  </td>
+</tr>
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container">https://madie.cms.gov/Library/HRExampleCVMeasureCQLLibraryNameDT</td>
+</tr>
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Contents</th>
+  <td class="content-container">
+    <em><a href="#population-criteria">Population Criteria</a></em>
+    <br/>
+    <em><a href="#definitions">Logic Definitions</a></em>
+    <br/>
+    <em><a href="#terminology">Terminology</a></em>
+    <br/>
+    <em><a href="#dependencies">Dependencies</a></em>
+    <br/>
+    <em><a href="#data-requirements">Data Requirements</a></em>
+    <br/>
+  </td>
+</tr>
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="population-criteria"> </a>Population Criteria</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-hrexamplecvmeasurecqllibrarynamedt-initial-population"> </a>
+    
+    
+    Initial Population
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  AgeInYearsAt(date from 
+    end of &quot;Measurement Period&quot;
+  ) in Interval[18, 75]</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-hrexamplecvmeasurecqllibrarynamedt-measure-population"> </a>
+    
+    
+    Measure Population
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
+  &quot;Initial Population&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-hrexamplecvmeasurecqllibrarynamedt-measure-population-exclusions"> </a>
+    
+    
+    Measure Population Exclusion
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusions&quot;:
+  &quot;Initial Population&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-hrexamplecvmeasurecqllibrarynamedt-measure-observation-1"> </a>
+    
+    
+    Measure Observation
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 1&quot;():
+  if AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &gt;= 18 then 1 
+    else 0</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="definitions"> </a>Logic Definitions</th>
+
+
+</tr>
+  
+  
+          
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  case
+    when Patient.sex = '248153007' then &quot;Male (finding)&quot;
+    when Patient.sex = '248152002' then &quot;Female (finding)&quot;
+    else null
+  end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  [Coverage: type in &quot;Payer Type&quot;] Payer
+    return {
+      code: Payer.type,
+      period: Payer.period
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  Patient.ethnicity E
+    return Tuple {
+      codes: { E.ombCategory } union E.detailed,
+      display: E.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  Patient.race R
+    return Tuple {
+      codes: R.ombCategory union R.detailed,
+      display: R.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  SDE.&quot;SDE Sex&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-rav-patient-too-young-at-start-of-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;RAV Patient Too Young at Start of Measurement Period&quot;:
+  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &lt; 5</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-initial-population"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  AgeInYearsAt(date from 
+    end of &quot;Measurement Period&quot;
+  ) in Interval[18, 75]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-measure-population-exclusions"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusions&quot;:
+  &quot;Initial Population&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  SDE.&quot;SDE Payer&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  SDE.&quot;SDE Ethnicity&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  SDE.&quot;SDE Race&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-measure-population"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
+  &quot;Initial Population&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hrexamplecvmeasurecqllibrarynamedt-measure-observation-1"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> HRExampleCVMeasureCQLLibraryNameDT</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 1&quot;():
+  if AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &gt;= 18 then 1 
+    else 0</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tostring"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value uri): value.value</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)
+value to a CQL DateTime Interval
+@comment: If the start value of the given period is unspecified, the starting
+boundary of the resulting interval will be open (meaning the start of the interval
+is unknown, as opposed to interpreted as the beginning of time).
+*/
+define function ToInterval(period FHIR.Period):
+    if period is null then
+        null
+    else
+        if period.&quot;start&quot; is null then
+            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]
+        else
+            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tocode"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.
+*/
+define function ToCode(coding FHIR.Coding):
+    if coding is null then
+        null
+    else
+        System.Code {
+          code: coding.code.value,
+          system: coding.system.value,
+          version: coding.version.value,
+          display: coding.display.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="terminology"> </a>Terminology</th>
+
+
+</tr>
+  
+  
+  
+
+ 
+
+ 
+
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system SNOMEDCT
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://snomed.info/sct
+    <br/>
+    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Payer Type
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>
+    
+  </td>
+</tr>
+ 
+
+
+  
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Male (finding)
+        <br/>
+      
+      <em>Code</em>: 248153007
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Female (finding)
+        <br/>
+      
+      <em>Code</em>: 248152002
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="dependencies"> </a>Dependencies</th>
+
+
+</tr>
+  
+  
+  
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: QICore model information
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo
+    <br/>
+    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library SDE
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>
+    
+  </td>
+</tr>
+ 
+
+ 
+
+ 
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="data-requirements"> </a>Data Requirements</th>
+
+
+</tr>
+  
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Patient
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: extension, url
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Coverage
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+  
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
