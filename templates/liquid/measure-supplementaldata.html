@@ -1,6 +1,12 @@
 {% for supplementalDataGuidance in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-supplementalDataGuidance') %}
   {% if supplementalDataGuidance.extension.where(url = 'guidance').exists() %}
-    {%include default.html header='Supplemental Data Guidance' content=supplementalDataGuidance.extension.where(url = 'guidance').value %}
+    {% if supplementalDataGuidance.extension.where(url = 'usage').exists() %}
+    {% assign gusage = supplementalDataGuidance.extension.where(url = 'usage').first().value %}
+    {% assign gheader = iif(gusage.text.exists(), gusage.text, iif(gusage.coding.first().display.exists(), gusage.coding.first().display, gusage.coding.first().code)) + ' Guidance' %}
+    {% else %}
+    {% assign gheader = 'Supplemental Data Guidance' %}
+    {% endif %}
+    {%include default.html header=gheader content=supplementalDataGuidance.extension.where(url = 'guidance').value %}
   {% endif %}
 {% endfor %}
 {% if include.measure.supplementalData.exists() %}
