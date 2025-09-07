@@ -63,7 +63,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary",
-  "version": "0.5.0-cibuild",
+  "version": "0.5.0",
   "name": "HRExampleCohortMeasureCQLLibrary",
   "type": {
     "coding": [ {

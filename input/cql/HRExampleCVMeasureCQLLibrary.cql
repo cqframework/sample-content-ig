@@ -1,4 +1,4 @@
-library HRExampleCVMeasureCQLLibrary version '0.5.0-cibuild'
+library HRExampleCVMeasureCQLLibrary version '0.5.0'
 
 using QICore version '4.1.1'
 
