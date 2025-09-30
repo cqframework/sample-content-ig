@@ -411,6 +411,11 @@
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueCanonical": "#effective-data-requirements"
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HRExampleCohortMeasure",
   "identifier": [ {
@@ -465,7 +470,7 @@
   "title": "HR Example Cohort (Measure Name in Details Tab of MADiE UI)\n",
   "status": "draft",
   "experimental": true,
-  "date": "2025-09-30T04:02:26+00:00",
+  "date": "2025-09-30T04:16:55+00:00",
   "publisher": "ICF",
   "contact": [ {
     "telecom": [ {

@@ -251,7 +251,7 @@
   "title": "Questionnaire Measure Example",
   "status": "draft",
   "experimental": true,
-  "date": "2025-09-29T21:02:26-07:00",
+  "date": "2025-09-29T21:16:55-07:00",
   "description": "Example measure illustrating a continuous variable measure calculating scores from multiple questionnaires",
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample" ],
   "scoring": {
