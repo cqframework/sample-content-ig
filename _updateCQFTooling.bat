@@ -1,5 +1,5 @@
 @ECHO OFF
-SET version=3.9.1
+SET version=3.10.0
 SET tooling_jar=tooling-cli-%version%.jar
 SET "dlurl=https://repo1.maven.org/maven2/org/opencds/cqf/tooling-cli/%version%/%tooling_jar%%"
 SET input_cache_path=%~dp0input-cache\

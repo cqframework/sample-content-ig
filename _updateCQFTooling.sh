@@ -4,7 +4,7 @@
 
 # this script is only intended for downloading release packages
 # snapshot versions must be downloaded 'manually'
-v=3.9.1
+v=3.10.0
 tooling_jar=tooling-cli-${v}.jar
 dlurl='https://repo1.maven.org/maven2/org/opencds/cqf/tooling-cli/'${v}'/'${tooling_jar}
 
