@@ -1,4 +1,4 @@
-library QuestionnaireMeasureExample version '0.5.0-cibuild'
+library QuestionnaireMeasureExample version '0.5.2'
 
 using FHIR version '4.0.1'
 

@@ -8,35 +8,35 @@
     "resourceType": "Library",
     "id": "effective-data-requirements",
     "extension": [ {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
         "code": "IMP",
         "display": "Inpatient"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
         "code": "ACUTE",
         "display": "Acute"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
         "code": "NONAC",
         "display": "Nonacute"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
         "code": "OBSENC",
         "display": "Observation Encounter"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "SupplementalDataElementsExample"
@@ -51,7 +51,7 @@
         "valueInteger": 0
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -66,7 +66,7 @@
         "valueInteger": 1
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -81,7 +81,7 @@
         "valueInteger": 2
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -96,7 +96,7 @@
         "valueInteger": 3
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "SupplementalDataElementsExample"
@@ -111,7 +111,7 @@
         "valueInteger": 4
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -126,7 +126,7 @@
         "valueInteger": 5
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -141,7 +141,7 @@
         "valueInteger": 6
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "SupplementalDataElementsExample"
@@ -156,7 +156,7 @@
         "valueInteger": 7
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -171,7 +171,7 @@
         "valueInteger": 8
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "SupplementalDataElementsExample"
@@ -186,7 +186,7 @@
         "valueInteger": 9
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -201,7 +201,7 @@
         "valueInteger": 10
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -216,7 +216,7 @@
         "valueInteger": 11
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -231,7 +231,7 @@
         "valueInteger": 12
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "CQMCommonExample"
@@ -246,7 +246,7 @@
         "valueInteger": 13
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "CQMCommonExample"
@@ -261,7 +261,7 @@
         "valueInteger": 14
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "CQMCommonExample"
@@ -276,7 +276,7 @@
         "valueInteger": 15
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QICoreCommonExample"
@@ -291,7 +291,7 @@
         "valueInteger": 16
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HybridHospitalWideMortalityFHIRExample"
@@ -306,7 +306,7 @@
         "valueInteger": 17
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -321,7 +321,7 @@
         "valueInteger": 18
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -616,11 +616,8 @@
       "reference": "Device/cqf-tooling"
     }
   }, {
-    "id": "effective-data-requirements",
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
-    "valueReference": {
-      "reference": "#effective-data-requirements"
-    }
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HybridHospitalWideMortalityFHIRExample",
   "identifier": [ {
@@ -684,7 +681,7 @@
   "title": "Core Clinical Data Elements for the Hybrid Hospital-Wide (All-Condition, All-Procedure) Risk-Standardized Mortality Measure (HWM) FHIR Example",
   "status": "draft",
   "experimental": false,
-  "date": "2025-08-14T17:02:17+00:00",
+  "date": "2025-09-30T04:02:26+00:00",
   "publisher": "Centers for Medicare & Medicaid Services (CMS)",
   "contact": [ {
     "telecom": [ {

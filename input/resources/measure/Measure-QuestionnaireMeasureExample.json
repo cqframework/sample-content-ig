@@ -8,31 +8,31 @@
     "resourceType": "Library",
     "id": "effective-data-requirements",
     "extension": [ {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://loinc.org",
         "code": "LA6568-5"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://loinc.org",
         "code": "LA6569-3"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://loinc.org",
         "code": "LA6570-1"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://loinc.org",
         "code": "LA6571-9"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "PHQ9LogicExample"
@@ -47,7 +47,7 @@
         "valueInteger": 0
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "PHQ9LogicExample"
@@ -62,7 +62,7 @@
         "valueInteger": 1
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "PHQ9LogicExample"
@@ -77,7 +77,7 @@
         "valueInteger": 2
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QuestionnaireMeasureExample"
@@ -92,7 +92,7 @@
         "valueInteger": 3
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QuestionnaireMeasureExample"
@@ -107,7 +107,7 @@
         "valueInteger": 4
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QuestionnaireMeasureExample"
@@ -122,7 +122,7 @@
         "valueInteger": 5
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -137,7 +137,7 @@
         "valueInteger": 6
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -152,7 +152,7 @@
         "valueInteger": 7
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "PHQ9LogicExample"
@@ -167,7 +167,7 @@
         "valueInteger": 8
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -243,18 +243,15 @@
       "reference": "Device/cqf-tooling"
     }
   }, {
-    "id": "effective-data-requirements",
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
-    "valueReference": {
-      "reference": "#effective-data-requirements"
-    }
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/QuestionnaireMeasureExample",
   "name": "QuestionnaireMeasureExample",
   "title": "Questionnaire Measure Example",
   "status": "draft",
   "experimental": true,
-  "date": "2025-08-14T10:02:17-07:00",
+  "date": "2025-09-29T21:02:26-07:00",
   "description": "Example measure illustrating a continuous variable measure calculating scores from multiple questionnaires",
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample" ],
   "scoring": {

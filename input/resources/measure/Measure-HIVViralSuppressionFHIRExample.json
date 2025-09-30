@@ -8,39 +8,39 @@
     "resourceType": "Library",
     "id": "effective-data-requirements",
     "extension": [ {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://snomed.info/sct",
         "code": "260988000",
         "display": "Below threshold level (qualifier value)"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://snomed.info/sct",
         "code": "260415000",
         "display": "Not detected (qualifier value)"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
         "code": "active"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
         "code": "recurrence"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-directReferenceCode",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
       "valueCoding": {
         "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
         "code": "relapse"
       }
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HIVViralSuppressionFHIRExample"
@@ -55,7 +55,7 @@
         "valueInteger": 0
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HIVViralSuppressionFHIRExample"
@@ -70,7 +70,7 @@
         "valueInteger": 1
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HIVViralSuppressionFHIRExample"
@@ -85,7 +85,7 @@
         "valueInteger": 2
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HIVViralSuppressionFHIRExample"
@@ -100,7 +100,7 @@
         "valueInteger": 3
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HIVViralSuppressionFHIRExample"
@@ -115,7 +115,7 @@
         "valueInteger": 4
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "HIVViralSuppressionFHIRExample"
@@ -130,7 +130,7 @@
         "valueInteger": 5
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QICoreCommonExample"
@@ -145,7 +145,7 @@
         "valueInteger": 6
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QICoreCommonExample"
@@ -160,7 +160,7 @@
         "valueInteger": 7
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QICoreCommonExample"
@@ -175,7 +175,7 @@
         "valueInteger": 8
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QICoreCommonExample"
@@ -190,7 +190,7 @@
         "valueInteger": 9
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QICoreCommonExample"
@@ -205,7 +205,7 @@
         "valueInteger": 10
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QICoreCommonExample"
@@ -220,7 +220,7 @@
         "valueInteger": 11
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "QICoreCommonExample"
@@ -235,7 +235,7 @@
         "valueInteger": 12
       } ]
     }, {
-      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
         "valueString": "FHIRHelpers"
@@ -467,11 +467,8 @@
       "reference": "Device/cqf-tooling"
     }
   }, {
-    "id": "effective-data-requirements",
-    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-effectiveDataRequirements",
-    "valueReference": {
-      "reference": "#effective-data-requirements"
-    }
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HIVViralSuppressionFHIRExample",
   "identifier": [ {
@@ -526,7 +523,7 @@
   "title": "HIV Viral Suppression FHIR Example",
   "status": "draft",
   "experimental": false,
-  "date": "2025-08-14T17:02:17+00:00",
+  "date": "2025-09-30T04:02:26+00:00",
   "publisher": "Health Resources & Services Administration",
   "contact": [ {
     "telecom": [ {
