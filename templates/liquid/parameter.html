@@ -1,34 +1,27 @@
-{% for parameter in include.parameter.distinct() %}
 <tr>
   {%include row-header.html header=include.header %}
   <td class="content-container">
-    {% if parameter.name.exists() %}
-    <em>Name</em>: {{parameter.name}}
-    {% endif %}
-    {% if parameter.use.exists() or parameter.min.exists() or parameter.max.exists() or parameter.type.exists() %}
-    <br />
-    {% endif %}
-    {% if parameter.use.exists() %}
-    <em>Use</em>: {{parameter.use}}
-    {% endif %}
-    {% if parameter.min.exists() or parameter.max.exists() or parameter.type.exists() %}
-    <br />
-    {% endif %}
-    {% if parameter.min.exists() %}
-    <em>Min Cardinality</em>: {{parameter.min}}
-    {% endif %}
-    {% if parameter.max.exists() or parameter.type.exists() %}
-    <br />
-    {% endif %}
-    {% if parameter.max.exists() %}
-    <em>Max Cardinality</em>: {{parameter.max}}
-    {% endif %}
-    {% if parameter.type.exists() %}
-    <br />
-    {% endif %}
-    {% if parameter.type.exists() %}
-    <em>Type</em>: {{parameter.type}}
-    {% endif %}
+    <table>
+      <thead>
+        <tr>
+          <td><em>Name</em></td>
+          <td><em>Use</em></td>
+          <td><em>Card.</em></td>
+          <td><em>Type</em></td>
+          <td>Documentation</td>
+        </tr>
+      </thead>
+      <tbody>
+      {% for parameter in include.parameter %}
+        <tr>
+          <td>{{parameter.name}}</td>
+          <td>{{parameter.use}}</td>
+          <td>{{iif(parameter.min.exists(), parameter.min.toString(), '0') + '..' + iif(parameter.max.exists(), parameter.max, '1')}}</td>
+          <td>{{parameter.type + iif(parameter.profile.exists(), '(' + parameter.profile + ')', '')}}</td>
+          <td>{{parameter.documentation}}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
   </td>
 </tr>
-{% endfor %}
