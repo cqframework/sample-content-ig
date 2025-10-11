@@ -406,7 +406,7 @@
       "valueString": "Definition Section of Details Tab in MADiE UI \"Term\" free text. Character limit not determined. QDM Equivalent: ?."
     }, {
       "url": "definition",
-      "valueMarkdown": "**Definition Section of Details Tab in MADiE UI**\n\n* \"Definition\" free text.\n\n* Character limit not determined\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Definition**\n"
+      "valueMarkdown": "**Definition Section of Details Tab in MADiE UI**\n\n* \"Definition\" free text.\n\n* Character limit not determined\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Definition**"
     } ]
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
@@ -467,7 +467,7 @@
     }
   } ],
   "name": "HRExampleCohortMeasure",
-  "title": "HR Example Cohort (Measure Name in Details Tab of MADiE UI)\n",
+  "title": "HR Example Cohort (Measure Name in Details Tab of MADiE UI)",
   "status": "draft",
   "experimental": true,
   "date": "2025-09-30T04:16:55+00:00",
@@ -478,7 +478,7 @@
       "value": "https://www.icf.com/"
     } ]
   } ],
-  "description": "**Description Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM equivalent: Description**\n",
+  "description": "**Description Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM equivalent: Description**",
   "useContext": [ {
     "code": {
       "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
@@ -493,9 +493,9 @@
       } ]
     }
   } ],
-  "purpose": "**Purpose Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: N/A**\n",
-  "usage": "**Guidance (Usage) Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Guidance**\n",
-  "copyright": "**Copyright Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Displays \"UNKNOWN\" if not populated.*\n\n**QDM Equivalent: Copyright**\n",
+  "purpose": "**Purpose Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: N/A**",
+  "usage": "**Guidance (Usage) Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Guidance**",
+  "copyright": "**Copyright Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Displays \"UNKNOWN\" if not populated.*\n\n**QDM Equivalent: Copyright**",
   "effectivePeriod": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -509,15 +509,15 @@
   } ],
   "relatedArtifact": [ {
     "type": "citation",
-    "citation": "**CITATION References Section of Details Tab in MADiE UI**\n\n* Type\" selected from drop down (Citation or Justification)\n\n* Reference\" free text after selection.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Reference**\n"
+    "citation": "**CITATION References Section of Details Tab in MADiE UI**\n\n* Type\" selected from drop down (Citation or Justification)\n\n* Reference\" free text after selection.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Reference**"
   }, {
     "type": "justification",
-    "display": "**JUSTIFICATION References Section of Details Tab in MADiE UI**\n\n* \"Type\" selected from drop down (Citation or Justification)\n\n* \"Reference\" free text after selection.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Reference**\n"
+    "display": "**JUSTIFICATION References Section of Details Tab in MADiE UI**\n\n* \"Type\" selected from drop down (Citation or Justification)\n\n* \"Reference\" free text after selection.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Reference**"
   } ],
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary" ],
-  "disclaimer": "**Disclaimer Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Displays \"UNKNOWN\" if not populated.*\n\n**QDM Equivalent: Disclaimer**\n",
-  "rationale": "**Rationale Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Rationale**\n",
-  "clinicalRecommendationStatement": "**Clinical Recommendation Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Clinical Recommendation Statement**\n",
+  "disclaimer": "**Disclaimer Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Displays \"UNKNOWN\" if not populated.*\n\n**QDM Equivalent: Disclaimer**",
+  "rationale": "**Rationale Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Rationale**",
+  "clinicalRecommendationStatement": "**Clinical Recommendation Section of Details Tab in MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Clinical Recommendation Statement**",
   "group": [ {
     "id": "Group_1",
     "extension": [ {
@@ -588,7 +588,7 @@
       }
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation",
-      "valueString": "**Rate Aggregation Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Rate Aggregation**\n"
+      "valueString": "**Rate Aggregation Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Rate Aggregation**"
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringPrecision",
       "valuePositiveInt": 1
@@ -603,9 +603,9 @@
       }
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance",
-      "valueMarkdown": "**Improvement Notation Description Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Improvement Notation required field selected by dropdown (Increased score indicates improvement and Decreased score indicates improvement).\n\n**QDM Equivalent: Improvement Notation**\n"
+      "valueMarkdown": "**Improvement Notation Description Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Improvement Notation required field selected by dropdown (Increased score indicates improvement and Decreased score indicates improvement).\n\n**QDM Equivalent: Improvement Notation**"
     } ],
-    "description": "**Population Criteria 1 Description on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM Equivalent: N/A**\n\n**Populates Summary Field in FHIR human readable**\n\n|                                                                        Additional MADiE Page Notes:                                                                         |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| * Measure type selectable from drop down, multi select; for this example selected all options.                                                                              |\n| * Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error.                                           |\n| * Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). *Note to self, changing scoring deletes all population information.* |\n| * Aggregate Function selectable from dropdown.                                                                                                                              |\n| * Scoring Unit free text entry.                                                                                                                                             |\n| * Scoring Precision selectable integers.                                                                                                                                    |\n\n",
+    "description": "**Population Criteria 1 Description on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM Equivalent: N/A**\n\n**Populates Summary Field in FHIR human readable**\n\n|                                                                        Additional MADiE Page Notes:                                                                         |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| * Measure type selectable from drop down, multi select; for this example selected all options.                                                                              |\n| * Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error.                                           |\n| * Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). *Note to self, changing scoring deletes all population information.* |\n| * Aggregate Function selectable from dropdown.                                                                                                                              |\n| * Scoring Unit free text entry.                                                                                                                                             |\n| * Scoring Precision selectable integers.                                                                                                                                    |\n",
     "population": [ {
       "id": "InitialPopulation_1",
       "code": {
@@ -615,7 +615,7 @@
           "display": "Initial Population"
         } ]
       },
-      "description": "**Initial Population Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Initial Population required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Initial Population**\n",
+      "description": "**Initial Population Description Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Initial Population required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Initial Population**",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Initial Population"
@@ -633,7 +633,7 @@
           } ]
         }
       } ],
-      "description": "**Stratification 1 Description in Stratifications Section of Population Criteria Tab of MADiE UI**\n\n* Free Text.\n\n* Character limit not determined.\n\nStratification 1 required field selected by dropdown (Defines from CQL Editor tab).\n\nAssociation 1 appears to default to all defined populations.\n\n*Conditional field, does not show if not populated.*\n\n**QDM Equivalent: Stratification**\n",
+      "description": "**Stratification 1 Description in Stratifications Section of Population Criteria Tab of MADiE UI**\n\n* Free Text.\n\n* Character limit not determined.\n\nStratification 1 required field selected by dropdown (Defines from CQL Editor tab).\n\nAssociation 1 appears to default to all defined populations.\n\n*Conditional field, does not show if not populated.*\n\n**QDM Equivalent: Stratification**",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Patient Age Less than 18 Years Start of Measurement Period"
@@ -650,7 +650,7 @@
           } ]
         }
       } ],
-      "description": "**Stratification 2 Description in Stratifications Section of Population Criteria Tab of MADiE UI**\n\n* Free Text.\n\n* Character limit not determined.\n\nStratification 2 required field selected by dropdown (Defines from CQL Editor tab).\n\nAssociation 2 appears to default to all defined populations.\n\n*Conditional field, does not show if not populated.*\n\n**QDM Equivalent: Stratification**\n",
+      "description": "**Stratification 2 Description in Stratifications Section of Population Criteria Tab of MADiE UI**\n\n* Free Text.\n\n* Character limit not determined.\n\nStratification 2 required field selected by dropdown (Defines from CQL Editor tab).\n\nAssociation 2 appears to default to all defined populations.\n\n*Conditional field, does not show if not populated.*\n\n**QDM Equivalent: Stratification**",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Patient Age 18 Years or Older at Start of Measurement Period"
@@ -726,7 +726,7 @@
       }
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-rateAggregation",
-      "valueString": "**Rate Aggregation Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Rate Aggregation**\n"
+      "valueString": "**Rate Aggregation Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Rate Aggregation**"
     }, {
       "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoringPrecision",
       "valuePositiveInt": 1
@@ -741,9 +741,9 @@
       }
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance",
-      "valueMarkdown": "**Improvement Notation Description Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Improvement Notation required field selected by dropdown (Increased score indicates improvement and Decreased score indicates improvement).\n\n**QDM Equivalent: Improvement Notation**\n"
+      "valueMarkdown": "**Improvement Notation Description Field of Reporting Section on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Improvement Notation required field selected by dropdown (Increased score indicates improvement and Decreased score indicates improvement).\n\n**QDM Equivalent: Improvement Notation**"
     } ],
-    "description": "**Population Criteria 2 Description on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM Equivalent: N/A**\n\n**Populates Summary Field in FHIR human readable**\n\n|                                                                        Additional MADiE Page Notes:                                                                         |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| * Measure type selectable from drop down, multi select; for this example selected all options.                                                                              |\n| * Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error.                                           |\n| * Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). *Note to self, changing scoring deletes all population information.* |\n| * Aggregate Function selectable from dropdown.                                                                                                                              |\n| * Scoring Unit free text entry.                                                                                                                                             |\n| * Scoring Precision selectable integers.                                                                                                                                    |\n\nNo stratifiers for this group\n",
+    "description": "**Population Criteria 2 Description on Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n**QDM Equivalent: N/A**\n\n**Populates Summary Field in FHIR human readable**\n\n|                                                                        Additional MADiE Page Notes:                                                                         |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| * Measure type selectable from drop down, multi select; for this example selected all options.                                                                              |\n| * Population Basis selectable from drop down, single select; for this example, boolean is only one that didn't generate an error.                                           |\n| * Scoring selectable from dropdown, single select (Cohort, Continuous Variable, Proportion and Ratio). *Note to self, changing scoring deletes all population information.* |\n| * Aggregate Function selectable from dropdown.                                                                                                                              |\n| * Scoring Unit free text entry.                                                                                                                                             |\n| * Scoring Precision selectable integers.                                                                                                                                    |\n\nNo stratifiers for this group",
     "population": [ {
       "id": "InitialPopulation_2",
       "code": {
@@ -753,7 +753,7 @@
           "display": "Initial Population"
         } ]
       },
-      "description": "**Initial Population Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Initial Population required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Initial Population**\n",
+      "description": "**Initial Population Description in Population Criteria 2 Field in Population Criteria Tab of MADiE UI**\n\n* Free text.\n\n* Character limit not determined.\n\n* Initial Population required field selected by dropdown (Defines from CQL Editor Tab).\n\n**QDM Equivalent: Initial Population**",
       "criteria": {
         "language": "text/cql-identifier",
         "expression": "Initial Population2"
@@ -781,7 +781,7 @@
         "code": "supplemental-data"
       } ]
     } ],
-    "description": "SDE Ethnicity\n",
+    "description": "SDE Ethnicity",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "SDE Ethnicity"
@@ -807,7 +807,7 @@
         "code": "supplemental-data"
       } ]
     } ],
-    "description": "SDE Payer\n",
+    "description": "SDE Payer",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "SDE Payer"
@@ -833,7 +833,7 @@
         "code": "supplemental-data"
       } ]
     } ],
-    "description": "SDE Race\n",
+    "description": "SDE Race",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "SDE Race"
@@ -859,7 +859,7 @@
         "code": "supplemental-data"
       } ]
     } ],
-    "description": "SDE Sex\n",
+    "description": "SDE Sex",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "SDE Sex"
@@ -885,7 +885,7 @@
         "code": "risk-adjustment-factor"
       } ]
     } ],
-    "description": "RAV Patient Too Young at Start of Measurement Period\n",
+    "description": "RAV Patient Too Young at Start of Measurement Period",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "RAV Patient Too Young at Start of Measurement Period"
@@ -911,7 +911,7 @@
         "code": "risk-adjustment-factor"
       } ]
     } ],
-    "description": "RAV Patient Too Old at Start of Measurement Period\n",
+    "description": "RAV Patient Too Old at Start of Measurement Period",
     "criteria": {
       "language": "text/cql-identifier",
       "expression": "RAV Patient Too Old at Start of Measurement Period"

@@ -808,7 +808,7 @@
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
     "extension": [ {
       "url": "guidance",
-      "valueString": "Patient's Ethnicity:\nHispanic or Latino\nNot Hispanic or Latino\n Patient's Payer:\nCategories of types of health care payer entities as defined by the US Public Health Data Consortium SOP code system\n Patient's Race:\nNative Hawaiian or Other Pacific Islander\nAsian\nAmerican Indian or Alaska Native\nOther Race\nWhite\nBlack or African American\n Patient's Sex:\nGender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories.\n"
+      "valueString": "Patient's Ethnicity:\nHispanic or Latino\nNot Hispanic or Latino\n Patient's Payer:\nCategories of types of health care payer entities as defined by the US Public Health Data Consortium SOP code system\n Patient's Race:\nNative Hawaiian or Other Pacific Islander\nAsian\nAmerican Indian or Alaska Native\nOther Race\nWhite\nBlack or African American\n Patient's Sex:\nGender identity restricted to only Male and Female used in administrative situations requiring a restriction to these two categories."
     }, {
       "url": "usage",
       "valueCodeableConcept": {
