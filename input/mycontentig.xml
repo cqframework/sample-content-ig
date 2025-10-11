@@ -68,6 +68,16 @@
       <name value="CQF Tooling"/>
       <description value="CQF Tooling used in the generation of this IG"/>
     </resource>
+    <!-- Use an input manifest parameters to specify code system dependencies to be used for expansion of value sets in the implementation guide.
+      See [Manifest Parameters](https://hl7.org/fhir/uv/crmi/2025Sep/version-manifest.html#manifest-parameters) for more information. -->
+    <resource>
+      <reference>
+        <reference value="Parameters/manifest"/>
+      </reference>
+      <name value="Input Expansion Parameters"/>
+      <description value="The input expansion parameters resource for this implementation guide, specifying SNOMED Edition. This resource will be contained within the published implementation guide with all pinned references."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -109,22 +119,6 @@
         <generation value="markdown"/>
       </page>
     </page>
-    <parameter>
-      <code value="path-resource"/>
-      <value value="input/resources/device"/>
-    </parameter>
-    <parameter>
-      <code value="path-resource"/>
-      <value value="input/resources/library"/>
-    </parameter>
-    <parameter>
-      <code value="path-resource"/>
-      <value value="input/resources/measure"/>
-    </parameter>
-    <parameter>
-      <code value="path-resource"/>
-      <value value="input/resources/questionnaire"/>
-    </parameter>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
@@ -137,6 +131,34 @@
     </parameter>
     <parameter>
       <code value="autoload-resources"/>
+      <value value="true"/>
+    </parameter>
+    <!-- 
+      The path to the expansion parameters resource. See [path-expansion-params](https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#:~:text=path%2Dexpansion%2Dparams) 
+      Note carefully that this parameter does not include the resource in the IG. Inclusion of the resource must still be accomplished by adding the resource definition to a resource path in the publisher.
+    -->
+    <parameter>
+      <code value="path-expansion-params" />
+      <value value="resources/parameters/Parameters-manifest.json"/>
+    </parameter>
+    <!-- Instruct the IG publisher to pin unversioned canonical references encountered during publication
+      See [How to pin canonical references](https://build.fhir.org/ig/FHIR/ig-guidance/pinning.html#how-to-pin-canonical-references) -->
+    <parameter>
+      <code value="pin-canonicals"/>
+      <value value="pin-all"/>
+    </parameter>
+    <!-- Instruct the IG publisher to make use of the manifest for canonical pinning 
+      See [Controlling where pinning happens](https://build.fhir.org/ig/FHIR/ig-guidance/pinning.html#controlling-where-pinning-happens)
+    -->
+    <parameter>
+      <code value="pin-manifest"/>
+      <value value="manifest"/>
+    </parameter>
+    <!-- Instruct the IG publisher to pin external references:
+      See [Pinning External References](https://build.fhir.org/ig/FHIR/ig-guidance/pinning.html#pinning-external-references)
+    -->
+    <parameter>
+      <code value="pin-external"/>
       <value value="true"/>
     </parameter>
     <parameter>
@@ -158,6 +180,11 @@
     <parameter>
       <code value="path-resource" />
       <value value="input/resources/plandefinition"/>
+    </parameter>
+    <!-- To ensure the input manifest parameters are included in the implementation guide so it can be used as the pinning manifest -->
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/parameters"/>
     </parameter>
     <parameter>
       <code value="path-resource" />
