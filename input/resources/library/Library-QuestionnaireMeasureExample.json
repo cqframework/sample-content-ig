@@ -58,7 +58,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample",
-  "version": "0.5.3-cibuild",
+  "version": "0.5.3",
   "name": "QuestionnaireMeasureExample",
   "type": {
     "coding": [ {

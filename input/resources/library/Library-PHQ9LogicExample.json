@@ -58,7 +58,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample",
-  "version": "0.5.3-cibuild",
+  "version": "0.5.3",
   "name": "PHQ9LogicExample",
   "type": {
     "coding": [ {

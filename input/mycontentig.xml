@@ -7,7 +7,7 @@
   </extension>-->
   <url value="http://somewhere.org/fhir/uv/mycontentig/ImplementationGuide/example.fhir.uv.mycontentig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.5.3-cibuild"/>
+  <version value="0.5.3"/>
   <name value="YourComputableMyContentIGNameHere"/>
   <title value="Your User Friendly Name for MyContentIG Here"/>
   <status value="draft"/>
