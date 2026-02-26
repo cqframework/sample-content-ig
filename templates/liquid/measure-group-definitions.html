@@ -9,7 +9,7 @@
     {%include section-header.html header='Measure Group (Rate)' %}
   {% endif %}
   {% for contained in include.measure.contained.where(id.contains('effective-data-requirements')) %}
-  {%include measure-group-population-definitions.html group=group groupKey=groupKey contained=include.measure.contained %}
-  {%include measure-group-stratifier-definitions.html group=group groupKey=groupKey contained=include.measure.contained %}
+  {%include measure-group-population-definitions.html group=group groupKey=groupKey contained=contained measure=include.measure %}
+  {%include measure-group-stratifier-definitions.html group=group groupKey=groupKey contained=contained measure=include.measure %}
   {% endfor %}
 {% endfor %}

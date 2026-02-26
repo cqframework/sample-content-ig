@@ -10,7 +10,7 @@
   {% if group.description.exists() %}
     {%include default.html header='Summary' content=group.description %}
   {% endif %}
-  {%include measure-group-scoring.html group=group %}
+  {%include measure-group-scoring.html group=group groupKey=groupKey measure=include.measure %}
   {%include measure-group-population.html group=group groupKey=groupKey measure=include.measure %}
-  {%include measure-group-stratifier.html group=group groupKey=groupKey %}
+  {%include measure-group-stratifier.html group=group groupKey=groupKey measure=include.measure %}
 {% endfor %}

@@ -1,3 +1,4 @@
+{% if include.group.stratifier.exists() %}
 {% for stratifier in include.group.stratifier %}
   {% if stratifier.criteria.exists() %}
     {% if stratifier.criteria.language.startsWith('text/cql') %}
@@ -9,3 +10,8 @@
     {% endif %}
   {% endif %}
 {% endfor %}
+{% else %}
+{% if include.measure.extension.where(url='http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements').value %}
+{%include default.html header='Stratifier' content='None' %}
+{% endif %}
+{% endif %}

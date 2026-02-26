@@ -1,3 +1,4 @@
+{% if include.group.stratifier.exists() %}
 {% for stratifier in include.group.stratifier %}
 <tr>
   {%include row-header.html header='Stratifier' %}
@@ -24,3 +25,8 @@
   </td>
 </tr>
 {% endfor %}
+{% else %}
+{% if include.measure.extension.where(url='http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements').value %}
+{%include default.html header='Stratifier' content='None' %}
+{% endif %}
+{% endif %}
