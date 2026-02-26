@@ -1,4 +1,4 @@
-library RetrieveExample version '0.5.3'
+library RetrieveExample version '0.5.4-cibuild'
 
 using FHIR version '4.0.1'
 

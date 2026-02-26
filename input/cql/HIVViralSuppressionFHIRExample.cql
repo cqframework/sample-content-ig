@@ -1,4 +1,4 @@
-library HIVViralSuppressionFHIRExample version '0.5.3'
+library HIVViralSuppressionFHIRExample version '0.5.4-cibuild'
 
 using QICore version '4.1.1'
 

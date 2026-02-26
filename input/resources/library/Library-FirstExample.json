@@ -58,7 +58,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/FirstExample",
-  "version": "0.5.3",
+  "version": "0.5.4-cibuild",
   "name": "FirstExample",
   "type": {
     "coding": [ {
