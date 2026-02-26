@@ -245,6 +245,9 @@
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueCanonical": "#effective-data-requirements"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements",
+    "valueBoolean": true
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/QuestionnaireMeasureExample",
   "name": "QuestionnaireMeasureExample",
