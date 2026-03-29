@@ -1,3 +1,6 @@
+{% assign sdeGuidance = include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-supplementalDataGuidance').where(extension.where(url = 'usage').first().value.coding.code = 'supplemental-data') %}
+{% assign ravGuidance = include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-supplementalDataGuidance').where(extension.where(url = 'usage').first().value.coding.code = 'risk-adjustment-factor') %}
+{% if include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-supplementalDataGuidance').exists() %}
 {% for supplementalDataGuidance in include.measure.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-supplementalDataGuidance') %}
   {% if supplementalDataGuidance.extension.where(url = 'guidance').exists() %}
     {% if supplementalDataGuidance.extension.where(url = 'usage').exists() %}
@@ -9,6 +12,19 @@
     {%include default.html header=gheader content=supplementalDataGuidance.extension.where(url = 'guidance').value %}
   {% endif %}
 {% endfor %}
+{% else %}
+{% if sdeGuidance.exists().not() %}
+{% if include.measure.extension.where(url='http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements').value %}
+{%include default.html header='Supplemental Data Guidance' content='None' %}
+{% endif %}
+{% endif %}
+{% if ravGuidance.exists().not() %}
+{% if include.measure.extension.where(url='http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements').value %}
+{%include default.html header='Risk Adjustment Factor Guidance' content='None' %}
+{% endif %}
+{% endif %}
+{% endif %}
+
 {% if include.measure.supplementalData.exists() %}
   {%include section-header.html header='Supplemental Data Elements' %}
 {% endif %}
