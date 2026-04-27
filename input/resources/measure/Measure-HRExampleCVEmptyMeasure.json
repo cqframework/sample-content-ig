@@ -11,51 +11,6 @@
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
-        "valueString": "SupplementalDataElementsExample"
-      }, {
-        "url": "name",
-        "valueString": "SDE Sex"
-      }, {
-        "url": "statement",
-        "valueString": "define \"SDE Sex\":\n  case\n      when Patient.gender = 'male' then Code { code: 'M', system: 'http://hl7.org/fhir/v3/AdministrativeGender', display: 'Male' }\n      when Patient.gender = 'female' then Code { code: 'F', system: 'http://hl7.org/fhir/v3/AdministrativeGender', display: 'Female' }\n      else null\n    end"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 0
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HRExampleCVEmptyMeasureCQLLibrary"
-      }, {
-        "url": "name",
-        "valueString": "SDE Sex"
-      }, {
-        "url": "statement",
-        "valueString": "define \"SDE Sex\":\n  SDE.\"SDE Sex\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 1
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HRExampleCVEmptyMeasureCQLLibrary"
-      }, {
-        "url": "name",
-        "valueString": "RAV Patient Too Young at Start of Measurement Period"
-      }, {
-        "url": "statement",
-        "valueString": "define \"RAV Patient Too Young at Start of Measurement Period\":\n  AgeInYearsAt(date from start of \"Measurement Period\") < 5"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 2
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
         "valueString": "HRExampleCVEmptyMeasureCQLLibrary"
       }, {
         "url": "name",
@@ -65,112 +20,7 @@
         "valueString": "define \"Initial Population\":\n  AgeInYearsAt(date from \n    end of \"Measurement Period\"\n  ) in Interval[18, 75]"
       }, {
         "url": "displaySequence",
-        "valueInteger": 3
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HRExampleCVEmptyMeasureCQLLibrary"
-      }, {
-        "url": "name",
-        "valueString": "Measure Population Exclusions"
-      }, {
-        "url": "statement",
-        "valueString": "define \"Measure Population Exclusions\":\n  \"Initial Population\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 4
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "SupplementalDataElementsExample"
-      }, {
-        "url": "name",
-        "valueString": "SDE Payer"
-      }, {
-        "url": "statement",
-        "valueString": "define \"SDE Payer\":\n  [Coverage: type in \"Payer Type\"] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 5
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HRExampleCVEmptyMeasureCQLLibrary"
-      }, {
-        "url": "name",
-        "valueString": "SDE Payer"
-      }, {
-        "url": "statement",
-        "valueString": "define \"SDE Payer\":\n  SDE.\"SDE Payer\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 6
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "SupplementalDataElementsExample"
-      }, {
-        "url": "name",
-        "valueString": "SDE Ethnicity"
-      }, {
-        "url": "statement",
-        "valueString": "define \"SDE Ethnicity\":\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 7
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HRExampleCVEmptyMeasureCQLLibrary"
-      }, {
-        "url": "name",
-        "valueString": "SDE Ethnicity"
-      }, {
-        "url": "statement",
-        "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 8
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "SupplementalDataElementsExample"
-      }, {
-        "url": "name",
-        "valueString": "SDE Race"
-      }, {
-        "url": "statement",
-        "valueString": "define \"SDE Race\":\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 9
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "HRExampleCVEmptyMeasureCQLLibrary"
-      }, {
-        "url": "name",
-        "valueString": "SDE Race"
-      }, {
-        "url": "statement",
-        "valueString": "define \"SDE Race\":\n  SDE.\"SDE Race\""
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 10
+        "valueInteger": 0
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -185,7 +35,7 @@
         "valueString": "define \"Measure Population\":\n  \"Initial Population\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 11
+        "valueInteger": 1
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -200,52 +50,7 @@
         "valueString": "define function \"Measure Observation 1\"():\n  if AgeInYearsAt(date from start of \"Measurement Period\") >= 18 then 1 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 12
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "FHIRHelpers"
-      }, {
-        "url": "name",
-        "valueString": "ToInterval"
-      }, {
-        "url": "statement",
-        "valueString": "define function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 13
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "FHIRHelpers"
-      }, {
-        "url": "name",
-        "valueString": "ToString"
-      }, {
-        "url": "statement",
-        "valueString": "define function ToString(value uri): value.value"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 14
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "FHIRHelpers"
-      }, {
-        "url": "name",
-        "valueString": "ToCode"
-      }, {
-        "url": "statement",
-        "valueString": "define function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 15
+        "valueInteger": 2
       } ]
     } ],
     "name": "EffectiveDataRequirements",
@@ -256,19 +61,6 @@
         "code": "module-definition"
       } ]
     },
-    "relatedArtifact": [ {
-      "type": "depends-on",
-      "display": "Library SDE",
-      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample"
-    }, {
-      "type": "depends-on",
-      "display": "Library FHIRHelpers",
-      "resource": "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1"
-    }, {
-      "type": "depends-on",
-      "display": "Value set Payer Type",
-      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
-    } ],
     "parameter": [ {
       "name": "Measurement Period",
       "use": "in",
@@ -276,47 +68,11 @@
       "max": "1",
       "type": "Period"
     }, {
-      "name": "SDE Sex",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Coding"
-    }, {
-      "name": "RAV Patient Too Young at Start of Measurement Period",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "Measure Population Exclusions",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "SDE Payer",
-      "use": "out",
-      "min": 0,
-      "max": "*",
-      "type": "Resource"
-    }, {
       "name": "Initial Population",
       "use": "out",
       "min": 0,
       "max": "1",
       "type": "boolean"
-    }, {
-      "name": "SDE Ethnicity",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Resource"
-    }, {
-      "name": "SDE Race",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Resource"
     }, {
       "name": "Measure Population",
       "use": "out",
@@ -326,36 +82,22 @@
     } ],
     "dataRequirement": [ {
       "type": "Patient",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
-      "mustSupport": [ "url", "extension" ]
-    }, {
-      "type": "Coverage",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
-      "mustSupport": [ "type", "period" ],
-      "codeFilter": [ {
-        "path": "type",
-        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
-      } ]
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
     } ]
   } ],
   "extension": [ {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
-    "valueCanonical": "#effective-data-requirements"
-  }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
-  }, {
     "url": "http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements",
     "valueBoolean": true
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HRExampleCVEmptyMeasure",
   "name": "HRExampleCVEmptyMeasure",
   "title": "HR Example CV Empty (Measure Name in Details Tab of MADiE UI)",
   "status": "draft",
   "experimental": true,
-  "date": "2025-09-30T04:16:55+00:00",
+  "date": "2026-04-27T17:29:06+00:00",
   "publisher": "ICF",
   "contact": [ {
     "telecom": [ {

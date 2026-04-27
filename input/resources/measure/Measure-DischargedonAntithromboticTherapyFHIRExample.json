@@ -516,36 +516,6 @@
         "url": "displaySequence",
         "valueInteger": 32
       } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "isCommunity"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Returns true if the given MedicationRequest has a category of Community\n*/\ndefine fluent function isCommunity(medicationRequest MedicationRequest):\n  exists (medicationRequest.category C\n    where C ~ Community\n  )"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 33
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
-        "valueString": "isDischarge"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Returns true if the given MedicationRequest has a category of Discharge\n*/\ndefine fluent function isDischarge(medicationRequest MedicationRequest):\n  exists (medicationRequest.category C\n    where C ~ Discharge\n  )"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 34
-      } ]
     } ],
     "name": "EffectiveDataRequirements",
     "status": "active",
@@ -826,11 +796,11 @@
       "reference": "Device/cqf-tooling"
     }
   }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
-    "valueCanonical": "#effective-data-requirements"
-  }, {
     "url": "http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements",
     "valueBoolean": true
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/DischargedonAntithromboticTherapyFHIRExample",
   "identifier": [ {
@@ -881,7 +851,7 @@
   "title": "Discharged on Antithrombotic Therapy FHIR Example",
   "status": "draft",
   "experimental": false,
-  "date": "2025-09-30T04:16:55+00:00",
+  "date": "2026-04-27T17:29:06+00:00",
   "publisher": "The Joint Commission",
   "contact": [ {
     "telecom": [ {

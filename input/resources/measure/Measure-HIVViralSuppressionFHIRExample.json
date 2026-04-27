@@ -211,21 +211,6 @@
         "valueString": "QICoreCommonExample"
       }, {
         "url": "name",
-        "valueString": "ToInterval"
-      }, {
-        "url": "statement",
-        "valueString": "/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval<DateTime>, or Interval<Quantity> types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval<DateTime> or Interval<Quantity>.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nAny other input will reslt in a null DateTime Interval\n@deprecated: This function is deprecated. Use the fluent function `toInterval()` instead\n*/\ndefine function ToInterval(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>>):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval<DateTime> then\n  \t\tchoice as Interval<DateTime>\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval<Quantity> then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\twhen choice is QICore.Timing then\n            null as Interval<DateTime>\n\t\telse\n\t\t\tnull as Interval<DateTime>\n\tend"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 11
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "QICoreCommonExample"
-      }, {
-        "url": "name",
         "valueString": "ToAbatementInterval"
       }, {
         "url": "statement",
@@ -467,11 +452,11 @@
       "reference": "Device/cqf-tooling"
     }
   }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
-    "valueCanonical": "#effective-data-requirements"
-  }, {
     "url": "http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements",
     "valueBoolean": true
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HIVViralSuppressionFHIRExample",
   "identifier": [ {
@@ -526,7 +511,7 @@
   "title": "HIV Viral Suppression FHIR Example",
   "status": "draft",
   "experimental": false,
-  "date": "2025-09-30T04:16:55+00:00",
+  "date": "2026-04-27T17:29:06+00:00",
   "publisher": "Health Resources & Services Administration",
   "contact": [ {
     "telecom": [ {

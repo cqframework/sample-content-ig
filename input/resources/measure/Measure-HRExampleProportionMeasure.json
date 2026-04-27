@@ -619,16 +619,11 @@
       "valueMarkdown": "**Definition Section of Details Tab in MADiE UI**\n\n* \"Definition\" free text.\n\n* Character limit not determined\n\n*Conditional field, will not display if not populated.*\n\n**QDM Equivalent: Definition**"
     } ]
   }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
-    "valueCanonical": "#effective-data-requirements"
-  }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
-  }, {
     "url": "http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements",
     "valueBoolean": true
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HRExampleProportionMeasure",
   "identifier": [ {
@@ -683,7 +678,7 @@
   "title": "HR Example Proportion (Measure Name in Details Tab of MADiE UI)",
   "status": "draft",
   "experimental": true,
-  "date": "2025-09-30T04:16:55+00:00",
+  "date": "2026-04-27T17:29:06+00:00",
   "publisher": "ICF",
   "contact": [ {
     "telecom": [ {
