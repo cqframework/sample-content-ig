@@ -63,7 +63,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary",
-  "version": "0.5.4",
+  "version": "0.5.5-cibuild",
   "name": "HRExampleCVMeasureCQLLibrary",
   "type": {
     "coding": [ {

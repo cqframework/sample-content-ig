@@ -1,4 +1,4 @@
-library QICoreCommonExample version '0.5.4'
+library QICoreCommonExample version '0.5.5-cibuild'
 
 using QICore version '4.1.1'
 
