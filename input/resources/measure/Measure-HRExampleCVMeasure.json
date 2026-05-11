@@ -387,6 +387,11 @@
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueCanonical": "#effective-data-requirements"
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Measure/HRExampleCVMeasure",
   "identifier": [ {
@@ -441,7 +446,7 @@
   "title": "HR Example CV (Measure Name in Details Tab of MADiE UI)",
   "status": "draft",
   "experimental": true,
-  "date": "2026-04-27T17:29:06+00:00",
+  "date": "2026-05-11T04:25:47+00:00",
   "publisher": "ICF",
   "contact": [ {
     "telecom": [ {

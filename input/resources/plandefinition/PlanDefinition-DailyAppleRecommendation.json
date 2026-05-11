@@ -22,16 +22,11 @@
     "id": "effective-data-requirements",
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueCanonical": "#effective-data-requirements"
-  }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/PlanDefinition/DailyAppleRecommendation",
   "name": "DailyAppleRecommendation",
   "title": "Daily Apple Recommendation",
-  "date": "2026-04-27T11:29:06-06:00",
+  "date": "2026-05-10T22:25:47-06:00",
   "description": "An apple a day keeps the doctor away",
   "library": [ "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic" ],
   "action": [ {
