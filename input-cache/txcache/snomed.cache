@@ -1437,7 +1437,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -1665,7 +1665,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -1677,7 +1677,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -1729,19 +1729,19 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -1757,7 +1757,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -1765,7 +1765,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -1773,7 +1773,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -1781,23 +1781,23 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -1890,7 +1890,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -2118,7 +2118,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -2130,7 +2130,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -2182,19 +2182,19 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2210,7 +2210,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2218,7 +2218,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2226,7 +2226,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2234,23 +2234,23 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2343,7 +2343,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -2571,7 +2571,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -2583,7 +2583,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -2635,19 +2635,19 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2663,7 +2663,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2671,7 +2671,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2679,7 +2679,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2687,23 +2687,23 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -2799,7 +2799,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -3027,7 +3027,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -3039,7 +3039,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -3091,19 +3091,19 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3119,11 +3119,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3131,11 +3131,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3143,11 +3143,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3155,27 +3155,27 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3269,7 +3269,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -3497,7 +3497,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -3509,7 +3509,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -3561,19 +3561,19 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3589,11 +3589,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3601,11 +3601,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3613,11 +3613,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3625,27 +3625,27 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -3739,7 +3739,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -3967,7 +3967,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/PHQ9LogicExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -3979,7 +3979,7 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QICoreCommonExample|0.5.5"
   },
   {
     "name" : "default-valueset-version",
@@ -4031,19 +4031,19 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/TJCOverallExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HIVViralSuppressionFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -4059,11 +4059,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -4071,11 +4071,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -4083,11 +4083,11 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
@@ -4095,27 +4095,27 @@ v: {
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioEmptyMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioEmptyMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleRatioMeasureCQLLibrary|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/QuestionnaireMeasureExample|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/Library/DailyAppleLogic|0.5.5"
   },
   {
     "name" : "default-canonical-version",
-    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5-cibuild"
+    "valueString" : "http://somewhere.org/fhir/uv/mycontentig/ActivityDefinition/DailyAppleActivity|0.5.5"
   },
   {
     "name" : "default-canonical-version",

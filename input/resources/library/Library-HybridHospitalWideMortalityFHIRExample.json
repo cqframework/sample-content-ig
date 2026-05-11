@@ -63,7 +63,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/HybridHospitalWideMortalityFHIRExample",
-  "version": "0.5.5-cibuild",
+  "version": "0.5.5",
   "name": "HybridHospitalWideMortalityFHIRExample",
   "type": {
     "coding": [ {

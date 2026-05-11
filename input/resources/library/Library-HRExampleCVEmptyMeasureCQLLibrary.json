@@ -63,7 +63,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCVEmptyMeasureCQLLibrary",
-  "version": "0.5.5-cibuild",
+  "version": "0.5.5",
   "name": "HRExampleCVEmptyMeasureCQLLibrary",
   "type": {
     "coding": [ {
