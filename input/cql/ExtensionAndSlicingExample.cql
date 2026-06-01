@@ -1,4 +1,4 @@
-library ExtensionAndSlicingExample version '0.5.5'
+library ExtensionAndSlicingExample version '0.5.6-cibuild'
 
 using FHIR version '4.0.1'
 

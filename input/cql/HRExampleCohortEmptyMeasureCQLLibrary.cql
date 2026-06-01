@@ -1,4 +1,4 @@
-library HRExampleCohortEmptyMeasureCQLLibrary version '0.5.5'
+library HRExampleCohortEmptyMeasureCQLLibrary version '0.5.6-cibuild'
 
 using QICore version '4.1.1'
 

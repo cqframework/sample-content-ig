@@ -58,7 +58,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/CQMCommonExample",
-  "version": "0.5.5",
+  "version": "0.5.6-cibuild",
   "name": "CQMCommonExample",
   "type": {
     "coding": [ {
