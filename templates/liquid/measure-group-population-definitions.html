@@ -1,4 +1,4 @@
-{% for scoring in include.group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-scoring') %}
+{% for scoring in include.measure.scoring | include.group.extension.where(url = 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring' or url = 'http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-scoring') %}
   {% if scoring.value.coding.where(code = 'cohort').exists() %}
 
     {% if include.group.population.where(code.coding.where(code = 'initial-population').exists()).exists() %}
