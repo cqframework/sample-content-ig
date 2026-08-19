@@ -261,6 +261,13 @@
       "code": "increase"
     } ]
   },
+  "copyright": "the publisher made me do it",
+  "_copyright": {
+    "extension": [{
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    }]
+  },
   "group": [ {
     "id": "group-1",
     "population": [ {
