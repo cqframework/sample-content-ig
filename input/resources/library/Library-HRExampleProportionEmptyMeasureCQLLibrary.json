@@ -58,7 +58,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleProportionEmptyMeasureCQLLibrary",
-  "version": "0.5.6-cibuild",
+  "version": "0.5.6",
   "name": "HRExampleProportionEmptyMeasureCQLLibrary",
   "type": {
     "coding": [ {
