@@ -1,7 +1,16 @@
+{% assign displayNone = include.resource.extension.where(url='http://hl7.org/fhir/uv/cqm/StructureDefinition/cqm-renderMissingElements' and value) %}
 {%include related-artifact.html relatedArtifact=include.resource.relatedArtifact %}
 {%include knowledge-artifact-comment.html include.resource=include.resource %}
+{% if include.resource.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/cqf-definitionTerm').exists() %}
 {% for definitionTerm in include.resource.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/cqf-definitionTerm') %}
   {%assign termvalue = definitionTerm.extension.where(url = 'term').value + ': ' + definitionTerm.extension.where(url = 'definition').value %}
-  {%include default.html header='Definition' content=termvalue %}
+  {%include default.html header='Definition (Term)' content=termvalue %}
 {% endfor %}
-{%include default.html header='Guidance (Usage)' content=include.resource.usage %}
+{% else %}
+{% if displayNone.exists() %}
+{%include default.html header='Definitions (Terms)' content='None' %}
+{% endif %}
+{% endif %}
+{%include default.html header='Guidance (Usage)' content=include.resource.usage displayNone=displayNone.exists() %}
+
+
