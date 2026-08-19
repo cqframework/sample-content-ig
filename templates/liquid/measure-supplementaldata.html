@@ -50,8 +50,6 @@
     {% endif %}
     {% if sde.description.exists() %}
       <em>Description</em>: {{sde.description}}
-    {% else %}
-      <em>Description</em>: No description provided
     {% endif %}
     {% if sde.criteria.exists() %}
       {% if sde.criteria.language.startsWith('text/cql') and sde.criteria.expression.exists() %}
