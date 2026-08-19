@@ -26,7 +26,7 @@
 {% endif %}
 
 {% if include.measure.supplementalData.exists() %}
-  {%include section-header.html header='Supplemental Data Elements' %}
+  {%include section-header.html header='Supplemental Data Elements' link='supplemental-data' %}
 {% endif %}
 {% for sde in include.measure.supplementalData %}
 <tr>

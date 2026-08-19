@@ -1,3 +1,4 @@
+{%include section-header.html header='Measure Rates (Groups)' link='measure-rates' %}
 {% for group in include.measure.group %}
   {%assign groupLinkId = group.extension.where(url.endsWith('linkId')).value %}
   {%assign groupKey = iif(groupLinkId.exists(), groupLinkId, iif(group.id.exists(), group.id, 'grp')) %}
