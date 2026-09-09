@@ -1,7 +1,8 @@
 {
-  "http://unstats.un.org/unsd/methods/m49/m49.htm" : null,
-  "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/intended-venue-codes" : null,
-  "urn:ietf:bcp:13" : null,
-  "http://hl7.org/fhir/uv/cqm/ValueSet/intended-venue" : null,
-  "http://unitsofmeasure.org/" : null
+  "http://fhir.org/guides/cqf/cpg/example/ValueSet/Apple" : null,
+  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-mednotrequested" : null,
+  "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition" : null,
+  "http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1" : null,
+  "http://somewhere.org/fhir/uv/mycontentig/Library/FHIRHelpers|4.0.1" : null,
+  "http://utah.edu/fhir/lcs-cds/ValueSet/conditionclinical" : null
 }
