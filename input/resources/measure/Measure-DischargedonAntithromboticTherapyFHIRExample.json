@@ -997,7 +997,8 @@
         } ]
       },
       "criteria": {
-        "language": "text/cql-identifier"
+        "language": "text/cql-identifier",
+        "expression": "Numerator Exclusion"
       }
     } ]
   } ],

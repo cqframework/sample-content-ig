@@ -615,7 +615,8 @@
         } ]
       },
       "criteria": {
-        "language": "text/cql-identifier"
+        "language": "text/cql-identifier",
+        "expression": "Denominator Exclusion"
       }
     }, {
       "id": "E492BC05-FD48-4459-8574-5CF67CC14C66",
@@ -641,7 +642,8 @@
         } ]
       },
       "criteria": {
-        "language": "text/cql-identifier"
+        "language": "text/cql-identifier",
+        "expression": "Numerator Exclusion"
       }
     }, {
       "id": "4e8d7586-8625-42d1-9cff-c02d3d4b87f3",
@@ -653,7 +655,8 @@
         } ]
       },
       "criteria": {
-        "language": "text/cql-identifier"
+        "language": "text/cql-identifier",
+        "expression": "Denominator Exception"
       }
     } ]
   } ]
