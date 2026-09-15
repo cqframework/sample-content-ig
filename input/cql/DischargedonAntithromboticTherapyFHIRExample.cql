@@ -1,4 +1,4 @@
-library DischargedonAntithromboticTherapyFHIRExample version '0.5.6'
+library DischargedonAntithromboticTherapyFHIRExample version '0.5.7-cibuild'
 
 /* based upon FHIR library DischargedonAntithromboticTherapyFHIR4 version '0.4.000' */
 /* 2023 AU */

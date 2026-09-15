@@ -58,7 +58,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/SupplementalDataElementsExample",
-  "version": "0.5.6",
+  "version": "0.5.7-cibuild",
   "name": "SupplementalDataElementsExample",
   "type": {
     "coding": [ {

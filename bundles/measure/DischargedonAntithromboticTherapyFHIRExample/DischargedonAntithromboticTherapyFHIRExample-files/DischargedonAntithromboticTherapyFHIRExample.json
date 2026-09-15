@@ -58,7 +58,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/DischargedonAntithromboticTherapyFHIRExample",
-  "version": "0.5.6",
+  "version": "0.5.7-cibuild",
   "name": "DischargedonAntithromboticTherapyFHIRExample",
   "type": {
     "coding": [ {

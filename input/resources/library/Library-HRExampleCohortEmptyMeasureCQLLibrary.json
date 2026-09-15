@@ -58,7 +58,7 @@
     }
   } ],
   "url": "http://somewhere.org/fhir/uv/mycontentig/Library/HRExampleCohortEmptyMeasureCQLLibrary",
-  "version": "0.5.6",
+  "version": "0.5.7-cibuild",
   "name": "HRExampleCohortEmptyMeasureCQLLibrary",
   "type": {
     "coding": [ {
